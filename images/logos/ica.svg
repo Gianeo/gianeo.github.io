@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="398"
+   height="204"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-31.937448,-408.55206)">
+    <g
+       id="g5312"
+       transform="matrix(3.4518946,0,0,3.4518946,-78.307436,-1501.9135)">
+      <path
+         style="fill:#ee1c23;fill-rule:nonzero;stroke:none"
+         d="M 147.2365,611.4952 L 131.2125,611.4952 L 127.3565,605.0292 L 110.9785,605.0292 L 116.9335,594.8452 L 121.7135,594.8452 L 114.9575,582.5552 C 108.5485,592.9152 103.8745,607.5442 90.2045,611.1232 C 79.8985,614.3262 68.3145,612.1382 60.7305,604.6092 C 52.7735,596.5982 49.6265,584.5842 53.5755,573.6912 C 56.7805,563.7072 66.9255,555.8582 77.1215,554.6312 C 81.5015,554.0452 86.0915,554.3872 89.9385,555.7222 C 89.9385,555.7222 94.5595,557.3492 96.0225,558.2062 L 88.6575,570.6482 C 84.9745,568.0332 79.3635,568.0332 75.2015,569.6332 C 69.7525,571.8222 66.1245,577.4832 66.1245,583.3012 C 66.1245,588.9122 69.2765,594.0372 74.2915,596.7612 C 78.7275,599.0032 85.1305,598.7852 89.1905,596.0112 C 91.3265,594.6802 92.9835,592.4342 94.3145,590.3502 L 114.9265,553.4542 L 147.2365,611.4952"
+         id="path2692" />
+      <path
+         style="fill:#ee1c23;fill-rule:nonzero;stroke:none"
+         d="M 46.2605,611.4982 L 31.9375,611.4952 L 31.9375,555.0832 L 46.2495,555.0832 L 46.2605,611.5052 L 46.2605,611.4982"
+         id="path2694" />
+    </g>
+  </g>
+</svg>
