@@ -8,14 +8,14 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
-            .uk-sticky-fixed {
+            nav.uk-sticky-fixed {
                 box-shadow: 0 2px 8px rgba(0,0,0,.08);
             }
         </style>
     </head>
     <body class="uk-margin-medium-top">
 
-            <nav class="uk-padding-large uk-padding-remove-vertical uk-background-default" uk-navbar uk-sticky>
+            <nav class="uk-padding-large uk-padding-remove-vertical uk-background-default" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                 <div class="uk-navbar-left">
 
                     <ul class="uk-navbar-nav">
@@ -61,8 +61,8 @@
         <div class="uk-width-3-4 uk-padding uk-align-center">
             <h2 class="uk-hidden">Work Experience</h2>
                 <div>
-                    <h3 class="uk-h5 uk-text-bold uk-text-uppercase uk-heading-divider">Design & Leadership: 2015 - Today</h3>
-                    <h4 class="uk-h1 uk-text-bold">Ocado Smart Platform</h4>
+                    <h3 class="uk-h5 uk-heading-divider"><span class="uk-text-bold uk-text-uppercase uk-margin-small-right">Design & Leadership:</span> 2015 - Today</h3>
+                    <h4 class="uk-h1 uk-text-bold uk-background-default uk-padding-small uk-padding-remove-horizontal">Ocado Smart Platform</h4>
                     <p class="uk-width-xlarge">“Ocado has invested over the last fifteen years to create the best grocery e-commerce solution in the world. From our user-friendly mobile interface to our highly efficient automated warehouse technology, we can now offer this best-in-class customer experience and highly efficient end-to-end supply chain solution to retail partners globally. As a solutions business we are entirely focused on helping our partners build winning grocery e-commerce businesses in their markets.”</p>
                     <cite class="uk-display-block">― Luke Jensen, CEO - Ocado Smart Platform</cite>
                 </div>
