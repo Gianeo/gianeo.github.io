@@ -15,12 +15,21 @@
     </head>
     <body>
 
+        <div class="uk-visibility@m uk-margin-large-top"></div>
+
             <nav class="uk-hidden@s uk-background-default uk-box-shadow-small" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                     <button class="uk-button uk-button-large uk-button-text uk-width-1-2 uk-padding uk-text-bold uk-background-default">My Work</button>
                     <button class="uk-button uk-button-large uk-button-text uk-width-1-2 uk-padding">About Me</button>
+                    <button class="uk-button uk-button-large uk-button-text uk-width-1-2 uk-padding">Connect</button>
             </nav>
 
-            <nav class="uk-visible@s uk-padding-large uk-padding-remove-vertical uk-background-default" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+            <nav class="uk-hidden@m uk-child-width-auto uk-background-default uk-box-shadow-small" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+                    <button class="uk-button uk-button-large uk-button-text uk-padding uk-text-bold">My Design & Leadership Experience</button>
+                    <button class="uk-button uk-button-large uk-button-text uk-padding">Something About Me</button>
+                    <button class="uk-button uk-button-large uk-button-text uk-padding">Let's Connect</button>
+            </nav>
+
+            <nav class="uk-visible@l uk-padding-large uk-padding-remove-vertical uk-background-default" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
                         <li class="uk-active uk-text-bold">
@@ -31,8 +40,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="uk-navbar-right">
-                    <a href="" class="uk-padding-small" uk-icon="linkedin"></a>
+                <div class="uk-iconnav uk-background-secondary">
+                    <a href="" class="uk-padding-small uk-icon-link" uk-icon="linkedin"></a>
                     <a href="" class="uk-padding-small" uk-icon="instagram"></a>
                     <a href="" class="uk-padding-small" uk-icon="behance"></a>
                     <a href="" class="uk-padding-small" uk-icon="twitter"></a>
@@ -41,15 +50,16 @@
             </nav>
 
             <div class="uk-container uk-padding uk-padding-remove-horizontal@l uk-margin-large-bottom@m uk-margin-remove-vertical uk-align-center">
-                <div uk-grid>
-                    <div class="uk-align-center uk-align-left@m">
+                <div class="" uk-grid>
+                    <div class="uk-width-auto@m uk-align-center uk-align-left@m">
                         <img data-src="images/v01/profile.jpg" width="150" height="150" alt="" class="uk-border-circle uk-margin-top" uk-img>
                     </div>
-                    <div class="uk-text-center uk-text-left@m uk-margin-remove-top">
+                    <div class="uk-width-expand@m uk-text-center uk-text-left@m uk-margin-remove-top">
                         <h1 class="uk-heading-primary uk-text-bold uk-margin-top@m">Gianni James Favaretto</h1>
-                        <h2 class="uk-width-xlarge@m uk-text-lead uk-margin uk-margin-large-bottom">User Experience, Design, and Leadership in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
+                        <h2 class="uk-width-large@m uk-text-lead uk-margin uk-margin-large-bottom">User Experience, Design, and Leadership in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
                     </div>
                 </div>
+
             </div>
 
         <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -100" style="background-image: url('images/v01/01.jpg');"></div>
