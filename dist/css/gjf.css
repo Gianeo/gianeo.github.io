@@ -501,19 +501,19 @@ a.uk-link-reset:hover,
 /* Hero
  ========================================================================== */
 .uk-heading-hero {
-  font-size: 4rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   font-size: 5rem; }
 
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-heading-hero {
-    font-size: 6rem;
+    font-size: 3.75rem;
     line-height: 1; } }
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-heading-hero {
-    font-size: 8rem;
+    font-size: 5rem;
     line-height: 1; } }
 /* Divider
  ========================================================================== */
@@ -7221,8 +7221,7 @@ iframe.uk-cover {
  */
 [class*='uk-align'] {
   display: block;
-  margin-bottom: 30px;
-  }
+  margin-bottom: 30px; }
 
 * + [class*='uk-align'] {
   margin-top: 30px; }
@@ -8163,8 +8162,7 @@ iframe.uk-cover {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-padding {
-    padding: 40px;
-    } }
+    padding: 40px; } }
 /* Small
  ========================================================================== */
 .uk-padding-small {
