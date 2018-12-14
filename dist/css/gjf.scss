@@ -3,6 +3,7 @@
 // 1. Your custom variables and variable overwrites.
 $global-link-color: #DA7D02;
 $global-secondary-background: #222;
+$global-font-family: 'PT Sans', Arial, sans-serif;
 
 // 2. Import default variables and available mixins.
 @import "../../src/scss/variables-theme.scss";
