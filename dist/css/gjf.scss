@@ -10,7 +10,7 @@ $global-font-family: 'PT Sans', Arial, sans-serif;
 @import "../../src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-@mixin hook-card() { color: #666; }
+@mixin hook-heading-hero(){ font-size: 5rem; }
 
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";

@@ -502,7 +502,8 @@ a.uk-link-reset:hover,
  ========================================================================== */
 .uk-heading-hero {
   font-size: 4rem;
-  line-height: 1.1; }
+  line-height: 1.1;
+  font-size: 5rem; }
 
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
@@ -2630,7 +2631,7 @@ select.uk-form-width-xsmall {
 .uk-card {
   position: relative;
   box-sizing: border-box;
-  color: #666; }
+  transition: box-shadow 0.1s ease-in-out; }
 
 /* Sections
  ========================================================================== */
@@ -7220,7 +7221,8 @@ iframe.uk-cover {
  */
 [class*='uk-align'] {
   display: block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  }
 
 * + [class*='uk-align'] {
   margin-top: 30px; }
@@ -8161,7 +8163,8 @@ iframe.uk-cover {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-padding {
-    padding: 40px; } }
+    padding: 40px;
+    } }
 /* Small
  ========================================================================== */
 .uk-padding-small {
