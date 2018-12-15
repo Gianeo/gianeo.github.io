@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 // 1. Your custom variables and variable overwrites.
-$global-primary-background: #ff6f61;
-$global-secondary-background: #222;
+$global-primary-background: #ffc837;
+$global-secondary-background: #1a1915;
 $global-font-family: 'PT Sans', Arial, sans-serif;
-$heading-hero-font-size-l: 5rem;
+$heading-hero-font-size-l: 4.2rem;
 
 // 2. Import default variables and available mixins.
 @import "../../src/scss/variables-theme.scss";
