@@ -3,15 +3,20 @@
 // 1. Your custom variables and variable overwrites.
 $global-primary-background: #ffc837;
 $global-secondary-background: #1a1915;
-$global-font-family: 'PT Sans', Arial, sans-serif;
-$heading-hero-font-size-l: 4.2rem;
+$global-font-family: 'IBM Plex Sans', sans-serif;
+
+$heading-hero-font-size-l: 6.2rem;
+$heading-hero-line-height: .8;
+$heading-hero-line-height-s: .8;
+$heading-hero-line-height-m: .8;
+$heading-hero-line-height-l: .8;
 
 // 2. Import default variables and available mixins.
 @import "../../src/scss/variables-theme.scss";
 @import "../../src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
-@mixin hook-heading-hero(){ font-size: 5rem; }
+@mixin hook-heading-hero(){  }
 
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
