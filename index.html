@@ -9,7 +9,7 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
-            nav.uk-sticky-fixed {
+            div.uk-sticky-fixed {
                 box-shadow: 0 2px 8px rgba(0,0,0,.08);
             }
         </style>
@@ -24,44 +24,43 @@
                     <button class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">Let's Connect</button>
             </nav>
 
-            <nav class="uk-visible@m uk-padding-large uk-padding-remove-vertical uk-background-default" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li class="uk-active uk-text-bold">
-                            <a href="#">My Design & Leadership Experience</a>
-                        </li>
-                        <li>
-                            <a href="#" class="">Something About Me</a>
-                        </li>
-                    </ul>
+            <div class="uk-visible@m uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+                <div class="uk-container-large uk-padding uk-padding-remove-vertical uk-margin-remove-vertical uk-align-center">
+                    <nav class="" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <ul class="uk-navbar-nav">
+                                <li class="uk-active uk-text-bold">
+                                    <a href="#">My Design & Leadership Experience</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="">Something About Me</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a href="" class="uk-padding-small" uk-icon="linkedin"></a>
+                            <a href="" class="uk-padding-small" uk-icon="instagram"></a>
+                            <a href="" class="uk-padding-small" uk-icon="behance"></a>
+                            <a href="" class="uk-padding-small" uk-icon="twitter"></a>
+                            <a href="" class="uk-padding-small" uk-icon="mail"></a>
+                        </div>
+                    </nav>
                 </div>
-                <div class="uk-padding-remove-vertical uk-navbar-right">
-                    <a href="" class="uk-padding-small" uk-icon="linkedin"></a>
-                    <a href="" class="uk-padding-small" uk-icon="instagram"></a>
-                    <a href="" class="uk-padding-small" uk-icon="behance"></a>
-                    <a href="" class="uk-padding-small" uk-icon="twitter"></a>
-                    <a href="" class="uk-padding-small" uk-icon="mail"></a>
-                </div>
-            </nav>
+            </div>
 
-            <div class="uk-padding-large uk-margin-remove-vertical uk-align-center">
+            <div class="uk-container-large uk-align-center">
+            <div class="uk-margin uk-padding-large uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -100" style="background-image: url('images/v01/01.jpg');">
                 <div class="uk-margin-top uk-padding uk-padding-remove-vertical" uk-grid>
-                    <div class="uk-width-auto@m">
+                    <div class="uk-width-auto@m uk-padding-small uk-padding-remove-horizontal">
                         <img data-src="images/v01/profile.jpg" width="150" height="150" alt="" class="uk-border-circle uk-margin-bottom uk-align-center" uk-img>
                     </div>
                     <div class="uk-width-expand@m uk-text-center uk-text-left@m uk-margin-remove-top">
-                        <h1 class="uk-heading-hero uk-text-bold">Gianni J. <br>Favaretto</h1>
-                        <h2 class="uk-width-large@m uk-text-lead uk-margin-bottom">User Experience, Design, and Leadership in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
+                        <h1 class="uk-heading-hero uk-text-bold uk-display-inline-block uk-background-default uk-padding-small uk-margin-remove-vertical">Gianni J. <br>Favaretto</h1>
+                        <div class="uk-width-large@m">
+                        <h2 class="uk-text-lead uk-margin-bottom uk-display-inline-block uk-background-default uk-padding-small">User Experience, Design, and Leadership in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
+                        </div>
                     </div>
                 </div>
-
-            </div>
-
-        <div class="uk-height-large uk-background-cover uk-light uk-flex uk-background-center-left" uk-parallax="bgy: -100" style="background-image: url('images/v01/01.jpg');"></div>
-
-        <div class="uk-background-secondary">
-            <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-text-muted uk-margin-remove-bottom">
-                <p class="uk-text-lead uk-text-muted uk-padding">I believe to be a genuine, unconventional and jocular person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
             </div>
         </div>
 
@@ -93,7 +92,13 @@
 
         </div>
 
-        <div class="uk-background-muted">
+        <div class="uk-background-secondary">
+            <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-text-muted uk-margin-remove-bottom">
+                <p class="uk-text-lead uk-text-muted uk-padding">I believe to be a genuine, unconventional and jocular person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
+            </div>
+        </div>
+
+        <div class="uk-background-default">
             <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-margin-remove-bottom">
                 <p class="uk-text-lead uk-text-muted uk-padding">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to exceed business expectations.</p>
             </div>
