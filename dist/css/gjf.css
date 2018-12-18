@@ -503,7 +503,8 @@ a.uk-link-reset:hover,
 .uk-heading-hero {
   font-size: 3.9rem;
   line-height: 0.6;
-  font-family: 'Abril Fatface'; }
+  font-family: 'Abril Fatface';
+  color: #000; }
 
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
@@ -1887,14 +1888,14 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-button-secondary {
-  background-color: #1a1915;
+  background-color: #000;
   color: #fff;
   border: 1px solid transparent; }
 
 /* Hover + Focus */
 .uk-button-secondary:hover,
 .uk-button-secondary:focus {
-  background-color: #0c0b0a;
+  background-color: black;
   color: #fff; }
 
 /* OnClick + Active */
@@ -2144,7 +2145,7 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-section-secondary {
-  background: #1a1915; }
+  background: #000; }
 
 /* Overlap modifier
  ========================================================================== */
@@ -2623,7 +2624,7 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-tile-secondary {
-  background: #1a1915; }
+  background: #000; }
 
 /* ========================================================================
    Component: Card
@@ -2754,7 +2755,7 @@ select.uk-form-width-xsmall {
  * Secondary
  */
 .uk-card-secondary {
-  background: #1a1915;
+  background: #000;
   color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
 
@@ -2762,7 +2763,7 @@ select.uk-form-width-xsmall {
   color: #fff; }
 
 .uk-card-secondary.uk-card-hover:hover {
-  background-color: #1a1915;
+  background-color: #000;
   box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16); }
 
 /* Size modifier
@@ -2953,7 +2954,7 @@ select.uk-form-width-xsmall {
  */
 .uk-marker {
   padding: 5px;
-  background: #1a1915;
+  background: #000;
   color: #fff;
   border-radius: 500px; }
 
@@ -3152,7 +3153,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-overlay-primary {
-  background: rgba(26, 25, 21, 0.8); }
+  background: rgba(0, 0, 0, 0.8); }
 
 /* ========================================================================
    Component: Article
@@ -5313,7 +5314,7 @@ ul.uk-nav-sub {
   box-sizing: border-box;
   width: 270px;
   padding: 20px 20px;
-  background: #1a1915;
+  background: #000;
   /* 3 */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -7084,7 +7085,7 @@ iframe.uk-cover {
   background-color: #ffc837; }
 
 .uk-background-secondary {
-  background-color: #1a1915; }
+  background-color: #000; }
 
 /* Size
  ========================================================================== */
