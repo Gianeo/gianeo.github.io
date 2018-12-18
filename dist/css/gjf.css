@@ -501,19 +501,20 @@ a.uk-link-reset:hover,
 /* Hero
  ========================================================================== */
 .uk-heading-hero {
-  font-size: 3.1rem;
-  line-height: 0.8; }
+  font-size: 3.9rem;
+  line-height: 0.6;
+  font-family: 'Abril Fatface'; }
 
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-heading-hero {
-    font-size: 4.65rem;
-    line-height: 0.8; } }
+    font-size: 5.85rem;
+    line-height: 0.6; } }
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-heading-hero {
-    font-size: 6.2rem;
-    line-height: 0.8; } }
+    font-size: 7.8rem;
+    line-height: 0.6; } }
 /* Divider
  ========================================================================== */
 .uk-heading-divider {
@@ -3182,7 +3183,8 @@ select.uk-form-width-xsmall {
  ========================================================================== */
 .uk-article-title {
   font-size: 2.23125rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  font-family: 'Abril Fatface'; }
 
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
