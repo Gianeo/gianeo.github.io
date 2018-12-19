@@ -111,8 +111,9 @@ ins {
  * Mark
  */
 mark {
-  background: #ffd;
-  color: #666; }
+  background: #ffc;
+  color: #666;
+  }
 
 /*
  * Quote
