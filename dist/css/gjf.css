@@ -2648,7 +2648,8 @@ select.uk-form-width-xsmall {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-card-body {
-    padding: 40px 40px; }
+    padding: 40px 40px;
+    }
 
   .uk-card-header {
     padding: 20px 40px; }
