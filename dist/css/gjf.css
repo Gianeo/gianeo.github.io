@@ -2648,8 +2648,7 @@ select.uk-form-width-xsmall {
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-card-body {
-    padding: 40px 40px;
-    }
+    padding: 40px 40px; }
 
   .uk-card-header {
     padding: 20px 40px; }
@@ -6729,7 +6728,8 @@ ul.uk-nav-sub {
 .uk-text-lead {
   font-size: 1.5rem;
   line-height: 1.5;
-  color: #333; }
+  color: #333;
+  font-weight: 300; }
 
 .uk-text-meta {
   font-size: 0.875rem;
@@ -8186,7 +8186,8 @@ iframe.uk-cover {
   padding: 0 !important; }
 
 .uk-padding-remove-top {
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+  }
 
 .uk-padding-remove-bottom {
   padding-bottom: 0 !important; }

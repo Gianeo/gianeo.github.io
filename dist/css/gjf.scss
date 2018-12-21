@@ -18,6 +18,7 @@ $heading-hero-line-height-l: .6;
 // 3. Your custom mixin overwrites.
 @mixin hook-heading-hero(){ font-family: 'Abril Fatface'; color: #000; }
 @mixin hook-article-title(){ font-family: 'Abril Fatface'; }
+@mixin hook-text-lead(){ font-weight: 300; }
 
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
