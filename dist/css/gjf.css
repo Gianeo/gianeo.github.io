@@ -1816,9 +1816,7 @@ select.uk-form-width-xsmall {
   text-align: center;
   /* 9 */
   text-decoration: none;
-  text-transform: uppercase;
-  transition: 0.1s ease-in-out;
-  transition-property: color, background-color, border-color; }
+  font-weight: 700; }
 
 .uk-button:not(:disabled) {
   cursor: pointer; }
@@ -8186,8 +8184,7 @@ iframe.uk-cover {
   padding: 0 !important; }
 
 .uk-padding-remove-top {
-  padding-top: 0 !important;
-  }
+  padding-top: 0 !important; }
 
 .uk-padding-remove-bottom {
   padding-bottom: 0 !important; }
