@@ -25,6 +25,9 @@
                 display: inline-block;
                 padding: 2rem !important;
             }
+            @media (max-width: 960px) { 
+                .uk-margin-remove-vertical-m { margin-top: 0px !important; margin-bottom: 0px !important; }
+            }
         </style>
     </head>
     <body>
@@ -61,8 +64,8 @@
                 </div>
             </div>
 
-            <div class="uk-container-large uk-align-center uk-margin-large-top uk-margin-large-bottom" style="padding-right: 7rem;">
-            <div class="uk-margin uk-padding uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
+            <div class="uk-container-large uk-align-center uk-margin-large-top uk-margin-large-bottom uk-margin-remove-vertical-m">
+            <div class="uk-margin uk-padding uk-background-contain uk-flex uk-background-center-right uk-margin-remove-vertical-m" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
                 <div class="uk-grid-collapse uk-margin-top uk-padding uk-padding-remove-vertical" uk-grid>
                     <div class="uk-width-auto@m uk-padding-small uk-padding-remove-horizontal uk-margin-small-top">
                         <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-margin-bottom uk-align-center" uk-img>
@@ -77,7 +80,7 @@
             </div>
         </div>
 
-        <div class="uk-background-secondary uk-margin-large-top uk-margin-bottom">
+        <div class="uk-background-secondary uk-margin-large-top uk-margin-bottom uk-margin-remove-vertical-m">
             <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-text-muted uk-margin-remove-bottom">
                 <p class="uk-text-lead uk-light uk-padding">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories often have little to do with the truth. We also have the tendency to perceive ourselves as shining much brighter than we do in reality.</p>
             </div>
@@ -85,7 +88,7 @@
 
         <div class="uk-background-default">
 
-            <div class="uk-container-large uk-align-center uk-margin-remove-vertical">
+            <div class="uk-container-large@m uk-align-center uk-margin-remove-vertical">
             <div class="uk-child-width-1-2@m uk-padding uk-margin-remove-vertical" uk-grid uk-height-match="target: > div > .uk-card">
                 
                 <div>
@@ -174,7 +177,23 @@
             </div>
 
             <div>
-                <div class="uk-card uk-padding uk-background-default" style="margin-top: 12rem;">
+                <div class="uk-background-default uk-padding-large">
+                    <div class="uk-padding uk-width-xlarge@m uk-align-center uk-margin-remove-bottom">
+                        <p class="uk-text-lead uk-padding">I live with three values that define who I am as well as leading me where I want to be: <mark>"value 1"</mark>, <mark>"value 2"</mark>, and <mark>"value 3"</mark></p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-background-default uk-padding-large">
+                    <div class="uk-padding uk-width-xlarge@m uk-align-center uk-margin-remove-bottom">
+                        <p class="uk-text-lead uk-padding">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-padding uk-background-default">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/08.jpg);" uk-parallax="bgy: -35"></div>
                     <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Eni, Sun, Nasa, Novartis, ...</a></h1>
