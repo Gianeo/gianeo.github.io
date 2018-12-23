@@ -1816,7 +1816,8 @@ select.uk-form-width-xsmall {
   text-align: center;
   /* 9 */
   text-decoration: none;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .uk-button:not(:disabled) {
   cursor: pointer; }
