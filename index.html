@@ -13,19 +13,27 @@
                 box-shadow: 0 2px 8px rgba(0,0,0,.08);
             }
             mark {background-color: #f9f220; color: #000;}
-            .card-layout01 {
-                margin: -9rem 1rem;
-                background: #fff;
-                display: inline-block;
-                padding: 2rem !important;
-            }
-            .card-layout02 {
-                margin-right: -7.5rem;
-                background: #fff;
-                display: inline-block;
-                padding: 2rem !important;
+            
+            @media (min-width: 1399px) {
+                .card-layout01 {
+                    margin: -9rem 1rem;
+                    background: #fff;
+                    display: inline-block;
+                    padding: 2rem !important;
+                }
+                .card-layout02 {
+                    margin-right: -7.5rem;
+                    background: #fff;
+                    display: inline-block;
+                    padding: 2rem !important;
+                }
             }
             @media (max-width: 960px) { 
+                .cover-img { background-image: none !important; }
+                .cover-txt { padding: 0; }
+                .cover-txt > h1 { padding: 0; }
+                .cover-txt > div { padding: 0; }
+                .uk-card { padding: 0; }
                 .uk-margin-remove-vertical-m { margin-top: 0px !important; margin-bottom: 0px !important; }
             }
         </style>
@@ -65,8 +73,8 @@
             </div>
 
             <div class="uk-container-large uk-align-center uk-margin-large-top uk-margin-large-bottom uk-margin-remove-vertical-m">
-            <div class="uk-margin uk-padding uk-background-contain uk-flex uk-background-center-right uk-margin-remove-vertical-m" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
-                <div class="uk-grid-collapse uk-margin-top uk-padding uk-padding-remove-vertical" uk-grid>
+            <div class="cover-img uk-margin uk-padding uk-background-contain uk-flex uk-background-center-right uk-margin-remove-vertical-m" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
+                <div class="cover-txt uk-grid-collapse uk-margin-top uk-padding uk-padding-remove-vertical" uk-grid>
                     <div class="uk-width-auto@m uk-padding-small uk-padding-remove-horizontal uk-margin-small-top">
                         <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-margin-bottom uk-align-center" uk-img>
                     </div>
