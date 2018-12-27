@@ -14,7 +14,7 @@
             footer { margin-top: 30px; }
 
             .uk-sticky-fixed { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
-            .cover-img { background-image: none !important; padding: 0; }
+            .cover-img { background-image: none; padding: 0; }
 
             .uk-button-text { line-height: 1.2; }
 
@@ -42,7 +42,33 @@
             }
 
             @media (min-width: 960px) { 
-                .cover-img { background-image: none !important; padding: 0; }
+                .header { padding: 60px; }
+                .header h1 { margin: 0; padding: 30px; line-height: .6;}
+                .header h2 { margin: 0; padding: 30px; }
+                .header div.intro > div {
+                    margin-top: 30px;
+                }
+                .header div.intro { 
+                    margin-left: 30px;
+                    padding: 5px 0 5px 15px; /*border-left: 22px solid #c0c; used box-shadow instead*/ 
+                    display:inline-block; 
+                    overflow-y: hidden; 
+                    width: auto; 
+                }
+                .header .intro h1, .header .intro h2 {
+                    background-color: #fff;
+                    display: inline;
+                    margin: 0;
+                    padding: 8px 0;
+                    box-shadow: -16px 0 0 #fff;
+                }
+                .header .intro h1 span, .header .intro h2 span { 
+                    position: relative;
+                    left:-9px;  
+                }
+
+
+                .cover-img { background-image: url('images/v01/01.jpg'); padding: 0; }
                 .cover-txt, .msg-box > div { padding: 0; }
                 .msg-box { margin: 0 !important; }
                 .msg-box .uk-text-lead { font-size: 1.25rem !important; }
@@ -104,15 +130,15 @@
             </div>
 
             <div class="header uk-container-large uk-align-center">
-                <div class="cover-img uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
+                <div class="cover-img uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -35">
                     <div class="cover-txt uk-grid-collapse" uk-grid>
                         <div class="uk-width-auto@m">
                             <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-align-center" uk-img>
                         </div>
-                        <div class="uk-width-expand@m uk-text-center uk-text-left@m">
-                            <h1 class="uk-heading-hero uk-display-inline-block uk-background-default">Gianni J. Favaretto</h1>
+                        <div class="intro uk-width-expand@m uk-text-center uk-text-left@m">
+                            <h1 class="uk-heading-hero"><span>Gianni J. Favaretto</span></h1>
                             <div class="uk-width-large@m">
-                            <h2 class="uk-text-lead uk-width-large@s uk-display-inline-block uk-background-default"><mark>User Experience, Design, and Leadership</mark> in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
+                            <h2 class="uk-text-lead"><span><mark>User Experience, Design, and Leadership</mark> in tech-savvy and agile domains. War veteran, former missionary, and married with children.</span></h2>
                             </div>
                         </div>
                     </div>
