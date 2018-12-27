@@ -9,24 +9,34 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
-            .uk-sticky-fixed {
-                box-shadow: 0 2px 8px rgba(0,0,0,.08);
-            }
-            mark {background-color: #f9f220; color: #000;}
 
-            @media (min-width: 300px) { 
-                .msg-box p { padding: 30px; }
-                .uk-card { padding: 40px 60px; }
-                .uk-card div { padding-left: 0 !important; }
-            }
+            mark {background-color: #f9f220; color: #000;}
+            footer { margin-top: 30px; }
+
+            .uk-sticky-fixed { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+            .cover-img { background-image: none !important; padding: 0; }
+
+            .uk-button-text { line-height: 1.2; }
+
+            .intro h1 { margin: 0; }
+            .intro h2 { margin: 20px 0 0; }
+
+            .intro, .uk-card { padding: 30px; margin: 0; }
+            .uk-card-media-top { margin-bottom: 20px; }
+            .uk-card-body { padding: 0; }
+            .uk-card .uk-background-cover { height: 150px; }
+            
+            .msg-box { margin: 30px 0; padding: 30px 30px 40px; }
+            .msg-box p, .msg-box div { margin: 0; }
+
 
             @media (min-width: 768px) { 
-                .msg-box { margin-top: 30px; }
-                .msg-box p { padding: 90px; }
                 .uk-card { padding: 45px 60px; }
+                .msg-box { margin-top: 30px; }
+                .msg-box p { padding: 90px; margin: 0; }
             }
 
-            @media (max-width: 960px) { 
+            @media (min-width: 960px) { 
                 .cover-img { background-image: none !important; padding: 0; }
                 .cover-txt, .msg-box > div { padding: 0; }
                 .msg-box { margin: 0 !important; }
@@ -88,16 +98,16 @@
                 </div>
             </div>
 
-            <div class="uk-container-large uk-align-center uk-margin-large-top uk-margin-large-bottom uk-margin-remove-vertical-m">
-            <div class="cover-img uk-margin uk-padding uk-background-contain uk-flex uk-background-center-right uk-margin-remove-vertical-m" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
-                <div class="cover-txt uk-grid-collapse uk-margin-top uk-padding uk-padding-remove-vertical" uk-grid>
-                    <div class="uk-width-auto@m uk-padding-small uk-padding-remove-horizontal uk-margin-small-top">
+            <div class="intro uk-container-large uk-align-center">
+            <div class="cover-img uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -35" style="background-image: url('images/v01/01.jpg');">
+                <div class="cover-txt uk-grid-collapse" uk-grid>
+                    <div class="uk-width-auto@m">
                         <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-margin-bottom uk-align-center" uk-img>
                     </div>
                     <div class="uk-width-expand@m uk-text-center uk-text-left@m uk-margin-remove">
-                        <h1 class="uk-heading-hero uk-display-inline-block uk-background-default uk-padding uk-margin-remove-vertical">Gianni J. Favaretto</h1>
+                        <h1 class="uk-heading-hero uk-display-inline-block uk-background-default">Gianni J. Favaretto</h1>
                         <div class="uk-width-large@m">
-                        <h2 class="uk-text-lead uk-width-large@s uk-margin-bottom uk-display-inline-block uk-background-default uk-padding" style="padding-top: 20px;"><mark>User Experience, Design, and Leadership</mark> in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
+                        <h2 class="uk-text-lead uk-width-large@s uk-display-inline-block uk-background-default"><mark>User Experience, Design, and Leadership</mark> in tech-savvy and agile domains. War veteran, former missionary, and married with children.</h2>
                         </div>
                     </div>
                 </div>
@@ -105,20 +115,20 @@
         </div>
 
         <div class="msg-box uk-background-secondary">
-            <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-text-muted uk-margin-remove-bottom">
+            <div class="k-align-center uk-text-muted">
                 <p class="uk-text-lead uk-light">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories often have little to do with the truth. We also have the tendency to perceive ourselves as shining much brighter than we do in reality.</p>
             </div>
         </div>
 
         <div class="uk-background-default">
 
-            <div class="uk-container-large@m uk-align-center uk-margin-remove-vertical">
-            <div class="uk-child-width-1-2@m uk-padding uk-margin-remove-vertical" uk-grid uk-height-match="target: > div > .uk-card">
+            <div class="uk-container-large@m uk-align-center">
+            <div class="uk-child-width-1-2@m" uk-grid uk-height-match="target: > div > .uk-card">
                 
                 <div>
-                    <div class="uk-card uk-padding uk-margin-remove-top uk-background-default">
-                        <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/04.jpg);" uk-parallax="bgy: -35"></div>
-                        <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                    <div class="uk-card">
+                        <div class="uk-card-media-top uk-background-cover" style="background-image: url(images/v01/04.jpg);" uk-parallax="bgy: -35"></div>
+                        <div class="uk-card-body card-layout01">
                             <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2B</mark></a></h1>
                             <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="uk-text-muted">Mar 2015 – Jan 2019</span></p>
                             <p class="uk-width-large@m">Three years have passed since I started working on the Ocado Smart Platform. From one man trying to kick off a more user-centred approach to problem-solving while delivering design outcomes, we are now a high-level multi-skilled UX team...</p>
@@ -128,9 +138,9 @@
                 </div>
 
                 <div>
-                    <div class="uk-card uk-padding uk-margin-remove-top uk-background-default">
+                    <div class="uk-card">
                         <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/05.jpg);" uk-parallax="bgy: -35"></div>
-                        <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                        <div class="uk-card-body card-layout01">
                             <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2C</mark></a></h1>
                             <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="uk-text-muted">Mar 2015 – Jan 2019</span></p>
                             <p class="uk-width-large@m">The main reason why I was so thrilled to be part of the Ocado Smart Platform bunch was the opportunity to contribute to the development of the next generation of customer-facing e-commerce platforms of Ocado...</p>
@@ -145,17 +155,17 @@
         </div>
 
         <div class="msg-box uk-background-secondary">
-            <div class="uk-padding uk-width-xxlarge@m uk-align-center uk-text-muted uk-margin-remove-bottom">
-                <p class="uk-text-lead uk-light uk-padding">I believe to be a <mark>genuine, unconventional and jocular</mark> person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
+            <div class="uk-align-center uk-text-muted">
+                <p class="uk-text-lead uk-light">I believe to be a <mark>genuine, unconventional and jocular</mark> person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
             </div>
         </div>
 
-        <div class="uk-child-width-1-1 uk-padding uk-grid uk-background-default" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-child-width-1-1 uk-grid" uk-grid uk-height-match="target: > div > .uk-card">
 
             <div>
-                <div class="uk-card uk-padding uk-margin-remove-top uk-background-default">
+                <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/03.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                    <div class="uk-card-body card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Fabled by Marie Claire</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="uk-text-muted">Nov 2014 – Apr 2016</span></p>
                         <p class="uk-width-large@m">We launched Fabled.com, in partnership with Marie Claire, in the summer of 2016. Fabled was the result of the work started in 2012 when we initiated the General Merchandise department to offer top products lines not appropriate for a supermarket...</p>
@@ -166,20 +176,20 @@
 
         </div>
 
-        <div class="uk-child-width-1-2@m uk-padding uk-grid uk-background-default uk-margin-remove-top uk-remove" uk-height-match="target: > div > .uk-card" uk-grid="masonry: true">
+        <div class="uk-child-width-1-2@m uk-grid" uk-height-match="target: > div > .uk-card" uk-grid="masonry: true">
 
             <div class="uk-visible@m">
-                <div class="uk-background-default uk-padding-large">
-                    <div class="uk-padding uk-width-xlarge@m uk-align-center uk-margin-remove-bottom">
-                        <p class="uk-text-lead uk-padding">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
+                <div class="">
+                    <div class="uk-width-xlarge@m uk-align-center">
+                        <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div class="uk-card uk-padding uk-padding-remove-top uk-background-default">
+                <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large uk-background-top-center" style="background-image: url(images/v01/06.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                    <div class="uk-card-body card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado GM, Fetch, and Sizzle</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="uk-text-muted">Sep 2012 – Apr 2016</span></p>
                         <p class="uk-width-large@m">We just released the newly branded ocado.com when they offered me the opportunity to start-up and lead the UX of the new general merchandise operation. After two intense years in the Ocado grocery's department, I moved to something new and exciting...</p>
@@ -189,9 +199,9 @@
             </div>
 
             <div>
-                <div class="uk-card uk-padding uk-background-default">
+                <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/07.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                    <div class="uk-card-body card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado.com</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Sr. Designer / User Experience & Design Manager.</b> <span class="uk-text-muted">Mar 2010 – Sep 2012</span></p>
                         <p class="uk-width-large@m">I was freelancing in Italy when I was invited to have a phone interview with Ocado. Ocado who? I asked myself. I did some research, and my heart started hammering when I read about Ocado's vision was to disrupt the online shopping for grocery...</p>
@@ -201,25 +211,25 @@
             </div>
 
             <div class="uk-visible@m">
-                <div class="uk-background-default uk-padding-large">
-                    <div class="uk-padding uk-width-xlarge@m uk-align-center uk-margin-remove-bottom">
-                        <p class="uk-text-lead uk-padding">I live with three values that define who I am as well as leading me where I want to be: <mark>"value 1"</mark>, <mark>"value 2"</mark>, and <mark>"value 3"</mark></p>
+                <div class="">
+                    <div class="uk-width-xlarge@m uk-align-center">
+                        <p class="uk-text-lead">I live with three values that define who I am as well as leading me where I want to be: <mark>"value 1"</mark>, <mark>"value 2"</mark>, and <mark>"value 3"</mark></p>
                     </div>
                 </div>
             </div>
 
             <div class="uk-visible@m">
-                <div class="uk-background-default uk-padding-large">
-                    <div class="uk-padding uk-width-xlarge@m uk-align-center uk-margin-remove-bottom">
-                        <p class="uk-text-lead uk-padding">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
+                <div class="">
+                    <div class="uk-width-xlarge@m uk-align-center">
+                        <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div class="uk-card uk-padding uk-background-default">
+                <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/08.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body uk-padding-remove-horizontal uk-padding-remove-bottom card-layout01">
+                    <div class="uk-card-body ard-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Eni, Sun, Nasa, Novartis, ...</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Independent Designer, Consultant, and Instructor.</b> <span class="uk-text-muted">Aug 2002 – Mar 2010</span></p>
                         <p class="uk-width-large@m">User Experience, Design, Art Direction, UI Development, Branding and Training. Clients include Macromedia, Sun Microsystem, Nasa, ENI, Accor, Novartis, Thomson Reuters, CIM e-Banking, Sacbo International Airport...</p>
@@ -230,24 +240,24 @@
 
         </div>
 
-        <div class="msg-box uk-grid uk-grid-collapse uk-child-width-1-2@m uk-background-secondary" uk-grid>
+        <div class="uk-grid uk-grid-collapse uk-child-width-1-2@m" uk-grid>
             <div class="uk-background-cover uk-background-top-center" style="background-image: url(images/v01/09.jpg);" uk-parallax="bgy: -35"></div>
-            <div class="uk-padding uk-margin-remove-bottom">
-                <p class="uk-text-lead uk-width-xlarge@m uk-light uk-padding-large uk-align-center">I build, mentor and curate agile teams by focusing on motivation, caring, <mark>continuos growth</mark>, and on developing of a strong mindset on <mark>problem-solving</mark>.</p>
+            <div class="msg-box uk-background-secondary">
+                <p class="uk-text-lead uk-light">I build, mentor and curate agile teams by focusing on motivation, caring, <mark>continuos growth</mark>, and on developing of a strong mindset on <mark>problem-solving</mark>.</p>
             </div>
         </div>
 
-        <div class="uk-child-width-1-2@m uk-padding uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
+        <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
 
         </div>
 
-            <div class="uk-container uk-padding uk-padding-remove-top uk-background-default">
-                <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+            <div class="uk-container@m">
+                <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
 
                     <div>
-                        <div class="uk-card uk-background-default">
+                        <div class="uk-card">
                             <div>
-                                <div class="uk-card-body uk-padding-small uk-padding-remove-vertical">
+                                <div class="uk-card-body">
                                 <h1 class="uk-article-title">Macromedia</h1>
                                 <p class="uk-text-uppercase uk-text-small"><b>Certified consultant, speaker and instructor.</b> <span class="uk-text-muted">2002 – 2004</span></p>
                                 <p class="uk-width-large@m">Selected to be part of the Macromedia Specialist Group (20/25 over 600 professionals). Trained and qualified Consultant, instructor and speaker during road shows and conferences held by Macromedia Italia.</p> 
@@ -257,9 +267,9 @@
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-background-default">
+                        <div class="uk-card">
                             <div>
-                                <div class="uk-card-body uk-padding-small uk-padding-remove-vertical">
+                                <div class="uk-card-body">
                                 <h1 class="uk-article-title">ColumbusNet</h1>
                                 <p class="uk-text-uppercase uk-text-small"><b>Web Art Director.</b> <span class="uk-text-muted">Feb 2001 – Aug 2002</span></p>
                                 <p class="uk-width-large@m">Designed and supervised the design of interface concepts and all the graphics that enhanced the appearance of websites and web applications.</p>
@@ -270,9 +280,9 @@
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-background-default uk-margin-large-bottom">
+                        <div class="uk-card">
                             <div>
-                                <div class="uk-card-body uk-padding-small uk-padding-remove-top">
+                                <div class="uk-card-body">
                                 <h1 class="uk-article-title">ANS</h1>
                                 <p class="uk-text-uppercase uk-text-small"><b>Web Designer.</b> <span class="uk-text-muted">2000 – 2001</span></p>
                                 <p class="uk-width-large@m">Translating the client vision into a useable and visually appealing web solution. <br>Working within a team of high profile developers and network specialist.</p>
@@ -281,9 +291,9 @@
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-background-default uk-margin-large-bottom">
+                        <div class="uk-card">
                             <div>
-                                <div class="uk-card-body uk-padding-small uk-padding-remove-top">
+                                <div class="uk-card-body">
                                 <h1 class="uk-article-title">Utah Valley University</h1>
                                 <p class="uk-text-uppercase uk-text-small"><b>Professor Assistant and Web Designer/Dev.</b> <span class="uk-text-muted">1999 – 2001</span></p>
                                 <p class="uk-width-large@m">Worked side by side with Professor Gale on evaluating students' web design work.
@@ -296,10 +306,11 @@
                 </div>
             </div>
 
-        <div class="uk-height-large uk-background-cover uk-light uk-flex uk-margin-large-top" uk-parallax="bgy: -100" style="background-image: url('images/v01/02.jpg');">
+    <footer>
+        <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -100" style="background-image: url('images/v01/02.jpg');">
         </div>
         <div class="uk-background-secondary">
-            <div class="uk-container uk-padding-large uk-margin-remove-bottom uk-text-muted">
+            <div class="uk-container uk-text-muted">
                 <p class="uk-iconnav uk-text-muted uk-padding uk-flex uk-flex-center uk-flex-middle">
                     <a href="" class="uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
                     <a href="" class="uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
@@ -309,6 +320,7 @@
                 </p>
             </div>
         </div>
+    </footer>
 
     
     </body>
