@@ -33,7 +33,10 @@
 
 
             @media (min-width: 768px) { 
+                body { margin-top: 30px; }
+                nav { text-align: center; }
                 .uk-card { padding: 45px 60px; }
+                .uk-card .uk-background-cover { height: 300px; }
                 .msg-box { margin-top: 30px; }
                 .msg-box p { padding: 90px; margin: 0; }
             }
@@ -70,7 +73,7 @@
 
         <div class="uk-visible@m"></div>
 
-            <nav class="uk-hidden@m uk-child-width-auto uk-background-default" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+            <nav class="uk-hidden@m uk-child-width-auto uk-background-default uk-flex uk-flex-center" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                     <button class="uk-button uk-button-large uk-button-text uk-padding uk-text-bold uk-background-default">My Work</button>
                     <button class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">About Me</button>
                     <button class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">Let's Connect</button>
