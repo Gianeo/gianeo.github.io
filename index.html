@@ -18,7 +18,7 @@
 
             .uk-button-text { line-height: 1.2; }
 
-            .header { padding: 40px 30px 30px; margin: 0; }
+            .header {padding: 40px 30px 30px;margin: 0 auto;}
             .header h1 { margin: 30px 0 30px; line-height: .8; }
             .header h2 { margin: 0; }
 
@@ -42,34 +42,42 @@
             }
 
             @media (min-width: 960px) { 
-                .header { padding: 60px; }
-                .header h1 { margin: 0; padding: 30px; line-height: .6;}
+                .header { padding: 90px 60px; }
+                .header h1 { margin: 0; padding: 30px; line-height: .65;}
                 .header h2 { margin: 0; padding: 30px; }
-                .header div.intro > div {
+                .header img {
                     margin-top: 30px;
                 }
-                .header div.intro { 
+                .header div.intro {
+                    border-top: solid 30px #fff;
+                }
+                .header div.intro > div {
+                    margin-top: 35px;
+                }
+                .header div.intro {
                     margin-left: 30px;
-                    padding: 5px 0 5px 15px; /*border-left: 22px solid #c0c; used box-shadow instead*/ 
-                    display:inline-block; 
-                    overflow-y: hidden; 
-                    width: auto; 
+                    padding: 5px 0 0px 15px;
+                    /*border-left: 22px solid #c0c; used box-shadow instead*/
+                    display:inline-block;
+                    overflow-y: hidden;
+                    width: auto;
+                    max-width: 600px;
                 }
                 .header .intro h1, .header .intro h2 {
                     background-color: #fff;
                     display: inline;
                     margin: 0;
-                    padding: 8px 0;
+                    padding: 8px 0px;
                     box-shadow: -16px 0 0 #fff;
                 }
                 .header .intro h1 span, .header .intro h2 span { 
                     position: relative;
-                    left:-9px;  
+                    left: -9px;  
                 }
 
 
-                .cover-img { background-image: url('images/v01/01.jpg'); padding: 0; }
-                .cover-txt, .msg-box > div { padding: 0; }
+                .cover-img {background-image: url('images/v01/01.jpg');padding: 0px 0;}
+                .cover-txt, .msg-box > div {padding: 0px;}
                 .msg-box { margin: 0 !important; }
                 .msg-box .uk-text-lead { font-size: 1.25rem !important; }
                 .cover-txt > h1 { padding: 0; }
