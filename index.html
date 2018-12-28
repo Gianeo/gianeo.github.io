@@ -50,15 +50,9 @@
                 .header {padding: 60px;}
                 .header h1 { margin: 0; padding: 30px; line-height: .65;}
                 .header h2 { margin: 0; padding: 30px; }
-                .header img {
-                    margin-top: 30px;
-                }
-                .header div.intro {
-                    border-top: solid 30px #fff;
-                }
-                .header div.intro > div {
-                    margin-top: 35px;
-                }
+                .header img { margin-top: 30px; }
+                .header div.intro { border-top: solid 30px #fff; }
+                .header div.intro > div { margin-top: 35px; }
                 .header div.intro {
                     margin-left: 30px;
                     padding: 5px 0 0px 15px;
@@ -75,11 +69,8 @@
                     padding: 8px 0px;
                     box-shadow: -16px 0 0 #fff;
                 }
-                .header .intro h1 span, .header .intro h2 span { 
-                    position: relative;
-                    left: -9px;  
-                }
-                .cover-img {background-image: url('images/v01/01.jpg');padding: 0px 0;}
+                .header .intro h1 span, .header .intro h2 span { position: relative; left: -9px; }
+                .cover-img {background-image: url('images/v01/01.jpg');padding: 0;}
                 .cover-txt, .msg-box > div {padding: 0px;}
                 .msg-box { margin: 0; }
                 .msg-box p { font-size: 1.25rem; max-width: 450px; margin: 0 auto; }
@@ -99,8 +90,22 @@
             }
 
             @media (min-width: 1024px) {
+                
+                .header { padding: 60px 60px 90px; }
+                .msg-box { min-height: 380px; display: flex; align-items: center; }
+                .msg-box div { margin: 0 auto; }
+                .uk-card-body { padding: 60px 30px; margin-bottom: 30px !important; }
 
-                .uk-card-body {padding: 60px 30px; margin-bottom: 30px !important;}
+            }
+
+            @media (min-width: 1440px) {
+                
+                .cover-txt {margin-top: 0;;}
+                .header { padding: 60px 60px 90px; }
+                .cover-img {padding: 0 60px 90px 0;}
+                .msg-box { min-height: 380px; display: flex; align-items: center; }
+                .msg-box div { margin: 0 auto; }
+                .uk-card-body { padding: 60px 30px; margin-bottom: 30px !important; }
 
             }
 
@@ -164,7 +169,7 @@
 
         <section class="msg-box uk-background-secondary">
 
-            <div class="k-align-center uk-text-muted">
+            <div class="uk-text-muted">
                 <p class="uk-text-lead uk-light">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories often have little to do with the truth. We also have the tendency to perceive ourselves as shining much brighter than we do in reality.</p>
             </div>
 
@@ -210,7 +215,7 @@
 
         <section class="msg-box uk-background-secondary">
 
-            <div class="uk-align-center uk-text-muted">
+            <div class="uk-text-muted">
                 <p class="uk-text-lead uk-light">I believe to be a <mark>genuine, unconventional and jocular</mark> person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
             </div>
 
