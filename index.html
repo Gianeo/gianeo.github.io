@@ -45,7 +45,7 @@
             }
 
             @media (min-width: 960px) { 
-
+                section { margin: 0 !important; }
                 .header {padding: 60px;}
                 .header h1 { margin: 0; padding: 30px; line-height: .65;}
                 .header h2 { margin: 0; padding: 30px; }
@@ -92,39 +92,19 @@
 
             @media (min-width: 1024px) {
 
-                .msg-box { margin: 60px 0 0; }
-                .msg-box-small { padding: 90px; min-height: 450px; }
-                .uk-card-body.left-card { padding-left: 120px; }
-                .uk-card-body.right-card { padding-right: 120px; }
-                .article-copy-center { margin: 0 auto 30px; }
+                .msg-box {margin: 0;}
+                .msg-box-small {padding: 50px 80px;height: 450px;}
+                .uk-card-body {padding: 30px 10px;margin-bottom: 0 !important;}
+                .uk-card-body.left-card { /*padding-left: 120px;*/ }
+                .uk-card-body.right-card { /*padding-right: 120px;*/ }
+                .article-copy-center {margin: 0 auto 30px;text-align: left;}
                 .card-layout01 {
-                    margin: -7rem auto;
+                    /*margin: -7rem auto;*/
                     background: #fff;
                     display: inline-block;
-                    padding: 30px;
-                }
-                .card-layout02 {
-                    margin-right: -7.5rem;
-                    background: #fff;
-                    display: inline-block;
-                    padding: 2rem !important;
                 }
             }
 
-            @media (min-width: 1399px) {
-                .card-layout01 {
-                    margin: -7rem auto;
-                    background: #fff;
-                    display: inline-block;
-                    padding: 30px;
-                }
-                .card-layout02 {
-                    margin-right: -7.5rem;
-                    background: #fff;
-                    display: inline-block;
-                    padding: 2rem !important;
-                }
-            }
         </style>
     </head>
     <body>
@@ -185,74 +165,74 @@
 
         <div class="uk-background-default">
 
-            <div class="uk-container-large@m uk-align-center">
-            <div class="uk-grid-collapse uk-text-center uk-child-width-1-2@m" uk-grid uk-height-match="target: > div > .uk-card">
-                
-                <div>
-                    <div class="uk-card">
-                        <div class="uk-card-media-top uk-background-cover" style="background-image: url(images/v01/04.jpg);" uk-parallax="bgy: -35"></div>
-                        <div class="uk-card-body card-layout01">
-                            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2B</mark></a></h1>
-                            <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Mar 2015 – Jan 2019</span></p>
-                            <p class="article-copy-center uk-width-large@m uk-text-left">Three years have passed since I started working on the Ocado Smart Platform. From one man trying to kick off a more user-centred approach to problem-solving while delivering design outcomes, we are now a high-level multi-skilled UX team...</p>
-                            <a class="uk-button uk-button-secondary uk-margin-small-top" href="folio/ospb2b.html" uk-toggle>Read my story</a>
+            <section class="uk-container-large uk-align-center">
+
+                <div class="uk-grid-collapse uk-text-center uk-child-width-1-2@m" uk-grid uk-height-match="target: > div > .uk-card">
+                    
+                    <div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-background-cover" style="background-image: url(images/v01/04.jpg);" uk-parallax="bgy: -35"></div>
+                            <div class="uk-card-body card-layout01">
+                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2B</mark></a></h1>
+                                <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Mar 2015 – Jan 2019</span></p>
+                                <p class="article-copy-center uk-width-large@m">Three years have passed since I started working on the Ocado Smart Platform. From one man trying to kick off a more user-centred approach to problem-solving while delivering design outcomes, we are now a high-level multi-skilled UX team...</p>
+                                <a class="uk-button uk-button-secondary uk-margin-small-top" href="folio/ospb2b.html" uk-toggle>Read my story</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <div class="uk-card">
-                        <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/05.jpg);" uk-parallax="bgy: -35"></div>
-                        <div class="uk-card-body card-layout01">
-                            <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2C</mark></a></h1>
-                            <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Mar 2015 – Jan 2019</span></p>
-                            <p class="article-copy-center uk-width-large@m uk-text-left">The main reason why I was so thrilled to be part of the Ocado Smart Platform bunch was the opportunity to contribute to the development of the next generation of customer-facing e-commerce platforms of Ocado...</p>
-                            <a class="uk-button uk-button-secondary uk-margin-small-top" href="folio/ospb2c.html" uk-toggle>Read my story</a>
+                    <div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/05.jpg);" uk-parallax="bgy: -35"></div>
+                            <div class="uk-card-body card-layout01">
+                                <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado Smart Platform <mark>B2C</mark></a></h1>
+                                <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Mar 2015 – Jan 2019</span></p>
+                                <p class="article-copy-center uk-width-large@m">The main reason why I was so thrilled to be part of the Ocado Smart Platform bunch was the opportunity to contribute to the development of the next generation of customer-facing e-commerce platforms of Ocado...</p>
+                                <a class="uk-button uk-button-secondary uk-margin-small-top" href="folio/ospb2c.html" uk-toggle>Read my story</a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-            </div>
-        </div>
+            </section>
 
         </div>
 
-        <div class="msg-box uk-background-secondary">
+        <section class="msg-box uk-background-secondary">
             <div class="uk-align-center uk-text-muted">
                 <p class="uk-text-lead uk-light">I believe to be a <mark>genuine, unconventional and jocular</mark> person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="uk-child-width-1-1 uk-grid" uk-grid uk-height-match="target: > div > .uk-card">
+        <section class="uk-container-large uk-align-center uk-child-width-1-1 uk-grid-collapse uk-text-center" uk-grid uk-height-match="target: > div > .uk-card">
 
             <div>
                 <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/03.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body left-card card-layout01">
+                    <div class="uk-card-bodycard-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Fabled by Marie Claire</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Nov 2014 – Apr 2016</span></p>
-                        <p class="uk-width-large@m">We launched Fabled.com, in partnership with Marie Claire, in the summer of 2016. Fabled was the result of the work started in 2012 when we initiated the General Merchandise department to offer top products lines not appropriate for a supermarket...</p>
+                        <p class="article-copy-center uk-width-large@m">We launched Fabled.com, in partnership with Marie Claire, in the summer of 2016. Fabled was the result of the work started in 2012 when we initiated the General Merchandise department to offer top products lines not appropriate for a supermarket...</p>
                         <a class="uk-button uk-button-secondary uk-margin-small-top" href="folio/fabled.html" uk-toggle>Read my story</a>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div class="uk-child-width-1-2@m uk-grid" uk-height-match="target: > div > .uk-card" uk-grid="masonry: true">
+        <section class="uk-container-large uk-align-center uk-child-width-1-2@m uk-grid-collapse" uk-height-match="target: > div > .uk-card" uk-grid="masonry: true">
 
-            <div class="uk-visible@m msg-box-small">
-                <div class="">
-                    <div class="uk-width-xlarge@m uk-align-center">
+            <div class="uk-visible@m msg-box-small uk-flex uk-flex-middle">
+                    <div class="uk-width-large@m uk-align-center">
                         <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
                     </div>
-                </div>
             </div>
 
             <div>
                 <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large uk-background-bottom-center" style="background-image: url(images/v01/06.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body right-card uk-float-right card-layout01">
+                    <div class="uk-card-body right-card card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Ocado, Fetch, and Sizzle</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Leading the User Experience and Design.</b> <span class="date uk-text-muted">Sep 2012 – Apr 2016</span></p>
                         <p class="uk-width-large@m">We just released the newly branded ocado.com when they offered me the opportunity to start-up and lead the UX of the new general merchandise operation. After two intense years in the Ocado grocery's department, I moved to something new and exciting...</p>
@@ -272,7 +252,7 @@
                     </div>
                 </div>
             </div>
-
+<!--
             <div class="uk-visible@m msg-box-small">
                 <div class="">
                     <div class="uk-width-xlarge@m uk-align-center">
@@ -288,11 +268,12 @@
                     </div>
                 </div>
             </div>
+-->
 
             <div>
                 <div class="uk-card">
                     <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(images/v01/08.jpg);" uk-parallax="bgy: -35"></div>
-                    <div class="uk-card-body right-card uk-float-right card-layout01">
+                    <div class="uk-card-body right-card card-layout01">
                         <h1 class="uk-article-title"><a class="uk-link-reset" href="">Eni, Sun, Nasa, Novartis, ...</a></h1>
                         <p class="uk-text-uppercase uk-text-small"><b>Independent Designer, Consultant, and Instructor.</b> <span class="date uk-text-muted">Aug 2002 – Mar 2010</span></p>
                         <p class="uk-width-large@m">User Experience, Design, Art Direction, UI Development, Branding and Training. Clients include Macromedia, Sun Microsystem, Nasa, ENI, Accor, Novartis, Thomson Reuters, CIM e-Banking, Sacbo International Airport...</p>
@@ -301,20 +282,16 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div class="uk-grid uk-grid-collapse uk-child-width-1-2@m" uk-grid>
+        <section class="uk-grid uk-grid-collapse uk-child-width-1-2@m" uk-grid>
             <div class="uk-background-cover uk-background-top-center" style="background-image: url(images/v01/09.jpg);" uk-parallax="bgy: -35"></div>
             <div class="msg-box uk-background-secondary">
                 <p class="uk-text-lead uk-light">I build, mentor and curate agile teams by focusing on motivation, caring, <mark>continuos growth</mark>, and on developing of a strong mindset on <mark>problem-solving</mark>.</p>
             </div>
-        </div>
+        </section>
 
-        <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid uk-height-match="target: > div > .uk-card">
-
-        </div>
-
-            <div class="uk-container@m">
+            <section class="uk-container-large uk-align-center">
                 <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid>
 
                     <div>
@@ -367,7 +344,7 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
     <footer>
         <div class="uk-height-large uk-background-cover uk-light uk-flex" uk-parallax="bgy: -100" style="background-image: url('images/v01/02.jpg');">
