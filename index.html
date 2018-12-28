@@ -33,7 +33,7 @@
             .cards-mini { padding: 30px 0 0;}
             .cards-mini .uk-card { padding-top: 0; }
             .cards-mini .uk-card-body { padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
-            .msg-box { margin-top: 0 !important; padding: 30px 30px 40px; }
+            .msg-box { margin-top: 0 !important; padding: 30px 30px 40px; display: flex; align-items: center; }
             .msg-box p, .msg-box div { margin: 0; font-size: 1.25rem; }
 
 
@@ -41,12 +41,12 @@
 
                 body { margin-top: 30px; }
                 nav { text-align: center; }
-                footer { margin-top: 60px; }
-                section.folio { padding-top: 60px; }
+                footer { margin-top: 0; }
+                section.folio { padding-top: 30px; }
                 .header h2 {max-width: 450px; margin: 0 auto 60px;}
                 .uk-card { padding: 45px 60px; }
                 .uk-card .uk-background-cover { height: 300px; }
-                .uk-card-body {padding: 30px 10px; margin-bottom: 30px !important;}
+                .uk-card-body {padding: 30px 10px; margin-bottom: 0 !important;}
                 .article-copy { max-width: 450px; }
                 .msg-box p { padding: 60px; margin: 0; }
                 .msg-box .uk-text-lead { font-size: 1.25rem; }
@@ -55,6 +55,7 @@
 
             @media (min-width: 960px) { 
 
+                section.folio { padding-top: 0; }
                 .header {padding: 60px;}
                 .header h1 { margin: 0; padding: 30px; line-height: .65;}
                 .header h2 { margin: 0; padding: 30px; }
@@ -77,35 +78,37 @@
                     box-shadow: -16px 0 0 #fff;
                 }
                 .header .intro h1 span, .header .intro h2 span { position: relative; left: -9px; }
-                .cover-img {background-image: url('images/v01/01.jpg');padding: 0;}
-                .cover-txt, .msg-box > div {padding: 0px;}
-                section.folio { padding-top: 0; }
-                .msg-box { margin: 0; }
-                .msg-box p { font-size: 1.25rem; max-width: 450px; margin: 0 auto; }
+                .cover-txt, .msg-box > div {padding: 0;}
                 .cover-txt > h1 { padding: 0; }
                 .cover-txt > div { padding: 0; }
-                .uk-card { padding: 0 0 2.6rem; margin-bottom: 0; }
+                .uk-card { padding: 0 0 30px; margin-bottom: 0; }
                 .uk-card .uk-background-cover {height: 350px;}
-                .article-copy {max-width: 380px; }
-                .msg-box-small {padding: 50px 80px; height: 380px;}
+                .uk-card-body { padding: 15px 30px 0; }
+                .article-copy { max-width: 380px; }
                 .cards-mini { padding: 60px 0;}
+                .msg-box { margin: 0; }
+                .msg-box p { font-size: 1.25rem; max-width: 450px; margin: 0 auto; }
 
             }
 
             @media (min-width: 1024px) {
                 
+                section.folio { padding: 0; }
                 .header { padding: 60px 60px 90px; }
-                .msg-box { min-height: 380px; display: flex; align-items: center; }
+                .msg-box { min-height: 380px; }
                 .msg-box div { margin: 0 auto; }
-                .uk-card-body { padding: 30px 30px 60px; margin-bottom: 30px !important; }
-                .cards-mini { padding: 90px 0;}
+                .cards-mini { padding: 60px 0;}
+                .uk-card-body { padding: 60px; }
 
             }
 
             @media (min-width: 1440px) {
                 
+                .cover-img {background-image: url('images/v01/01.jpg');padding: 0;}
                 .cover-txt { margin-top: 0; }
                 .cover-img { padding: 0 60px 90px 0; }
+                .uk-card-body { padding: 90px; }
+                .cards-mini { padding: 90px 0;}
 
             }
 
@@ -247,7 +250,7 @@
 
             <div class="uk-grid-collapse uk-child-width-1-2@m" uk-grid uk-height-match="target: > div > .uk-card">
     <!--
-                <div class="uk-visible@m msg-box-small uk-flex uk-flex-middle">
+                <div class="uk-visible@m  uk-flex uk-flex-middle">
                         <div class="uk-width-large@m uk-align-center">
                             <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
                         </div>
@@ -279,7 +282,7 @@
 
             </div>
 <!--
-            <div class="uk-visible@m msg-box-small">
+            <div class="uk-visible@m ">
                 <div class="">
                     <div class="uk-width-xlarge@m uk-align-center">
                         <p class="uk-text-lead">I live with three values that define who I am as well as leading me where I want to be: <mark>"value 1"</mark>, <mark>"value 2"</mark>, and <mark>"value 3"</mark></p>
@@ -287,7 +290,7 @@
                 </div>
             </div>
 
-            <div class="uk-visible@m msg-box-small">
+            <div class="uk-visible@m ">
                 <div class="">
                     <div class="uk-width-xlarge@m uk-align-center">
                         <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
