@@ -43,7 +43,7 @@
             .uk-sticky-fixed { box-shadow: none; }
             .role-box { padding: 60px 15px 30px; }
             .folio-footer div { padding: 30px; text-align: center; }
-            .uk-card > div { margin-bottom: 30px; }
+            .uk-card > div:first-child { margin-bottom: 30px !important; }
             .page-cover { height: 150px; }
 
 
@@ -65,7 +65,7 @@
                 
                 /* FOLIO */
                 body { margin-top: 0; }
-                .img-cover { height: 300px; }
+                .img-cover { display: block; height: 300px; }
 
             }
 
@@ -168,7 +168,7 @@
                         </div>
                 </header>
 
-                <div class="img-cover uk-background-cover uk-flex" uk-parallax="bgy: -100" style="background-image: url('../images/album/31.jpg');">
+                <div class="img-cover uk-background-cover" uk-parallax="bgy: -100" style="background-image: url('../images/album/31.jpg');">
                 </div>
 
                 <section class="role-box uk-width-auto uk-background-secondary uk-light">
