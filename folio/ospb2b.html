@@ -13,7 +13,6 @@
             mark { background-color: #f9f220; color: #000; }
             footer { margin-top: 30px; }
             section { margin: 0 auto !important; }
-            h1 { font-family: 'Abril Fatface'; font-size: 3.825rem; margin-bottom: 30px; line-height: 1; }
             section.folio { padding: 30px 0; }
 
             .uk-sticky-fixed { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
@@ -36,6 +35,11 @@
             .cards-mini .uk-card-body { padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
             .msg-box { margin-top: 0 !important; padding: 30px 30px 40px; display: flex; align-items: center; }
             .msg-box p, .msg-box div { margin: 0; font-size: 1.25rem; }
+
+
+
+            h1 { font-family: 'Abril Fatface'; font-size: 3.825rem; margin-bottom: 30px; line-height: 1; }
+
 
 
             @media (min-width: 768px) { 
@@ -113,7 +117,8 @@
 
 
                 .uk-card { padding: 0; margin: 0; }
-                .role-box, header { padding: 60px 120px; }
+                .role-box, .folio-footer { padding: 60px; }
+                header { padding: 60px 120px; }
 
             }
 
@@ -178,7 +183,7 @@
         <section class="folio uk-container-large uk-align-center uk-background-default">
 
             <div>
-                <div class="uk-card">
+                <div class="uk-card uk-grid-collapse uk-child-width-1-2@s" uk-grid>
                     <div class="uk-card-body">
                         <h1 class="uk-article-title">My Journey</h1>
                         <div class="uk-width-xlarge">
@@ -193,25 +198,12 @@
                             <p>Pushing design in a tech-savvy environment such as Ocado Technology remains a tough challenge today, but one that our team was and will always be willing to tackle. We regularly conduct workshops, lead and facilitate design sprints and share our learning, facts and stories with the Ocado community through initiatives such as the UX Academy. We have a programme for software engineers and product owners who are looking for experience working as a UXer for a period of time. In OSP Systems, we are currently satisfying the design need of more than twenty autonomous development teams.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-<!--
-            <div class="uk-visible@m ">
                 <div class="">
-                    <div class="uk-width-xlarge@m uk-align-center">
-                        <p class="uk-text-lead">I live with three values that define who I am as well as leading me where I want to be: <mark>"value 1"</mark>, <mark>"value 2"</mark>, and <mark>"value 3"</mark></p>
-                    </div>
+                    <img src="../images/osp/03.jpg" alt="">
+                    <img src="../images/osp/aeris.png" alt="">
+                </div>
                 </div>
             </div>
-
-            <div class="uk-visible@m ">
-                <div class="">
-                    <div class="uk-width-xlarge@m uk-align-center">
-                        <p class="uk-text-lead">I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to <mark>exceed business expectations</mark>.</p>
-                    </div>
-                </div>
-            </div>
--->
 
 
 
@@ -222,8 +214,6 @@
             </div>
 
         </section>
-
-       <!-- <div class="uk-card-media-top uk-background-cover uk-height-large" style="background-image: url(../images/album/28.jpg);" uk-parallax="bgy: -35"></div> -->
 
             <div class="uk-card uk-grid-collapse uk-child-width-1-2@s" uk-grid>
                 <div class="uk-flex-last@s uk-flex uk-flex-middle uk-card-media-right">
@@ -237,8 +227,12 @@
                 </div>
             </div>
 
-            <div class="uk-card">
-                <div class="uk-background-cover uk-height-medium" style="background-image: url(../images/osp/tubemap.png);">
+
+            <div class="uk-background-cover uk-height-medium" style="background-image: url(../images/osp/tubemap.png); margin: 60px 0 0">
+                </div>
+
+            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                <div class="uk-flex-last@s uk-flex uk-flex-middle uk-card-media-right uk-background-muted">
                 </div>
                 <div>
                     <div class="uk-card-body">
@@ -276,7 +270,7 @@
 
         </section>
 
-            <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-light" uk-grid>
+            <div class="folio-footer uk-grid-collapse uk-child-width-1-2@s uk-light" uk-grid>
                     <div class="uk-card-body uk-text-right">
                         View previous story <br>
                         <a href="" class="uk-button uk-button-large uk-button-text">Ocado Smart Platform: B2B</a>
