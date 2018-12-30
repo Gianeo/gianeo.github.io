@@ -19,3 +19,150 @@ $heading-hero-font-size-l: 7.8rem;
 
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
+
+mark { background-color: #f9f220; color: #000; }
+            footer { margin-top: 30px; }
+            section { margin: 0 auto !important; }
+            section.folio { padding: 30px 0; }
+
+            .uk-sticky-fixed { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+            .cover-img { background-image: none; padding: 0; }
+
+            .uk-button-text { line-height: 1.2; }
+
+            .header { padding: 40px 30px 30px;margin: 0 auto; }
+            .header h1 { margin: 30px 0 30px; line-height: .8; text-align: center; }
+            .header h2 { margin: 0 0 30px; }
+
+            .uk-card { padding: 30px; margin: 0; }
+            .uk-card-media-top { margin-bottom: 20px; }
+            .uk-card-body { padding: 0; }
+            .uk-card .uk-background-cover { height: 150px; }
+            .uk-card .date { display: block; }
+            .article-copy { margin: 0 0 30px; text-align: left; }
+            .cards-mini { padding: 30px 0 0;}
+            .cards-mini .uk-card { padding-top: 0; }
+            .cards-mini .uk-card-body { padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
+            .msg-box { margin-top: 0 !important; padding: 45px 30px 60px; display: flex; align-items: center; }
+            .msg-box p, .msg-box div { margin: 0; font-size: 1.25rem; }
+
+
+            /* FOLIO */
+            #folio header { padding: 30px; margin: 15px 0 0 !important; }
+            #folio header h1 { font-family: 'Abril Fatface'; font-size: 3.825rem; margin-bottom: 30px; line-height: 1; }
+            #folio .uk-sticky-fixed { box-shadow: none; }
+            #folio .role-box { padding: 60px 15px 30px; }
+            #folio .folio-footer div { padding: 30px; text-align: center; }
+            #folio .uk-card > div:first-child { margin-bottom: 30px !important; }
+            #folio .img-cover { height: 150px; }
+            #folio .img-cover.margins, #folio .msg-box.margins { margin: 30px 0 !important; }
+
+
+
+            @media (min-width: 768px) { 
+
+                body { margin-top: 30px; }
+                nav { text-align: center; }
+                footer { margin-top: 0; }
+                section.folio { padding-top: 30px; }
+                .header h2 {max-width: 450px; margin: 0 auto 60px;}
+                .uk-card { padding: 45px 60px; }
+                .uk-card .uk-background-cover { height: 300px; }
+                .uk-card-body {padding: 30px 0; margin-bottom: 0 !important;}
+                .article-copy { max-width: 450px; }
+                .msg-box p { padding: 60px; margin: 0; }
+                .msg-box .uk-text-lead { font-size: 1.25rem; }
+
+                
+                /* FOLIO */
+                body#folio { margin-top: 0; }
+                #folio header { padding: 60px; margin: 0 !important; }
+                #folio .img-cover { display: block; height: 300px; }
+                #folio .role-box { padding: 60px 30px; }
+                #folio .uk-card > div:first-child { margin-bottom: 0 !important; }
+                #folio .img-cover { height: 300px; }
+                #folio .img-cover.small {height: 150px;}
+
+            }
+
+            @media (min-width: 960px) { 
+
+                section.folio { padding-top: 0; }
+                .header {padding: 60px;}
+                .header h1 { margin: 0; padding: 30px; line-height: .65;}
+                .header h2 { margin: 0; padding: 30px; }
+                .header img { margin-top: 30px; }
+                .header div.intro { border-top: solid 30px #fff; }
+                .header div.intro > div { margin-top: 35px; }
+                .header div.intro {
+                    margin-left: 30px;
+                    padding: 5px 0 0px 15px;
+                    display:inline-block;
+                    overflow-y: hidden;
+                    width: auto;
+                    max-width: 600px;
+                }
+                .header .intro h1, .header .intro h2 {
+                    background-color: #fff;
+                    display: inline;
+                    margin: 0;
+                    padding: 8px 0px;
+                    box-shadow: -16px 0 0 #fff;
+                }
+                .header .intro h1 span, .header .intro h2 span { position: relative; left: -9px; }
+                .cover-txt, .msg-box > div {padding: 0;}
+                .cover-txt > h1 { padding: 0; }
+                .cover-txt > div { padding: 0; }
+                .uk-card { padding: 0 0 30px; margin-bottom: 0; }
+                .uk-card .uk-background-cover {height: 350px;}
+                .uk-card-body { padding: 15px 30px 0; }
+                .article-copy { max-width: 380px; }
+                .cards-mini { padding: 60px 0;}
+                .msg-box { margin: 0; }
+                .msg-box p { font-size: 1.25rem; max-width: 450px; margin: 0 auto; }
+
+                
+                /* FOLIO */
+                #folio .role-box { padding: 90px 90px 30px; }
+                #folio .uk-card { padding: 0; }
+                #folio .img-cover.margins { margin: 60px 0; }
+
+
+            }
+
+            @media (min-width: 1024px) {
+                
+                section.folio { padding: 0; }
+                .header { padding: 60px 60px 90px; }
+                .msg-box { min-height: 380px; }
+                .msg-box div { margin: 0 auto; }
+                .cards-mini { padding: 60px 0;}
+                .uk-card-body { padding: 60px; }
+
+            }
+
+            @media (min-width: 1440px) {
+                
+                .cover-txt { margin-top: 0; }
+                .cover-img { padding: 0 60px 90px 0; }
+                .uk-card-body { padding: 90px; }
+                .cards-mini { padding: 90px 0;}
+
+                
+                /* FOLIO */
+                #folio .uk-card { padding: 0; margin: 0; }
+                #folio .role-box, #folio .folio-footer { padding: 120px; }
+                #folio header { padding: 60px 120px; margin: 0 auto !important; }
+                #folio .img-cover { height: 450px; }
+                #folio .img-cover.small { height: 300px; }
+                #folio .img-cover.margins { margin: 90px 0 !important; }
+
+            }
+
+            @media (min-width: 2560px) {
+                
+                #folio .header { padding: 90px 60px 120px; }
+                #folio .cover-img { padding: 0 60px 110px 0; }
+                #folio .cards-mini { padding: 120px 0;}
+
+            }
