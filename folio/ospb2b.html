@@ -42,7 +42,7 @@
             h1 { font-family: 'Abril Fatface'; font-size: 3.825rem; margin-bottom: 30px; line-height: 1; }
             .uk-sticky-fixed { box-shadow: none; }
             .role-box { padding: 60px 15px 30px; }
-            .folio-footer { padding: 30px; text-align: center; }
+            .folio-footer div { padding: 30px; text-align: center; }
             .uk-card > div { margin-bottom: 30px; }
             .page-cover { height: 150px; }
 
@@ -65,6 +65,7 @@
                 
                 /* FOLIO */
                 body { margin-top: 0; }
+                .img-cover { height: 300px; }
 
             }
 
@@ -107,6 +108,7 @@
                 
                 /* FOLIO */
                 .uk-card > div { margin-bottom: 0; }
+                .role-box { padding: 90px; }
 
 
             }
@@ -133,8 +135,11 @@
                 
                 /* FOLIO */
                 .uk-card { padding: 0; margin: 0; }
-                .role-box, .folio-footer { padding: 60px; }
+                .role-box, .folio-footer { padding: 120px; }
                 header { padding: 60px 120px; margin: 0 !important; }
+                .img-cover { height: 450px; }
+                .img-cover.small { height: 300px; }
+                .img-cover.margins { margin: 60px 0; }
 
             }
 
@@ -163,7 +168,7 @@
                         </div>
                 </header>
 
-                <div class="page-cover uk-background-cover uk-flex" uk-parallax="bgy: -100" style="background-image: url('../images/album/31.jpg');">
+                <div class="img-cover uk-background-cover uk-flex" uk-parallax="bgy: -100" style="background-image: url('../images/album/31.jpg');">
                 </div>
 
                 <section class="role-box uk-width-auto uk-background-secondary uk-light">
@@ -246,7 +251,7 @@
             </div>
 
 
-            <div class="page-cover uk-background-cover" style="background-image: url(../images/osp/tubemap.png);"></div>
+            <div class="img-cover small margins uk-background-cover" style="background-image: url(../images/osp/tubemap.png);"></div>
 
 
             <div class="uk-card uk-grid-collapse uk-child-width-1-2@s" uk-grid>
@@ -290,16 +295,14 @@
         </section>
 
             <div class="folio-footer uk-grid-collapse uk-child-width-1-2 uk-light" uk-grid>
-                    <div class="uk-card-body">
+                    <div>
                         Previous <br>
                         <a href="" class="uk-button uk-button-large uk-button-text">Ocado Smart Platform: B2B</a>
                     </div>
-                <div>
-                    <div class="uk-card-body">
+                    <div>
                         Next <br>
                         <a href="" class="uk-button uk-button-large uk-button-text">Ocado Smart Platform: B2C</a>
                     </div>
-                </div>
             </div>
 
 
