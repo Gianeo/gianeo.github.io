@@ -9639,6 +9639,9 @@ footer {
 section {
   margin: 0 auto !important; }
 
+h2, h3, h4 {
+  font-weight: 700; }
+
 section.folio {
   padding: 30px 0; }
 
@@ -9720,7 +9723,10 @@ section.folio {
   box-shadow: none; }
 
 #folio .role-box {
-  padding: 60px 15px 30px; }
+  padding: 60px 15px; }
+
+#folio .role-box h4 {
+  margin-bottom: 10px; }
 
 #folio .folio-footer div {
   padding: 30px;
@@ -9787,6 +9793,10 @@ section.folio {
   #folio .role-box {
     padding: 60px 30px; }
 
+  #folio .role-box > div > div > div > div {
+    padding: 30px;
+    min-height: none !important; }
+
   #folio .uk-card > div:first-child {
     margin-bottom: 0 !important; }
 
@@ -9821,13 +9831,12 @@ section.folio {
     margin-top: 35px; }
 
   .header div.intro {
-    margin-left: 45px;
+    margin-left: 30px;
     padding: 5px 0 0px 15px;
     display: inline-block;
     overflow-y: hidden;
     width: auto;
-    max-width: 600px;
-    }
+    max-width: 600px; }
 
   .header .intro h1, .header .intro h2 {
     background-color: #fff;
@@ -9874,9 +9883,6 @@ section.folio {
     margin: 0 auto; }
 
   /* FOLIO */
-  #folio .role-box {
-    padding: 90px 90px 30px; }
-
   #folio .uk-card {
     padding: 0; }
 
@@ -9899,14 +9905,17 @@ section.folio {
     padding: 60px 0; }
 
   .uk-card-body {
-    padding: 60px; } }
+    padding: 60px; }
+
+  /* FOLIO */
+  #folio .role-box, #folio .folio-footer {
+    padding: 60px 30px; } }
 @media (min-width: 1440px) {
   .cover-txt {
     margin-top: 0; }
 
   .cover-img {
-    padding: 0 60px 60px 0;
-    }
+    padding: 0 60px 90px 0; }
 
   .uk-card-body {
     padding: 120px; }
@@ -9915,6 +9924,10 @@ section.folio {
     padding: 90px 0; }
 
   /* FOLIO */
+  #folio header {
+    padding: 60px 120px;
+    margin: 0 auto !important; }
+
   #folio .uk-card {
     padding: 0;
     margin: 0; }
@@ -9922,9 +9935,8 @@ section.folio {
   #folio .role-box, #folio .folio-footer {
     padding: 120px; }
 
-  #folio header {
-    padding: 60px 120px;
-    margin: 0 auto !important; }
+  #folio .role-box > div > div > div > div {
+    padding: 30px 60px; }
 
   #folio .img-cover {
     height: 450px; }
