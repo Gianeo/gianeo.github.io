@@ -9643,8 +9643,7 @@ h2, h3, h4 {
   font-weight: 700; }
 
 section.folio {
-  padding: 30;
-  }
+  padding: 0; }
 
 .uk-sticky-fixed {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
@@ -9652,6 +9651,9 @@ section.folio {
 .cover-img {
   background-image: none;
   padding: 0; }
+
+.background {
+  background-color: #fff; }
 
 .uk-button-text {
   line-height: 1.2; }
@@ -9666,7 +9668,7 @@ section.folio {
   text-align: center; }
 
 .header h2 {
-  margin: 0 0 30px; }
+  margin: 0; }
 
 .uk-card {
   padding: 30px;
@@ -9689,7 +9691,7 @@ section.folio {
   text-align: left; }
 
 .cards-mini {
-  padding: 30px 0 0; }
+  padding: 60px 0 0; }
 
 .cards-mini .uk-card {
   padding-top: 0; }
@@ -9700,7 +9702,7 @@ section.folio {
   margin-bottom: 0 !important; }
 
 .msg-box {
-  margin-top: 0 !important;
+  margin-top: 30px !important;
   padding: 45px 30px 60px;
   display: flex;
   align-items: center; }
@@ -9753,8 +9755,7 @@ section.folio {
     margin-top: 0; }
 
   section.folio {
-    padding-top: 0;
-    }
+    padding-top: 0; }
 
   .header h2 {
     max-width: 450px;
@@ -9770,11 +9771,14 @@ section.folio {
     padding: 30px 0;
     margin-bottom: 0 !important; }
 
+  .cards-mini {
+    padding: 60px 0 90px; }
+
   .article-copy {
     max-width: 450px; }
 
   .msg-box p {
-    padding: 60px;
+    padding: 60px 90px;
     margin: 0; }
 
   .msg-box .uk-text-lead {
@@ -9810,6 +9814,9 @@ section.folio {
 @media (min-width: 960px) {
   section.folio {
     padding-top: 0; }
+
+  .background {
+    background-color: #000; }
 
   .header {
     padding: 60px; }
@@ -9900,11 +9907,14 @@ section.folio {
   .msg-box {
     min-height: 380px; }
 
+  .msg-box.image {
+    margin-top: 0 !important; }
+
   .msg-box div {
     margin: 0 auto; }
 
   .cards-mini {
-    padding: 60px 0; }
+    padding: 90px 0; }
 
   .uk-card-body {
     padding: 60px; }
@@ -9917,13 +9927,13 @@ section.folio {
     margin-top: 0; }
 
   .cover-img {
-    padding: 0 60px 90px 0; }
+    padding: 0 60px 60px 0; }
 
   .uk-card-body {
     padding: 120px; }
 
   .cards-mini {
-    padding: 90px 0; }
+    padding: 120px 0; }
 
   /* FOLIO */
   #folio header {
