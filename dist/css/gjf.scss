@@ -95,8 +95,9 @@ $heading-hero-font-size-l: 7.8rem;
                 section.folio { padding-top: 0; }
                 .background { background-color: #000; }
                 .header {padding: 60px;}
-                .header h1 { margin: 0; padding: 30px; line-height: .75; text-align: left;}
-                .header h2 { margin: 0; padding: 15px 30px 30px; }
+                .header h1 { padding: 30px; line-height: .75; text-align: left; }
+                .header h2 { padding: 0 30px 30px; }
+                .header .intro h1, .header .intro h2 { background-color: #fff; margin: 0; }
                 .header img { margin-top: 35px; }
                 .header div.intro > div { margin-top: 0; }
                 .header div.intro {
@@ -105,12 +106,7 @@ $heading-hero-font-size-l: 7.8rem;
                     width: auto;
                     max-width: 600px;
                 }
-                .header .intro h1, .header .intro h2 {
-                    background-color: #fff;
-                    margin: 0;
-                }
                 .cover-txt, .msg-box > div {padding: 0;}
-                .cover-txt > h1 { padding: 0; }
                 .cover-txt > div { padding: 0; }
                 .uk-card { padding: 0 0 30px; margin-bottom: 0; }
                 .uk-card .uk-background-cover {height: 350px;}

@@ -9822,14 +9822,16 @@ section.folio {
     padding: 60px; }
 
   .header h1 {
-    margin: 0;
     padding: 30px;
     line-height: .75;
     text-align: left; }
 
   .header h2 {
-    margin: 0;
-    padding: 15px 30px 30px; }
+    padding: 0 30px 30px; }
+
+  .header .intro h1, .header .intro h2 {
+    background-color: #fff;
+    margin: 0; }
 
   .header img {
     margin-top: 35px; }
@@ -9843,14 +9845,7 @@ section.folio {
     width: auto;
     max-width: 600px; }
 
-  .header .intro h1, .header .intro h2 {
-    background-color: #fff;
-    margin: 0; }
-
   .cover-txt, .msg-box > div {
-    padding: 0; }
-
-  .cover-txt > h1 {
     padding: 0; }
 
   .cover-txt > div {
