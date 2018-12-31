@@ -21,7 +21,7 @@
             <nav class="uk-hidden@m uk-child-width-auto uk-background-default uk-flex uk-flex-center" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                     <a href="index.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-bold uk-background-default">My Work</a>
                     <a href="me.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">About Me</a>
-                    <a href="index.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">Let's Connect</a>
+                    <a href="index.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted" uk-toggle="target: #offcanvas-flip">Let's Connect</a>
             </nav>
 
             <div class="uk-visible@m uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
@@ -295,6 +295,23 @@
             </div>
         </div>
     </footer>
+
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <div class="uk-padding-large">
+            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
+            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
+            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: behance; ratio: 2"></a>
+            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
+            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
+        </div>
+
+    </div>
+</div>
 
     
     </body>
