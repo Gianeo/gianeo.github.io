@@ -9829,7 +9829,7 @@ section.folio {
 
   .header h2 {
     margin: 0;
-    padding: 30px; }
+    padding: 15px 30px 30px; }
 
   .header img {
     margin-top: 35px; }
@@ -9891,7 +9891,7 @@ section.folio {
     padding: 0; }
 
   .header {
-    padding: 60px 60px 0; }
+    padding: 60px 0 0 60px; }
 
   .msg-box {
     min-height: 380px; }

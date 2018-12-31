@@ -96,7 +96,7 @@ $heading-hero-font-size-l: 7.8rem;
                 .background { background-color: #000; }
                 .header {padding: 60px;}
                 .header h1 { margin: 0; padding: 30px; line-height: .75; text-align: left;}
-                .header h2 { margin: 0; padding: 30px; }
+                .header h2 { margin: 0; padding: 15px 30px 30px; }
                 .header img { margin-top: 35px; }
                 .header div.intro > div { margin-top: 0; }
                 .header div.intro {
@@ -131,7 +131,7 @@ $heading-hero-font-size-l: 7.8rem;
             @media (min-width: 1024px) {
                 
                 section.folio { padding: 0; }
-                .header { padding: 60px 60px 0; }
+                .header { padding: 60px 0 0 60px; }
                 .msg-box { min-height: 380px; }
                 .msg-box.image { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }
