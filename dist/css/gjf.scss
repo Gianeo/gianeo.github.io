@@ -32,7 +32,7 @@ $heading-hero-font-size-l: 7.8rem;
 
             .uk-button-text { line-height: 1.2; }
 
-            .header { padding: 40px 30px 30px;margin: 0 auto; }
+            .header { padding: 40px 30px 30px; margin: 0 auto; }
             .header h1 { margin: 30px 0 30px; line-height: .8; text-align: center; }
             .header h2 { margin: 0; }
 
@@ -95,27 +95,20 @@ $heading-hero-font-size-l: 7.8rem;
                 section.folio { padding-top: 0; }
                 .background { background-color: #000; }
                 .header {padding: 60px;}
-                .header h1 { margin: 0; padding: 30px; line-height: .65;}
+                .header h1 { margin: 0; padding: 30px; line-height: .75; text-align: left;}
                 .header h2 { margin: 0; padding: 30px; }
-                .header img { margin-top: 30px; }
-                .header div.intro { border-top: solid 30px #fff; }
-                .header div.intro > div { margin-top: 35px; }
+                .header img { margin-top: 35px; }
+                .header div.intro > div { margin-top: 0; }
                 .header div.intro {
                     margin-left: 30px;
-                    padding: 5px 0 0px 15px;
                     display:inline-block;
-                    overflow-y: hidden;
                     width: auto;
                     max-width: 600px;
                 }
                 .header .intro h1, .header .intro h2 {
                     background-color: #fff;
-                    display: inline;
                     margin: 0;
-                    padding: 8px 0px;
-                    box-shadow: -16px 0 0 #fff;
                 }
-                .header .intro h1 span, .header .intro h2 span { position: relative; left: -9px; }
                 .cover-txt, .msg-box > div {padding: 0;}
                 .cover-txt > h1 { padding: 0; }
                 .cover-txt > div { padding: 0; }
@@ -138,7 +131,7 @@ $heading-hero-font-size-l: 7.8rem;
             @media (min-width: 1024px) {
                 
                 section.folio { padding: 0; }
-                .header { padding: 60px 60px 90px; }
+                .header { padding: 60px 60px 0; }
                 .msg-box { min-height: 380px; }
                 .msg-box.image { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }
@@ -154,7 +147,7 @@ $heading-hero-font-size-l: 7.8rem;
             @media (min-width: 1440px) {
                 
                 .cover-txt { margin-top: 0; }
-                .cover-img { padding: 0 60px 60px 0; }
+                .cover-img { padding: 0 0 120px 0; margin: 0 0 -30px 90px !important; }
                 .uk-card-body { padding: 120px; }
                 .cards-mini { padding: 120px 0;}
 

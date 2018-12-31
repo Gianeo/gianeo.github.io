@@ -9824,39 +9824,28 @@ section.folio {
   .header h1 {
     margin: 0;
     padding: 30px;
-    line-height: .65; }
+    line-height: .75;
+    text-align: left; }
 
   .header h2 {
     margin: 0;
     padding: 30px; }
 
   .header img {
-    margin-top: 30px; }
-
-  .header div.intro {
-    border-top: solid 30px #fff; }
+    margin-top: 35px; }
 
   .header div.intro > div {
-    margin-top: 35px; }
+    margin-top: 0; }
 
   .header div.intro {
     margin-left: 30px;
-    padding: 5px 0 0px 15px;
     display: inline-block;
-    overflow-y: hidden;
     width: auto;
     max-width: 600px; }
 
   .header .intro h1, .header .intro h2 {
     background-color: #fff;
-    display: inline;
-    margin: 0;
-    padding: 8px 0px;
-    box-shadow: -16px 0 0 #fff; }
-
-  .header .intro h1 span, .header .intro h2 span {
-    position: relative;
-    left: -9px; }
+    margin: 0; }
 
   .cover-txt, .msg-box > div {
     padding: 0; }
@@ -9902,7 +9891,7 @@ section.folio {
     padding: 0; }
 
   .header {
-    padding: 60px 60px 90px; }
+    padding: 60px 60px 0; }
 
   .msg-box {
     min-height: 380px; }
@@ -9927,7 +9916,8 @@ section.folio {
     margin-top: 0; }
 
   .cover-img {
-    padding: 0 60px 60px 0; }
+    padding: 0 0 120px 0;
+    margin: 0 0 -30px 90px !important; }
 
   .uk-card-body {
     padding: 120px; }
