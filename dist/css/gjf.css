@@ -4952,7 +4952,8 @@ ul.uk-nav-sub {
  * Remove margin from adjacent element
  */
 [class*='uk-modal-close-']:first-child + * {
-  margin-top: 0; }
+  margin-top: 0;
+  }
 
 /*
  * Hover

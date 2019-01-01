@@ -13,20 +13,24 @@
                 .cover-img { background-image: url('images/v01/01.jpg'); }
             }
             .iframe-container {
-              overflow: hidden;
-              padding-top: 56.25%;
               position: relative;
+              margin-top: 0 !important;
+              padding: 0;
                height: 100%;
                width: 100%;
             }
 
             .iframe-container iframe {
-               border: 0;
-               height: 100%;
-               left: 0;
+              margin-top: 0 !important;
                position: absolute;
+               left: 0;
                top: 0;
+               height: 100%;
                width: 100%;
+               border: 0;
+               height:calc(100vh - 4px);
+               width:calc(100vw - 4px);
+               box-sizing: border-box;
             }
 
             /* 4x3 Aspect Ratio */
@@ -338,8 +342,8 @@
 <div id="modal-full" class="uk-modal-full uk-modal" uk-modal>
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
-        <div class="iframe-container">
-            <iframe src="folio/ospb2b.html" width="1200" height="1200" frameborder="0" uk-video></iframe>
+        <div class="iframe-container uk-width-auto uk-margin-auto-vertical">
+            <iframe src="folio/ospb2b.html" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
