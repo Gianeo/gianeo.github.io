@@ -4952,8 +4952,7 @@ ul.uk-nav-sub {
  * Remove margin from adjacent element
  */
 [class*='uk-modal-close-']:first-child + * {
-  margin-top: 0;
-  }
+  margin-top: 0; }
 
 /*
  * Hover
@@ -9734,7 +9733,8 @@ section.folio {
 
 #folio .folio-footer div {
   padding: 30px;
-  text-align: center; }
+  text-align: center;
+  min-height: 200px; }
 
 #folio .uk-card > div:first-child {
   margin-bottom: 30px !important; }
@@ -9892,7 +9892,7 @@ section.folio {
   .msg-box {
     min-height: 380px; }
 
-  .msg-box.image {
+  .msg-box.no-margin {
     margin-top: 0 !important; }
 
   .msg-box div {

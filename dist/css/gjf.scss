@@ -55,7 +55,7 @@ $heading-hero-font-size-l: 7.8rem;
             #folio .uk-sticky-fixed { box-shadow: none; }
             #folio .role-box { padding: 60px 15px; }
             #folio .role-box h4 { margin-bottom: 10px; }
-            #folio .folio-footer div { padding: 30px; text-align: center; }
+            #folio .folio-footer div { padding: 30px; text-align: center; min-height: 200px; }
             #folio .uk-card > div:first-child { margin-bottom: 30px !important; }
             #folio .img-cover { height: 150px; }
             #folio .img-cover.margins, #folio .msg-box.margins { margin: 30px 0 !important; }
@@ -129,7 +129,7 @@ $heading-hero-font-size-l: 7.8rem;
                 section.folio { padding: 0; }
                 .header { padding: 60px 0 0 60px; }
                 .msg-box { min-height: 380px; }
-                .msg-box.image { margin-top: 0 !important; }
+                .msg-box.no-margin { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }
                 .cards-mini { padding: 90px 0;}
                 .uk-card-body { padding: 60px; }
