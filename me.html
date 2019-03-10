@@ -12,12 +12,15 @@
             @media (min-width: 1440px) {
                 .cover-img {background-image: url('images/v01/13.jpg');}
             }
-            .photo-gallery div div {
-                background: #fff;
-                padding: 2rem;
+            .photo-gallery img {
+                border: solid 2rem #fff;
+                border-bottom-color: #eee;
+                border-right-color: #eee;
             }
             .full-image {
-                margin: 2rem 0;
+                border: solid 2rem #fff;
+                border-bottom-color: #eee;
+                border-right-color: #eee;
             }
         </style>
     </head>
@@ -85,7 +88,7 @@
         </section>
 
 
-        <div class="uk-background-secondary">
+        <div class="uk-background-secondary uk-padding">
 
 
             <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
@@ -104,7 +107,7 @@
 
             </div>
 
-            <img data-src="images/myalbum/05.jpg" width="100%" height="" alt="" class="full-image" uk-img>
+            <div class="uk-padding"><img data-src="images/myalbum/05.jpg" alt="" class="full-image" uk-img></div>
 
             <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
 
@@ -133,7 +136,7 @@
 
             </div>
 
-            <img data-src="images/myalbum/13.jpg" width="100%" height="" alt="" class="full-image" uk-img>
+            <div class="uk-padding"><img data-src="images/myalbum/13.jpg" width="100%" height="" alt="" class="full-image" uk-img></div>
 
             <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
 
@@ -152,12 +155,15 @@
 
             </div>
 
-            <img data-src="images/myalbum/18.jpg" width="100%" height="" alt="" class="full-image" uk-img>
+            <div class="uk-padding"><img data-src="images/myalbum/18.jpg" width="100%" height="" alt="" class="full-image" uk-img></div>
 
             <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
 
                 
                 
+                <div class="uk-padding">
+                    <div><img src="images/myalbum/22.jpg" class="uk-margin-small-bottom"></div>
+                </div>
                 <div class="uk-padding">
                     <div><img src="images/myalbum/19.jpg" class="uk-margin-small-bottom"></div>
                 </div>
@@ -166,9 +172,6 @@
                 </div>
                 <div class="uk-padding">
                     <div><img src="images/myalbum/21.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/22.jpg" class="uk-margin-small-bottom"></div>
                 </div>
             </div>
 
