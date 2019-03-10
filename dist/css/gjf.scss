@@ -60,6 +60,10 @@ $heading-hero-font-size-l: 7.8rem;
             #folio .img-cover { height: 150px; }
             #folio .img-cover.margins, #folio .msg-box.margins { margin: 30px 0 !important; }
 
+            /* FOLIO */
+            .gallery div { padding: 15px; }
+            .gallery + div + div { text-align: center !important; }
+
 
 
             @media (min-width: 768px) { 
