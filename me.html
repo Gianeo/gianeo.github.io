@@ -40,10 +40,16 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
-                .photo-gallery img {
+                .photo-gallery img, .poster img {
                     border: solid 1rem #fff;
                     border-bottom-color: #eee;
                     border-right-color: #eee;
+                }
+                .poster {
+                    padding: 0 2rem;
+                }
+                .poster img {
+                    width: 100%;
                 }
                 .photo-gallery div {
                     padding: .5rem;
@@ -54,11 +60,11 @@
                 .msg-box p, .msg-box div {
                     margin: 0 auto;
                 }
-            @media (min-width: 1440px) {
+            @media (min-width: 1024px) {
                 .cover-img {background-image: url('images/v01/13.jpg');}
             }
             @media (min-width: 940px) {
-                .photo-gallery img {
+                .photo-gallery img, .poster img {
                     border-width: 2rem;
                 }
             }
@@ -99,14 +105,14 @@
 
 
 
-            <section class="header uk-container-large uk-align-center">
+            <section class="uk-container-large header uk-align-center">
 
-                <div class="cover-img uk-background-contain uk-flex uk-background-center-right" uk-parallax="bgy: -35">
+                <div class="cover-img uk-background-contain uk-flex uk-background-center-right">
                     <div class="cover-txt uk-grid-collapse" uk-grid>
                         <div class="uk-width-auto@m">
                             <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-align-center" uk-img>
                         </div>
-                        <div class="intro uk-text-left@m">
+                        <div class="intro uk-width-expand@m uk-text-left@m">
                             <h1 class="uk-heading-hero">Gianni J. Favaretto</h1>
                             <div class="uk-width-large@m">
                             <h2 class="uk-text-lead">User Experience, Design, and Leadership in tech-savvy and agile domains. <mark>War veteran, former missionary, and married with children</mark>.</h2>
@@ -122,12 +128,14 @@
         <section class="msg-box uk-background-secondary">
 
             <div class="uk-text-muted">
-                <p class="uk-text-lead uk-light">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories might have little to do with the truth.</p>
+                <p class="uk-text-lead uk-light">Angelic troublemaker, skeptical optimist, ambivert.</p>
             </div>
 
         </section>
 
         <div class="uk-background-secondary">
+
+            <div class="poster"><img data-src="images/myalbum/07.jpg" alt="" uk-img></div>
 
 
             <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-collapse uk-padding-small" uk-grid="masonry: true">
@@ -150,17 +158,14 @@
                     <div><img src="images/myalbum/06.jpg"></div>
                 </div>
                 <div>
-                    <div><img src="images/myalbum/07.jpg"></div>
-                </div>
-                <div>
                     <div><img src="images/myalbum/08.jpg"></div>
                 </div>
                 <div>
                     <div><img src="images/myalbum/09.jpg"></div>
                 </div>
-                 <div class="txt-block uk-text-muted">
+                 <!--<div class="txt-block uk-text-muted">
                      <p class="uk-text-lead uk-light uk-text-center">Angelic troublemaker, skeptical optimist, ambivert.</p>
-                </div>
+                </div>-->
                 <div>
                     <div><img src="images/myalbum/10.jpg"></div>
                 </div>
@@ -182,9 +187,9 @@
                 <div>
                     <div><img src="images/myalbum/16.jpg"></div>
                 </div>
-                 <div class="txt-block uk-text-muted">
+                <!-- <div class="txt-block uk-text-muted">
                      <p class="uk-text-lead uk-light uk-text-center">Military, Computer Science, and Design education.</p>
-                </div>
+                </div>-->
                 <div>
                     <div><img src="images/myalbum/17.jpg"></div>
                 </div>
@@ -194,9 +199,9 @@
                 <div>
                     <div><img src="images/myalbum/24.jpg"></div>
                 </div>
-                 <div class="txt-block uk-text-muted">
+                 <!--<div class="txt-block uk-text-muted">
                      <p class="uk-text-lead uk-light uk-text-center">Sub 3:30 marathon runner.</p>
-                </div>
+                </div>-->
                 <div>
                     <div><img src="images/myalbum/19.jpg"></div>
                 </div>
@@ -215,9 +220,9 @@
                 <div>
                     <div><img src="images/myalbum/25.jpg"></div>
                 </div>
-                 <div class="txt-block uk-text-muted">
+                <!--<div class="txt-block uk-text-muted">
                      <p class="uk-text-lead uk-light uk-text-center">Gulf War 1991 veteran.</p>
-                </div>
+                </div>-->
                 <div>
                     <div><img src="images/myalbum/26.jpg"></div>
                 </div>

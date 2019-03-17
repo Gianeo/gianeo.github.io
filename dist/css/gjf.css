@@ -510,7 +510,7 @@ a.uk-link-reset:hover,
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-heading-hero {
-    font-size: 5.85rem;
+    font-size: 7.8rem;
     line-height: 1; } }
 /* Desktop and bigger */
 @media (min-width: 1200px) {
@@ -9813,6 +9813,7 @@ section.folio {
 
   #folio .img-cover.small {
     height: 150px; } }
+    
 @media (min-width: 960px) {
   section.folio {
     padding-top: 0; }
@@ -9824,16 +9825,7 @@ section.folio {
     padding: 60px; }
 
   .header h1 {
-    padding: 30px;
-    line-height: .75;
     text-align: left; }
-
-  .header h2 {
-    padding: 0 30px 30px; }
-
-  .header .intro h1, .header .intro h2 {
-    background-color: #fff;
-    margin: 0; }
 
   .header img {
     margin-top: 35px; }
@@ -9889,6 +9881,18 @@ section.folio {
 
   .header {
     padding: 60px 0 0 60px; }
+
+  .header .intro h1, .header .intro h2 {
+    background-color: #fff;
+    margin: 0; }
+
+  .header h1 {
+    padding: 30px;
+    line-height: .75;
+    text-align: left; }
+
+  .header h2 {
+    padding: 0 30px 30px; }
 
   .msg-box {
     min-height: 380px; }
