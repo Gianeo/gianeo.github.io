@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8524972-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-8524972-1');
+        </script>
+
+        <!-- Fullstory -->
+        <script>
+            window['_fs_debug'] = false;
+            window['_fs_host'] = 'fullstory.com';
+            window['_fs_org'] = 'C5N0G';
+            window['_fs_namespace'] = 'FS';
+            (function(m,n,e,t,l,o,g,y){
+                if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+                g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+                o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+                y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+                g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+                g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+                g.consent=function(a){g("consent",!arguments.length||a)};
+                g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+                g.clearUserCookie=function(){};
+            })(window,document,window['_fs_namespace'],'script','user');
+            </script>
+
+
         <title>Gianni James Favaretto: UX, Design, and Leadership.</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,18 +40,27 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
+                .photo-gallery img {
+                    border: solid 1rem #fff;
+                    border-bottom-color: #eee;
+                    border-right-color: #eee;
+                }
+                .photo-gallery div {
+                    padding: .5rem;
+                }
+                .txt-block {
+                    padding: 8rem 2rem !important;
+                }
+                .msg-box p, .msg-box div {
+                    margin: 0 auto;
+                }
             @media (min-width: 1440px) {
                 .cover-img {background-image: url('images/v01/13.jpg');}
             }
-            .photo-gallery img {
-                border: solid 2rem #fff;
-                border-bottom-color: #eee;
-                border-right-color: #eee;
-            }
-            .full-image {
-                border: solid 2rem #fff;
-                border-bottom-color: #eee;
-                border-right-color: #eee;
+            @media (min-width: 940px) {
+                .photo-gallery img {
+                    border-width: 2rem;
+                }
             }
         </style>
     </head>
@@ -36,7 +76,7 @@
 
             <div class="uk-visible@m uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                 <div class="uk-container-large uk-padding uk-padding-remove-vertical uk-margin-remove-vertical uk-align-center">
-                    <nav class="" uk-navbar>
+                    <nav uk-navbar>
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
                                 <li class="uk-text-bold">
@@ -48,10 +88,10 @@
                             </ul>
                         </div>
                         <div class="uk-navbar-right">
-                            <a href="" class="uk-padding-small" uk-icon="linkedin"></a>
-                            <a href="" class="uk-padding-small" uk-icon="instagram"></a>
-                            <a href="" class="uk-padding-small" uk-icon="twitter"></a>
-                            <a href="" class="uk-padding-small" uk-icon="mail"></a>
+                            <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
+                            <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
+                            <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a>
+                            <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
                         </div>
                     </nav>
                 </div>
@@ -82,115 +122,129 @@
         <section class="msg-box uk-background-secondary">
 
             <div class="uk-text-muted">
-                <p class="uk-text-lead uk-light">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories often have little to do with the truth. We also have the tendency to perceive ourselves as shining much brighter than we do in reality.</p>
+                <p class="uk-text-lead uk-light">The story we tell of our lifes is based on our memories. But our memories are highly flawed, meaning that our life stories might have little to do with the truth.</p>
             </div>
 
         </section>
-
 
         <div class="uk-background-secondary">
 
 
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/01.jpg" class="uk-margin-small-bottom"></div>
+            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-collapse uk-padding-small" uk-grid="masonry: true">
+                <div>
+                    <div><img src="images/myalbum/01.jpg"></div>
                 </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/02.jpg" class="uk-margin-small-bottom"></div>
+                <div>
+                    <div><img src="images/myalbum/02.jpg"></div>
                 </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/03.jpg" class="uk-margin-small-bottom"></div>
+                <div>
+                    <div><img src="images/myalbum/03.jpg"></div>
                 </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/09.jpg" class="uk-margin-small-bottom"></div>
+                <div>
+                    <div><img src="images/myalbum/04.jpg"></div>
                 </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/06.jpg" class="uk-margin-small-bottom"></div>
+                <div>
+                    <div><img src="images/myalbum/05.jpg"></div>
                 </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/08.jpg" class="uk-margin-small-bottom"></div>
+                <div>
+                    <div><img src="images/myalbum/06.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/07.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/08.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/09.jpg"></div>
+                </div>
+                 <div class="txt-block uk-text-muted">
+                     <p class="uk-text-lead uk-light uk-text-center">Angelic troublemaker, skeptical optimist, ambivert.</p>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/10.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/14.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/11.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/12.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/13.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/15.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/16.jpg"></div>
+                </div>
+                 <div class="txt-block uk-text-muted">
+                     <p class="uk-text-lead uk-light uk-text-center">Military, Computer Science, and Design education.</p>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/17.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/18.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/24.jpg"></div>
+                </div>
+                 <div class="txt-block uk-text-muted">
+                     <p class="uk-text-lead uk-light uk-text-center">Sub 3:30 marathon runner.</p>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/19.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/20.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/21.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/22.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/23.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/25.jpg"></div>
+                </div>
+                 <div class="txt-block uk-text-muted">
+                     <p class="uk-text-lead uk-light uk-text-center">Gulf War 1991 veteran.</p>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/26.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/27.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/29.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/30.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/31.jpg"></div>
+                </div>
+                <div>
+                    <div><img src="images/myalbum/32.jpg"></div>
                 </div>
 
             </div>
 
-            <div class="uk-padding"><img data-src="images/myalbum/05.jpg" alt="" class="full-image" uk-img></div>
+            <div><img data-src="images/myalbum/33.jpg" width="100%" alt="" uk-img></div>
 
-        <section class="msg-box uk-background-secondary">
+        <section class="msg-box no-margin uk-background-secondary">
 
             <div class="uk-text-muted">
-                <p class="uk-text-lead uk-light uk-text-center">Angelic troublemaker, skeptical optimist.</p>
-            </div>
-
-        </section>
-
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
-
-                
-
-            </div>
-
-            <div class="uk-padding"><img data-src="images/myalbum/04.jpg" width="100%" height="" alt="" class="full-image" uk-img></div>
-
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
-
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/10.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/07.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/12.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-
-            </div>
-
-            <div class="uk-padding"><img data-src="images/myalbum/13.jpg" width="100%" height="" alt="" class="full-image" uk-img></div>
-
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
-
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/14.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/15.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/16.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/17.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-
-            </div>
-
-            <div class="uk-padding"><img data-src="images/myalbum/18.jpg" width="100%" height="" alt="" class="full-image" uk-img></div>
-
-
-
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-2@l uk-grid-collapse" uk-grid="masonry: true">
-                
-                
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/22.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/19.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/20.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-                <div class="uk-padding">
-                    <div><img src="images/myalbum/21.jpg" class="uk-margin-small-bottom"></div>
-                </div>
-            </div>
-
-
-
-        <section class="msg-box uk-background-secondary">
-
-            <div class="uk-text-muted">
-                <p class="uk-text-lead uk-light uk-text-center">Self timer photography expert</p>
+                <p class="uk-text-lead uk-light uk-text-center">Pancreatic cancer survivor ... so far.</p>
             </div>
 
         </section>
@@ -205,10 +259,10 @@
         <div class="uk-background-secondary">
             <div class="uk-container uk-text-muted">
                 <p class="uk-iconnav uk-text-muted uk-padding uk-flex uk-flex-center uk-flex-middle">
-                    <a href="" class="uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
-                    <a href="" class="uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
-                    <a href="" class="uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
-                    <a href="" class="uk-padding" uk-icon="icon: mail; ratio: 2"></a>
+                    <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
+                    <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
+                    <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
+                    <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding" uk-icon="icon: mail; ratio: 2"></a>
                 </p>
             </div>
         </div>
@@ -221,10 +275,10 @@
         <button class="uk-offcanvas-close" type="button" uk-close></button>
 
         <div class="uk-padding">
-            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
-            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
-            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
-            <a href="" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
+            <a href="https://www.linkedin.com/in/giannijfavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
+            <a href="https://www.instagram.com/giannifavaretto/" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
+            <a href="https://twitter.com/GianniFavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
+            <a href="mailto:giannijfavaretto@gmail.com" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
         </div>
 
     </div>
