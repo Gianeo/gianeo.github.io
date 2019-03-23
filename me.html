@@ -39,6 +39,15 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
+                .uk-sticky-fixed {
+                    background-color: #fff;
+                }
+                .header h1 {
+                    margin-top: 0;
+                }
+                .header h2 {
+                    text-align: center;
+                }
                 .photo-gallery img, .poster img {
                     border: solid 1rem #fff;
                     border-bottom-color: #f8f8f8;
@@ -49,7 +58,12 @@
                     box-shadow: 0 14px 25px rgba(0,0,0,0.16);
                 }
                 .poster {
-                    padding: 0 2rem;
+                    padding: 2rem 2rem 0;
+                    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+50,1+100 */
+                    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
                 }
                 .poster a img {
                     width: 100%;
@@ -60,15 +74,45 @@
                 .txt-block {
                     padding: 8rem 2rem !important;
                 }
+                .msg-box {
+                    margin: 0 !important;
+                    background-color: #fff;
+                }
                 .msg-box p, .msg-box div {
                     margin: 0 auto;
                 }
-            @media (min-width: 1024px) {
-                body {background: url('images/v01/13.jpg') no-repeat center right fixed;}
-            }
+            
+            @media (min-width: 640px) {
+                body {
+                    margin-top: 0;
+                    padding-top: 2rem;
+                    background: url('images/v01/13.jpg') no-repeat center right fixed / cover;
+                }
+                .header h1 {
+                    margin-top: 2rem !important;
+                }
+                .uk-heading-hero {
+                    font-size: 7.8rem;
+                }
+                .msg-box {
+                    background-color: transparent;
+                }
+            
             @media (min-width: 940px) {
+                .header .intro h1, .header .intro h2 {
+                    background-color: transparent;
+                    margin: 0;
+                }
                 .photo-gallery img, .poster img {
                     border-width: 2rem;
+                }
+                .msg-box {
+                    background-color: transparent;
+                }
+            }
+            @media (min-width: 1024px) {
+                .header h2 {
+                    text-align: left;
                 }
             }
         </style>
@@ -77,17 +121,18 @@
 
         <div class="uk-visible@m"></div>
 
-            <nav class="uk-hidden@m uk-child-width-auto uk-background-default uk-flex uk-flex-center" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+            <nav class="uk-hidden@m uk-child-width-auto uk-flex uk-flex-center" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                     <a href="index.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-bold uk-background-default uk-text-muted">My Work</a>
                     <a href="me.html" class="uk-button uk-button-large uk-button-text uk-padding">About Me</a>
                     <a href="index.html" class="uk-button uk-button-large uk-button-text uk-padding uk-text-muted">Let's Connect</a>
             </nav>
 
-            <div class="uk-visible@m uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+            <div class="uk-visible@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
                 <div class="uk-container-large uk-padding uk-padding-remove-vertical uk-margin-remove-vertical uk-align-center">
                     <nav uk-navbar>
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
+                                <li><img data-src="images/v01/profile.jpg" width="42" height="42" alt="" class="uk-border-circle uk-margin-top uk-margin-right" uk-img></li>
                                 <li class="uk-text-bold">
                                     <a href="index.html">My Design & Leadership Experience</a>
                                 </li>
@@ -112,9 +157,6 @@
 
                 <div class="cover-img uk-background-contain uk-flex uk-background-center-right">
                     <div class="cover-txt uk-grid-collapse" uk-grid>
-                        <div class="uk-width-auto@m">
-                            <img data-src="images/v01/profile.jpg" width="180" height="180" alt="" class="uk-border-circle uk-align-center" uk-img>
-                        </div>
                         <div class="intro uk-width-expand@m uk-text-left@m">
                             <h1 class="uk-heading-hero">Gianni J. Favaretto</h1>
                             <div class="uk-width-large@m">
@@ -131,7 +173,7 @@
         <section class="msg-box">
 
             <div class="">
-                <p class="uk-text-lead uk-dropcap uk-background-default">I left home at seventeen years old to serve four years in the Navy (including participating in the Gulf War) after watching Top Gun; I almost killed himself while climbing a glacier in search of the League of Shadows (yes, I dreamed of becoming Batman). <br>I backpack solo in the wilderness because I think it's cool, for the pictures, and to be an awesome dad. I lead my colleagues to climbing adventures. I served fifteen months as a missionary, and, for now, I survived from pancreatic cancer.</p>
+                <p class="uk-text-lead uk-dropcap uk-background-default">At seventeen years old, I left home to serve four years in the Navy (including participating in the Gulf War) after watching Top Gun; I almost killed himself while climbing a glacier in search of the League of Shadows (yes, I dreamed of becoming Batman). <br>I backpack solo in the wilderness because I think it's cool, for the pictures, and to be an awesome dad. I lead my colleagues to climbing adventures. I served fifteen months as a missionary, and, for now, I survived from pancreatic cancer.</p>
             </div>
 
         </section>
