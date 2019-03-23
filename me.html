@@ -41,8 +41,12 @@
         <style type="text/css">
                 .photo-gallery img, .poster img {
                     border: solid 1rem #fff;
-                    border-bottom-color: #eee;
-                    border-right-color: #eee;
+                    border-bottom-color: #f8f8f8;
+                    border-right-color: #f8f8f8;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                }
+                .photo-gallery img:hover {
+                    box-shadow: 0 14px 25px rgba(0,0,0,0.16);
                 }
                 .poster {
                     padding: 0 2rem;
@@ -60,7 +64,7 @@
                     margin: 0 auto;
                 }
             @media (min-width: 1024px) {
-                .cover-img {background-image: url('images/v01/13.jpg');}
+                body {background: url('images/v01/13.jpg') no-repeat center right fixed;}
             }
             @media (min-width: 940px) {
                 .photo-gallery img, .poster img {
@@ -104,7 +108,7 @@
 
 
 
-            <section class="uk-container-large header uk-align-center" uk-parallax="bgy: -100">
+            <section class="uk-container-large header uk-align-center">
 
                 <div class="cover-img uk-background-contain uk-flex uk-background-center-right">
                     <div class="cover-txt uk-grid-collapse" uk-grid>
@@ -114,7 +118,7 @@
                         <div class="intro uk-width-expand@m uk-text-left@m">
                             <h1 class="uk-heading-hero">Gianni J. Favaretto</h1>
                             <div class="uk-width-large@m">
-                            <h2 class="uk-text-lead">User Experience, Design, and Leadership in tech-savvy and agile domains. <mark>War veteran, former missionary, and married with children</mark>.</h2>
+                            <h2 class="uk-text-lead">Angelic troublemaker, skeptical optimist, ambivert.</h2>
                             </div>
                         </div>
                     </div>
@@ -124,22 +128,22 @@
 
 
 
-        <section class="msg-box uk-background-secondary">
+        <section class="msg-box">
 
-            <div class="uk-text-muted">
-                <p class="uk-text-lead uk-light">Angelic troublemaker, skeptical optimist, ambivert.</p>
+            <div class="">
+                <p class="uk-text-lead uk-dropcap uk-background-default">I left home at seventeen years old to serve four years in the Navy (including participating in the Gulf War) after watching Top Gun; I almost killed himself while climbing a glacier in search of the League of Shadows (yes, I dreamed of becoming Batman). <br>I backpack solo in the wilderness because I think it's cool, for the pictures, and to be an awesome dad. I lead my colleagues to climbing adventures. I served fifteen months as a missionary, and, for now, I survived from pancreatic cancer.</p>
             </div>
 
         </section>
 
-        <div class="uk-background-secondary" uk-lightbox="animation: scale">
+        <div class="" uk-lightbox="animation: scale">
 
             <div class="poster"><a class="" href="images/myalbum/07.jpg" data-caption=""><img data-src="images/myalbum/07.jpg" alt="" uk-img></a></div>
 
 
-            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-collapse uk-padding-small" uk-grid="masonry: true">
+            <div class="photo-gallery uk-child-width-1-2@s uk-child-width-1-3@l uk-grid-collapse uk-padding-small uk-background-default" uk-grid="masonry: true">
                 <div>
-                    <div><a class="uk-inline" href="images/myalbum/01.jpg" data-caption=""><img src="images/myalbum/01.jpg"></a></div>
+                    <div class=""><a class="uk-inline" href="images/myalbum/01.jpg" data-caption=""><img src="images/myalbum/01.jpg"></a></div>
                 </div>
                 <div>
                     <div><a class="uk-inline" href="images/myalbum/02.jpg" data-caption=""><img src="images/myalbum/02.jpg"></a></div>
