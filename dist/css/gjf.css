@@ -9834,7 +9834,7 @@ section.folio {
     margin-top: 0; }
 
   .header div.intro {
-    margin-left: 30px;
+    margin-left: 0;
     display: inline-block;
     width: auto;
     max-width: 600px; }
