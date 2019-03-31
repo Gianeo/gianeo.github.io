@@ -15,7 +15,7 @@ $heading-hero-font-size-l: 7.8rem;
 @mixin hook-heading-hero(){ font-family: 'Abril Fatface'; color: #000; }
 @mixin hook-article-title(){ font-family: 'Abril Fatface'; }
 @mixin hook-text-lead(){ font-weight: 300; }
-@mixin hook-button(){ font-weight: 700; text-transform: uppercase; }
+@mixin hook-button(){ font-weight: 300; text-transform: uppercase; }
 
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
