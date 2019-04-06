@@ -20,7 +20,8 @@ $heading-hero-font-size-l: 7.8rem;
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
 
-			mark { background-color: #f9f220; color: #000; }
+            mark { background-color: #f9f220; color: #000; }
+            .uk-label { background-color: #eee; color: #000; }
             footer { margin-top: 0; }
             section { margin: 0 auto !important; }
             h2, h3, h4 { font-weight: 700; }

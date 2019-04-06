@@ -12252,6 +12252,11 @@ mark {
   color: #000;
 }
 
+.uk-label {
+  background-color: #eee;
+  color: #000;
+}
+
 footer {
   margin-top: 0;
 }
