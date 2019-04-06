@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // 1. Your custom variables and variable overwrites.
-$global-primary-background: #ffc837;
+$global-primary-background: #fff;
 $global-secondary-background: #000;
 $global-font-family: 'Roboto', sans-serif;
 
@@ -113,7 +113,10 @@ $heading-hero-font-size-l: 7.8rem;
                 .uk-card { padding: 0 0 30px; margin-bottom: 0; }
                 .uk-card .uk-background-cover {height: 350px;}
                 .uk-card-body { padding: 15px 30px 0; }
-                .article-copy { max-width: 380px; }
+                .folio-card p, .folio-card h1, .folio-links { background-color: #fff; padding: 30px; margin: 0 !important }
+                p.article-role { font-size: 0.875rem; line-height: 1.9; text-transform: uppercase; padding: 5px 15px 1px 30px; margin: 0 !important }
+                .folio-links { background-color: #fff; padding: 0 30px 30px 30px; width: auto !important; display: inline-block; }
+                p.article-copy { padding-bottom: 30px; }
                 .cards-mini { padding: 60px 0;}
                 .msg-box { margin: 0; }
                 .msg-box p { font-size: 1.25rem; max-width: 450px; margin: 0 auto; }
@@ -128,7 +131,7 @@ $heading-hero-font-size-l: 7.8rem;
 
             @media (min-width: 1024px) {
                 
-                section.folio { padding: 0; }
+                section.folio { padding: 0; margin: 120px auto !important; }
                 .header { padding: 60px 0 0 60px; }
                 .header .intro h1, .header .intro h2 { background-color: #fff; margin: 0; }
                 .header h1 { padding: 30px; line-height: .75; text-align: left; }
