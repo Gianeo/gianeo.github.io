@@ -5,7 +5,7 @@ $global-primary-background: #fff;
 $global-secondary-background: #000;
 $global-font-family: 'Roboto', sans-serif;
 
-$heading-hero-font-size-l: 7.8rem;
+$heading-hero-font-size-l: 9.8rem;
 
 // 2. Import default variables and available mixins.
 @import "../../src/scss/variables-theme.scss";
@@ -39,13 +39,13 @@ $heading-hero-font-size-l: 7.8rem;
 
             .uk-card { padding: 30px; margin: 0; }
             .uk-card-media-top { margin-bottom: 20px; }
-            .uk-card-body { padding: 0; }
+            .uk-card-body { padding: 30px; }
             .uk-card .uk-background-cover { height: 150px; }
             .uk-card .date { display: block; }
             .article-copy { margin: 0 0 30px; text-align: left; }
             .cards-mini { padding: 60px 0 0;}
             .cards-mini .uk-card { padding-top: 0; }
-            .cards-mini .uk-card-body { padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
+            .cards-mini{ padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
             .msg-box { margin-top: 30px !important; padding: 45px 30px 60px; display: flex; align-items: center; }
             .msg-box p, .msg-box div { margin: 0; font-size: 1.25rem; }
 
@@ -60,6 +60,7 @@ $heading-hero-font-size-l: 7.8rem;
             #folio .uk-card > div:first-child { margin-bottom: 30px !important; }
             #folio .img-cover { height: 150px; }
             #folio .img-cover.margins, #folio .msg-box.margins { margin: 30px 0 !important; }
+            .folio h1.uk-article-title { margin-top: 15px; }
 
             /* FOLIO */
             .gallery div { padding: 15px; }
@@ -73,10 +74,10 @@ $heading-hero-font-size-l: 7.8rem;
                 nav { text-align: center; }
                 footer { margin-top: 0; }
                 section.folio { padding-top: 0; }
-                .header h2 {max-width: 450px; margin: 0 auto 60px;}
+                .header h2 { max-width: 500px; margin: 30px auto 0; }
                 .uk-card { padding: 45px 60px; }
                 .uk-card .uk-background-cover { height: 300px; }
-                .uk-card-body {padding: 30px 0; margin-bottom: 0 !important;}
+                .uk-card-body {padding: 30px; margin-bottom: 0 !important; }
 				.cards-mini { padding: 60px 0 90px;}
                 .article-copy { max-width: 450px; }
                 .msg-box p { padding: 60px 90px; margin: 0; }
@@ -92,22 +93,22 @@ $heading-hero-font-size-l: 7.8rem;
                 #folio .uk-card > div:first-child { margin-bottom: 0 !important; }
                 #folio .img-cover { height: 300px; }
                 #folio .img-cover.small {height: 150px;}
+                section.folio { padding-top: 0; margin: 60px auto !important; }
 
             }
 
             @media (min-width: 960px) { 
 
-                section.folio { padding-top: 0; }
                 .background { background-color: #000; }
                 .header {padding: 60px;}
                 .header h1 {text-align: center;}
                 .header img { margin-top: 35px; }
                 .header div.intro > div { margin-top: 0; }
                 .header div.intro {
-                    margin-left: 0;
+                    margin-left: 30px;
                     display:inline-block;
                     width: auto;
-                    max-width: 600px;
+                    // max-width: 600px;
                 }
                 .cover-txt, .msg-box > div {padding: 0;}
                 .cover-txt > div { padding: 0; }
@@ -136,7 +137,7 @@ $heading-hero-font-size-l: 7.8rem;
                 .header { padding: 60px 0 0 60px; }
                 .header .intro h1, .header .intro h2 { background-color: #fff; margin: 0; }
                 .header h1 { padding: 30px; line-height: .75; text-align: left; }
-                .header h2 { padding: 0 30px 30px; }
+                .header h2 { padding: 30px; }
                 .msg-box { min-height: 380px; }
                 .msg-box.no-margin { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }

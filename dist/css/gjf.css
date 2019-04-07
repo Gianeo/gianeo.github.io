@@ -586,7 +586,7 @@ a.uk-link-reset:hover,
 /* Hero
  ========================================================================== */
 .uk-heading-hero {
-  font-size: 3.9rem;
+  font-size: 4.9rem;
   line-height: 1.1;
   font-family: 'Abril Fatface';
   color: #000;
@@ -595,7 +595,7 @@ a.uk-link-reset:hover,
 /* Tablet landscape and bigger */
 @media (min-width: 960px) {
   .uk-heading-hero {
-    font-size: 5.85rem;
+    font-size: 7.35rem;
     line-height: 1;
   }
 }
@@ -603,7 +603,7 @@ a.uk-link-reset:hover,
 /* Desktop and bigger */
 @media (min-width: 1200px) {
   .uk-heading-hero {
-    font-size: 7.8rem;
+    font-size: 9.8rem;
     line-height: 1;
   }
 }
@@ -12316,7 +12316,7 @@ section.folio {
 }
 
 .uk-card-body {
-  padding: 0;
+  padding: 30px;
 }
 
 .uk-card .uk-background-cover {
@@ -12340,7 +12340,7 @@ section.folio {
   padding-top: 0;
 }
 
-.cards-mini .uk-card-body {
+.cards-mini {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0 !important;
@@ -12406,6 +12406,10 @@ section.folio {
   margin: 30px 0 !important;
 }
 
+.folio h1.uk-article-title {
+  margin-top: 15px;
+}
+
 /* FOLIO */
 .gallery div {
   padding: 15px;
@@ -12429,8 +12433,8 @@ section.folio {
     padding-top: 0;
   }
   .header h2 {
-    max-width: 450px;
-    margin: 0 auto 60px;
+    max-width: 500px;
+    margin: 30px auto 0;
   }
   .uk-card {
     padding: 45px 60px;
@@ -12439,7 +12443,7 @@ section.folio {
     height: 300px;
   }
   .uk-card-body {
-    padding: 30px 0;
+    padding: 30px;
     margin-bottom: 0 !important;
   }
   .cards-mini {
@@ -12483,12 +12487,13 @@ section.folio {
   #folio .img-cover.small {
     height: 150px;
   }
+  section.folio {
+    padding-top: 0;
+    margin: 60px auto !important;
+  }
 }
 
 @media (min-width: 960px) {
-  section.folio {
-    padding-top: 0;
-  }
   .background {
     background-color: #000;
   }
@@ -12505,10 +12510,9 @@ section.folio {
     margin-top: 0;
   }
   .header div.intro {
-    margin-left: 0;
+    margin-left: 30px;
     display: inline-block;
     width: auto;
-    max-width: 600px;
   }
   .cover-txt, .msg-box > div {
     padding: 0;
@@ -12585,7 +12589,7 @@ section.folio {
     text-align: left;
   }
   .header h2 {
-    padding: 0 30px 30px;
+    padding: 30px;
   }
   .msg-box {
     min-height: 380px;
