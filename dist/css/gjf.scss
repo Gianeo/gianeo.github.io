@@ -24,6 +24,7 @@ $heading-hero-font-size-l: 9.8rem;
             .uk-label { background-color: #eee; color: #000; }
             footer { margin-top: 0; }
             section { margin: 0 auto !important; }
+            h1 { font-family: 'Abril Fatface'; font-size: 42px; line-height: 42px; margin-bottom:30px; }
             h2, h3, h4 { font-weight: 700; }
             section.folio { padding: 0; }
 
@@ -34,7 +35,7 @@ $heading-hero-font-size-l: 9.8rem;
             .uk-button-text { line-height: 1.2; }
 
             .header { padding: 40px 30px 30px; margin: 0 auto; }
-            .header h1 { font-size: 62px; line-height: 54px; margin: 15px 0 30px; text-align: center; }
+            .header h1 { font-size: 62px; line-height: 62px; margin: 15px 0 30px; text-align: center; }
             .header h2 { font-size: 20px; line-height: 32px; text-align: center; margin: 0; }
 
             .uk-card { padding: 30px; margin: 0; }
@@ -43,16 +44,16 @@ $heading-hero-font-size-l: 9.8rem;
             .uk-card .uk-background-cover { height: 150px; }
             .uk-card .date { display: block; }
             .article-copy { margin: 0 0 30px; text-align: left; }
-            .cards-mini { padding: 60px 0 0;}
-            .cards-mini .uk-card { padding-top: 0; }
-            .cards-mini{ padding-top: 0; padding-bottom: 0; margin-bottom: 0 !important;}
             .msg-box { margin-top: 30px !important; padding: 45px 30px 60px; display: flex; align-items: center; }
             .msg-box p, .msg-box div { margin: 0; font-size: 20px; line-height: 32px; }
+            .folio h1.uk-article-title { margin-top: 15px; }
+            .folio .article-role, .folio .uk-label { font-size: 13px; text-transform: uppercase; }
+            .folio .uk-button { font-size: 13px; font-weight: bold; }
 
 
             /* FOLIO */
             #folio header { padding: 30px; margin: 15px 0 0 !important; }
-            #folio header h1 { font-family: 'Abril Fatface'; font-size: 42px; margin-bottom: 30px; line-height: 63px; }
+            #folio header h1 { font-family: 'Abril Fatface'; font-size: 62px; line-height: 62px; margin-bottom: 30px; }
             #folio .uk-sticky-fixed { box-shadow: none; }
             #folio .role-box { padding: 60px 15px; }
             #folio .role-box h4 { margin-bottom: 10px; }
@@ -60,9 +61,6 @@ $heading-hero-font-size-l: 9.8rem;
             #folio .uk-card > div:first-child { margin-bottom: 30px !important; }
             #folio .img-cover { height: 150px; }
             #folio .img-cover.margins, #folio .msg-box.margins { margin: 30px 0 !important; }
-            .folio h1.uk-article-title { margin-top: 15px; }
-            .folio .article-role, .folio .uk-label { font-size: 13px; text-transform: uppercase; }
-            .folio .uk-button { font-size: 13px; font-weight: bold; }
 
             /* FOLIO */
             .gallery div { padding: 15px; }
@@ -81,13 +79,12 @@ $heading-hero-font-size-l: 9.8rem;
                 .uk-card { padding: 45px 60px; }
                 .uk-card .uk-background-cover { height: 300px; }
                 .uk-card-body {padding: 30px; margin-bottom: 0 !important; }
-				.cards-mini { padding: 60px 0 90px;}
                 .msg-box p { padding: 60px 90px; margin: 0; max-width: 460px; }
+                section.folio { padding-top: 0; margin: 60px auto !important; }
 
                 
                 /* FOLIO */
                 body#folio { margin-top: 0; }
-                section.folio { padding-top: 0; }
                 #folio header { padding: 60px; margin: 0 !important; }
                 #folio .img-cover { display: block; height: 300px; }
                 #folio .role-box { padding: 60px 30px; }
@@ -95,7 +92,7 @@ $heading-hero-font-size-l: 9.8rem;
                 #folio .uk-card > div:first-child { margin-bottom: 0 !important; }
                 #folio .img-cover { height: 300px; }
                 #folio .img-cover.small {height: 150px;}
-                section.folio { padding-top: 0; margin: 60px auto !important; }
+                #folio section.folio { margin: 0 auto !important; }
 
             }
 
@@ -112,7 +109,6 @@ $heading-hero-font-size-l: 9.8rem;
             //     .uk-card-body { padding: 15px 30px 0; }
             //     .folio-card p, .folio-card h1, .folio-links { background-color: #fff; padding: 30px; margin: 0 !important }
             //     .folio-links { background-color: #fff; padding: 0 30px 30px 30px; width: auto !important; display: inline-block; }
-            //     .cards-mini { padding: 60px 0;}
             //     .msg-box { margin: 0; }
             //     .msg-box p { max-width: 450px; margin: 0 auto; }
 
@@ -137,12 +133,12 @@ $heading-hero-font-size-l: 9.8rem;
                 .msg-box { min-height: 380px; }
                 .msg-box.no-margin { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }
-                .cards-mini { padding: 90px 0;}
                 .uk-card-body { padding: 60px; }
 
                 
                 /* FOLIO */
                 #folio .role-box, #folio .folio-footer { padding: 60px 30px; }
+                #folio section.folio { margin: 0 auto !important; }
 
             }
 
@@ -151,7 +147,6 @@ $heading-hero-font-size-l: 9.8rem;
                 .cover-txt { margin-top: 0; }
                 .cover-img { padding: 0 0 120px 0; margin: 0 0 -30px 90px !important; }
                 .uk-card-body { padding: 120px; }
-                .cards-mini { padding: 120px 0;}
 
                 
                 /* FOLIO */

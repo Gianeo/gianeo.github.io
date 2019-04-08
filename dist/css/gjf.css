@@ -12265,6 +12265,13 @@ section {
   margin: 0 auto !important;
 }
 
+h1 {
+  font-family: 'Abril Fatface';
+  font-size: 42px;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+
 h2, h3, h4 {
   font-weight: 700;
 }
@@ -12298,7 +12305,7 @@ section.folio {
 
 .header h1 {
   font-size: 62px;
-  line-height: 54px;
+  line-height: 62px;
   margin: 15px 0 30px;
   text-align: center;
 }
@@ -12336,20 +12343,6 @@ section.folio {
   text-align: left;
 }
 
-.cards-mini {
-  padding: 60px 0 0;
-}
-
-.cards-mini .uk-card {
-  padding-top: 0;
-}
-
-.cards-mini {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0 !important;
-}
-
 .msg-box {
   margin-top: 30px !important;
   padding: 45px 30px 60px;
@@ -12367,6 +12360,20 @@ section.folio {
   line-height: 32px;
 }
 
+.folio h1.uk-article-title {
+  margin-top: 15px;
+}
+
+.folio .article-role, .folio .uk-label {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.folio .uk-button {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 /* FOLIO */
 #folio header {
   padding: 30px;
@@ -12375,9 +12382,9 @@ section.folio {
 
 #folio header h1 {
   font-family: 'Abril Fatface';
-  font-size: 42px;
+  font-size: 62px;
+  line-height: 62px;
   margin-bottom: 30px;
-  line-height: 63px;
 }
 
 #folio .uk-sticky-fixed {
@@ -12409,20 +12416,6 @@ section.folio {
 
 #folio .img-cover.margins, #folio .msg-box.margins {
   margin: 30px 0 !important;
-}
-
-.folio h1.uk-article-title {
-  margin-top: 15px;
-}
-
-.folio .article-role, .folio .uk-label {
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.folio .uk-button {
-  font-size: 13px;
-  font-weight: bold;
 }
 
 /* FOLIO */
@@ -12467,20 +12460,18 @@ section.folio {
     padding: 30px;
     margin-bottom: 0 !important;
   }
-  .cards-mini {
-    padding: 60px 0 90px;
-  }
   .msg-box p {
     padding: 60px 90px;
     margin: 0;
     max-width: 460px;
   }
+  section.folio {
+    padding-top: 0;
+    margin: 60px auto !important;
+  }
   /* FOLIO */
   body#folio {
     margin-top: 0;
-  }
-  section.folio {
-    padding-top: 0;
   }
   #folio header {
     padding: 60px;
@@ -12506,9 +12497,8 @@ section.folio {
   #folio .img-cover.small {
     height: 150px;
   }
-  section.folio {
-    padding-top: 0;
-    margin: 60px auto !important;
+  #folio section.folio {
+    margin: 0 auto !important;
   }
 }
 
@@ -12547,15 +12537,15 @@ section.folio {
   .msg-box div {
     margin: 0 auto;
   }
-  .cards-mini {
-    padding: 90px 0;
-  }
   .uk-card-body {
     padding: 60px;
   }
   /* FOLIO */
   #folio .role-box, #folio .folio-footer {
     padding: 60px 30px;
+  }
+  #folio section.folio {
+    margin: 0 auto !important;
   }
 }
 
@@ -12569,9 +12559,6 @@ section.folio {
   }
   .uk-card-body {
     padding: 120px;
-  }
-  .cards-mini {
-    padding: 120px 0;
   }
   /* FOLIO */
   #folio header {
