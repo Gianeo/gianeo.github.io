@@ -12447,15 +12447,9 @@ section.folio {
   .header div.intro > div {
     margin-top: 0;
   }
-  .header div.intro {
-    margin-left: 30px;
-    display: inline-block;
-    width: auto;
-  }
   .header h1 {
     font-size: 94px;
     line-height: 72px;
-    text-align: left;
   }
   .header h2 {
     font-size: 26px;
@@ -12476,12 +12470,10 @@ section.folio {
   .cards-mini {
     padding: 60px 0 90px;
   }
-  .article-copy {
-    max-width: 450px;
-  }
   .msg-box p {
     padding: 60px 90px;
     margin: 0;
+    max-width: 460px;
   }
   /* FOLIO */
   body#folio {
@@ -12521,78 +12513,15 @@ section.folio {
 }
 
 @media (min-width: 960px) {
-  .background {
-    background-color: #000;
-  }
-  .header {
-    padding: 60px;
-  }
-  .header img {
-    margin-top: 35px;
-  }
-  .cover-txt, .msg-box > div {
-    padding: 0;
-  }
-  .cover-txt > div {
-    padding: 0;
-  }
-  .uk-card {
-    padding: 0 0 30px;
-    margin-bottom: 0;
-  }
-  .uk-card .uk-background-cover {
-    height: 350px;
-  }
-  .uk-card-body {
-    padding: 15px 30px 0;
-  }
-  .folio-card p, .folio-card h1, .folio-links {
-    background-color: #fff;
-    padding: 30px;
-    margin: 0 !important;
-  }
-  .folio-links {
-    background-color: #fff;
-    padding: 0 30px 30px 30px;
-    width: auto !important;
-    display: inline-block;
-  }
-  p.article-copy {
-    padding-bottom: 30px;
-  }
-  .cards-mini {
-    padding: 60px 0;
-  }
-  .msg-box {
-    margin: 0;
-  }
-  .msg-box p {
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  /* FOLIO */
-  #folio .uk-card {
-    padding: 0;
-  }
-  #folio .img-cover.margins {
-    margin: 60px 0;
-  }
-  .folio h1.uk-article-title {
-    margin-top: 30px;
-  }
-  .folio .article-role {
-    text-align: left;
-    margin: 0 0 15px;
-  }
-}
-
-@media (min-width: 1024px) {
   section.folio {
     padding: 0;
     margin: 120px auto !important;
   }
   .header {
     padding: 60px 0 0 60px;
+  }
+  .header img {
+    margin-top: 30px;
   }
   .header .intro h1, .header .intro h2 {
     background-color: #fff;
