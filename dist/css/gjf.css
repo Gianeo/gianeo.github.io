@@ -12297,12 +12297,16 @@ section.folio {
 }
 
 .header h1 {
+  font-size: 62px;
+  line-height: 54px;
   margin: 30px 0 30px;
-  line-height: .8;
   text-align: center;
 }
 
 .header h2 {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
   margin: 0;
 }
 
@@ -12359,7 +12363,8 @@ section.folio {
 
 .msg-box p, .msg-box div {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 /* FOLIO */
@@ -12370,9 +12375,9 @@ section.folio {
 
 #folio header h1 {
   font-family: 'Abril Fatface';
-  font-size: 3.825rem;
+  font-size: 42px;
   margin-bottom: 30px;
-  line-height: 1;
+  line-height: 63px;
 }
 
 #folio .uk-sticky-fixed {
@@ -12410,6 +12415,16 @@ section.folio {
   margin-top: 15px;
 }
 
+.folio .article-role, .folio .uk-label {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.folio .uk-button {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 /* FOLIO */
 .gallery div {
   padding: 15px;
@@ -12432,7 +12447,14 @@ section.folio {
   section.folio {
     padding-top: 0;
   }
+  .header h1 {
+    font-size: 94px;
+    line-height: 72px;
+    text-align: left;
+  }
   .header h2 {
+    font-size: 26px;
+    line-height: 40px;
     max-width: 500px;
     margin: 30px auto 0;
   }
@@ -12455,9 +12477,6 @@ section.folio {
   .msg-box p {
     padding: 60px 90px;
     margin: 0;
-  }
-  .msg-box .uk-text-lead {
-    font-size: 1.25rem;
   }
   /* FOLIO */
   body#folio {
@@ -12500,9 +12519,6 @@ section.folio {
   .header {
     padding: 60px;
   }
-  .header h1 {
-    text-align: center;
-  }
   .header img {
     margin-top: 35px;
   }
@@ -12535,13 +12551,6 @@ section.folio {
     padding: 30px;
     margin: 0 !important;
   }
-  p.article-role {
-    font-size: 0.875rem;
-    line-height: 1.9;
-    text-transform: uppercase;
-    padding: 5px 15px 1px 30px;
-    margin: 0 !important;
-  }
   .folio-links {
     background-color: #fff;
     padding: 0 30px 30px 30px;
@@ -12558,7 +12567,6 @@ section.folio {
     margin: 0;
   }
   .msg-box p {
-    font-size: 1.25rem;
     max-width: 450px;
     margin: 0 auto;
   }
@@ -12571,6 +12579,10 @@ section.folio {
   }
   .folio h1.uk-article-title {
     margin-top: 30px;
+  }
+  .folio .article-role {
+    text-align: left;
+    margin: 0 0 15px;
   }
 }
 
@@ -12587,11 +12599,14 @@ section.folio {
     margin: 0;
   }
   .header h1 {
+    font-size: 124px;
+    line-height: 94px;
     padding: 30px;
-    line-height: .75;
     text-align: left;
   }
   .header h2 {
+    font-size: 26px;
+    line-height: 40px;
     padding: 30px;
   }
   .msg-box {
