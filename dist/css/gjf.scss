@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // 1. Your custom variables and variable overwrites.
-$global-primary-background: #fff;
+$global-primary-background: rgba(255,255,255,0.9);
 $global-secondary-background: #000;
 $global-font-family: 'Roboto', sans-serif;
 
@@ -30,7 +30,7 @@ $heading-hero-font-size-l: 9.8rem;
 
             .uk-sticky-fixed { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
             .cover-img { background-image: none; padding: 0; }
-            .background { background-color: #fff; }
+            .background { background-color: $global-primary-background; }
 
             .uk-button-text { line-height: 1.2; }
 
@@ -46,6 +46,7 @@ $heading-hero-font-size-l: 9.8rem;
             .article-copy { margin: 0 0 30px; text-align: left; }
             .msg-box { margin-top: 30px !important; padding: 45px 30px 60px; display: flex; align-items: center; }
             .msg-box p, .msg-box div { margin: 0; font-size: 20px; line-height: 32px; }
+            .msg-box p { padding: 30px; }
             .folio h1.uk-article-title { margin-top: 15px; }
             .folio .article-role, .folio .uk-label { font-size: 13px; text-transform: uppercase; }
             .folio .uk-button { font-size: 13px; font-weight: bold; }
@@ -124,14 +125,14 @@ $heading-hero-font-size-l: 9.8rem;
 
             @media (min-width: 960px) {
                 
-                section.folio { padding: 0; margin: 120px auto !important; }
+                section.folio { padding: 0 60px; margin: 120px auto !important; }
                 .header { padding: 60px 0 0 60px; }
                 .header img { margin-top: 30px;}
                 .header .intro { margin-left: 30px;}
-                .header .intro h1, .header .intro h2 { background-color: #fff; margin: 0; }
+                .header .intro h1, .header .intro h2 { background-color: $global-primary-background; margin: 0; }
                 .header h1 { font-size: 124px; line-height: 94px; padding: 30px; text-align: left; }
                 .header h2 { font-size: 26px; line-height: 40px; padding: 30px; }
-                .msg-box { min-height: 380px; }
+                .msg-box { padding: 30px 60px; min-height: 380px; }
                 .msg-box.no-margin { margin-top: 0 !important; }
                 .msg-box div { margin: 0 auto; }
                 .uk-card-body { padding: 60px; }

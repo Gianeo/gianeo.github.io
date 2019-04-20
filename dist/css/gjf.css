@@ -541,7 +541,7 @@ a.uk-link-heading:not(:hover),
 
 a.uk-link-heading:hover,
 .uk-link-heading a:hover {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
 }
 
@@ -1615,7 +1615,7 @@ button.uk-icon:not(:disabled) {
   outline: none;
   background-color: #fff;
   color: #666;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Disabled */
@@ -1838,7 +1838,7 @@ select.uk-form-width-xsmall {
 .uk-radio:focus,
 .uk-checkbox:focus {
   outline: none;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -1847,7 +1847,7 @@ select.uk-form-width-xsmall {
 .uk-radio:checked,
 .uk-checkbox:checked,
 .uk-checkbox:indeterminate {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border-color: transparent;
 }
 
@@ -1855,7 +1855,7 @@ select.uk-form-width-xsmall {
 .uk-radio:checked:focus,
 .uk-checkbox:checked:focus,
 .uk-checkbox:indeterminate:focus {
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.9);
 }
 
 /*
@@ -2173,7 +2173,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-button-primary {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #fff;
   border: 1px solid transparent;
 }
@@ -2181,14 +2181,14 @@ select.uk-form-width-xsmall {
 /* Hover + Focus */
 .uk-button-primary:hover,
 .uk-button-primary:focus {
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 0.9);
   color: #fff;
 }
 
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
-  background-color: #e6e6e6;
+  background-color: rgba(230, 230, 230, 0.9);
   color: #fff;
 }
 
@@ -2494,7 +2494,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-section-primary {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -3078,7 +3078,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-tile-primary {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -3228,7 +3228,7 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-card-primary {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   color: #fff;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -3239,7 +3239,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-card-primary.uk-card-hover:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
@@ -3593,8 +3593,8 @@ select.uk-form-width-xsmall {
  * Primary
  */
 .uk-alert-primary {
-  background: white;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.94);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -3659,7 +3659,7 @@ select.uk-form-width-xsmall {
   border-radius: 500px;
   vertical-align: middle;
   /* 1 */
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   color: #fff;
   font-size: 0.875rem;
   /* 2 */
@@ -3690,7 +3690,7 @@ select.uk-form-width-xsmall {
 .uk-label {
   display: inline-block;
   padding: 0 10px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
   font-size: 0.875rem;
   color: #fff;
@@ -4944,7 +4944,7 @@ ul.uk-nav-sub {
 
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #fff;
 }
 
@@ -5164,7 +5164,7 @@ ul.uk-nav-sub {
 /* Active */
 .uk-tab > .uk-active > a {
   color: #333;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.9);
 }
 
 /* Disabled */
@@ -6769,7 +6769,7 @@ ul.uk-nav-sub {
  * Primary
  */
 .uk-notification-message-primary {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /*
@@ -6929,17 +6929,17 @@ ul.uk-nav-sub {
  * 1. Remove right border in IE11 and Edge
  */
 .uk-progress::-webkit-progress-value {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
 
 .uk-progress::-moz-progress-bar {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .uk-progress::-ms-fill {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
   /* 1 */
@@ -8408,7 +8408,7 @@ ul.uk-nav-sub {
 }
 
 .uk-text-primary {
-  color: #fff !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .uk-text-success {
@@ -8438,12 +8438,12 @@ ul.uk-nav-sub {
   /* 2 */
   display: inline-block;
   /* 3 */
-  color: #fff !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 @supports (-webkit-background-clip: text) {
   .uk-text-background {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -8813,7 +8813,7 @@ iframe.uk-cover {
 }
 
 .uk-background-primary {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .uk-background-secondary {
@@ -12291,7 +12291,7 @@ section.folio {
 }
 
 .background {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .uk-button-text {
@@ -12358,6 +12358,10 @@ section.folio {
   margin: 0;
   font-size: 20px;
   line-height: 32px;
+}
+
+.msg-box p {
+  padding: 30px;
 }
 
 .folio h1.uk-article-title {
@@ -12504,7 +12508,7 @@ section.folio {
 
 @media (min-width: 960px) {
   section.folio {
-    padding: 0;
+    padding: 0 60px;
     margin: 120px auto !important;
   }
   .header {
@@ -12517,7 +12521,7 @@ section.folio {
     margin-left: 30px;
   }
   .header .intro h1, .header .intro h2 {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 0;
   }
   .header h1 {
@@ -12532,6 +12536,7 @@ section.folio {
     padding: 30px;
   }
   .msg-box {
+    padding: 30px 60px;
     min-height: 380px;
   }
   .msg-box.no-margin {
