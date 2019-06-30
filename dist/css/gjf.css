@@ -12754,6 +12754,10 @@ h3, h4 {
   font-weight: 700;
 }
 
+h1.lead {
+  font-size: 82px;
+}
+
 section.folio {
   padding: 0;
 }
