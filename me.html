@@ -107,12 +107,17 @@
             }
         </style>
     </head>
+    <body>
+
+            <!-- Mobile only -->
     
-    <body class="uk-margin-remove-top">
+                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
+    
+            <!-- END Mobile only -->
 
             <div uk-height-viewport uk-grid>
 
-                    <div class="uk-width-1-4">
+                    <div class="uk-visible@m uk-width-1-4">
                         <div class="" uk-sticky>
                         <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
                             <div class="">
@@ -149,7 +154,7 @@
                         </div>
                     </div>
 
-                <section class="uk-width-expand uk-padding-large uk-background-default">
+                <section class="mainBody uk-width-expand uk-background-default">
                         
                     <header class="uk-padding-large uk-padding-remove-top">
                             <div>
@@ -320,38 +325,39 @@
 
 </div>
 
+<img src="images/bracket.svg" class="bracket uk-visible@m" uk-svg>
 
 
-    <!-- <footer>
-        <div class="uk-background-secondary">
-            <div class="uk-container uk-text-muted">
-                <p class="uk-iconnav uk-text-muted uk-padding uk-flex uk-flex-center uk-flex-middle">
-                    <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
-                    <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
-                    <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
-                    <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding" uk-icon="icon: mail; ratio: 2"></a>
-                </p>
-            </div>
-        </div>
-    </footer> -->
 
-
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+<div id="offcanvas-overlay" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
 
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <div class="uk-padding">
-                <a href="https://www.linkedin.com/in/giannijfavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
-                <a href="https://www.instagram.com/giannifavaretto/" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
-                <a href="https://twitter.com/GianniFavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
-                <a href="mailto:giannijfavaretto@gmail.com" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
-            </div>
-
+                <div class="">
+                            <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
+                                <li class="uk-inline uk-width-1-1 uk-active"><a href="#" class="uk-margin-small-right"><b>Intro</b></a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
+                                <li class="uk-parent">
+                                    <a href="work.html"><b>Work Experience</b></a>
+                                    <ul class="uk-nav-sub uk-text-left">
+                                        <li><a href="folio/argos.html">Sainsbury's Argos</a></li>
+                                        <li><a href="folio/osp.html">Ocado Smart Platform</a></li>
+                                        <li><a href="folio/fabled.html">Fabled by Marie Claire</a></li>
+                                        <li><a href="folio/gm.html">Fetch and Sizzle</a></li>
+                                        <li><a href="folio/ocado.html">Ocado.com</a></li>
+                                        <li><a href="folio/freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="me.html"><b>About Me</b></a></li>
+                            </ul>
+                            <div class=" uk-padding-large">
+                                <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
+                                <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
+                                <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a>
+                                <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
+                            </div>
+                    </div>
+    
         </div>
     </div>
-
-    <img src="images/bracket.svg" class="bracket" uk-svg>
     
     </body>
 </html>
