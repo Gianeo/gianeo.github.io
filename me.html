@@ -56,6 +56,9 @@
                 .poster a img {
                     width: 100%;
                 }
+                .photo-gallery {
+                    padding: 0 !important;
+                }
                 .photo-gallery div {
                     padding: .5rem;
                 }
@@ -86,6 +89,9 @@
                     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
                     padding: 50px 60px 60px;
                 }
+                .photo-gallery {
+                    padding: 0 30px !important;
+                }
             }
             
             @media (min-width: 940px) {
@@ -111,7 +117,7 @@
 
             <!-- Mobile only -->
     
-                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
+                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary uk-box-shadow-large" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
     
             <!-- END Mobile only -->
 
@@ -159,7 +165,7 @@
                     <header class="uk-padding-large uk-padding-remove-top">
                             <div>
                                 <h1 class="uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top">Something about me</h1>
-                                <h3 class="uk-text-lead uk-margin-remove-bottom">A war veteran, former missionary, and married with children. <br>Angelic troublemaker, skeptical optimist, ambivert. <br>Amateur self portrait photographer.</h3>
+                                <p class="lead uk-margin-remove-bottom">A war veteran, former missionary, and married with children. <br>Angelic troublemaker, skeptical optimist, ambivert. <br>Amateur self portrait photographer.</p>
                             </div>
                     </header>
 
