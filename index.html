@@ -39,11 +39,17 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
     </head>
-    <body class="uk-margin-remove-top">
+    <body>
+
+        <!-- Mobile only -->
+
+            <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
+
+        <!-- END Mobile only -->
 
             <div uk-height-viewport uk-grid>
 
-                    <div class="uk-width-1-4">
+                    <div class="uk-visible@m uk-width-1-4">
                         <div class="" uk-sticky>
                         <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
                             <div class="">
@@ -57,19 +63,19 @@
                         </div>
                         <div class="uk-padding-small">
                             <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
-                                <li class="uk-active"><a href="#">Intro<span class="uk-float-right" uk-icon="arrow-right"></span></a></li>
+                                <li class="uk-inline uk-width-1-1 uk-active"><a href="#" class="uk-margin-small-right"><b>Intro</b></a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
                                 <li class="uk-parent">
-                                    <a href="#">Work Experience</a>
+                                    <a href="work.html"><b>Work Experience</b></a>
                                     <ul class="uk-nav-sub uk-text-left">
                                         <li><a href="folio/argos.html">Sainsbury's Argos</a></li>
                                         <li><a href="folio/osp.html">Ocado Smart Platform</a></li>
                                         <li><a href="folio/fabled.html">Fabled by Marie Claire</a></li>
                                         <li><a href="folio/gm.html">Fetch and Sizzle</a></li>
                                         <li><a href="folio/ocado.html">Ocado.com</a></li>
-                                        <li><a href="folio/freelance.html">Eni, Sun, Nasa, Novartis, Thomson Reuters, and more</a></li>
+                                        <li><a href="folio/freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="me.html">Photo Album</a></li>
+                                <li><a href="me.html"><b>About Me</b></a></li>
                             </ul>
                         </div>
                             <div class=" uk-padding-large">
@@ -81,11 +87,11 @@
                         </div>
                     </div>
 
-                <section class="uk-width-expand uk-padding-large uk-background-default">
+                <section class="mainBody uk-width-expand uk-background-default">
                         
                     <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-vertical uk-margin-large-bottom">
                             <div>
-                                <h1 class="lead uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top"><img data-src="images/v01/profile.jpg" width="115" height="115" alt="" class="uk-float-left uk-margin-right uk-margin-large-bottom uk-border-circle" uk-img>Gianni James Favaretto</h1>
+                                <h1 class="lead uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top"><img data-src="images/v01/profile.jpg" width="115" height="115" alt="" class="uk-visible@m uk-float-left uk-margin-right uk-margin-large-bottom uk-border-circle" uk-img>Gianni J. Favaretto</h1>
                                 <h3 class="uk-h5 uk-margin-remove-top"><span class="uk-text-bold uk-margin-small-right">User Experience, Design, and Leadership.</h3>
                             </div>
                     </header>
@@ -93,230 +99,85 @@
             
                     <div class="uk-padding-large uk-padding-remove-vertical">
 
-                            <p class="uk-width-xxlarge uk-text-lead uk-margin-medium-top uk-margin-large-bottom">I believe to be a genuine, unconventional and jocular person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background. <!--<br><br>I build, mentor and curate agile teams made of motivated, responsible, and caring individuals with a strong focus on problem-solving. <br><br>I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to exceed business expectations.-->
-
-                            <br><br>A war veteran, former missionary, and married with children.</p>
+                            <p class="lead uk-width-xxlarge uk-margin-medium-top uk-margin-large-bottom">I believe to be a genuine, unconventional and jocular person. Apparently, I am also a decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background. <br><br>I build, mentor and curate agile teams made of avid learners, motivated, responsible, and caring individuals with a strong focus on problem-solving. I am strategic and results driven, I spontaneously challenge the status quo, and I take advantage of all available resources to exceed business expectations.</p>
                             
                     </div>
 
-                    <div class="uk-padding-small uk-padding-remove-top">
+                    <div class="uk-padding-large uk-padding-remove-vertical uk-margin-bottom"><a class="uk-inline" href="images/v01/01.jpg" data-caption=""><img src="images/v01/01.jpg"></a></div>
 
-                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+
+                        <div class="uk-child-width-1-2@m uk-grid-collapse uk-grid-match" uk-grid>
 
                             <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
+                                <div class="uk-padding-large uk-padding-remove-bottom uk-margin-bottom">
+                                    <div class="uk-visible@m"><h2 class="">Currently</h2></div>
+                                        <div class="uk-padding uk-padding-remove-vertical uk-margin-bottom">
+                                            <div class="uk-flex-middle" uk-grid>
+                                                <!-- <div class="uk-width-auto">
                                                     <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
+                                                </div> -->
+                                                <div class="uk-width-expand uk-padding-remove-left">
                                                     <h3 class="uk-card-title uk-margin-remove-bottom">Sainsbury's Argos</h3>
                                                     <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Jan 2019 – Today</time></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu Clothing</b>, and <b>Habitat</b>.</p>
+                                        <div class="">
+                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams to create digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu Clothing</b>, and <b>Habitat</b>.</p>
                                         </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                                        <div class="uk-visible@m">
+                                            <a href="#" class="uk-button uk-button-text uk-margin-top">Read more</a>
+                                        </div>
+                                        <div class="uk-hidden@m">
+                                            <a href="#" class="uk-button uk-button-default uk-margin-top">Read more</a>
                                         </div>
                                 </div>
                             </div>
                             <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
+                                <div class="uk-padding-large uk-padding-remove-bottom uk-margin-bottom">
+                                    <div class="uk-visible@m"><h2 class="">Previously</h2></div>
+                                    <div class="uk-padding uk-padding-remove-vertical uk-margin-bottom">
+                                        <div class="uk-flex-middle" uk-grid>
+                                                <!-- <div class="uk-width-auto">
                                                     <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
+                                                </div> -->
+                                                <div class="uk-width-expand uk-padding-remove-left">
                                                     <h3 class="uk-card-title uk-margin-remove-bottom">Ocado Smart Platform</h3>
                                                     <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Mar 2015 – Jan 2019</time></p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="uk-card-body">
+                                        <div class="">
                                             <p>Build and lead the team responsible for the User Experience and Design of the Ocado Smart Platform, <b>B2B</b> and <b>B2C</b>, web, mobile, and native.</p>
                                         </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
+                                        <div class="uk-visible@m">
+                                            <a href="#" class="uk-button uk-button-text uk-margin-top">Read more</a>
+                                        </div>
+                                        <div class="uk-hidden@m">
+                                            <a href="#" class="uk-button uk-button-default uk-margin-top">Read more</a>
                                         </div>
                                 </div>
                             </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Fabled by Marie Claire</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">June 2014 – Apr 2016</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Fetch and Sizzle</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Sep 2012 – Apr 2016</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Ocado.com</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Mar 2010 – Sep 2012</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Freelance</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">2002 – 2010</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Macromedia</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">2002 – 2004</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">ColumbusNet</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">2001 – 2002</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">ANS</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">2000 – 2001</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover">
-                                        <div class="uk-card-header">
-                                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div>
-                                                <div class="uk-width-expand">
-                                                    <h3 class="uk-card-title uk-margin-remove-bottom">Utah Valley University</h3>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">1999 – 2001</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams that work with engineering to create user-centred digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="#" class="uk-button uk-button-text">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
+                    
 
                         </div>
 
-                    </div>
+                        <p class="uk-padding-large uk-padding-remove-vertical uk-text-center">
+                            <button class="uk-visible@m uk-button uk-button-default uk-button-large uk-width-1-1">My Other Experiences</button>
+                            <button class="uk-hidden@m uk-button uk-button-secondary uk-button-large uk-width-1-1">My Other Experiences</button>
+            
+                            <div class="uk-padding-large uk-padding-remove-bottom">
+        
+                                    <p class="uk-width-xxlarge uk-text-lead uk-margin-medium-top uk-margin-large-bottom">A war veteran, former missionary, and married with children.</p>
+                                    
+                            </div>
+                        </p>
+
+                        <div class="uk-padding-large uk-padding-remove-vertical"><a class="uk-inline" href="images/v01/20.jpg" data-caption=""><img src="images/v01/20.jpg"></a></div>
+
+                        <p class="uk-padding-large uk-padding-remove-top uk-text-center">
+                            <a href="me.html" class="uk-button uk-button-default uk-button-large uk-width-1-1">My photo album</a>
+                        </p>
             
                 </section>
                 
@@ -342,7 +203,39 @@
         </div>
     </div>
 
-    <img src="images/bracket.svg" class="bracket" uk-svg>
+    <img src="images/bracket.svg" class="bracket uk-visible@m" uk-svg>
+
+
+
+    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+
+                    <div class="">
+                                <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
+                                    <li class="uk-inline uk-width-1-1 uk-active"><a href="#" class="uk-margin-small-right"><b>Intro</b></a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
+                                    <li class="uk-parent">
+                                        <a href="work.html"><b>Work Experience</b></a>
+                                        <ul class="uk-nav-sub uk-text-left">
+                                            <li><a href="folio/argos.html">Sainsbury's Argos</a></li>
+                                            <li><a href="folio/osp.html">Ocado Smart Platform</a></li>
+                                            <li><a href="folio/fabled.html">Fabled by Marie Claire</a></li>
+                                            <li><a href="folio/gm.html">Fetch and Sizzle</a></li>
+                                            <li><a href="folio/ocado.html">Ocado.com</a></li>
+                                            <li><a href="folio/freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="me.html"><b>About Me</b></a></li>
+                                </ul>
+                                <div class=" uk-padding-large">
+                                    <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
+                                    <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
+                                    <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a>
+                                    <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
+                                </div>
+                        </div>
+        
+            </div>
+        </div>
 
     </body>
 </html>

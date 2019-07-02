@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <!-- Global site tag (gtag.js) - Google Analytics 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8524972-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-8524972-1');
+        </script>
+
+         Fullstory -->
+        <script>
+            window['_fs_debug'] = false;
+            window['_fs_host'] = 'fullstory.com';
+            window['_fs_org'] = 'C5N0G';
+            window['_fs_namespace'] = 'FS';
+            (function(m,n,e,t,l,o,g,y){
+                if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+                g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+                o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+                y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+                g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+                g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+                g.consent=function(a){g("consent",!arguments.length||a)};
+                g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+                g.clearUserCookie=function(){};
+            })(window,document,window['_fs_namespace'],'script','user');
+            </script>
+
         <title>Gianni James Favaretto: UX, Design, and Leadership.</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,80 +39,102 @@
         <script src="../dist/js/uikit.min.js"></script>
         <script src="../dist/js/uikit-icons.min.js"></script>
     </head>
-    <body id="folio">
+    <body class="uk-margin-remove-top">
 
-            <nav class="uk-child-width-auto uk-flex uk-flex-right" uk-navbar uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
-                <a class="uk-button uk-button-large uk-button-secondary" href="../index.html" uk-toggle><span uk-icon="close" class="uk-margin-small-right"></span>Exit</a>
-            </nav>
-        
-                <header class="uk-container-large uk-align-center">
-                    <h2 class="uk-hidden">Work Experience</h2>
-                        <div>
-                            <h3 class="uk-h5 uk-heading-divider"><span class="uk-text-bold uk-text-uppercase uk-margin-small-right">Design & Development:</span> 2002 - 2010</h3>
-                            <h1 class="uk-width-xxlarge@m">Eni, Sun, Nasa, Novartis, and more</h1>
-                            <p class="uk-width-xlarge">User Experience, Design, Art Direction, and UI Development. Clients include Macromedia, Sun Microsystem, Nasa, ENI, Accor, Novartis, Thomson Reuters, CIM e-Banking, Sacbo International Airport, Lovable, Fila, several government portals and many other high profile companies.</p>
-                        </div>
-                </header>
 
-                <div class="uk-height-large uk-background-cover uk-background-secondary uk-flex" uk-parallax="bgy: -100" style="background-image: url('../images/v01/08.jpg');"></div>
+            <div uk-height-viewport uk-grid>
 
-                <section class="role-box uk-width-auto uk-background-secondary uk-light">
-
-                    <div class="uk-container uk-align-center">  
-                            <div class="uk-width-auto">
-                                <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m" uk-height-match="target: > div > div" uk-grid>
-                                    <div>
-                                        <div><h4>Leading projects and designing</h4> user interfaces (user research, wireframing, prototyping, and visual design) for both conventional websites/portals and web applications.</div>
-                                    </div>
-                                    <div>
-                                        <div><h4>Art direction and brand development</h4> with graphic design and video production.</div>
-                                    </div>
-                                    <div>
-                                        <div><h4>Consultant, trainer and speaker</h4> on Web Design and Accessibility.</div>
-                                    </div>
-                                    <div>
-                                        <div><h4>Hand coding</h4> (X)HTML, CSS, Actionscript 3, JavaScript, XML / XSL.</div>
-                                    </div>
-                                    <div>
-                                        <div><h4>Worked</h4> on projects based on PHP, Java, .Net and ColdFusion.</div>
-                                    </div>
+                    <div class="uk-width-1-4">
+                        <div class="" uk-sticky>
+                        <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
+                            <div class="">
+                                <img data-src="../images/v01/profile.jpg" width="66" height="66" alt="" class="uk-float-left uk-margin-right" uk-img>
+                                <div class="uk-text-left uk-margin-left">
+                                    <h4 class="uk-margin-remove-vertical">Gianni James Favaretto</h4>
+                                    <p class="uk-text-small uk-margin-remove-vertical">User Experience, Design, and Leadership.</p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="uk-padding-small">
+                            <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
+                                <li><a href="../index.html"><b>Intro</b></a></li>
+                                <li class="uk-parent uk-active">
+                                    <a href="../work.html"><b>Work Experience</b></a>
+                                    <ul class="uk-nav-sub uk-text-left">
+                                        <li><a href="argos.html">Sainsbury's Argos</a></li>
+                                        <li><a href="osp.html">Ocado Smart Platform</a></li>
+                                        <li><a href="fabled.html">Fabled by Marie Claire</a></li>
+                                        <li><a href="gm.html">Fetch and Sizzle</a></li>
+                                        <li><a href="ocado.html">Ocado.com</a></li>
+                                        <li class="uk-inline uk-width-1-1 uk-active"><a href="freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../me.html" class="uk-margin-small-right"><b>About Me</b></a></li>
+                            </ul>
+                        </div>
+                            <div class=" uk-padding-large">
+                                <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
+                                <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
+                                <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a>
+                                <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
+                            </div>
+                        </div>
                     </div>
 
+                <section class="uk-width-expand uk-padding-large uk-background-default">
+                        
+                    <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-top">
+                            <div>
+                                <h1 class="uk-width-xxlarge@m uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top">Macromedia, Eni, Sun, Nasa, Novartis, ...</h1>
+                                <h3 class="uk-h5 uk-margin-remove-top uk-margin-remove-bottom"><span class="uk-text-bold uk-margin-small-right">Independent Designer, Consultant, Trainer, and Developer:</span> 2002 - 2010</h3>
+                            </div>
+                    </header>
+
+                    <!-- <h2 class="uk-margin-left uk-padding uk-padding-remove-top"><i>My role</i></h2> -->
+                            
+                    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-padding-large uk-padding-remove-vertical" uk-height-match="target: > div > div" uk-grid>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Leading projects and designing</h5> user interfaces (user research, wireframing, prototyping, and visual design) for both conventional websites/portals and web applications.</div>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Macromedia Certified Consultant, Instructor, and Speaker</h5> on roadshows and conferences held by Macromedia Italia. Selected to be part of the Macromedia Specialist Group (20/25 over 600 professionals).</div>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Consultant, trainer and speaker</h5> on Web Design and Accessibility.</div>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Hand coding</h5> (X)HTML, CSS, Actionscript 3, JavaScript, XML / XSL.</div>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Hands-on support</h5> on projects based on PHP, Java, .Net and ColdFusion.</div>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">Art direction and brand development</h5> with graphic design and video production.</div>
+                    </div>
+            
+                    <div class="uk-padding-large uk-padding-remove-top">
+
+                            <p class="uk-width-xxlarge uk-text-lead uk-margin-large-top uk-margin-medium-bottom">User Experience, Design, Art Direction, and UI Development. Clients include Macromedia, Sun Microsystem, Nasa, ENI, Accor, Novartis, Thomson Reuters, CIM e-Banking, Sacbo International Airport, Lovable, Fila, Government portals and many other high profile organisations.
+                            <img src="../images/ocado/cover01.png" alt="" class="uk-margin-large-top"></p>
+
+                    </div>
+
+            
+                    </div> 
                 </section>
                 
-                    <div class="uk-child-width-1-2@s uk-child-width-1-3@ uk-padding uk-background-secondary" uk-grid="masonry: true">
-                            <img data-src="../images/freelance/01.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/02.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/03.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/04.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/05.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/06.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/07.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/08.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/09.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/10.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/11.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/12.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/13.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/14.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/20.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/16.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/17.jpg" width="" height="" alt="" uk-img>
-                            <img data-src="../images/freelance/18.jpg" width="" height="" alt="" uk-img>
-
-                    </div>
-
-
-            <div class="folio-footer uk-grid-collapse uk-child-width-1-2 uk-background-secondary uk-light" uk-grid>
-                    <div class="uk-text-left">
-                        Previous <br>
-                        <a href="ocado.html" class="uk-button uk-button-large uk-button-text uk-text-left">Ocado.com</a>
-                    </div>
-                    <div class="uk-text-right">
-                    </div>
             </div>
-    
+
+
+
+
+
+
+    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-padding">
+                <a href="https://www.linkedin.com/in/giannijfavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
+                <a href="https://www.instagram.com/giannifavaretto/" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
+                <a href="https://twitter.com/GianniFavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
+                <a href="mailto:giannijfavaretto@gmail.com" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
+            </div>
+
+        </div>
+    </div>
+
+    <img src="../images/bracket.svg" class="bracket" uk-svg>
+
     </body>
 </html>

@@ -12754,10 +12754,6 @@ h3, h4 {
   font-weight: 700;
 }
 
-h1.lead {
-  font-size: 82px;
-}
-
 section.folio {
   padding: 0;
 }
@@ -12934,5 +12930,26 @@ section.folio {
 .uk-nav-sub > li > a {
   padding: 4px 0;
   font-size: 16px;
+}
+
+body {
+  margin: 45px 0 60px;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 0;
+  }
+  h1.lead {
+    font-size: 92px;
+    line-height: 62px;
+  }
+  p.lead {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  section.mainBody {
+    padding: 70px;
+  }
 }
 /*# sourceMappingURL=gjf.css.map */
