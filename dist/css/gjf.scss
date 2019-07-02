@@ -175,6 +175,12 @@ $heading-hero-font-size-l: 9.8rem;
             body {
                 margin: 45px 0 60px;
             }
+            .roleInfo {
+                background-color: #f7f7f7;
+                padding-top: 30px !important;
+                padding-bottom: 30px !important;
+            }
+            header h3 span { display: block; }
 
             @media (min-width: 768px) {
                 body {
@@ -191,4 +197,10 @@ $heading-hero-font-size-l: 9.8rem;
                 section.mainBody {
                     padding: 70px;
                 }
+                .roleInfo {
+                    background-color: transparent;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                }
+                header h3 span { display: inline; }
             }

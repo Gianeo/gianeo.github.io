@@ -39,12 +39,18 @@
         <script src="../dist/js/uikit.min.js"></script>
         <script src="../dist/js/uikit-icons.min.js"></script>
     </head>
-    <body class="uk-margin-remove-top">
+    <body>
+
+            <!-- Mobile only -->
+    
+                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
+    
+            <!-- END Mobile only -->
 
 
             <div uk-height-viewport uk-grid>
 
-                    <div class="uk-width-1-4">
+                    <div class="uk-visible@m uk-width-1-4">
                         <div class="" uk-sticky>
                         <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
                             <div class="">
@@ -81,7 +87,7 @@
                         </div>
                     </div>
 
-                <section class="uk-width-expand uk-padding-large uk-background-default">
+                    <section class="mainBody uk-width-expand uk-background-default">
                         
                     <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-top">
                             <div>
@@ -92,8 +98,8 @@
 
                     <!-- <h2 class="uk-margin-left uk-padding uk-padding-remove-top"><i>My role</i></h2> -->
                             
-                    <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-padding-large uk-padding-remove-vertical" uk-height-match="target: > div > div" uk-grid>
-                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">UX and UI design</h5> on the Webshop and on the IOS iPhone and iPad apps (both awarded "App of the year").</div>
+                    <div class="roleInfo uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-padding-large uk-padding-remove-vertical" uk-height-match="target: > div > div" uk-grid>
+                        <div><h5 class="uk-margin-remove-bottom uk-text-bold">UX and UI design</h5> of the Webshop and of the IOS iPhone and iPad apps (both awarded "App of the year").</div>
                         <div><h5 class="uk-margin-remove-bottom uk-text-bold">Delivery</h5> of detailed front-end development guidelines.</div>
                         <div><h5 class="uk-margin-remove-bottom uk-text-bold">Hiring and mentoring</h5> entry-level designers</div>
                         <div><h5 class="uk-margin-remove-bottom uk-text-bold">Liaise</h5> with developers, analysts, marketing and merchandise personnel to deliver user-centered and business validated outcomes.</div>
@@ -101,7 +107,7 @@
             
                     <div class="uk-padding-large uk-padding-remove-top">
 
-                            <p class="uk-width-xxlarge uk-text-lead uk-margin-large-top uk-margin-medium-bottom">Ocado is a British online supermarket. In contrast to its main competitors, the company has no chain of stores and does all home deliveries from its warehouses. Ocado has been voted the best online supermarket in the UK by Which? readers every year since 2010.
+                            <p class="lead uk-width-xxlarge uk-margin-large-top uk-margin-medium-bottom">Ocado is a British online supermarket. In contrast to its main competitors, the company has no chain of stores and does all home deliveries from its warehouses. Ocado has been voted the best online supermarket in the UK by Which? readers every year since 2010.
                             <img src="../images/ocado/cover01.png" alt="" class="uk-margin-large-top"></p>
             
                         <div class="uk-width-xlarge uk-margin-large-top">
@@ -137,27 +143,39 @@
                 
             </div>
 
-
-
-
-
-
-    <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
-        <div class="uk-offcanvas-bar">
-
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-
-            <div class="uk-padding">
-                <a href="https://www.linkedin.com/in/giannijfavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: linkedin; ratio: 2"></a>
-                <a href="https://www.instagram.com/giannifavaretto/" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: instagram; ratio: 2"></a>
-                <a href="https://twitter.com/GianniFavaretto" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: twitter; ratio: 2"></a>
-                <a href="mailto:giannijfavaretto@gmail.com" class="uk-display-block uk-text-center uk-padding" uk-icon="icon: mail; ratio: 2"></a>
-            </div>
-
-        </div>
-    </div>
-
-    <img src="../images/bracket.svg" class="bracket" uk-svg>
+            <img src="../images/bracket.svg" class="bracket uk-visible@m" uk-svg>
+        
+        
+        
+            <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar">
+        
+                            <div class="">
+                                        <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
+                                            <li><a href="../index.html" class="uk-margin-small-right"><b>Intro</b></a></li>
+                                            <li class="uk-parent">
+                                                <a href="../work.html"><b>Work Experience</b></a>
+                                                <ul class="uk-nav-sub uk-text-left">
+                                                    <li><a href="argos.html">Sainsbury's Argos</a></li>
+                                                    <li><a href="osp.html">Ocado Smart Platform</a></li>
+                                                    <li><a href="fabled.html">Fabled by Marie Claire</a></li>
+                                                    <li><a href="gm.html">Fetch and Sizzle</a></li>
+                                                    <li class="uk-inline uk-width-1-1 uk-active"><a href="ocado.html">Ocado.com</a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
+                                                    <li><a href="freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="../me.html"><b>About Me</b></a></li>
+                                        </ul>
+                                        <div class="uk-padding-large">
+                                            <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
+                                            <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
+                                            <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a>
+                                            <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
+                                        </div>
+                                </div>
+                
+                    </div>
+                </div>
 
     </body>
 </html>
