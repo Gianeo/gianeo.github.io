@@ -26,6 +26,7 @@ $heading-hero-font-size-l: 9.8rem;
             section { margin: 0 auto !important; }
             h1 { font-family: 'Abril Fatface'; font-size: 52px; line-height: 42px; margin-bottom:30px; font-style: italic; }
             h2 { font-family: 'Abril Fatface'; font-size: 42px; line-height: 42px; margin-bottom:40px; font-weight: normal; font-style: italic; }
+            h3.light { color: #ededed}
             h3, h4 { font-weight: 700; }
             section.folio { padding: 0; }
 
@@ -33,6 +34,7 @@ $heading-hero-font-size-l: 9.8rem;
             .background { background-color: $global-primary-background; }
 
             .uk-button-text { line-height: 1.2; }
+            .uk-button { text-transform: initial; font-size: 16px; }
 
             .header { padding: 40px 30px 30px; margin: 0 auto; }
             .header h1 { font-size: 62px; line-height: 62px; margin: 15px 0 30px; text-align: center; }
@@ -145,12 +147,12 @@ $heading-hero-font-size-l: 9.8rem;
 
             // }
 
-            .bracket {
-                position: fixed;
-                top: 0;
-                left: 2%;
+            // .bracket {
+            //     position: fixed;
+            //     top: 0;
+            //     left: 2%;
 
-            }
+            // }
 
             .uk-tab > * > a {
                 display: block;
@@ -185,6 +187,7 @@ $heading-hero-font-size-l: 9.8rem;
             @media (min-width: 768px) {
                 body {
                     margin-top: 0;
+                    background: #fff url("../../images/bracket.svg") no-repeat fixed 2% 0;
                 }
                 h1.lead { 
                     font-size: 92px;
