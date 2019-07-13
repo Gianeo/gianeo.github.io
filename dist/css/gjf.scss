@@ -20,6 +20,10 @@ $heading-hero-font-size-l: 9.8rem;
 // 4. Import UIkit.
 @import "../../src/scss/uikit-theme.scss";
 
+            
+            body {
+                background: #fff;
+            }
             mark { background-color: #f9f220; color: #000; }
             .uk-label { background-color: #eee; color: #000; }
             footer { margin-top: 0; }
@@ -187,7 +191,6 @@ $heading-hero-font-size-l: 9.8rem;
             @media (min-width: 768px) {
                 body {
                     margin-top: 0;
-                    background: #fff url("../../images/bracket.svg") no-repeat fixed 2% 0;
                 }
                 h1.lead { 
                     font-size: 92px;
@@ -206,4 +209,10 @@ $heading-hero-font-size-l: 9.8rem;
                     padding-bottom: 0 !important;
                 }
                 header h3 span { display: inline; }
+            }
+
+            @media (min-width: 1560px) {
+                body {
+                    background: #fff url("../../images/bracket.svg") no-repeat fixed 2% 0;
+                }
             }
