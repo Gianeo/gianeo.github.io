@@ -109,7 +109,11 @@
 
                     <div id="top" class="uk-padding-large uk-padding-remove-vertical">
                         <div class="uk-background-default uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom" style="z-index: 980;" uk-sticky="offset: 0; bottom: #offset">
-                            <ul class="uk-tab uk-margin-remove-bottom" uk-switcher="connect: .switcher-container">
+                                <ul class="uk-tab uk-margin-remove-bottom uk-hidden@m" uk-switcher="connect: .switcher-container">
+                                    <li class="uk-active"><a href="#top" uk-scroll><b>B2B</b></a></li>
+                                    <li><a href="#top" uk-scroll><b>B2C</b></a></li>
+                                </ul>
+                            <ul class="uk-tab uk-margin-remove-bottom uk-visible@m" uk-switcher="connect: .switcher-container">
                                 <li class="uk-active"><a href="#top" uk-scroll><b>Back-end Systems</b></a></li>
                                 <li><a href="#top" uk-scroll><b>Customer-facing</b></a></li>
                             </ul>
