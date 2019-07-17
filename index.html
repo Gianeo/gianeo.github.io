@@ -38,6 +38,20 @@
         <link rel="stylesheet" href="dist/css/gjf.css" />
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
+        <style type="text/css">
+            #profile {
+                opacity: 0;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+            }
+            #profile.showProfile {
+                opacity: 1;
+                transition: opacity .25s ease-in-out;
+                -moz-transition: opacity .25s ease-in-out;
+                -webkit-transition: opacity .25s ease-in-out;
+            }
+        </style>
     </head>
     <body>
 
@@ -52,8 +66,8 @@
                     <div class="uk-visible@m uk-width-1-4">
                         <div class="" uk-sticky>
                         <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
-                            <div id="profile" class="" uk-scrollspy-class="uk-hidden">
-                                <div><img data-src="images/v01/profile.jpg" width="66" height="66" alt="" class="uk-float-left uk-margin-right" uk-img></div>
+                            <div id="profile">
+                                <img data-src="images/v01/profile.jpg" width="66" height="66" alt="" class="uk-float-left uk-margin-right" uk-img>
                                 <!-- <div class="uk-float-left uk-margin-right" style="width: 66px; height: 66px; background: #fff;"></div> -->
                                 <div class="uk-text-left uk-margin-left">
                                     <h4 class="uk-margin-remove-vertical">Gianni James Favaretto</h4>
@@ -89,7 +103,7 @@
 
                 <section class="mainBody uk-width-expand">
                         
-                    <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-vertical uk-margin-large-bottom" outview.uk.scrollspy="target: div#profile; cls: uk-animation-fade; delay: 500">
+                    <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-vertical uk-margin-large-bottom">
                             <div>
                                 <h1 class="lead uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top"><img data-src="images/v01/profile.jpg" width="115" height="115" alt="" class="uk-visible@m uk-float-left uk-margin-right uk-margin-large-bottom uk-border-circle" uk-img>Gianni J. Favaretto</h1>
                                 <h3 class="uk-h5 uk-margin-remove-top"><span class="uk-text-bold uk-margin-small-right">User Experience, Design, and Leadership.</h3>
@@ -209,6 +223,19 @@
         
             </div>
         </div>
+
+
+        <script>
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 250) {
+                    document.getElementById("profile").className = "showProfile";
+                  } else {
+                    document.getElementById("profile").className = "";
+                  }
+                }
+                </script>
 
     </body>
 </html>
