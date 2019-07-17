@@ -28,10 +28,13 @@ $heading-hero-font-size-l: 9.8rem;
             .uk-label { background-color: #eee; color: #000; }
             footer { margin-top: 0; }
             section { margin: 0 auto !important; }
-            h1 { font-family: 'Abril Fatface'; font-size: 52px; line-height: 42px; margin-bottom:30px; font-style: italic; }
-            h2 { font-family: 'Abril Fatface'; font-size: 42px; line-height: 42px; margin-bottom:40px; font-weight: normal; font-style: italic; }
-            h3.light { color: #ededed}
-            h3, h4 { font-weight: 700; }
+            h1 { font-family: 'Abril Fatface'; font-size: 3.815em; line-height: 1; margin-bottom:30px; font-style: italic; }
+            h2 { font-family: 'Abril Fatface'; font-size: 3.052em; line-height: 1; margin-bottom:40px; font-weight: normal; font-style: italic; }
+            h3 { font-size: 1.953em; }
+            h4 { font-size: 1.563em; }
+            h5 { font-size: 1.25em; }
+            h2.light { color: #ededed}
+            h3, h4, h5 { font-weight: 700; }
             section.folio { padding: 0; }
 
             .cover-img { background-image: none; padding: 0; }
@@ -158,6 +161,12 @@ $heading-hero-font-size-l: 9.8rem;
 
             // }
 
+
+            p.lead {
+                font-size: 1.25rem;
+                line-height: 1.5;
+            }
+
             .uk-tab > * > a {
                 display: block;
                 text-align: center;
@@ -193,11 +202,11 @@ $heading-hero-font-size-l: 9.8rem;
                     margin-top: 0;
                 }
                 h1.lead { 
-                    font-size: 92px;
-                    line-height: 62px; 
+                    font-size: 5.96em;
+                    line-height: 64px; 
                 }
                 p.lead {
-                    font-size: 1.5rem;
+                    font-size: 1.563em;
                     line-height: 1.5;
                 }
                 section.mainBody {
