@@ -12756,14 +12756,17 @@ h2 {
 
 h3 {
   font-size: 1.953em;
+  line-height: 1.2;
 }
 
 h4 {
   font-size: 1.563em;
+  line-height: 1.2;
 }
 
 h5 {
   font-size: 1.25em;
+  line-height: 1.4;
 }
 
 h2.light {
