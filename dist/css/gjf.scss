@@ -33,7 +33,7 @@ $heading-hero-font-size-l: 9.8rem;
             h3 { font-size: 1.953em; line-height: 1.2; }
             h4 { font-size: 1.563em; line-height: 1.2; }
             h5 { font-size: 1.25em; line-height: 1.4; }
-            h2.light { color: #ededed}
+            h2.light { color: #dedede}
             h3, h4, h5 { font-weight: 700; }
             section.folio { padding: 0; }
 
@@ -182,6 +182,7 @@ $heading-hero-font-size-l: 9.8rem;
             .uk-nav > li > a {
                 padding: 8px 0;
                 font-size: 16px;
+                color: #000;
             }
             .uk-nav-sub > li > a {
                 padding: 4px 0;
@@ -222,6 +223,6 @@ $heading-hero-font-size-l: 9.8rem;
 
             @media (min-width: 1560px) {
                 body {
-                    background: #fff url("../../images/bracket.svg") no-repeat fixed 2% 0;
+                    // background: #fff url("../../images/bracket.svg") no-repeat fixed 2% 0;
                 }
             }
