@@ -12470,6 +12470,10 @@ p.lead {
   line-height: 1.5;
 }
 
+a.uk-button {
+  border-radius: 5px;
+}
+
 .uk-tab > * > a {
   display: block;
   text-align: center;
@@ -12530,5 +12534,20 @@ header h3 span {
   header h3 span {
     display: inline;
   }
+}
+
+.rotate-text-transform {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: inline-block;
+  position: fixed;
+  right: -93px;
+  top: 550px;
+  background: #4343435e;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=gjf.css.map */

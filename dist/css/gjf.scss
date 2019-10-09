@@ -161,10 +161,13 @@ $heading-hero-font-size-l: 9.8rem;
 
             // }
 
-
             p.lead {
                 font-size: 1.25rem;
                 line-height: 1.5;
+            }
+
+            a.uk-button {
+                border-radius: 5px;
             }
 
             .uk-tab > * > a {
@@ -219,6 +222,25 @@ $heading-hero-font-size-l: 9.8rem;
                     padding-bottom: 0 !important;
                 }
                 header h3 span { display: inline; }
+            }
+
+            .rotate-text-transform {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+                display: inline-block;
+
+                position: fixed;
+                right: -93px;
+                top: 550px;
+                background: #4343435e;
+                color: #fff;
+                padding: 6px 10px;
+                font-size: 12px;
+                text-rendering: optimizeLegibility;
+                letter-spacing: 2px;
             }
 
             @media (min-width: 1560px) {
