@@ -35,7 +35,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
-        <link rel="stylesheet" href="../dist/css/gjf.css" />
+        <link rel="stylesheet" href="../dist/css/uikit.css" />
+        <link rel="stylesheet" href="../dist/css/custom.css" />
         <script src="../dist/js/uikit.min.js"></script>
         <script src="../dist/js/uikit-icons.min.js"></script>
     </head>
@@ -88,9 +89,12 @@
                     </div>
                 </div>
 
-                    <section class="mainBody uk-width-expand">
+
+                <!-- RIGHT CONTENT -->    
+
+                <div class="uk-padding uk-padding-remove-right uk-width-expand">
                         
-                        <header class="uk-width-auto uk-padding-large uk-padding-remove-top">
+                        <header class="uk-width-auto uk-padding uk-padding-remove-bottom">
                                 <div>
                                     <h1 class="uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top">Ocado Smart Platform</h1>
                                     <h3 class="uk-h5 uk-margin-remove-top uk-margin-remove-bottom"><span class="uk-text-bold uk-margin-small-right">Team & Design Leadership</span> Mar 2015 - Jan 2019</h3>
@@ -99,17 +103,29 @@
     
                         <!-- <h2 class="uk-margin-left uk-padding uk-padding-remove-top"><i>My role</i></h2> -->
                                 
-                        <div class="roleInfo uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-padding-large uk-padding-remove-vertical" uk-height-match="target: > div > div" uk-grid>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Built, scaled, and mentored</h5> a multi-disciplinary UX team (Researchers, Architects, Designers and UI Engineers).</div>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Responsible</h5> for all aspects of UX and the UI design of the Ocado Smart Platform (Desktop and Mobile B2B and B2C applications).</div>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Defined and executing</h5> the user experience vision, strategy, team's code of conduct, user-centered design direction and guidelines.</div>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Enriching</h5> a strong technology-based culture by injecting a more user-centered and problem-solving mindset and process.</div>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Liaise</h5> with designers, developers and product owners to implement new conceptual ideas.</div>
-                            <div><h5 class="uk-margin-remove-bottom uk-text-bold">Facilitating</h5> multidisciplinary teams' collaboration.</div>
-                        </div>
+                        <div class="roleInfo uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-padding uk-padding-remove-bottom" uk-height-match="target: > div > div" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Built, scaled, and mentored</h5> a multi-disciplinary UX team (Researchers, Architects, Designers and UI Engineers).</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Responsible</h5> for all aspects of UX and the UI design of the Ocado Smart Platform (Desktop and Mobile B2B and B2C applications).</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Defined and executing</h5> the user experience vision, strategy, team's code of conduct, user-centered design direction and guidelines.</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Enriching</h5> a strong technology-based culture by injecting a more user-centered and problem-solving mindset and process.</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Liaise</h5> with designers, developers and product owners to implement new conceptual ideas.</div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default uk-card-body"><h5 class="uk-margin-remove-bottom uk-text-bold">Facilitating</h5> multidisciplinary teams' collaboration.</div>
+                            </div>
+                       </div>
 
-                    <div id="top" class="uk-padding-large uk-padding-remove-vertical">
-                        <div class="uk-background-default uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom" style="z-index: 980;" uk-sticky="offset: 0; bottom: #offset">
+                    <div id="top" class="uk-padding">
+                        <div class="uk-background-default uk-padding uk-padding-remove-horizontal uk-padding-remove-bottom" style="z-index: 980;" uk-sticky="offset: 0; bottom: #offset">
                                 <ul class="uk-tab uk-margin-remove-bottom uk-hidden@m" uk-switcher="connect: .switcher-container">
                                     <li class="uk-active"><a href="#top" uk-scroll><b>B2B</b></a></li>
                                     <li><a href="#top" uk-scroll><b>B2C</b></a></li>
@@ -121,18 +137,18 @@
                         </div>
                     </div>
 
-                    <ul class="uk-switcher switcher-container uk-margin">
+                    <ul class="uk-switcher switcher-container">
 
                     <li>
             
-                        <div class="uk-padding-large uk-padding-remove-top">
+                        <div class="uk-padding">
 
-                                <p class="lead uk-width-xxlarge uk-margin-medium-top uk-margin-large-bottom">Ocado has invested over the last fifteen years to create the <mark>best grocery e-commerce solution in the world</mark>. From our user-friendly mobile interface to our highly efficient automated warehouse technology, we can now offer this best-in-class customer experience and highly efficient end-to-end supply chain solution to retail partners globally. As a solutions business we are entirely focused on helping our partners build winning grocery e-commerce businesses in their markets.
+                                <p class="uk-text-lead uk-width-xxlarge uk-margin-large-bottom">Ocado has invested over the last fifteen years to create the <mark>best grocery e-commerce solution in the world</mark>. From our user-friendly mobile interface to our highly efficient automated warehouse technology, we can now offer this best-in-class customer experience and highly efficient end-to-end supply chain solution to retail partners globally. As a solutions business we are entirely focused on helping our partners build winning grocery e-commerce businesses in their markets.
                                 <img src="../images/osp/001.jpg" alt="" class="uk-margin-large-top"></p>
                 
                             <div class="uk-width-xlarge">
                                     <h2>My Journey</h2>
-                                        <p class="uk-dropcap">Three years have passed since I started working on the Ocado Smart Platform. From one man trying to kick off a more user-centred approach to problem-solving while delivering design outcomes, we are now a high-level multi-skilled UX team.</p>
+                                        <p>Three years have passed since I started working on the Ocado Smart Platform. From one man trying to kick off a more user-centred approach to problem-solving while delivering design outcomes, we are now a high-level multi-skilled UX team.</p>
                                         <p>It has been an exciting, challenging and rewarding journey – a course full of obstacles and learning.</p>
                                         <p>I was leading the UX efforts for the Ocado General Merchandise Shops (we were just about launching Fabled.com) when I was invited to look into Ocado Technology’s latest business challenge. From a user perspective, because of its inconsistency in functionality and visuality, the Ocado Smart Platform was not perceived as one product or one suite of products. As such, it could not yet be regarded as a sellable product.</p>
 
@@ -151,23 +167,23 @@
                                 
                         </div>
                 
-                        <div class="uk-padding-large uk-padding-remove-vertical uk-width-xxlarge">
+                        <div class="uk-padding uk-width-xxlarge">
                                 <h3>Aeris Design System</h3>
                                 <p class="article-copy">We built Aeris, an OSP-branded development framework that helps create consistent, responsive layouts using user-friendly patterns and code for all our diverse contexts. To satisfy the high demand to use it appropriately, the Aeris team, made up of front-end engineers and designers, is currently updating Aeris to facilitate its fit with applications built on different frameworks such as React and Angular. We are delivering a state-of-the-art and well-documented tool that will shape design while cutting the development time of all our products.</p>
                                 <img src="../images/osp/aeris.png" alt="" class="uk-margin">
                         </div>
                 
-                        <div class="uk-padding-large uk-width-xxlarge uk-padding-remove-bottom">
+                        <div class="uk-padding uk-width-xxlarge">
                                 <h3>OSP journey mapping</h3>
                                 <p class="article-copy">The product team raised a concern: how can we clearly explain internally and externally how OSP works? We created a tube map of the platform, incorporating all the high-level actions that must be taken by the retailer and shopper to make OSP efficient. Every new functionality will be regularly added to the map, and a beautiful, enormous printed wall version is easily accessible in our offices across Europe (often used efficiently in workshops and brainstorming).</p>
                                 <!-- <img src="../images/osp/08.png" alt=""> -->
                         </div>
 
-                        <div class="uk-padding-large uk-padding-remove-top">
+                        <div class="uk-padding">
                             <img src="../images/osp/tubemap.png" alt="" class="uk-margin">
                         </div>
                 
-                        <div class="uk-padding-large uk-width-xxlarge uk-padding-remove-vertical">
+                        <div class="uk-padding uk-width-xxlarge">
                                 <h3>Apps & Systems</h3>
                                 <p class="uk-article-copy uk-text-bold">CMS, Payment & Fraud, Store Pick, Click&Collect, Fleet Mgt, Supply Chain, Customer Care, and many more.</p>
                                 <p class="article-copy">Regardless of the UX team size, we were able to meet the minimum requirements of more than twenty B2B applications and deliver major mobile apps such as Store Pick and Delivery. Each UXer was able to take responsibility for more than one system at a time and significantly contributed, through effective planning, workshops and collaboration, to make the OSP a user-friendly product.</p>
@@ -178,10 +194,10 @@
                
                     <li><!-- B2C -->
             
-                        <div class="uk-padding-large uk-padding-remove-top">
+                        <div class="uk-padding">
         
-                                    <p class="lead uk-width-xxlarge uk-margin-medium-top uk-margin-large-bottom">OSP includes a webshop and native mobile apps that can be fully tailored to reflect the look and feel of your banner and offer a personalised customer experience in line with your brand requirements.
-                                    <img src="../images/v01/17.jpg" alt="" class="uk-margin-large-top"></p>
+                                    <p class="uk-text-lead uk-width-xxlarge">OSP includes a webshop and native mobile apps that can be fully tailored to reflect the look and feel of your banner and offer a personalised customer experience in line with your brand requirements.
+                                    <img src="../images/v01/17.jpg" alt="" class="uk-margin-large-top uk-margin-medium-bottom"></p>
                     
                                 <div class="uk-width-xlarge">
                                         <h2>My Journey</h2>
@@ -210,23 +226,23 @@
                                     
                         </div>
                     
-                        <div class="uk-padding-large uk-padding-remove-vertical uk-width-xxlarge">
+                        <div class="uk-padding uk-width-xxlarge">
                                     <h3>Fraisy: Component-based UI in React</h3>
                                     <p class="article-copy">We, the designers and developers, asked ourselves how to optimise our development and design time in delivering a consistent and customisable UI. While the UX team focused on prototyping in HTML, CSS and Javascript, the development team came up with the brilliant idea to push the UI kit to a new level. They introduced Storybook, a UI development environment, for all our UI components. With Storybook, we can visualise all the different states of our UI components, and, as UXers, we were able to design and prototype more realistically, using the same elements utilised in the production environment. With this process, we not only save time and improve collaboration but also definitely boost the product development by iterating faster than before.</p>
                                     <img src="../images/ecom/uikit.png" alt="" class="uk-margin">
                         </div>
                     
-                        <div class="uk-padding-large uk-width-xxlarge uk-padding-remove-bottom">
+                        <div class="uk-padding uk-width-xxlarge">
                                     <h3>Prototyping</h3>
                                     <p class="article-copy">The first two challenges in a design and developer relationship are communication and expectation. The developer expects to receive a final graphic outcome that will survive storms and fire. Unfortunately, that almost never happens. The conversion from a static design file to code can sometimes reawaken the creative side of the designer’s brain. When that happens, the designer requests design adjustments (often called improvements) that test the developer’s patience. With time, such cases build frustration on both sides, and the project pays the final price. We started investing time and resources (hiring an extra UI engineer) to prototype in high fidelity. We stopped sending Sketch files to developers and began delivering tested, validated and well-documented prototypes built with our design system. The advantages were clear: improved communication between all parties, increased confidence with the design team, clearer guidelines for the developers and a faster release process of the product’s features.</p>
                                     <!-- <img src="../images/ecom/04.jpg" alt=""> -->
                         </div>
         
-                        <div class="uk-padding-large uk-padding-remove-vertical">
+                        <div class="uk-padding">
                             <img src="../images/ecom/04.jpg" alt="" class="uk-margin">
                         </div>
                     
-                        <div class="uk-padding-large uk-width-xxlarge uk-padding-remove-bottom">
+                        <div class="uk-padding uk-width-xxlarge">
                                     <h3>User Research & Testing Community</h3>
                                     <p class="article-copy">We found ourselves with the need to find an efficient way to listen to our users and validate our first hypothesis within a short period with not much of a budget. We had to be creative in finding a way to tackle the challenge. Our solution was to involve all the diverse employees of the Ocado group. We were able to recruit more than 200 users from a good variety of departments. We conduct one-to-one interviews and tests and send a weekly coffee break quiz with surveys on specific topics or with A/B design tests. By doing this, not only do we regularly obtain plentiful quantitative and qualitative data cheaply, but we also infuse UX globally and connect with more diverse profiles within the company.</p>
                                     <img src="../images/v01/09.jpg" alt="">
@@ -236,14 +252,14 @@
 
                 </ul>
             
-                    <div class="uk-padding-large uk-width-xxlarge uk-padding-remove-bottom">
+                    <div class="uk-padding uk-width-xxlarge">
                             <h3>UX Academy</h3>
                             <p class="article-copy">Our mission is to contribute positively to the growth of Ocado Technology’s culture by injecting a more user centred mindset across the business. We are trying to fulfil our mission by regularly planning events such as talks and workshops where we discuss UX principles and share our learning and results. To reinforce collaboration and empathy (both ways), we started a UX work experience programme, where developers and product owners have the opportunity to work full time as a UXer for a typical time of two weeks.</p>
                             <img src="../images/v01/16.jpg" alt="" class="uk-margin">
                     </div>
             
             
-                    <div class="uk-padding-large uk-margin-medium-top">
+                    <div class="uk-padding">
             
                             <p class="uk-width-xlarge">Some of the world's largest brick-and-mortar grocery stores have selected OSP to sell groceries online profitably, scalably, and sustainably:</p>
                             <img data-src="../images/ecom/brands.png" width="" height="" alt="" class="uk-width-xlarge" uk-img>
@@ -252,7 +268,7 @@
             
             
                     </div> 
-                </section>
+                </div>
                 
             </div>
         
