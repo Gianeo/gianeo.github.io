@@ -40,6 +40,15 @@
         <script src="dist/js/uikit.min.js"></script>
         <script src="dist/js/uikit-icons.min.js"></script>
         <style type="text/css">
+        @media (min-width: 1440px) {
+            body {
+            background-image: url("images/bracket.svg"), url("images/test1.png");
+            background-attachment: fixed;
+            background-position: 2% 0, bottom right;
+            background-size: 25%, 24%;
+            background-repeat: no-repeat, no-repeat;
+            }
+        }
             #profile {
                 opacity: 0;
                 transition: opacity .25s ease-in-out;
@@ -54,18 +63,19 @@
             }
         </style>
     </head>
-    <body class="uk-background-fixed uk-background-norepeat uk-background-top-right uk-background-blend-multiply">
-        <!-- <body class="uk-background-fixed uk-background-norepeat uk-background-top-right uk-background-blend-multiply" style="background-image: url(images/01.jpg);"> -->
+    <body class="">
+
+        <!-- <div class="uk-background-fixed uk-background-center-center uk-height-medium uk-width-1-1" style="background: #000 url(images/v01/profile.jpg) no-repeat;"></div> -->
 
             <!-- Mobile only -->
     
-                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary uk-box-shadow-large" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
+                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@l uk-icon-button uk-button-primary uk-box-shadow-large" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay" uk-icon="menu"></a></div>
     
             <!-- END Mobile only -->
 
             <div uk-height-viewport uk-grid>
 
-                    <div class="uk-visible@m uk-width-1-4">
+                    <div class="uk-visible@l uk-width-1-4">
                         <div class="" uk-sticky>
                         <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
                         <div class="uk-visible@l">
@@ -108,7 +118,7 @@
 
                 <!-- RIGHT CONTENT -->    
 
-                <div class="uk-padding uk-padding-remove-right uk-width-expand">
+                <div class="uk-width-1-2@l uk-padding uk-padding-remove-right">
                         
                     <header class="uk-width-xxlarge uk-padding uk-padding-remove-bottom">
                             <div>
@@ -120,157 +130,121 @@
             
                     <div class="uk-clearfix uk-padding">
 
-                            <p class="uk-text-lead uk-width-xxlarge uk-margin-medium-bottom">I believe to be a genuine, ambivert, unconventional, a bit nonconformist, and jocular person. Some might also say that I am a more than decent user experience and design leader as well as an active creative craft practitioner with a strong, clean design sense and a good computer science background.</p>
+                            <p class="uk-text-lead uk-width-xxlarge uk-margin-medium-bottom">I believe to be a genuine, ambivert, unconventional, a bit nonconformist, and jocular person. Some might also say that I am a more than decent multi-industry human-centred experience and design leader, an active creative craft practitioner, and a playful programmer.</p>
                             
 
-                            <section class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <section class="uk-child-width-1-3@s uk-grid-large uk-grid-match uk-margin-medium-bottom" uk-grid>
 
                                 <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small">
-                                        <p class="uk-text-meta uk-text-uppercase">What satisfies me</p>
+                                    <div class="">
+                                        <!-- <p class="uk-text-meta uk-text-uppercase">What satisfies me</p> -->
+                                        <p class="uk-align-center uk-margin-small-bottom"><span class="" uk-icon="star"></span></p>
                                         <p><strong>I build, coach, and curate teams</strong> with the intent of developing individuals to be avid learners, motivated, collaborative, caring, and creative problem-solvers.</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small">
-                                        <p class="uk-text-meta uk-text-uppercase">What I love to do</p>
+                                    <div class="">
+                                        <p class="uk-align-center uk-margin-small-bottom"><span class="" uk-icon="heart"></span></p>
                                         <p><strong>I design and prototype</strong> products, interfaces, design systems, and everything else with a vision in mind, thinking strategically, and being people-driven.</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small">
-                                        <p class="uk-text-small uk-text-meta uk-text-uppercase">What comes natural to me</p>
-                                        <p><strong>I spontaneously challenge the status quo</strong> (and accepting all its consequences), and I take advantage of all available resources to exceed business' expectations.</p>
+                                    <div class="">
+                                        <!-- <p class="uk-text-small uk-text-meta uk-text-uppercase">What comes natural to me</p> -->
+                                        <p class="uk-align-center uk-margin-small-bottom"><span class="" uk-icon="happy"></span></p>
+                                        <p><strong>I spontaneously challenge the status quo</strong> (with all its consequences), and I take advantage of all available resources to exceed business' expectations.</p>
                                     </div>
                                 </div>
 
                             </section>
 
 
-                            <section class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid>
+                            <section class="uk-child-width-1-2@s uk-grid-large uk-grid-match" uk-grid>
 
                                 <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small">
+                                    <div class="">
                                         <p class="uk-text-meta uk-text-uppercase">Current role</p>
                                         <h5 class="uk-margin-remove-top">Head of Experience Design <br>@ Zopa Bank</h5>
                                         <p>I am leading the Experience Design team (Product and Service Design) that work with engineering and product to create user-centred financial experiences across all digital channels.</p>
-                                        <a href="folio/zopa.html" class="uk-button uk-button-default uk-margin-top uk-float-right">More info</a>
+                                        <a href="folio/zopa.html" class="uk-button uk-button-primary uk-margin-top">What I'm doing</a>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default uk-card-body uk-box-shadow-small">
-                                        <p class="uk-text-meta uk-text-uppercase">Previously</p>
+                                    <div class="">
+                                        <p class="uk-text-meta uk-text-uppercase">Previous role</p>
                                         <h5 class="uk-margin-remove-top">Head of UX and Product Design <br>@ Sainsbury's Argos</h5>
                                         <p>I led the User Experience, Product Design, UX Research, and UX Writing teams to create digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu Clothing</b>, and <b>Habitat</b>.</p>
-                                        <a href="folio/argos.html" class="uk-button uk-button-default uk-margin-top uk-float-right">Read my story</a>
+                                        <a href="folio/argos.html" class="uk-button uk-button-default uk-margin-top">Read my story</a>
                                     </div>
                                 </div>
 
                             </section>
 
 
-                            <div class="uk-margin-medium-top uk-margin-large-bottom"><img src="images/v01/01.jpg"><span class="uk-text-meta uk-margin-small-top">Teaching Design Thinking in Ocado Technology (2015-2018)</span></div>
+                            <div class="uk-margin-large-top uk-margin-large-bottom"><img src="images/v01/01.jpg"><span class="uk-text-meta uk-padding uk-background-muted">Introducing and facilitating Design Thinking in Ocado Technology (2015-2018)</span></div>
                             
-                            <h2 class="">Something about me</h2>
+                            <!-- <h2 class="uk-margin-large-top uk-padding uk-padding-remove-left">Something about me</h2> -->
 
-                            <!-- <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                                <div class="uk-card-media-left uk-cover-container">
-                                    <img src="images/photos/53.jpg" alt="" uk-cover>
-                                    <canvas width="600" height="400"></canvas>
-                                </div>
+                            <div class="uk-child-width-1-2@s uk-grid-medium uk-grid-match" uk-grid>
                                 <div>
-                                    <div class="uk-card-body">
-                                        <h3 class="uk-card-title">Served 4 years in the Navy</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                            <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-box-shadow-small">
+                                    <div class="">
                                         <div class="uk-card-media-top">
-                                            <img src="images/photos/49.jpg" alt="">
+                                            <img src="images/ecom/01.jpg" alt="">
                                         </div>
-                                        <div class="uk-card-body">
-                                            <h5 class="">Adventure and challenges taker</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-box-shadow-small">
-                                        <div class="uk-card-media-top">
-                                            <img src="images/photos/07.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <h5 class="">Operation Desert Storm veteran</h5>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-box-shadow-small">
-                                        <div class="uk-card-media-top">
-                                            <img src="images/photos/01.jpg" alt="">
-                                        </div>
-                                        <div class="uk-card-body">
-                                            <h5 class="">Missionary</h5>
+                                        <div class="uk-margin-top">
+                                            <h5 class="">Ocado Smart Platform B2C</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="">
-                                        <div class="uk-card-body">
-                                            <a href="folio/zopa.html" class="uk-button uk-button-default uk-margin-top uk-float-right">More about me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div>
-                                    <div class="uk-card uk-card-default">
                                         <div class="uk-card-media-top">
-                                            <img src="images/photos/01.jpg" alt="">
+                                            <img src="images/osp/01.jpg" alt="">
                                         </div>
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Married with children</h3>
+                                        <div class="uk-margin-top">
+                                            <h5 class="">Ocado Smart Platform B2B</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default">
+                                    <div class="">
                                         <div class="uk-card-media-top">
-                                            <img src="images/photos/17.jpg" alt="">
+                                            <img src="images/fabled/03.jpg" alt="">
                                         </div>
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Photographer enthusiast</h3>
+                                        <div class="uk-margin-top">
+                                            <h5 class="">Fabled by Marie Clare</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default">
+                                    <div class="">
                                         <div class="uk-card-media-top">
-                                            <img src="images/photos/17.jpg" alt="">
+                                            <img src="images/gm/02.jpg" alt="">
                                         </div>
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Adventurer</h3>
+                                        <div class="uk-margin-top">
+                                            <h5 class="">Fetch.co.uk and Sizzle.co.uk</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="uk-card uk-card-default">
+                                    <div class="">
                                         <div class="uk-card-media-top">
-                                            <img src="images/photos/17.jpg" alt="">
+                                            <img src="images/ocado/04.jpg" alt="">
                                         </div>
-                                        <div class="uk-card-body">
-                                            <h3 class="uk-card-title">Pancreatic cancer survivor</h3>
+                                        <div class="uk-margin-top">
+                                            <h5 class="">Ocado.com</h5>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+                                
+                            </div>
+                            <div class="uk-align-right uk-margin-medium-top">
+                                <a href="folio/zopa.html" class="uk-button uk-button-primary">More about me</a>
                             </div>
             
                         </div>
