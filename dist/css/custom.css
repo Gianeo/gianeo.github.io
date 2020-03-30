@@ -14,7 +14,7 @@ h1 {
 @media (min-width: 768px) {
     h1.display { 
         font-family: 'Abril Fatface'; 
-        font-size: 5.815em;
+        font-size: 8.815em;
         line-height: 0.68; 
     }
 }
