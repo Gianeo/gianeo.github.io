@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.mosaic {
+            position: relative;
+            background: #fff url("01.png") no-repeat;
+            background-size: cover;
+        }
+        /* div.mosaic img {
+            position: absolute;
+            bottom: 0;
+            width: 202px;
+            height: 202px;
+        } */
+        svg {
+            position: absolute;
+        }
+        svg rect {
+            fill: white;
+            mask: url(#mask01);
+        }
+        svg > rect {
+            fill: #fff;
+        }
+        div.mosaic, svg, svg g, svg mask, svg rect, svg > rect {
+            width: 375px;
+            height: 437px;
+            top: 0;
+            left: 0;
+        }
+
+        /* svg mask */
+        img.mask2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* second img */
+        div.mask-img1 {
+            position: absolute;
+            background: #fff url("02.png") no-repeat;
+            background-size: cover;
+            width: 204px;
+            height: 204px;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;
+            text-align: center;
+            display: table-cell;
+            z-index: 0;
+        }
+
+        div.mosaic img.logo {
+            width: 180px;
+            mix-blend-mode: overlay;
+            max-height: 100%;  
+            max-width: 100%; 
+            position: absolute;  
+            top: 0;  
+            bottom: 0;  
+            left: 0;  
+            right: 0;  
+            margin: auto;
+        }
+
+        @media (min-width: 1440px) {
+
+            div.mosaic, svg, svg > rect {
+                width: 648px;
+                height: 756px;
+            }
+            svg rect {
+                transform: scale(2);
+            }
+
+            /* second img mask */
+            div.mask-img1 {
+                width: 412px;
+                height: 412px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="mosaic">
+
+        <svg>
+            <defs>
+                <mask id="mask01" x="0" y="0">
+                    <rect x="0" y="0" />
+                        <g fill="#000" fill-rule="evenodd">
+                            <path d="M237,200 L237,437 L0,437 L0,200 L237,200 Z M375,200 L375,334 L241,334 L241,200 L375,200 Z M237,96 L237,196 L137,196 L137,96 L237,96 Z M375,0 L375,196 L241,196 L241,0 L375,0 Z"></path>
+                        </g>
+                </mask>
+            </defs>
+            <rect x="0" y="0" />
+        </svg>
+
+        <div class="mask-img1">
+
+            <img src="zopa.svg" class="logo">
+    
+        </div>
+
+    </div> -->
+
+    <div class="mosaic">
+
+        <img src="mask2.svg" class="mask2">
+
+        <!-- Second image -->
+
+        <div class="mask-img1">
+
+            <img src="zopa.svg" class="logo">
+    
+        </div>
+
+        <!-- End second image -->
+
+    </div>
+    
+</body>
+</html>

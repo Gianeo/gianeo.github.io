@@ -37,3 +37,9 @@ mark {
     color: #000; 
 }
 
+
+/* overrides */
+
+.uk-button {
+    text-transform: none !important;
+}
