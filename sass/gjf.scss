@@ -76,7 +76,7 @@ h1.gjf-is-display span {
 
 div.gf-mosaic {
     position: relative;
-    background: #fff url("../images/photos/01.png") no-repeat top right;
+    background: #fff url("../images/photos/zopa/01.jpg") no-repeat top right;
     background-size: cover;
     // width: 375px;
     height: 437px;
@@ -94,9 +94,9 @@ div.gf-mosaic img.gf-mask-01 {
     z-index: 1;
 }
 
-div.gf-mosaic div.gf-masked-img-02 {
+div.gf-mosaic div.gf-zopa {
     position: absolute;
-    // background: #fff url("../images/photos/02.png") no-repeat;
+    background: #fff url("../images/photos/zopa/02.jpg") no-repeat;
     background-size: cover;
     width: 204px;
     height: 204px;
@@ -110,7 +110,7 @@ div.gf-mosaic div.gf-masked-img-02 {
     z-index: 0;
 }
 
-div.gf-mosaic img.gf-logo {
+div.gf-zopa img.gf-logo, div.gf-argos img.gf-logo {
     width: 180px;
     mix-blend-mode: overlay;
     max-height: 100%;  
@@ -129,11 +129,18 @@ div.gf-mosaic img.gf-logo {
         width: 648px;
         height: 756px;
     }
-    div.gf-mosaic div.gf-masked-img-02 {
+    div.gf-mosaic div.gf-zopa {
         width: 412px;
         height: 412px;
     }
 
+}
+
+// Argos
+div.gf-argos {
+    position: relative;
+    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
+    background-size: cover;
 }
 
 // END homepage
