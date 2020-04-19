@@ -1,242 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-            <!-- Global site tag (gtag.js) - Google Analytics  -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-8524972-1"></script>
-            <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gianni James Favaretto // User Experience, Design, and Leadership.</title>
+    <link rel="stylesheet" href="sass/gjf.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>    
     
-              gtag('config', 'UA-8524972-1');
-            </script>
-    
-             <!-- Fullstory -->
-        <script>
-            window['_fs_debug'] = false;
-            window['_fs_host'] = 'fullstory.com';
-            window['_fs_org'] = 'C5N0G';
-            window['_fs_namespace'] = 'FS';
-            (function(m,n,e,t,l,o,g,y){
-                if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
-                g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
-                o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
-                y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
-                g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
-                g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
-                g.consent=function(a){g("consent",!arguments.length||a)};
-                g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
-                g.clearUserCookie=function(){};
-            })(window,document,window['_fs_namespace'],'script','user');
-            </script>
+    <div class="is-hidden-tablet is-transparent has-padding-top-25 has-padding-bottom-80">
 
-        <title>Gianni James Favaretto: UX, Design, and Leadership.</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
-        <link rel="stylesheet" href="dist/css/gjf.css" />
-        <script src="dist/js/uikit.min.js"></script>
-        <script src="dist/js/uikit-icons.min.js"></script>
-        <style type="text/css">
-            #profile {
-                opacity: 0;
-                transition: opacity .25s ease-in-out;
-                -moz-transition: opacity .25s ease-in-out;
-                -webkit-transition: opacity .25s ease-in-out;
-            }
-            #profile.showProfile {
-                opacity: 1;
-                transition: opacity .25s ease-in-out;
-                -moz-transition: opacity .25s ease-in-out;
-                -webkit-transition: opacity .25s ease-in-out;
-            }
-        </style>
-    </head>
-    <body>
+      <div class="has-width-50 has-margin-top-25 has-margin-right-10 is-pulled-left has-background-grey-dark" style="height: 10px;"></div>
+      <div style="margin-top: 17px;">Gianni James Favaretto</div>
 
-            <!-- Mobile only -->
-    
-                <div class="uk-position-bottom-right uk-position-fixed uk-padding" style="z-index: 1000"><a class="uk-hidden@m uk-icon-button uk-button-secondary uk-box-shadow-large" style="width: 50px; height:50px;" uk-toggle="target: #offcanvas-overlay"  uk-icon="menu"></a></div>
-    
-            <!-- END Mobile only -->
+    </div>
 
-            <div uk-height-viewport uk-grid>
+    <nav class="is-hidden-mobile navbar is-transparent has-padding-top-25 has-padding-left-50 has-padding-right-50 has-padding-bottom-80">
 
-                    <div class="uk-visible@m uk-width-1-4">
-                        <div class="" uk-sticky>
-                        <div class="uk-padding-large uk-padding-remove-left uk-padding-remove-bottom uk-margin-medium-bottom">
-                        <div class="uk-visible@l">
-                            <div id="profile" class="uk-visible@l">
-                                <img data-src="images/v01/profile.jpg" width="66" height="66" alt="" class="uk-float-left uk-margin-right" uk-img>
-                                <div class="uk-text-left uk-margin-left">
-                                    <h5 class="uk-margin-remove-vertical">Gianni J. Favaretto</h5>
-                                    <p class="uk-text-small uk-margin-remove-vertical">User Experience, Design, and Leadership.</p>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div class="uk-padding-small">
-                            <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical uk-padding-remove-right">
-                                <li class="uk-inline uk-width-1-1 uk-active"><a href="#" class="uk-margin-small-right"><b>Intro</b></a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
-                                <li class="uk-parent">
-                                    <a href="work.html"><b>Work Experience</b></a>
-                                    <ul class="uk-nav-sub uk-text-left">
-                                        <li><a href="folio/argos.html">Sainsbury's Argos</a></li>
-                                        <li><a href="folio/osp.html">Ocado Smart Platform</a></li>
-                                        <li><a href="folio/fabled.html">Fabled by Marie Claire</a></li>
-                                        <li><a href="folio/gm.html">Fetch and Sizzle</a></li>
-                                        <li><a href="folio/ocado.html">Ocado.com</a></li>
-                                        <li><a href="folio/freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="me.html"><b>About Me</b></a></li>
-                            </ul>
-                        </div>
-                            <div class="uk-padding-large uk-padding-remove-top uk-margin-top">
-                                <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
-                                <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
-                                <!-- <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a> -->
-                                <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                <section class="mainBody uk-width-expand">
-                        
-                    <header class="uk-width-xxlarge uk-padding-large uk-padding-remove-vertical uk-margin-large-bottom">
-                            <div>
-                                <h1 class="lead uk-margin-remove-bottom uk-padding-small uk-padding-remove-left uk-padding-remove-top"><img data-src="images/v01/profile.jpg" width="115" height="115" alt="" class="uk-visible@s uk-float-left uk-margin-right uk-margin-large-bottom uk-border-circle" uk-img>Gianni J. Favaretto</h1>
-                                <h3 class="uk-h5 uk-margin-remove-top"><span class="uk-text-bold uk-margin-small-right">User Experience, Design, and Leadership.</h3>
-                            </div>
-                    </header>
-                    
-            
-                    <div class="uk-padding-large uk-padding-remove-vertical">
-
-                            <p class="lead uk-width-xxlarge uk-margin-medium-top uk-margin-large-bottom">I believe to be a genuine, unconventional and jocular person. Apparently, I am also a decent <mark>user experience and design leader</mark> as well as an <mark>active creative craft practitioner</mark> with a strong, clean design sense and a good computer science background.</p>
-                            
-                    </div>
-
-                    <div class="uk-padding-large uk-padding-remove-vertical uk-margin-bottom"><img src="images/v01/01.jpg"></div>
-
-
-                        <div class="uk-child-width-1-2@m uk-grid-collapse uk-grid-match" uk-grid>
-
-                            <div>
-                                <div class="uk-padding-large uk-padding-remove-bottom uk-margin-bottom">
-                                    <div class="uk-visible@m"><h2 class="light">Currently</h2></div>
-                                        <div class="uk-padding uk-padding-remove-vertical uk-margin-bottom">
-                                            <div class="uk-flex-middle" uk-grid>
-                                                <!-- <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div> -->
-                                                <div class="uk-width-expand uk-padding-remove-left">
-                                                    <h4 class="uk-margin-remove-bottom">Sainsbury's Argos</h4>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Jan 2019 – Today</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-xlarge">
-                                            <p>As Head of UX and Product Design, I am leading the User Experience, Product Design, UX Research, and UX Writing teams to create digital experiences across mobile, desktop, application, in-store and new channels as they emerge in <b>Argos</b>, <b>Argos Financial Services</b>, <b>Tu Clothing</b>, and <b>Habitat</b>.</p>
-                                        </div>
-                                        <div>
-                                            <a href="folio/argos.html" class="uk-button uk-button-default uk-margin-top">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-padding-large uk-padding-remove-bottom uk-margin-bottom">
-                                    <div class="uk-visible@m"><h2 class="light">Previously</h2></div>
-                                    <div class="uk-padding uk-padding-remove-vertical uk-margin-bottom">
-                                        <div class="uk-flex-middle" uk-grid>
-                                                <!-- <div class="uk-width-auto">
-                                                    <img class="uk-border-circle" width="40" height="40" src="images/v01/profile.jpg">
-                                                </div> -->
-                                                <div class="uk-width-expand uk-padding-remove-left">
-                                                    <h4 class="uk-margin-remove-bottom">Ocado Smart Platform</h4>
-                                                    <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">Mar 2015 – Jan 2019</time></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-xlarge">
-                                            <p>Build and lead the team responsible for the User Experience and Design of the Ocado Smart Platform, <b>B2B</b> and <b>B2C</b>, web, mobile, and native.</p>
-                                        </div>
-                                        <div>
-                                            <a href="folio/osp.html" class="uk-button uk-button-default uk-margin-top">Read more</a>
-                                        </div>
-                                </div>
-                            </div>
-                    
-
-                        </div>
-
-                        <p class="uk-padding-large uk-padding-remove-vertical">
-                            <a href="work.html" class="uk-button uk-button-secondary">My other work experiences</a>
-                        </p>
-            
-                        <div class="uk-padding-large uk-padding-remove-bottom">
-    
-                                <p class="uk-width-xxlarge uk-text-lead uk-margin-medium-top uk-margin-bottom">A war veteran, former missionary, and married with children.</p>
-                                <a href="me.html" class="uk-button uk-button-default">Something about me</a>
-                                
-                        </div>
-
-                        <div class="uk-padding-large"><a href="me.html"><img src="images/v01/20.jpg"></a>
-
-                            <blockquote cite="#">
-                                <p class="uk-margin-small-bottom">Be the hero of that movie called life.</p>
-                                <footer>Gianni J.F.</footer>
-                            </blockquote></div>
-            
-                </section>
-                
+        <div class="has-width-250 has-margin-top-25 has-background-grey-dark" style="height: 10px;"></div>
+      
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <span class="navbar-item">
+              Gianni James Favaretto
+            </span>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+                <a class="navbar-item has-padding-10 is-active" href="#">
+                  @ Work
+                </a>
+                <a class="navbar-item has-padding-10 has-margin-left-30" href="#">
+                  Thoughts
+                </a>
+                <a class="navbar-item has-padding-10 has-margin-left-30" href="#">
+                  PhotoAlbum
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item has-padding-10 has-margin-left-30" href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="navbar-item has-padding-10 has-margin-left-30" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
             </div>
-
-
-
-    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-            <div class="uk-offcanvas-bar">
-
-                    <div class="">
-                                <ul class="uk-nav uk-nav-default uk-padding-large uk-padding-remove-vertical">
-                                    <li class="uk-inline uk-width-1-1 uk-active"><a href="#" class="uk-margin-small-right"><b>Intro</b></a><span class="uk-position-center-right" uk-icon="arrow-right"></span></li>
-                                    <li class="uk-parent">
-                                        <a href="work.html"><b>Work Experience</b></a>
-                                        <ul class="uk-nav-sub uk-text-left">
-                                            <li><a href="folio/argos.html">Sainsbury's Argos</a></li>
-                                            <li><a href="folio/osp.html">Ocado Smart Platform</a></li>
-                                            <li><a href="folio/fabled.html">Fabled by Marie Claire</a></li>
-                                            <li><a href="folio/gm.html">Fetch and Sizzle</a></li>
-                                            <li><a href="folio/ocado.html">Ocado.com</a></li>
-                                            <li><a href="folio/freelance.html" class="uk-margin-right">Macromedia, Eni, Sun, Nasa, Novartis, ...</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="me.html"><b>About Me</b></a></li>
-                                </ul>
-                                <div class=" uk-padding-large">
-                                    <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="uk-padding-small" uk-icon="linkedin"></a>
-                                    <a href="https://www.instagram.com/giannifavaretto/" target="_blank" class="uk-padding-small" uk-icon="instagram"></a>
-                                    <!-- <a href="https://twitter.com/GianniFavaretto" target="_blank" class="uk-padding-small" uk-icon="twitter"></a> -->
-                                    <a href="mailto:giannijfavaretto@gmail.com" class="uk-padding-small" uk-icon="mail"></a>
-                                </div>
-                        </div>
-        
-            </div>
+          </div>
         </div>
 
+    </nav>
 
-        <script>
-                window.onscroll = function() {myFunction()};
-                
-                function myFunction() {
-                  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 250) {
-                    document.getElementById("profile").className = "showProfile";
-                  } else {
-                    document.getElementById("profile").className = "";
-                  }
-                }
-                </script>
+    <section class="section has-text-centered-mobile">
+        <div class="container has-padding-left-100-desktop">
+        <h1  class="title gjf-is-display">
+            gianni <span>@ work</span>
+        </h1>
+        <h5 class="title is-5 has-margin-left-100-tablet has-margin-top-10-mobile has-padding-30-mobile">
+            User Experience, Design, and Leadership.
+        </h5>
+        </div>
+    </section>
 
-    </body>
+    <div class="container has-padding-100-desktop">
+
+        <div class="columns has-margin-bottom-100-tablet">
+            <div class="column has-padding-top-30-tablet">
+
+            <p class="subtitle is-4 has-padding-40-mobile">I believe to be a genuine, ambivert, unconventional, a bit nonconformist, and jocular person. While my wife has no idea of what I do, my lovely biased daughters would tell you that I am the best multi-industry human-centred experience and design leader that continues to love getting his hands dirty in crafting.</p>
+
+            <div class="has-width-150 has-margin-top-80-tablet has-margin-bottom-80-tablet has-background-grey-dark" style="height: 5px;"></div>
+
+            <div class="has-max-width-400 has-margin-top-80-tablet has-padding-40-mobile">
+                <time class="">Oct 2019 - Today</time>
+                <h1 class="title is-4 has-margin-top-20 has-margin-bottom-5">Head of Experience Design</h1>
+                <h2 class="title is-6">@ Zopa Bank</h2>
+                <p class="has-max-width-300-tablet">I am leading the Experience Design team (Product and Service Design) that work with engineering and product to create user-centred financial experiences across all digital channels.
+                </p>
+                <button class="button is-primary has-margin-top-30 has-margin-bottom-30-tablet">Learn more</button>
+            </div>
+
+            </div>
+            <div class="column">
+
+                <div class="gf-mosaic has-width-375-tablet">
+                    <img src="images/shapes/mask01.svg" alt="" class="gf-mask-01 is-hidden-mobile">
+                    <div class="gf-masked-img-02 is-hidden-mobile">
+                        <img src="images/logos/zopa.svg" alt="" class="gf-logo">
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- end columns -->
+
+        <div class="columns is-gapless has-padding-top-20-mobile has-padding-bottom-20-mobile has-padding-40-tablet has-margin-top-100-tablet has-margin-bottom-100 has-background-grey-dark is-relative">
+            <div class="column">
+              <p class="has-padding-40-mobile has-padding-60-tablet has-text-grey-light">I <b>build</b>, <b>coach</b>, and <b>scale</b> teams with the intent of developing individuals to be avid learners, motivated, collaborative, caring, and creative problem-solvers.</p>
+            </div>
+            <div class="column">
+              <p class="has-padding-left-40-mobile has-padding-right-40-mobile has-padding-60-tablet has-text-grey-light">I <b>design</b> and <b>prototype</b> products, interfaces, design systems, and everything else with a vision in mind, thinking strategically, and being people-driven.</p>
+            </div>
+            <div class="column">
+              <p class="has-padding-40-mobile has-padding-60-tablet has-text-grey-light">I spontaneously <b>challenge the status quo</b> (with all its consequences), and I take advantage of all available resources to exceed business' expectations.</p>
+            </div>
+            
+            <svg width="405px" height="15px" viewBox="0 0 405 15" class="is-hidden-mobile" style="
+            position: absolute;
+            top: 0;
+            right: 242px;">
+                <g id="Index" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="405" height="15"></rect>
+                </g>
+            </svg>
+
+        </div><!-- end columns -->
+
+    </div><!-- end container -->
+
+  </body>
 </html>
