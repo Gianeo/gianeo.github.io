@@ -103,8 +103,27 @@ div.gf-mosaic2 {
     top: 0;
     left: 0;
 }
-/* svg mask */
+/* svg mask osp */
 div.gf-mosaic2 img.gf-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* fabled */
+div.gf-mosaic3 {
+    position: relative;
+    background: #fff url("../images/photos/fabled/01.png") no-repeat top left;
+    background-size: cover;
+    height: 1000px;
+    top: 0;
+    left: 0;
+}
+/* svg mask */
+div.gf-mosaic3 img.gf-mask {
     position: absolute;
     width: 100%;
     height: 100%;
