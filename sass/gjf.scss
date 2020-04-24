@@ -32,6 +32,10 @@ $input-shadow: none;
 
 // Custom CSS
 
+.subtitle.is-4 {
+    line-height: 2.1rem;
+}
+
 .is-active {
     text-decoration: line-through;
 }
@@ -109,7 +113,7 @@ div.gf-mosaic1 div.gf-zopa {
     z-index: 0;
 }
 
-div.gf-zopa img.gf-logo, div.gf-argos img.gf-logo {
+img.gf-logo, div.gf-argos img.gf-logo {
     width: 180px;
     mix-blend-mode: overlay;
     max-height: 100%;  
