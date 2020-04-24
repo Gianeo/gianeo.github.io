@@ -79,57 +79,18 @@ div.gf-mosaic1 {
     position: relative;
     background: #fff url("../images/photos/zopa/01.jpg") no-repeat top right;
     background-size: cover;
-    // width: 375px;
-    height: 437px;
-    top: 0;
-    left: 0;
-}
-/* svg mask */
-div.gf-mosaic1 img.gf-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 /* osp */
 div.gf-mosaic2 {
-    position: relative;
     background: #fff url("../images/photos/osp/04.jpg") no-repeat top right;
     background-size: cover;
-    height: 755px;
-    top: 0;
-    left: 0;
-}
-/* svg mask osp */
-div.gf-mosaic2 img.gf-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 /* fabled */
 div.gf-mosaic3 {
-    position: relative;
-    background: #fff url("../images/photos/fabled/01.png") no-repeat top left;
+    background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
     background-size: cover;
-    height: 1000px;
-    top: 0;
-    left: 0;
-}
-/* svg mask */
-div.gf-mosaic3 img.gf-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 div.gf-mosaic1 div.gf-zopa {
@@ -163,14 +124,6 @@ div.gf-zopa img.gf-logo, div.gf-argos img.gf-logo {
 
 @media (min-width: 1440px) {
 
-    div.gf-mosaic1 {
-        width: 648px;
-        height: 756px;
-    }
-    div.gf-mosaic1 div.gf-zopa {
-        width: 412px;
-        height: 412px;
-    }
 
 }
 
