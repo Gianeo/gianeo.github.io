@@ -30086,15 +30086,15 @@ h1.gjf-is-display {
   font-size: 120px;
   font-weight: 400;
   letter-spacing: -6.65px;
-  line-height: 38px;
+  line-height: 50px;
 }
 
 h1.gjf-is-display span {
-  color: #FF2147;
+  color: #EFEFEF;
   font-size: 100px;
   margin-left: 0;
   margin-top: 40px;
-  mix-blend-mode: overlay;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 769px) {
@@ -30108,7 +30108,7 @@ h1.gjf-is-display span {
   }
   h1.gjf-is-display span {
     display: block;
-    color: #d8d8d8;
+    color: #EFEFEF;
     font-size: 158px;
     margin-left: 134px;
     margin-top: 0;
