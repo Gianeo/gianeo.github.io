@@ -30065,12 +30065,19 @@ table.is-completely-borderless tr {
   }
 }
 
-.subtitle.is-4 {
+.subtitle.is-size-4 {
   line-height: 2.1rem;
 }
 
 .is-active {
   text-decoration: line-through;
+}
+
+@media screen and (min-width: 769px) {
+  .container section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 h1.gjf-is-display {
@@ -30168,5 +30175,31 @@ div.gf-argos {
   position: relative;
   background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
   background-size: cover;
+}
+
+.gf-sep {
+  height: 5px;
+  width: 150px;
+  background-color: #424043;
+}
+
+.gf-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gf-sep-full {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .gf-sep {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .gf-sep-marginless {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 /*# sourceMappingURL=gjf.css.map */

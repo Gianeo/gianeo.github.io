@@ -32,7 +32,7 @@ $input-shadow: none;
 
 // Custom CSS
 
-.subtitle.is-4 {
+.subtitle.is-size-4 {
     line-height: 2.1rem;
 }
 
@@ -41,6 +41,13 @@ $input-shadow: none;
 }
 
 // homepage
+
+@media screen and (min-width: 769px) {
+    .container section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
 
 h1.gjf-is-display {
     font-family: 'Abril Fatface'; 
@@ -145,3 +152,31 @@ div.gf-argos {
 }
 
 // END homepage
+
+
+// Line separator (decor)
+
+.gf-sep {
+    height: 5px;
+    width: 150px;
+    background-color: $grey-dark;
+}
+.gf-centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.gf-sep-full {
+    width: 100%;
+}
+@media screen and (min-width: 769px) {
+    .gf-sep {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .gf-sep-marginless {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+// END line separator (decor)
