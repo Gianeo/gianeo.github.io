@@ -201,3 +201,54 @@ img.gf-logo-centered {
 }
 
 // END line separator (decor)
+
+
+/* Mobile Nav */
+
+    .gf-nav-bar, .gf-nav {
+        display: none;
+    }
+    .gf-mobile-nav {
+        background-color: $grey-dark;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 60px 0;
+    }
+    .gf-mobile-nav a {          
+        display: inline-block;
+        color: #fff;
+        min-height: 50px;
+        padding: 15px !important;
+        text-align: center;
+        flex-grow: 1;
+    }
+    .gf-mobile-nav a.active {          
+        
+    }
+
+@media screen and (min-width: 769px) {
+    .gf-mobile-nav {
+        display: none;
+    }
+    .gf-nav-bar {
+        display: block;
+    }
+    .gf-nav {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 20px 40px !important;
+        margin-bottom: 60px;
+    }
+    .gf-nav a {          
+        display: inline-block;
+        color: #000;
+        min-height: 50px;
+        padding: 20px !important;
+        text-align: center;
+    }
+    .gf-nav a.active {          
+        
+    }
+}

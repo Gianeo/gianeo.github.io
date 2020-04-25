@@ -30208,4 +30208,63 @@ img.gf-logo-centered {
     margin-bottom: 0;
   }
 }
+
+/* Mobile Nav */
+.gf-nav-bar, .gf-nav {
+  display: none;
+}
+
+.gf-mobile-nav {
+  background-color: #424043;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0 60px 0;
+}
+
+.gf-mobile-nav a {
+  display: inline-block;
+  color: #fff;
+  min-height: 50px;
+  padding: 15px !important;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media screen and (min-width: 769px) {
+  .gf-mobile-nav {
+    display: none;
+  }
+  .gf-nav-bar {
+    display: block;
+  }
+  .gf-nav {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 20px 40px !important;
+    margin-bottom: 60px;
+  }
+  .gf-nav a {
+    display: inline-block;
+    color: #000;
+    min-height: 50px;
+    padding: 20px !important;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=gjf.css.map */
