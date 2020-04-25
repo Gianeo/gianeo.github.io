@@ -58,7 +58,7 @@ h1.gjf-is-display {
     line-height: 38px;
 }
 h1.gjf-is-display span {
-    color: #EFEFEF;
+    color: #d8d8d8;
     font-size: 100px;
     margin-left: 0;
     margin-top: 40px;
@@ -76,7 +76,7 @@ h1.gjf-is-display span {
     }
     h1.gjf-is-display span {
         display: block;
-        color: #EFEFEF;
+        color: #d8d8d8;
         font-size: 158px;
         margin-left: 134px;
         margin-top: 0;
@@ -86,45 +86,59 @@ h1.gjf-is-display span {
 }
 
 /* zopa */
-div.gf-mosaic1 {
+div.gf-zopa {
     position: relative;
     background: #fff url("../images/photos/zopa/01.jpg") no-repeat top right;
     background-size: cover;
 }
 
+/* argos */
+div.gf-argos {
+    position: relative;
+    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
+    background-size: cover;
+}
+
 /* osp */
-div.gf-mosaic2 {
+div.gf-osp {
     background: #fff url("../images/photos/osp/04.jpg") no-repeat top right;
     background-size: cover;
 }
 
 /* fabled */
-div.gf-mosaic3 {
+div.gf-fabled {
     background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
+    background-size: cover;
+}
+
+/* argos */
+div.gf-fetch {
+    position: relative;
+    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
     background-size: cover;
 }
 
 /* ocado */
-div.gf-mosaic4 {
+div.gf-ocado {
     background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
     background-size: cover;
 }
 
-div.gf-mosaic1 div.gf-zopa {
-    position: absolute;
-    background: #fff url("../images/photos/zopa/02.jpg") no-repeat;
-    background-size: cover;
-    width: 204px;
-    height: 204px;
-    bottom: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
-    text-align: center;
-    display: table-cell;
-    z-index: 0;
-}
+// div.gf-mosaic1 div.gf-zopa {
+//     position: absolute;
+//     background: #fff url("../images/photos/zopa/02.jpg") no-repeat;
+//     background-size: cover;
+//     width: 204px;
+//     height: 204px;
+//     bottom: 0;
+//     left: 0;
+//     margin: 0;
+//     padding: 0;
+//     vertical-align: middle;
+//     text-align: center;
+//     display: table-cell;
+//     z-index: 0;
+// }
 
 img.gf-logo, div.gf-argos img.gf-logo {
     width: 180px;
@@ -138,18 +152,23 @@ img.gf-logo, div.gf-argos img.gf-logo {
     right: 0;  
     margin: auto;
 }
+img.gf-logo-centered {
+    position: absolute;
+    max-height: 100%;  
+    max-width: 100%; 
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    mix-blend-mode: overlay;  
+}
 
 @media (min-width: 1440px) {
 
 
 }
 
-// Argos
-div.gf-argos {
-    position: relative;
-    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
-    background-size: cover;
-}
 
 // END homepage
 
