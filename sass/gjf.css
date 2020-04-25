@@ -30074,7 +30074,14 @@ table.is-completely-borderless tr {
 }
 
 @media screen and (min-width: 769px) {
-  .container section {
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -30083,17 +30090,18 @@ table.is-completely-borderless tr {
 h1.gjf-is-display {
   font-family: 'Abril Fatface';
   color: #2C3236;
-  font-size: 110px;
+  font-size: 104px;
   font-weight: 400;
-  letter-spacing: -6.65px;
+  letter-spacing: -2.65px;
   line-height: 50px;
 }
 
 h1.gjf-is-display span {
+  display: block;
   color: #EFEFEF;
-  font-size: 100px;
+  font-size: 90px;
   margin-left: 0;
-  margin-top: 40px;
+  margin-top: 0;
   mix-blend-mode: multiply;
 }
 
@@ -30103,7 +30111,7 @@ h1.gjf-is-display span {
     color: #2C3236;
     font-size: 158px;
     font-weight: 400;
-    letter-spacing: -6.65px;
+    letter-spacing: -2.65px;
     line-height: 38px;
   }
   h1.gjf-is-display span {
@@ -30122,6 +30130,7 @@ div.gf-zopa {
   position: relative;
   background: #fff url("../images/photos/zopa/01.jpg") no-repeat top right;
   background-size: cover;
+  max-height: 790px;
 }
 
 /* argos */
