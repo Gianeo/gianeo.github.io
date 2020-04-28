@@ -222,6 +222,14 @@ img.gf-logo-centered {
         text-align: center;
         flex-grow: 1;
     }
+    .gf-2nav-mobile-bar {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+    .gf-2nav-bar {
+        display: none;
+    }
 
 @media screen and (min-width: 769px) {
     .gf-mobile-nav {
@@ -229,22 +237,43 @@ img.gf-logo-centered {
     }
     .gf-nav-bar {
         display: block;
-        margin: 0 !important;
     }
     .gf-nav {
         background-color: #fff;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        padding: 20px !important;
-        margin-bottom: 20px !important;
     }
     .gf-nav a {          
         display: inline-block;
-        color: $link0;
-        min-height: 50px;
+        color: inherit;
+        font-weight: 600;
         padding: 20px !important;
         text-align: center;
+    }
+    .gf-2nav {
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .gf-2nav a {          
+        display: inline-block;
+        color: inherit;
+        padding: 10px 20px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .gf-nav-bar {
+        padding: 0 3% !important;
+    }
+    .gf-2nav-mobile-bar {
+        display: none;
+    }
+    .gf-2nav-bar {
+        display: block;
     }
 }
 
