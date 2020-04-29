@@ -39,9 +39,30 @@ $input-shadow: none;
     line-height: 2.1rem;
 }
 
-.is-active {
-    text-decoration: line-through;
+a.is-active, .tabs .is-active a {
+    color: #FF2147 !important;
 }
+.tabs .is-active a {
+    border-bottom-color: #FF2147 !important;
+}
+
+/* tabs */
+.tabs a {
+    font-weight: 600;
+}
+#tabs-with-content .tabs:not(:last-child) {
+    margin-bottom: 0;
+  }
+  
+  #tabs-with-content .tab-content {
+    padding: 1rem;
+    display: none;
+  }
+  
+  #tabs-with-content .tab-content.is-active {
+    display: block;
+  }
+/* END tabs */
 
 p {
     margin-bottom: 1rem;
