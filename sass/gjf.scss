@@ -43,6 +43,10 @@ $input-shadow: none;
 p {
     margin-bottom: 1rem;
 }
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 
 @media screen and (min-width: 769px) {
@@ -137,22 +141,6 @@ div.gf-ocado {
     background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
     background-size: cover;
 }
-
-// div.gf-mosaic1 div.gf-zopa {
-//     position: absolute;
-//     background: #fff url("../images/photos/zopa/02.jpg") no-repeat;
-//     background-size: cover;
-//     width: 204px;
-//     height: 204px;
-//     bottom: 0;
-//     left: 0;
-//     margin: 0;
-//     padding: 0;
-//     vertical-align: middle;
-//     text-align: center;
-//     display: table-cell;
-//     z-index: 0;
-// }
 
 img.gf-logo, div.gf-argos img.gf-logo {
     width: 180px;
@@ -297,6 +285,22 @@ img.gf-logo-centered {
 
 /* Utilities */
 
+div.gf-duties .gf-text {
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    flex-grow: 3;
+}
+div.gf-duties p {
+    min-width: 300px;
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    vertical-align: top;
+}
+
 @media screen and (min-width: 769px) {
 
     .gf-text-columns {
@@ -311,6 +315,14 @@ img.gf-logo-centered {
         border-right: solid 10px #fff;
     }
 
+    div.gf-duties .gf-text {
+        padding: 20px 40px 40px;
+    }
+    div.gf-duties p {
+        min-width: 300px;
+        padding: 40px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -319,22 +331,4 @@ img.gf-logo-centered {
         column-count: 3; 
     }
 
-}
-
-/* Duties box */
-
-div.gf-duties .gf-text {
-    padding: 40px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    flex-grow: 3;
-}
-div.gf-duties p {
-    min-width: 300px;
-    flex: 1;
-    color: #fff;
-    padding: 40px;
-    margin: 0;
-    vertical-align: top;
 }
