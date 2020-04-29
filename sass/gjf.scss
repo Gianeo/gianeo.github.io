@@ -50,7 +50,12 @@ section {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+.button {
+    background-color: white;
+    border-color: $link;
+    border-width: 1px;
+    color: $link;
+}
 
 @media screen and (min-width: 769px) {
     section {
@@ -80,16 +85,16 @@ h1.gjf-is-display span {
     font-size: 115px;
     margin-left: 0;
     margin-top: 0;
-    mix-blend-mode: multiply;
 }
 h1.gjf-is-display span.gf-title-offset {
     font-size: 90px;
+    mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 769px) {
     h1.gjf-is-display {
         font-family: 'Abril Fatface'; 
-        color: #2C3236;
+        color: $grey-dark;
         font-size: 158px;
         font-weight: 400;
         letter-spacing: -2.65px;
@@ -97,14 +102,14 @@ h1.gjf-is-display span.gf-title-offset {
     h1.gjf-is-display span {
         display: block;
         color: $grey-light;
-        font-size: 158px;
         margin-top: 0;
-        mix-blend-mode: multiply;
         z-index: 0;
     }
     h1.gjf-is-display span.gf-title-offset {
+        font-size: 158px;
         margin-left: 134px;
         line-height: 38px;
+        mix-blend-mode: multiply;
     }
 }
 
@@ -233,8 +238,13 @@ img.gf-logo-centered {
         padding: 20px;
         justify-content: space-between;
     }
-    .gf-2nav-mobile-bar a {        
+    .gf-nav-bar a, .gf-2nav-mobile-bar a {        
         color: $grey-dark;
+    }
+    .gf-nav-bar a:hover, .gf-2nav-bar a:hover { 
+        background-color: $grey-light;       
+        color: $grey-dark;
+        border-radius: 4px;
     }
     .gf-2nav-bar {
         display: none;
@@ -258,7 +268,7 @@ img.gf-logo-centered {
         display: inline-block;
         color: inherit;
         font-weight: 600;
-        padding: 20px !important;
+        padding: 10px 20px !important;
         text-align: center;
     }
     .gf-2nav {
@@ -269,7 +279,6 @@ img.gf-logo-centered {
     }
     .gf-2nav-bar a {          
         display: inline-block;
-        color: inherit;
         padding: 10px 20px !important;
         text-align: center;
         color: $grey-dark;
@@ -298,6 +307,15 @@ img.gf-logo-centered {
 
 /* Utilities */
 
+time {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+time.gf-inBox {
+    background-color: $grey-light;
+    padding: 1px 8px 2px;
+}
+
 div.gf-duties .gf-text {
     padding: 20px;
     display: flex;
@@ -308,7 +326,7 @@ div.gf-duties .gf-text {
 div.gf-duties p {
     min-width: 300px;
     flex: 1;
-    color: #fff;
+    color: #ffffffc4;
     padding: 20px;
     margin: 0;
     vertical-align: top;

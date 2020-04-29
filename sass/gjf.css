@@ -30086,6 +30086,13 @@ section {
   padding-bottom: 10px;
 }
 
+.button {
+  background-color: white;
+  border-color: #4C5E7E;
+  border-width: 1px;
+  color: #4C5E7E;
+}
+
 @media screen and (min-width: 769px) {
   section {
     padding-top: 40px;
@@ -30115,17 +30122,17 @@ h1.gjf-is-display span {
   font-size: 115px;
   margin-left: 0;
   margin-top: 0;
-  mix-blend-mode: multiply;
 }
 
 h1.gjf-is-display span.gf-title-offset {
   font-size: 90px;
+  mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 769px) {
   h1.gjf-is-display {
     font-family: 'Abril Fatface';
-    color: #2C3236;
+    color: #424043;
     font-size: 158px;
     font-weight: 400;
     letter-spacing: -2.65px;
@@ -30133,14 +30140,14 @@ h1.gjf-is-display span.gf-title-offset {
   h1.gjf-is-display span {
     display: block;
     color: #EFEFEF;
-    font-size: 158px;
     margin-top: 0;
-    mix-blend-mode: multiply;
     z-index: 0;
   }
   h1.gjf-is-display span.gf-title-offset {
+    font-size: 158px;
     margin-left: 134px;
     line-height: 38px;
+    mix-blend-mode: multiply;
   }
 }
 
@@ -30273,8 +30280,14 @@ img.gf-logo-centered {
           justify-content: space-between;
 }
 
-.gf-2nav-mobile-bar a {
+.gf-nav-bar a, .gf-2nav-mobile-bar a {
   color: #424043;
+}
+
+.gf-nav-bar a:hover, .gf-2nav-bar a:hover {
+  background-color: #EFEFEF;
+  color: #424043;
+  border-radius: 4px;
 }
 
 .gf-2nav-bar {
@@ -30305,7 +30318,7 @@ img.gf-logo-centered {
     display: inline-block;
     color: inherit;
     font-weight: 600;
-    padding: 20px !important;
+    padding: 10px 20px !important;
     text-align: center;
   }
   .gf-2nav {
@@ -30323,7 +30336,6 @@ img.gf-logo-centered {
   }
   .gf-2nav-bar a {
     display: inline-block;
-    color: inherit;
     padding: 10px 20px !important;
     text-align: center;
     color: #424043;
@@ -30347,6 +30359,16 @@ img.gf-logo-centered {
 
 /* END Nav */
 /* Utilities */
+time {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+time.gf-inBox {
+  background-color: #EFEFEF;
+  padding: 1px 8px 2px;
+}
+
 div.gf-duties .gf-text {
   padding: 20px;
   display: -webkit-box;
@@ -30369,7 +30391,7 @@ div.gf-duties p {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  color: #fff;
+  color: #ffffffc4;
   padding: 20px;
   margin: 0;
   vertical-align: top;
