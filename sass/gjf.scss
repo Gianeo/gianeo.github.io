@@ -292,6 +292,13 @@ img.gf-logo-centered {
         column-gap: 40px;
     }
 
+    .gf-grid-horiz-border {
+        border-bottom: solid 10px #fff;
+    }
+    .gf-grid-vert-border {
+        border-right: solid 10px #fff;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
