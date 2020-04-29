@@ -212,7 +212,7 @@ img.gf-logo-centered {
         background-color: $grey-dark;
         display: flex;
         flex-direction: row;
-        margin: 0 0 40px 0 !important;
+        margin: 0 0 10px 0 !important;
     }
     .gf-mobile-nav a {          
         display: inline-block;
@@ -232,6 +232,7 @@ img.gf-logo-centered {
     }
 
 @media screen and (min-width: 769px) {
+
     .gf-mobile-nav {
         display: none;
     }
@@ -263,9 +264,11 @@ img.gf-logo-centered {
         padding: 10px 20px !important;
         text-align: center;
     }
+
 }
 
 @media screen and (min-width: 1024px) {
+
     .gf-nav-bar {
         padding: 0 3% !important;
     }
@@ -275,6 +278,26 @@ img.gf-logo-centered {
     .gf-2nav-bar {
         display: block;
     }
+
 }
 
 /* END Nav */
+
+/* Utilities */
+
+@media screen and (min-width: 769px) {
+
+    .gf-text-columns {
+        column-count: 2; 
+        column-gap: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .gf-text-columns {
+        column-count: 3; 
+    }
+
+}
