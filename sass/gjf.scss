@@ -320,3 +320,21 @@ img.gf-logo-centered {
     }
 
 }
+
+/* Duties box */
+
+div.gf-duties .gf-text {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    flex-grow: 3;
+}
+div.gf-duties p {
+    min-width: 300px;
+    flex: 1;
+    color: #fff;
+    padding: 40px;
+    margin: 0;
+    vertical-align: top;
+}
