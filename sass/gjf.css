@@ -30065,6 +30065,10 @@ table.is-completely-borderless tr {
   }
 }
 
+.title.is-1 {
+  line-height: 2.8rem;
+}
+
 .subtitle.is-size-4 {
   line-height: 2.1rem;
 }
@@ -30108,10 +30112,14 @@ h1.gjf-is-display {
 h1.gjf-is-display span {
   display: block;
   color: #EFEFEF;
-  font-size: 90px;
+  font-size: 115px;
   margin-left: 0;
   margin-top: 0;
   mix-blend-mode: multiply;
+}
+
+h1.gjf-is-display span.gf-title-offset {
+  font-size: 90px;
 }
 
 @media screen and (min-width: 769px) {
@@ -30121,7 +30129,6 @@ h1.gjf-is-display span {
     font-size: 158px;
     font-weight: 400;
     letter-spacing: -2.65px;
-    line-height: 38px;
   }
   h1.gjf-is-display span {
     display: block;
@@ -30133,6 +30140,7 @@ h1.gjf-is-display span {
   }
   h1.gjf-is-display span.gf-title-offset {
     margin-left: 134px;
+    line-height: 38px;
   }
 }
 
@@ -30259,10 +30267,14 @@ img.gf-logo-centered {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 40px;
+  padding: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.gf-2nav-mobile-bar a {
+  color: #424043;
 }
 
 .gf-2nav-bar {
@@ -30309,16 +30321,18 @@ img.gf-logo-centered {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .gf-2nav a {
+  .gf-2nav-bar a {
     display: inline-block;
     color: inherit;
     padding: 10px 20px !important;
     text-align: center;
+    color: #424043;
+    line-height: 20px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .gf-nav-bar {
+  .gf-nav-bar, .gf-2nav-bar {
     padding: 0 3% !important;
   }
   .gf-2nav-mobile-bar {
@@ -30326,6 +30340,8 @@ img.gf-logo-centered {
   }
   .gf-2nav-bar {
     display: block;
+    margin-right: 20px !important;
+    margin-left: 10px !important;
   }
 }
 
@@ -30343,9 +30359,9 @@ div.gf-duties .gf-text {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 div.gf-duties p {

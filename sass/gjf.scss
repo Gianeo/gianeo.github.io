@@ -31,6 +31,9 @@ $input-shadow: none;
 @import 'mixins/_all.sass';
 
 // Custom CSS
+.title.is-1 {
+    line-height: 2.8rem;
+}
 
 .subtitle.is-size-4 {
     line-height: 2.1rem;
@@ -74,10 +77,13 @@ h1.gjf-is-display {
 h1.gjf-is-display span {
     display: block;
     color: $grey-light;
-    font-size: 90px;
+    font-size: 115px;
     margin-left: 0;
     margin-top: 0;
     mix-blend-mode: multiply;
+}
+h1.gjf-is-display span.gf-title-offset {
+    font-size: 90px;
 }
 
 @media screen and (min-width: 769px) {
@@ -87,7 +93,6 @@ h1.gjf-is-display span {
         font-size: 158px;
         font-weight: 400;
         letter-spacing: -2.65px;
-        line-height: 38px;
     }
     h1.gjf-is-display span {
         display: block;
@@ -99,6 +104,7 @@ h1.gjf-is-display span {
     }
     h1.gjf-is-display span.gf-title-offset {
         margin-left: 134px;
+        line-height: 38px;
     }
 }
 
@@ -224,8 +230,11 @@ img.gf-logo-centered {
     }
     .gf-2nav-mobile-bar {
         display: flex;
-        margin-bottom: 40px;
+        padding: 20px;
         justify-content: space-between;
+    }
+    .gf-2nav-mobile-bar a {        
+        color: $grey-dark;
     }
     .gf-2nav-bar {
         display: none;
@@ -258,18 +267,20 @@ img.gf-logo-centered {
         flex-direction: row;
         justify-content: flex-end;
     }
-    .gf-2nav a {          
+    .gf-2nav-bar a {          
         display: inline-block;
         color: inherit;
         padding: 10px 20px !important;
         text-align: center;
+        color: $grey-dark;
+        line-height: 20px;
     }
 
 }
 
 @media screen and (min-width: 1024px) {
 
-    .gf-nav-bar {
+    .gf-nav-bar, .gf-2nav-bar {
         padding: 0 3% !important;
     }
     .gf-2nav-mobile-bar {
@@ -277,6 +288,8 @@ img.gf-logo-centered {
     }
     .gf-2nav-bar {
         display: block;
+        margin-right: 20px !important;
+        margin-left: 10px !important;
     }
 
 }
@@ -290,7 +303,7 @@ div.gf-duties .gf-text {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    flex-grow: 3;
+    flex-grow: 1;
 }
 div.gf-duties p {
     min-width: 300px;
