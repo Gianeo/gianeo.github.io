@@ -40,9 +40,19 @@ $input-shadow: none;
     text-decoration: line-through;
 }
 
-// homepage
+p {
+    margin-bottom: 1rem;
+}
+
 
 @media screen and (min-width: 769px) {
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     section {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -79,10 +89,12 @@ h1.gjf-is-display span {
         display: block;
         color: $grey-light;
         font-size: 158px;
-        margin-left: 134px;
         margin-top: 0;
         mix-blend-mode: multiply;
         z-index: 0;
+    }
+    h1.gjf-is-display span.gf-title-offset {
+        margin-left: 134px;
     }
 }
 
