@@ -249,10 +249,15 @@ img.gf-logo-centered {
     .gf-mobile-nav a {          
         display: inline-block;
         color: #fff;
+        font-weight: 600;
         min-height: 50px;
         padding: 15px !important;
         text-align: center;
         flex-grow: 1;
+    }
+    .gf-mobile-nav a.is-active {          
+        background-color: #fff;
+        color: #FF2147;
     }
     .gf-2nav-mobile-bar {
         display: flex;
