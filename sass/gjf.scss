@@ -55,15 +55,15 @@ section {
 
 @media screen and (min-width: 769px) {
     section {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -110,44 +110,44 @@ h1.gjf-is-display span.gf-title-offset {
 }
 
 /* zopa */
-div.gf-zopa {
-    position: relative;
-    background: #fff url("../images/photos/zopa/01.jpg") no-repeat top right;
-    background-size: cover;
-    max-height: 790px;
-}
+// div.gf-zopa {
+//     position: relative;
+//     background: #fff url("../images/photos/zopa/01.jpg") no-repeat bottom right;
+//     background-size: cover;
+//     max-height: 790px;
+// }
 
 /* argos */
-div.gf-argos {
-    position: relative;
-    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
-    background-size: cover;
-}
+// div.gf-argos {
+//     position: relative;
+//     background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
+//     background-size: cover;
+// }
 
 /* osp */
-div.gf-osp {
-    background: #fff url("../images/photos/osp/04.jpg") no-repeat top right;
-    background-size: cover;
-}
+// div.gf-osp {
+//     background: #fff url("../images/photos/osp/04.jpg") no-repeat top right;
+//     background-size: cover;
+// }
 
-/* fabled */
-div.gf-fabled {
-    background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
-    background-size: cover;
-}
+// /* fabled */
+// div.gf-fabled {
+//     background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
+//     background-size: cover;
+// }
 
-/* argos */
-div.gf-fetch {
-    position: relative;
-    background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
-    background-size: cover;
-}
+// /* argos */
+// div.gf-fetch {
+//     position: relative;
+//     background: #fff url("../images/photos/argos/01.jpg") no-repeat center right;
+//     background-size: cover;
+// }
 
-/* ocado */
-div.gf-ocado {
-    background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
-    background-size: cover;
-}
+// /* ocado */
+// div.gf-ocado {
+//     background: #fff url("../images/photos/osp/01.jpg") no-repeat top left;
+//     background-size: cover;
+// }
 
 img.gf-logo, div.gf-argos img.gf-logo {
     width: 180px;
@@ -170,7 +170,7 @@ img.gf-logo-centered {
     left: 0;  
     right: 0;  
     margin: auto;
-    mix-blend-mode: overlay;  
+    // mix-blend-mode: overlay;  
 }
 
 @media (min-width: 1440px) {
@@ -310,6 +310,7 @@ img.gf-logo-centered {
 
 a.is-active, .tabs .is-active a {
     color: #FF2147 !important;
+    font-weight: 600;
 }
 .tabs .is-active a {
     border-bottom-color: #FF2147 !important;
