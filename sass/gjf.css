@@ -30075,6 +30075,7 @@ table.is-completely-borderless tr {
 
 p {
   margin-bottom: 1rem;
+  max-width: 500px;
 }
 
 section {
@@ -30323,6 +30324,10 @@ img.gf-logo-centered {
 
 /* END Nav */
 /* Utilities */
+.gf-visible-desktop {
+  display: none;
+}
+
 a.is-active, .tabs .is-active a {
   color: #FF2147 !important;
   font-weight: 600;
@@ -30415,6 +30420,9 @@ div.gf-duties p {
   .gf-text-columns {
     -webkit-column-count: 3;
             column-count: 3;
+  }
+  .gf-visible-desktop {
+    display: block;
   }
 }
 /*# sourceMappingURL=gjf.css.map */

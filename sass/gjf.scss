@@ -41,7 +41,9 @@ $input-shadow: none;
 
 p {
     margin-bottom: 1rem;
+    max-width: 500px;
 }
+
 section {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -308,6 +310,11 @@ img.gf-logo-centered {
 
 /* Utilities */
 
+
+.gf-visible-desktop {
+    display: none;
+}
+
 a.is-active, .tabs .is-active a {
     color: #FF2147 !important;
     font-weight: 600;
@@ -389,4 +396,9 @@ div.gf-duties p {
         column-count: 3; 
     }
 
+    .gf-visible-desktop {
+        display: block;
+    }
+
 }
+
