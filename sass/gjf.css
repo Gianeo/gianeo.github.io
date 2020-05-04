@@ -17085,13 +17085,13 @@ table.is-completely-borderless tr {
 }
 
 @media screen and (min-width: 769px), print {
-  . {
+  .has-max-width-300-tablet {
     max-width: 300px !important;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-  .-only {
+  .has-max-width-300-tablet-only {
     max-width: 300px !important;
   }
 }
@@ -30067,6 +30067,10 @@ table.is-completely-borderless tr {
 
 .title.is-1 {
   line-height: 2.8rem;
+}
+
+.title {
+  line-height: 1.325;
 }
 
 .subtitle.is-size-4 {
