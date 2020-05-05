@@ -30362,12 +30362,11 @@ a.is-active, .tabs .is-active a {
 
 /* END tabs */
 time {
-  font-size: 14px;
+  font-size: small;
   text-transform: uppercase;
 }
 
 time.gf-inBox {
-  background-color: #EFEFEF;
   padding: 1px 8px 2px;
 }
 
