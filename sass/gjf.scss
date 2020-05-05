@@ -226,19 +226,17 @@ img.gf-logo-centered {
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: #fff;
-        display: flex;
-        flex-direction: row;
+        background-color: #fff;     
         margin: 0 !important;
         border-top: solid $grey-light 1px;
         z-index: 10000;
     }
-    .gf-mobile-nav a {          
+    .gf-mobile-nav .gf-main-nav-mobile a {     
+        color: $grey-dark;       
         display: inline-block;
         color: $grey-dark;
         font-weight: 600;
-        min-height: 50px;
-        padding: 20px 15px 30px !important;
+        padding: 10px 10px 30px !important;
         text-align: center;
         flex-grow: 1;
     }
@@ -246,13 +244,16 @@ img.gf-logo-centered {
         // background-color: #fff;
         color: #FF2147;
     }
-    .gf-2nav-mobile-bar {
+    .gf-main-nav-mobile, .gf-2nav-mobile-bar {
         display: flex;
-        padding: 20px;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 10px !important;
         justify-content: space-between;
     }
-    .gf-nav-bar a, .gf-2nav-mobile-bar a {        
+    .gf-2nav-mobile-bar a {   
         color: $grey-dark;
+        padding: 15px 10px !important;
     }
     .gf-nav-bar a:hover, .gf-2nav-bar a:hover { 
         background-color: $grey-light;       

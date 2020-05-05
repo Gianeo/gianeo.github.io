@@ -30219,24 +30219,17 @@ img.gf-logo-centered {
   bottom: 0;
   width: 100%;
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   margin: 0 !important;
   border-top: solid #EFEFEF 1px;
   z-index: 10000;
 }
 
-.gf-mobile-nav a {
+.gf-mobile-nav .gf-main-nav-mobile a {
+  color: #424043;
   display: inline-block;
   color: #424043;
   font-weight: 600;
-  min-height: 50px;
-  padding: 20px 15px 30px !important;
+  padding: 10px 10px 30px !important;
   text-align: center;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -30247,18 +30240,24 @@ img.gf-logo-centered {
   color: #FF2147;
 }
 
-.gf-2nav-mobile-bar {
+.gf-main-nav-mobile, .gf-2nav-mobile-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  padding: 0 10px !important;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.gf-nav-bar a, .gf-2nav-mobile-bar a {
+.gf-2nav-mobile-bar a {
   color: #424043;
+  padding: 15px 10px !important;
 }
 
 .gf-nav-bar a:hover, .gf-2nav-bar a:hover {
