@@ -226,18 +226,19 @@ img.gf-logo-centered {
         position: fixed;
         bottom: 0;
         width: 100%;
-        background-color: $grey-dark;
+        background-color: #fff;
         display: flex;
         flex-direction: row;
         margin: 0 !important;
+        border-top: solid $grey-light 1px;
         z-index: 10000;
     }
     .gf-mobile-nav a {          
         display: inline-block;
-        color: #fff;
+        color: $grey-dark;
         font-weight: 600;
         min-height: 50px;
-        padding: 15px !important;
+        padding: 20px 15px !important;
         text-align: center;
         flex-grow: 1;
     }
