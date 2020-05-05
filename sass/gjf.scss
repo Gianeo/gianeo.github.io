@@ -267,7 +267,6 @@ img.gf-logo-centered {
         display: block;
     }
     .gf-nav {
-        background-color: #fff;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -280,7 +279,6 @@ img.gf-logo-centered {
         text-align: center;
     }
     .gf-2nav {
-        background-color: #fff;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -407,3 +405,6 @@ div.gf-duties p {
 
 }
 
+footer .gf-nav-bar a {
+    color: #fff;
+}

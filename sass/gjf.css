@@ -30275,7 +30275,6 @@ img.gf-logo-centered {
     display: block;
   }
   .gf-nav {
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30295,7 +30294,6 @@ img.gf-logo-centered {
     text-align: center;
   }
   .gf-2nav {
-    background-color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30432,5 +30430,9 @@ div.gf-duties p {
   .gf-visible-desktop {
     display: block;
   }
+}
+
+footer .gf-nav-bar a {
+  color: #fff;
 }
 /*# sourceMappingURL=gjf.css.map */
