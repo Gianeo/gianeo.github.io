@@ -223,10 +223,14 @@ img.gf-logo-centered {
         display: none;
     }
     .gf-mobile-nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         background-color: $grey-dark;
         display: flex;
         flex-direction: row;
-        margin: 0 0 10px 0 !important;
+        margin: 0 !important;
+        z-index: 10000;
     }
     .gf-mobile-nav a {          
         display: inline-block;

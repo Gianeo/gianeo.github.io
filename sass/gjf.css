@@ -30215,6 +30215,9 @@ img.gf-logo-centered {
 }
 
 .gf-mobile-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #424043;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30223,7 +30226,8 @@ img.gf-logo-centered {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 0 10px 0 !important;
+  margin: 0 !important;
+  z-index: 10000;
 }
 
 .gf-mobile-nav a {
