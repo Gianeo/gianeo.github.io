@@ -228,6 +228,7 @@ img.gf-logo-centered {
         width: 100%;
         background-color: #fff;     
         margin: 0 !important;
+        padding-top: 5px;
         border-top: solid $grey-light 1px;
         z-index: 10000;
     }
@@ -253,7 +254,7 @@ img.gf-logo-centered {
     }
     .gf-2nav-mobile-bar a {   
         color: $grey-dark;
-        padding: 15px 10px !important;
+        padding: 10px 10px !important;
     }
     .gf-nav-bar a:hover, .gf-2nav-bar a:hover { 
         background-color: $grey-light;       
