@@ -265,6 +265,12 @@ img.gf-logo-centered {
         display: none;
     }
 
+    // Bottom shortcuts on mobile
+    .gf-list-menu-mobile a {
+        display: block;
+        padding: 15px;
+    }
+
 @media screen and (min-width: 769px) {
 
     .gf-mobile-nav {
@@ -357,7 +363,7 @@ time {
 }
 time.gf-inBox {
     // background-color: $grey-light;
-    padding: 1px 8px 2px;
+    // padding: 1px 8px 2px;
 }
 
 div.gf-duties .gf-text {

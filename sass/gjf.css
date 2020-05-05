@@ -30271,6 +30271,11 @@ img.gf-logo-centered {
   display: none;
 }
 
+.gf-list-menu-mobile a {
+  display: block;
+  padding: 15px;
+}
+
 @media screen and (min-width: 769px) {
   .gf-mobile-nav {
     display: none;
@@ -30369,10 +30374,6 @@ a.is-active, .tabs .is-active a {
 time {
   font-size: small;
   text-transform: uppercase;
-}
-
-time.gf-inBox {
-  padding: 1px 8px 2px;
 }
 
 div.gf-duties .gf-text {
