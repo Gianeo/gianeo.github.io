@@ -30276,6 +30276,11 @@ img.gf-logo-centered {
   padding: 15px;
 }
 
+.gf-nav-bar a {
+  background-color: #fff;
+  color: #424043;
+}
+
 @media screen and (min-width: 769px) {
   .gf-mobile-nav {
     display: none;
@@ -30297,7 +30302,7 @@ img.gf-logo-centered {
   }
   .gf-nav a {
     display: inline-block;
-    color: inherit;
+    color: #424043;
     font-weight: 600;
     padding: 10px 20px !important;
     text-align: center;

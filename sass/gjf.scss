@@ -271,6 +271,12 @@ img.gf-logo-centered {
         padding: 15px;
     }
 
+    // link on name
+    .gf-nav-bar a {          
+        background-color: #fff;
+        color: $grey-dark;
+    }
+
 @media screen and (min-width: 769px) {
 
     .gf-mobile-nav {
@@ -286,7 +292,7 @@ img.gf-logo-centered {
     }
     .gf-nav a {          
         display: inline-block;
-        color: inherit;
+        color: $grey-dark;
         font-weight: 600;
         padding: 10px 20px !important;
         text-align: center;
