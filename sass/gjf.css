@@ -30156,9 +30156,6 @@ h1.gjf-is-display span.gf-title-offset {
   }
 }
 
-/* zopa */
-/* argos */
-/* osp */
 img.gf-logo, div.gf-argos img.gf-logo {
   width: 180px;
   mix-blend-mode: overlay;
@@ -30222,6 +30219,8 @@ img.gf-logo-centered {
   margin: 0 !important;
   padding-top: 5px;
   border-top: solid #EFEFEF 1px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   z-index: 10000;
 }
 
