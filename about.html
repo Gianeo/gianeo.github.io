@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="sass/gjf.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
-      .gridItem {
-        width: 33.3%;
-        background-color: transparent;
-        margin: 5px;
-        padding: 0;
-      }
+    .gridItem {
+            width: 100%;
+            background-color: transparent;
+            margin: 5px;
+            padding: 0;
+          }
+    @media screen and (min-width: 769px) {
+          .gridItem {
+            width: 50%;
+          }
+        }
+    @media screen and (min-width: 1024px) {
+          .gridItem {
+            width: 33.3%;
+          }
+        }
       body {
         background: #fff url('images/photos/about/0-14.jpg') no-repeat top right; 
         background-size: contain;
@@ -74,9 +84,9 @@
     <main class="container is-widescreen has-padding-20-mobile has-padding-left-40-tablet has-padding-right-40-tablet has-padding-left-80-desktop has-padding-right-80-desktop">
 
 
-    <section class="has-margin-top-20-mobile has-padding-bottom-10-mobile has-margin-top-80-tablet has-text-centered-mobile">
+    <section class="has-margin-top-80-mobile has-padding-bottom-10-mobile has-margin-top-80-tablet has-text-centered-mobile">
         <div class="container is-widescreen">
-        <h1  class="title gjf-is-display">
+        <h1  class="title gjf-is-display" style="mix-blend-mode: multiply;">
             gianni <span class="gf-title-offset">about</span>
         </h1>
         <h5 class="title is-5 has-margin-left-100-tablet">
