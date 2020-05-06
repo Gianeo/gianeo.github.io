@@ -7,6 +7,7 @@
     <title>Gianni James Favaretto // User Experience, Design, and Leadership.</title>
     <link rel="stylesheet" href="sass/gjf.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="js/hc-sticky.js"></script>
   </head>
   <body>   
 
@@ -171,13 +172,13 @@
       </section><!-- end my duties -->
 
 
-      <div class="tabs is-centered has-margin-top-30-mobile has-margin-top-20-tablet has-margin-top-40-desktop">
+      <div id="tabs" class="tabs is-centered has-padding-top-20 has-background-white" style="z-index: 1000;">
         <ul>
-          <li class="is-active"><a>B2B Systems</a></li>
-          <li><a>Online Shop</a></li>
+          <li class="is-active"><a href="#b2b">B2B Systems</a></li>
+          <li><a href="#b2c">Online Shop</a></li>
         </ul>
       </div>
-      <div class="tab-content">
+      <div class="tab-content" id="b2b">
 
         <section class="has-padding-top-40-desktop">
 
@@ -326,7 +327,7 @@
 <!-- END B2B tab content -->
 <!-- B2B tab content -->
 
-      <div class="tab-content">
+      <div class="tab-content" id="b2c">
 
         <section class="has-padding-top-40-desktop">
 
@@ -717,7 +718,12 @@
     </footer>
 
     <script>
-            let tabsWithContent = (function () {
+        var Sticky = new hcSticky('#tabs', {
+          stickTo: ''
+        });
+  </script>
+    <script>
+        let tabsWithContent = (function () {
         let tabs = document.querySelectorAll('.tabs li');
         let tabsContent = document.querySelectorAll('.tab-content');
 
