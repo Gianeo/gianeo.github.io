@@ -30237,7 +30237,7 @@ img.gf-logo-centered {
           flex-grow: 1;
 }
 
-.gf-mobile-nav a.is-active {
+.gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {
   color: #FF2147;
 }
 
