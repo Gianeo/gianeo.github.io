@@ -18357,6 +18357,9 @@ table.is-completely-borderless tr {
 @media screen and (min-width: 1408px) {
   .has-margin-right-auto-fullhd {
     margin-right: auto !important; } }
+html {
+  background-color: transparent; }
+
 .title.is-1 {
   line-height: 2.8rem; }
 
@@ -18394,10 +18397,10 @@ section {
 h1.gjf-is-display {
   font-family: 'Abril Fatface';
   color: #2C3236;
-  font-size: 104px;
+  font-size: 96px;
   font-weight: 400;
   letter-spacing: -2.65px;
-  line-height: 50px; }
+  line-height: 45px; }
 
 h1.gjf-is-display span {
   display: block;
@@ -18523,7 +18526,7 @@ img.gf-logo-centered {
   padding: 15px; }
 
 .gf-nav-bar a {
-  background-color: #fff;
+  background-color: transparent;
   color: #424043; }
 
 @media screen and (min-width: 769px) {
@@ -18531,7 +18534,8 @@ img.gf-logo-centered {
     display: none; }
 
   .gf-nav-bar {
-    display: block; }
+    display: block;
+    background-color: transparent; }
 
   .gf-nav {
     display: flex;
