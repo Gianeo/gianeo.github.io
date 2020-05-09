@@ -351,6 +351,12 @@ div.gf-duties p {
     margin: 0;
     vertical-align: top;
 }
+div.gf-duties {
+    min-width: 300px;
+}
+div.gf-duties .gf-4-col p {
+    min-width: 270px;
+}
 
 @media screen and (min-width: 769px) {
 
@@ -370,7 +376,6 @@ div.gf-duties p {
         padding: 20px 40px 40px;
     }
     div.gf-duties p {
-        min-width: 300px;
         padding: 40px;
     }
 
