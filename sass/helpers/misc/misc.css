@@ -1,15 +1,6 @@
 .is-blurred {
-  -webkit-filter: blur(15px) !important;
-          filter: blur(15px) !important;
-}
-
-.is-blurred-medium {
-  -webkit-filter: blur(40px) !important;
-          filter: blur(40px) !important;
-}
-
-.is-blurred-hard {
-  -webkit-filter: blur(75px) !important;
-          filter: blur(75px) !important;
-}
-/*# sourceMappingURL=misc.css.map */
+  filter: blur(15px) !important; }
+  .is-blurred-medium {
+    filter: blur(40px) !important; }
+  .is-blurred-hard {
+    filter: blur(75px) !important; }
