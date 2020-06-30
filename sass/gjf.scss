@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow:300,500,700');
 
 // Update Bulma's global variables
-$family-sans-serif: "Roboto", sans-serif;
+$family-sans-serif: "Muli", sans-serif;
 $grey-dark: #424043;
 $grey-light: #EFEFEF;
 $primary: #4C5E7E;
-$link: #4C5E7E;
+$link: #2C374A;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
@@ -35,9 +35,18 @@ $input-shadow: none;
 html {
     background-color: transparent;
 }
+body {
+    font-weight: 300;
+}
 
 .title.is-1 {
     line-height: 2.8rem;
+}
+h1.title.is-4 {
+    font-weight: 700;
+}
+.title.is-6  {
+    font-weight: 500;
 }
 .title {
     line-height: 1.325;
@@ -52,17 +61,33 @@ p {
 }
 p.subtitle {
     max-width: 600px;
+    font-weight: 300;
+}
+a {
+    font-weight: 500;
+}
+
+.button {
+    background-color: rgba(($primary), 0.1);
+    border-color: rgba(($primary), 0.1);
+    color: $link;
+    border-width: 0;
+    font-weight: 500;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    height: 2.8em;
+    border-bottom: solid 1px #cfd2d8;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        width: 100%;
+    }
 }
 
 section {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.button {
-    background-color: white;
-    border-color: $link;
-    border-width: 1px;
-    color: $link;
+    padding-top: 0px;
+    padding-bottom: 60px;
 }
 
 @media screen and (min-width: 769px) {
@@ -72,40 +97,40 @@ section {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1215px) {
     section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
 h1.gjf-is-display {
-    font-family: 'Abril Fatface'; 
     color: #2C3236;
-    font-size: 96px;
-    font-weight: 400;
-    letter-spacing: -2.65px;
-    line-height: 45px;
+    font-size: 84px;
+    font-weight: 700;
+    letter-spacing: -3.85px;
+    line-height: 20px;
+    margin-left: -6px;
 }
 h1.gjf-is-display span {
     display: block;
     color: $grey-light;
-    font-size: 126px;
+    font-size: 84px;
     margin-left: 0;
     margin-top: 0;
 }
 h1.gjf-is-display span.gf-title-offset {
-    font-size: 90px;
+    color: transparent;
+    font-size: 40px;
     mix-blend-mode: multiply;
 }
 
 @media screen and (min-width: 769px) {
-    h1.gjf-is-display {
-        font-family: 'Abril Fatface'; 
+    h1.gjf-is-display { 
         color: $grey-dark;
         font-size: 158px;
-        font-weight: 400;
-        letter-spacing: -2.65px;
+        font-weight: 700;
+        letter-spacing: -3.85px;
     }
     h1.gjf-is-display span {
         display: block;
@@ -115,8 +140,8 @@ h1.gjf-is-display span.gf-title-offset {
     }
     h1.gjf-is-display span.gf-title-offset {
         font-size: 158px;
-        margin-left: 134px;
-        line-height: 38px;
+        margin-left: 116px;
+        line-height: 40px;
         mix-blend-mode: multiply;
     }
 }
@@ -167,6 +192,12 @@ img.gf-logo-centered {
 }
 .gf-sep-full {
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .gf-centered-mobile {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (min-width: 769px) {
     .gf-sep {
@@ -224,7 +255,7 @@ img.gf-logo-centered {
         padding: 10px 10px !important;
     }
     .gf-nav-bar a:hover, .gf-2nav-bar a:hover { 
-        background-color: $grey-light;       
+        background-color: rgba(($primary), 0.1);      
         color: $grey-dark;
         border-radius: 4px;
     }
@@ -339,14 +370,14 @@ time {
 div.gf-duties .gf-text {
     padding: 20px;
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     flex-flow: row wrap;
     flex-grow: 1;
 }
 div.gf-duties p {
     min-width: 300px;
     flex: 1;
-    color: #ffffffc4;
+    // color: #ffffffc4;
     padding: 20px;
     margin: 0;
     vertical-align: top;
@@ -373,10 +404,14 @@ div.gf-duties .gf-4-col p {
     }
 
     div.gf-duties .gf-text {
-        padding: 20px 40px 40px;
+        padding: 20px;
+    }
+    div.gf-duties .gf-text div {
+        width: 33%;
     }
     div.gf-duties p {
         padding: 40px;
+        max-width: 350px;
     }
 
 }
@@ -391,4 +426,13 @@ div.gf-duties .gf-4-col p {
         display: block;
     }
 
+}
+
+h6.title {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.75em;
+    color: #6f6e70;
+    font-weight: 400;
 }
