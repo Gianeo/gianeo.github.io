@@ -30175,7 +30175,8 @@ h1.gjf-is-display span.gf-title-offset {
     color: #424043;
     font-size: 158px;
     font-weight: 700;
-    letter-spacing: -3.85px;
+    letter-spacing: -0.055em;
+    margin-bottom: 8px !important;
   }
   h1.gjf-is-display span {
     display: block;
@@ -30184,9 +30185,10 @@ h1.gjf-is-display span.gf-title-offset {
     z-index: 0;
   }
   h1.gjf-is-display span.gf-title-offset {
+    color: #EFEFEF;
     font-size: 158px;
     margin-left: 116px;
-    line-height: 40px;
+    line-height: 55px;
     mix-blend-mode: multiply;
   }
 }
@@ -30234,6 +30236,24 @@ img.gf-logo-centered {
   .gf-centered-mobile {
     margin-left: auto;
     margin-right: auto;
+  }
+  .logos div {
+    width: 50%;
+    height: 130px !important;
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logos img {
+    max-width: 120px;
+    max-height: 130px;
   }
 }
 
