@@ -212,8 +212,8 @@ img.gf-logo-centered {
         align-items: center;
     }
     .logos img {
-        max-width: 120px;
-        max-height: 130px;
+        max-width: 80px;
+        max-height: 80px;
     }
 }
 @media screen and (min-width: 769px) {
@@ -224,6 +224,10 @@ img.gf-logo-centered {
     .gf-sep-marginless {
         margin-top: 0;
         margin-bottom: 0;
+    }
+    .logos img {
+        max-width: 90px;
+        max-height: 90px;
     }
 }
 
