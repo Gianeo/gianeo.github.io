@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow:300,500,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,500,800');
 
 // Update Bulma's global variables
 $family-sans-serif: "Muli", sans-serif;
@@ -43,7 +43,7 @@ body {
     line-height: 2.8rem;
 }
 h1.title.is-4 {
-    font-weight: 700;
+    font-weight: 800;
 }
 .title.is-6  {
     font-weight: 500;
@@ -110,7 +110,7 @@ section {
 h1.gjf-is-display {
     color: #2C3236;
     font-size: 84px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -3.85px;
     line-height: 20px;
     margin-left: -6px;
@@ -132,7 +132,7 @@ h1.gjf-is-display span.gf-title-offset {
     h1.gjf-is-display { 
         color: $grey-dark;
         font-size: 146px;
-        font-weight: 700;
+        font-weight: 800;
         letter-spacing: -0.055em;
         margin-bottom: 8px !important;
     }
@@ -359,7 +359,7 @@ img.gf-logo-centered {
 
 a.is-active, .tabs .is-active a {
     color: #FF2147 !important;
-    font-weight: 600;
+    font-weight: 800;
 }
 .tabs .is-active a {
     border-bottom-color: #FF2147 !important;
@@ -367,7 +367,7 @@ a.is-active, .tabs .is-active a {
 
 /* tabs */
 .tabs a {
-    font-weight: 600;
+    font-weight: 800;
 }
 #tabs-with-content .tabs:not(:last-child) {
     margin-bottom: 0;
@@ -455,5 +455,5 @@ h6.title {
     text-align: center;
     letter-spacing: 0.75em;
     color: #6f6e70;
-    font-weight: 400;
+    font-weight: 300;
 }
