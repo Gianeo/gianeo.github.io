@@ -30125,7 +30125,7 @@ header div.mask .svg-masked {
 
 /* Work experience */
 .gf-work div {
-  padding: 24px 24px 64px;
+  padding: 24px 24px 40px;
 }
 
 .gf-work time {
@@ -30151,7 +30151,7 @@ header div.mask .svg-masked {
 }
 
 .gf-work a {
-  margin: 32px 0 0;
+  margin: 32px 0;
   width: 100%;
 }
 
@@ -30217,7 +30217,7 @@ svg.gf-decor-01 {
 /* Footer navigation */
 .gf-footer-nav {
   display: block;
-  padding: 0 24px 24px;
+  padding: 24px;
   text-align: center;
 }
 
