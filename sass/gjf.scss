@@ -35,9 +35,25 @@ $input-shadow: none;
 
 body {
     background-color: #fff;
-} 
+}
+section {
+    margin: 0;
+}
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 768px) {
+
+    body {
+        background-color: $grey-light;
+    }
+    body .container {
+        background-color: #fff;
+        max-width: 1152px;
+        padding: 0;
+    }   
+
+}
+
+@media screen and (min-width: 1152px) {
 
     body {
         background-color: $grey-light;
@@ -148,11 +164,15 @@ header div.mask .svg-masked {
     margin: 32px 0;
     width: 100%;
 }
+.gf-work .gf-work-pic-mobile {
+    display: block;
+    height: 200px;
+}
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 768px) {
 
     .gf-work {
-        padding: 80px 56px;
+        padding: 24px;
         overflow: auto;
         clear: left;
     }
@@ -165,6 +185,17 @@ header div.mask .svg-masked {
     } 
     .gf-work a {
         width: auto;
+    }
+    .gf-work .gf-work-pic-mobile {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .gf-work {
+        padding: 80px 56px;
     }
 
 }
@@ -182,6 +213,8 @@ header div.mask .svg-masked {
     font-weight: 300;
     text-align: center;
     padding: 16px 0 24px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .gf-what p b {
     color: #fff;
@@ -195,7 +228,11 @@ header div.mask .svg-masked {
     display: block;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 768px) {
+    
+    .gf-what {
+        margin: 0 0 24px;
+    }
 
     .gf-what p {
         padding: 16px 24px 24px;
@@ -235,7 +272,7 @@ img.gf-svg-shape-mobile {
     max-height: 60px;
 }
 
-@media screen and (min-width: 1344px) {
+@media screen and (min-width: 768px) {
 
     img.gf-svg-shape-mobile {
         display: none;
@@ -255,6 +292,22 @@ img.gf-svg-shape-mobile {
     }
     .gf-logos div {
         width: 16.6%;
+        padding: 24px;
+    }
+    .gf-logos div img { 
+        max-height: 60px;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .gf-logos div {
+        width: 16.6%;
+        padding: 40px;
+    }
+    .gf-logos div img { 
+        max-height: 60px;
     }
 
 
