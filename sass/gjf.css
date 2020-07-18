@@ -30113,6 +30113,14 @@ header div.mask .svg-masked {
   margin: 0;
 }
 
+@media screen and (min-width: 375px) {
+  header h2 {
+    text-align: right;
+    width: 130px;
+    margin: -100px 24px 52px;
+  }
+}
+
 /* Intro */
 .gf-intro {
   font-size: 21px;
