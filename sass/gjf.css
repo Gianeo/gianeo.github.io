@@ -30079,20 +30079,25 @@ section {
     background-color: #F2F4F4;
   }
   body .container {
+    position: relative;
     background-color: #fff;
     max-width: 1152px;
-    padding: 0;
+    padding: 48px 24px;
   }
 }
 
 @media screen and (min-width: 1152px) {
   body {
     background-color: #F2F4F4;
+    background-image: url(../images/photos/generic/bg-profile.jpg), url(../images/shapes/bg-shape.svg);
+    background-repeat: no-repeat;
+    background-size: auto, 100%;
+    background-position: center 200px, top left;
   }
   body .container {
     background-color: #fff;
     max-width: 1152px;
-    padding: 80px;
+    padding: 48px 80px 16px;
   }
 }
 
@@ -30112,6 +30117,10 @@ section {
 header {
   text-align: center;
   margin: 0;
+}
+
+header .gf-top-corner {
+  display: none;
 }
 
 header h1 {
@@ -30135,12 +30144,16 @@ header a {
 }
 
 header div.mask {
+  display: none;
+}
+
+header div.mask-mobile {
   padding: 24px 24px 0;
 }
 
-header div.mask .svg-masked {
-  -webkit-clip-path: url(#svgPath);
-  clip-path: url(#svgPath);
+header div.mask-mobile .svg-masked {
+  -webkit-clip-path: url(#svgPathMobile);
+  clip-path: url(#svgPathMobile);
   width: 100%;
   min-height: 425px;
   margin: 0;
@@ -30154,14 +30167,78 @@ header div.mask .svg-masked {
   }
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    text-align: left;
+  }
+  header svg.gf-top-corner, header svg.gf-top-corner rect {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 208px;
+    height: 8px;
+    fill: #F2F4F4;
+  }
+  header h1 {
+    border-top: none;
+    padding: 0 0 0 24px;
+  }
+  header h2 {
+    width: 150px;
+    margin: -130px 0 52px;
+  }
+  header a.button {
+    position: absolute;
+    top: 48px;
+    right: 56px;
+  }
+  header div.mask-mobile {
+    display: none;
+  }
+  header div.mask {
+    display: block;
+    padding: 64px 0 0;
+  }
+  header div.mask .svg-masked {
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    width: 100%;
+    min-height: 425px;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  header svg.gf-top-corner, header svg.gf-top-corner rect {
+    width: 232px;
+    fill: #494949;
+  }
+  header h1 {
+    border-top: none;
+    padding: 0;
+  }
+}
+
 /* Intro */
-.gf-intro {
+.gf-intro p {
   font-size: 21px;
   font-weight: 300;
   line-height: 30px;
   padding: 24px;
   margin: 32px 0;
   max-width: 400px;
+}
+
+@media screen and (min-width: 768px) {
+  .gf-intro {
+    background: url(../images/shapes/bg-intro.svg) no-repeat top center;
+    padding: 0 24px 96px;
+  }
+  .gf-intro p {
+    margin-left: 170px;
+    width: 420px;
+  }
 }
 
 /* Work experience */
@@ -30224,14 +30301,48 @@ header div.mask .svg-masked {
 
 @media screen and (min-width: 960px) {
   .gf-work {
-    padding: 80px 56px;
+    padding: 80px 24px;
+  }
+}
+
+/* Showcase */
+.gf-showcase {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gf-showcase {
+    display: block;
+    overflow: auto;
+    clear: left;
+  }
+  .gf-showcase div {
+    background-color: #F2F4F4;
+    height: 320px;
+    padding: 40px;
+    float: left;
+    margin-bottom: 24px;
+  }
+  .gf-showcase div.gf-case-one {
+    width: 60%;
+  }
+  .gf-showcase div.gf-case-two {
+    width: 40%;
+    border-left: solid #fff 24px;
+  }
+  .gf-showcase div.gf-case-three {
+    width: 40%;
+  }
+  .gf-showcase div.gf-case-four {
+    width: 60%;
+    border-left: solid #fff 24px;
   }
 }
 
 /* What I do */
 .gf-what {
   background-color: #424043;
-  padding: 64px;
+  padding: 64px 48px;
   margin: 0 0 40px;
 }
 
@@ -30319,8 +30430,8 @@ img.gf-svg-shape {
     background: transparent url(../images/shapes/shape02.svg) no-repeat center center;
     background-size: 100%;
     overflow: auto;
-    height: 234px;
-    padding: 48px 0;
+    height: 246px;
+    padding: 48px 24px;
     margin: 0;
   }
   .gf-logos div {
