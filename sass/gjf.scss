@@ -171,18 +171,28 @@ svg.gf-decor-01 {
 }
 
 
+/* Footer navigation */
 
-.gf-2nav-bar a {          
-   display: inline-block;
-        padding: 10px 20px !important;
-        text-align: center;
-        color: $grey-dark;
-        line-height: 20px;
-    }
+.gf-footer-nav {
+    display: block;
+    padding: 0 24px 24px;
+    text-align: center;
+}
+.gf-footer-nav a {
+    display: block;
+    padding: 12px;
+}
+.gf-footer-nav h6 {
+    color: $grey;
+    font-weight: 300;
+    margin: 0 0 24px;
+}
 
 
 
+footer {
 
+}
 
 
 

@@ -30214,11 +30214,21 @@ svg.gf-decor-01 {
   max-height: 60px;
 }
 
-.gf-2nav-bar a {
-  display: inline-block;
-  padding: 10px 20px !important;
+/* Footer navigation */
+.gf-footer-nav {
+  display: block;
+  padding: 0 24px 24px;
   text-align: center;
-  color: #424043;
-  line-height: 20px;
+}
+
+.gf-footer-nav a {
+  display: block;
+  padding: 12px;
+}
+
+.gf-footer-nav h6 {
+  color: #818F9B;
+  font-weight: 300;
+  margin: 0 0 24px;
 }
 /*# sourceMappingURL=gjf.css.map */
