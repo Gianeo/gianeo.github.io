@@ -30093,12 +30093,24 @@ header h1 {
 }
 
 header h2 {
-  margin: 24px auto 48px;
+  margin: 0 auto 48px;
   font-weight: 700;
 }
 
 header a {
   margin: 0 auto;
+}
+
+header div.mask {
+  padding: 24px 24px 0;
+}
+
+header div.mask .svg-masked {
+  -webkit-clip-path: url(#svgPath);
+  clip-path: url(#svgPath);
+  width: 100%;
+  min-height: 425px;
+  margin: 0;
 }
 
 /* Intro */
