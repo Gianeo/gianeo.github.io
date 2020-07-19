@@ -30143,12 +30143,14 @@ header a {
   margin: 0 auto;
 }
 
-header div.mask {
+header div.mask-tablet, header div.mask-desktop {
   display: none;
 }
 
 header div.mask-mobile {
   padding: 24px 24px 0;
+  width: 375px;
+  margin: 0 auto;
 }
 
 header div.mask-mobile .svg-masked {
@@ -30193,18 +30195,19 @@ header div.mask-mobile .svg-masked {
     top: 48px;
     right: 56px;
   }
-  header div.mask-mobile {
+  header div.mask-mobile, header div.mask-desktop {
     display: none;
   }
-  header div.mask {
+  header div.mask-tablet {
     display: block;
     padding: 64px 0 0;
+    width: 728px;
+    margin: 0 auto;
   }
-  header div.mask .svg-masked {
-    -webkit-clip-path: url(#svgPath);
-    clip-path: url(#svgPath);
-    width: 100%;
-    min-height: 645px;
+  header div.mask-tablet .svg-masked {
+    -webkit-clip-path: url(#svgPathTablet);
+    clip-path: url(#svgPathTablet);
+    min-height: 467px;
     margin: 0;
   }
 }
@@ -30217,6 +30220,20 @@ header div.mask-mobile .svg-masked {
   header h1 {
     border-top: none;
     padding: 0;
+  }
+  header div.mask-mobile, header div.mask-tablet {
+    display: none;
+  }
+  header div.mask-desktop {
+    display: block;
+    padding: 64px 0 0;
+  }
+  header div.mask-desktop .svg-masked {
+    -webkit-clip-path: url(#svgPathDesktop);
+    clip-path: url(#svgPathDesktop);
+    width: 100%;
+    min-height: 645px;
+    margin: 0;
   }
 }
 
