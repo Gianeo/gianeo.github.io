@@ -348,24 +348,25 @@ header a {
         clear: left;
     }
     .gf-showcase div {
-        background-color: $grey-light;
-        height: 320px;
-        padding: 40px;
         float: left;
-        margin-bottom: 24px;
+        margin-bottom: 18px;
+    }
+    .gf-showcase div img {
+        padding: 0;
+        margin: 0;
     }
     .gf-showcase div.gf-case-one {
-        width: 60%;
+        width: auto;
     }
     .gf-showcase div.gf-case-two {
-        width: 40%;
+        width: auto;
         border-left: solid #fff 24px;
     }
     .gf-showcase div.gf-case-three {
-        width: 40%;
+        width: auto;
     }
     .gf-showcase div.gf-case-four {
-        width: 60%;
+        width: auto;
         border-left: solid #fff 24px;
     }
 
