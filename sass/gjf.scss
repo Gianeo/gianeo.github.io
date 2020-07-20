@@ -105,31 +105,37 @@ header h1 {
     padding: 8px 0 0;
 }
 header .gf-hero {
-    margin: 32px auto 56px;
+    position: relative;
+    background: url(../images/photos/generic/hero-mobile.jpg) no-repeat top center;
+    width: 280px;
+    height: 362px;
+    margin: 24px auto 56px;
 }
-header h2 {
+header .gf-hero h2 {
+    position: absolute;
+    bottom: 0;
     text-align: right;
     width: 108px;
-    margin: -92px 0 0;
+    margin: 0;
     font-weight: 700;
 }
 header a {
     margin: 0 auto;
 }
 
-header div.mask-tablet, header div.mask-desktop {
-    display: none;
-}
-header div.mask-mobile, header .gf-hero {
-    width: 280px;
-    height: 362px;
-}
-header div.mask-mobile .svg-masked {
-    -webkit-clip-path: url(#svgPathMobile);
-    clip-path: url(#svgPathMobile);
-    width: 280px;
-    height: 362px;
-}
+// header div.mask-tablet, header div.mask-desktop {
+//     display: none;
+// }
+// header div.mask-mobile, header .gf-hero {
+//     width: 280px;
+//     height: 362px;
+// }
+// header div.mask-mobile .svg-masked {
+//     -webkit-clip-path: url(#svgPathMobile);
+//     clip-path: url(#svgPathMobile);
+//     width: 280px;
+//     height: 362px;
+// }
 
 @media screen and (min-width: 375px) {
 
@@ -160,32 +166,33 @@ header div.mask-mobile .svg-masked {
         padding: 0 0 0 24px;
     }
     header .gf-hero {
-        margin: 80px auto 0;
-    }
-    header .gf-hero h2 {
-        width: 140px;
-        margin: -100px 0 0;
+        position: relative;
+        background: url(../images/photos/generic/hero.jpg) no-repeat top center;
+        background-size: contain;
+        width: 720px;
+        height: 464px;
+        margin: 56px auto 56px;
     }
     header a.button {
         position: absolute;
         top: 48px;
         right: 56px;
     }
-    header div.mask-mobile, header div.mask-desktop {
-        display: none;
-    }
-    header div.mask-tablet, header .gf-hero {
-        display: block;
-        width: 728px;
-        height: 467px;
-    }
-    header div.mask-tablet .svg-masked {
-        -webkit-clip-path: url(#svgPathTablet);
-        clip-path: url(#svgPathTablet);
-        width: 728px;
-        height: 467px;
-        margin: 0;
-    }
+    // header div.mask-mobile, header div.mask-desktop {
+    //     display: none;
+    // }
+    // header div.mask-tablet, header .gf-hero {
+    //     display: block;
+    //     width: 728px;
+    //     height: 467px;
+    // }
+    // header div.mask-tablet .svg-masked {
+    //     -webkit-clip-path: url(#svgPathTablet);
+    //     clip-path: url(#svgPathTablet);
+    //     width: 728px;
+    //     height: 467px;
+    //     margin: 0;
+    // }
 
 }
 
@@ -199,24 +206,31 @@ header div.mask-mobile .svg-masked {
         border-top: none;
         padding: 0;
     }
+    header .gf-hero {
+        background: url(../images/photos/generic/hero.jpg) no-repeat;
+        width: 100%;
+        height: 652px;
+        margin: 80px 0 0;
+    }
     header .gf-hero h2 {
-        width: 152px;
-        margin: -110px 0 0;
+        top: 0;
+        left: 290px;
+        width: 150px;
     }
-    header div.mask-mobile, header div.mask-tablet {
-        display: none;
-    }
-    header div.mask-desktop, header .gf-hero {
-        display: block;
-        width: 1010px;
-        height: 652px;
-    }
-    header div.mask-desktop .svg-masked {
-        -webkit-clip-path: url(#svgPathDesktop);
-        clip-path: url(#svgPathDesktop);
-        width: 1010px;
-        height: 652px;
-    }
+    // header div.mask-mobile, header div.mask-tablet {
+    //     display: none;
+    // }
+    // header div.mask-desktop, header .gf-hero {
+    //     display: block;
+    //     width: 1010px;
+    //     height: 652px;
+    // }
+    // header div.mask-desktop .svg-masked {
+    //     -webkit-clip-path: url(#svgPathDesktop);
+    //     clip-path: url(#svgPathDesktop);
+    //     width: 1010px;
+    //     height: 652px;
+    // }
 
 }
 
@@ -238,7 +252,7 @@ header div.mask-mobile .svg-masked {
         padding: 0 24px 96px;
     }
     .gf-intro p {
-        margin-left: 170px;
+        margin-left: 154px;
         width: 420px;
     }
 
