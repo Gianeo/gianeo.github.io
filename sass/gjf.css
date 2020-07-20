@@ -30070,6 +30070,13 @@ body {
   background-color: #fff;
 }
 
+body .container {
+  position: relative;
+  background-color: #fff;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 section {
   margin: 0;
 }
@@ -30079,8 +30086,6 @@ section {
     background-color: #F2F4F4;
   }
   body .container {
-    position: relative;
-    background-color: #fff;
     max-width: 1152px;
     padding: 48px 24px;
   }
@@ -30095,7 +30100,6 @@ section {
     background-position: center 200px, top left;
   }
   body .container {
-    background-color: #fff;
     max-width: 1152px;
     padding: 48px 80px 16px;
   }
@@ -30417,6 +30421,7 @@ img.gf-svg-shape {
 
 .gf-logos div img {
   opacity: 0.4;
+  max-width: 100px;
   max-height: 60px;
 }
 
