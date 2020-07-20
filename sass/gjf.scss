@@ -171,7 +171,7 @@ header a {
         background-size: contain;
         width: 720px;
         height: 464px;
-        margin: 56px auto 56px;
+        margin: 56px auto 0;
     }
     header a.button {
         position: absolute;
@@ -241,7 +241,7 @@ header a {
     font-weight: 300;
     line-height: 30px;
     padding: 24px;
-    margin: 32px 0;
+    margin: 32px auto;
     max-width: 400px;
 }
 
@@ -252,8 +252,16 @@ header a {
         padding: 0 24px 96px;
     }
     .gf-intro p {
-        margin-left: 154px;
+        margin: 0 auto;
         width: 420px;
+    }
+
+}
+
+@media screen and (min-width: 1152px) {
+
+    .gf-intro p {
+        margin: 42px 0 24px 154px;
     }
 
 }
