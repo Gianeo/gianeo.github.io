@@ -30134,8 +30134,14 @@ header h1 {
   padding: 8px 0 0;
 }
 
+header .gf-hero {
+  margin: 32px auto 56px;
+}
+
 header h2 {
-  margin: 0 auto 48px;
+  text-align: right;
+  width: 108px;
+  margin: -92px 0 0;
   font-weight: 700;
 }
 
@@ -30147,25 +30153,23 @@ header div.mask-tablet, header div.mask-desktop {
   display: none;
 }
 
-header div.mask-mobile {
-  padding: 24px 24px 0;
-  width: 375px;
-  margin: 0 auto;
+header div.mask-mobile, header .gf-hero {
+  width: 280px;
+  height: 362px;
 }
 
 header div.mask-mobile .svg-masked {
   -webkit-clip-path: url(#svgPathMobile);
   clip-path: url(#svgPathMobile);
-  width: 100%;
-  min-height: 425px;
-  margin: 0;
+  width: 280px;
+  height: 362px;
 }
 
 @media screen and (min-width: 375px) {
   header h2 {
     text-align: right;
-    width: 130px;
-    margin: -100px 24px 52px;
+    width: 108px;
+    margin: -92px 0 0;
   }
 }
 
@@ -30186,9 +30190,12 @@ header div.mask-mobile .svg-masked {
     border-top: none;
     padding: 0 0 0 24px;
   }
-  header h2 {
-    width: 150px;
-    margin: -130px 0 52px;
+  header .gf-hero {
+    margin: 80px auto 0;
+  }
+  header .gf-hero h2 {
+    width: 140px;
+    margin: -100px 0 0;
   }
   header a.button {
     position: absolute;
@@ -30198,16 +30205,16 @@ header div.mask-mobile .svg-masked {
   header div.mask-mobile, header div.mask-desktop {
     display: none;
   }
-  header div.mask-tablet {
+  header div.mask-tablet, header .gf-hero {
     display: block;
-    padding: 64px 0 0;
     width: 728px;
-    margin: 0 auto;
+    height: 467px;
   }
   header div.mask-tablet .svg-masked {
     -webkit-clip-path: url(#svgPathTablet);
     clip-path: url(#svgPathTablet);
-    min-height: 467px;
+    width: 728px;
+    height: 467px;
     margin: 0;
   }
 }
@@ -30221,19 +30228,23 @@ header div.mask-mobile .svg-masked {
     border-top: none;
     padding: 0;
   }
+  header .gf-hero h2 {
+    width: 152px;
+    margin: -110px 0 0;
+  }
   header div.mask-mobile, header div.mask-tablet {
     display: none;
   }
-  header div.mask-desktop {
+  header div.mask-desktop, header .gf-hero {
     display: block;
-    padding: 64px 0 0;
+    width: 1010px;
+    height: 652px;
   }
   header div.mask-desktop .svg-masked {
     -webkit-clip-path: url(#svgPathDesktop);
     clip-path: url(#svgPathDesktop);
-    width: 100%;
-    min-height: 645px;
-    margin: 0;
+    width: 1010px;
+    height: 652px;
   }
 }
 
