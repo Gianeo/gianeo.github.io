@@ -174,7 +174,7 @@ header a {
         background-size: contain;
         width: 720px;
         height: 464px;
-        margin: 56px auto 0;
+        margin: 72px auto 0;
     }
     header a.button {
         position: absolute;
@@ -356,18 +356,32 @@ header a {
         margin: 0;
     }
     .gf-showcase div.gf-case-one {
-        width: auto;
+        width: 50%;
+        border-right: solid #fff 12px;
+    } .gf-showcase div.gf-case-one img {
+        width: 100%;
+        height: auto;
     }
     .gf-showcase div.gf-case-two {
-        width: auto;
-        border-left: solid #fff 24px;
+        width: 50%;
+        border-left: solid #fff 12px;
+    } .gf-showcase div.gf-case-two img {
+        width: 100%;
+        height: auto;
     }
     .gf-showcase div.gf-case-three {
-        width: auto;
+        width: 60%;
+        border-right: solid #fff 12px;
+    }.gf-showcase div.gf-case-three img {
+        width: 100%;
+        height: auto;
     }
     .gf-showcase div.gf-case-four {
-        width: auto;
-        border-left: solid #fff 24px;
+        width: 40%;
+        border-left: solid #fff 12px;
+    }.gf-showcase div.gf-case-four img {
+        width: 100%;
+        height: auto;
     }
 
 }
