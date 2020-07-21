@@ -275,7 +275,7 @@ header a {
 .gf-work div {
     padding: 24px 24px 40px;
 }
-.gf-work time {
+time {
     color: $grey;
     font-weight: 300;
 }
@@ -520,12 +520,155 @@ img.gf-svg-shape-mobile {
 
 
 
+/* Navigation */
+
+.gf-nav-bar {
+    display: none;
+}
+.gf-mobile-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;     
+    margin: 0 !important;
+    padding-top: 5px;
+    border-top: solid $grey-light 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: 10000;
+}
+.gf-mobile-nav a {     
+    color: $grey-dark;       
+    display: inline-block;
+    color: $grey-dark;
+    font-weight: 600;
+    padding: 10px 10px 30px !important;
+    text-align: center;
+    flex-grow: 1;
+}
+.gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {     
+    color: #FF2147;
+}
+.gf-mobile-nav div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px !important;
+    justify-content: space-between;
+}
+.gf-nav-bar a:hover { 
+    background-color: rgba(($primary), 0.1);      
+    color: $grey-dark;
+    border-radius: 4px;
+}
+.gf-works-nav {
+    display: none;
+}
+
+.gf-list-menu-mobile a {
+    display: block;
+    padding: 15px;
+}
+
+.gf-nav-bar a {          
+    background-color: transparent;
+    color: $grey-dark;
+}
+
+@media screen and (min-width: 769px) {
+
+.gf-mobile-nav {
+    display: none;
+}
+.gf-works-nav {
+    background-color: #fff;
+    max-width: 1152px;
+    padding: 24px 48px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.gf-works-nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    line-height: 20px;
+}
+.gf-works-nav a:nth-child(1) {
+    white-space: nowrap;
+    text-align: left;
+    margin-right: 32px
+}
+
+}
 
 
+/* Job content header */
 
+.gf-content-header {
+    text-align: center;
+    padding: 40px 24px;
+}
+.gf-content-header time {
 
+}
+.gf-content-header h1 {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    padding: 8px 0;
+}
+.gf-content-header h2 {
 
+}
+.gf-content-header p {
+    background-color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 24px;
+    margin: 24px auto;
+    max-width: 400px;
+    text-align: left;
+}
+.gf-content-header div {
+    background-position-x: -1000px !important;
+}
 
+@media screen and (min-width: 768px) {
+
+    main.container {
+        padding: 48px;
+    }
+    .gf-content-header {
+        text-align: left;
+        padding: 36px 0;
+    }
+    .gf-content-header h1 {
+        font-size: 68px;
+        line-height: 76px;
+        letter-spacing: -2.26px;
+        padding: 16px 0 8px;
+    }
+    .gf-content-header h2 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0 0 24px;
+    }
+    .gf-content-header p {
+        background-color: #fff;
+        padding: 0 48px 48px 0;
+        margin: 0;
+    }
+    .gf-content-header div {
+        background-position-x: 0 !important;
+        margin: 40px 0 0;
+        padding: 0 0 160px;
+    }
+
+}
 
 
 // Old CSS
@@ -722,114 +865,7 @@ img.gf-svg-shape-mobile {
 //     }
 // }
 
-//     .gf-nav-bar, .gf-nav {
-//         display: none;
-//     }
-//     .gf-mobile-nav {
-//         position: fixed;
-//         bottom: 0;
-//         width: 100%;
-//         background-color: #fff;     
-//         margin: 0 !important;
-//         padding-top: 5px;
-//         border-top: solid $grey-light 1px;
-//         border-top-left-radius: 25px;
-//         border-top-right-radius: 25px;
-//         z-index: 10000;
-//     }
-//     .gf-mobile-nav .gf-main-nav-mobile a {     
-//         color: $grey-dark;       
-//         display: inline-block;
-//         color: $grey-dark;
-//         font-weight: 600;
-//         padding: 10px 10px 30px !important;
-//         text-align: center;
-//         flex-grow: 1;
-//     }
-//     .gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {     
-//         color: #FF2147;
-//     }
-//     .gf-main-nav-mobile, .gf-2nav-mobile-bar {
-//         display: flex;
-//         flex-direction: row;
-//         width: 100%;
-//         padding: 0 10px !important;
-//         justify-content: space-between;
-//     }
-//     .gf-2nav-mobile-bar a {   
-//         color: $grey-dark;
-//         padding: 10px 10px !important;
-//     }
-//     .gf-nav-bar a:hover, .gf-2nav-bar a:hover { 
-//         background-color: rgba(($primary), 0.1);      
-//         color: $grey-dark;
-//         border-radius: 4px;
-//     }
-//     .gf-2nav-bar {
-//         display: none;
-//     }
 
-//     .gf-list-menu-mobile a {
-//         display: block;
-//         padding: 15px;
-//     }
-
-//     .gf-nav-bar a {          
-//         background-color: transparent;
-//         color: $grey-dark;
-//     }
-
-// @media screen and (min-width: 769px) {
-
-//     .gf-mobile-nav {
-//         display: none;
-//     }
-//     .gf-nav-bar {
-//         display: block;
-//         background-color: transparent;
-//     }
-//     .gf-nav {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-end;
-//     }
-//     .gf-nav a {          
-//         display: inline-block;
-//         color: $grey-dark;
-//         font-weight: 600;
-//         padding: 10px 20px !important;
-//         text-align: center;
-//     }
-//     .gf-2nav {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: flex-end;
-//     }
-//     .gf-2nav-bar a {          
-//         display: inline-block;
-//         padding: 10px 20px !important;
-//         text-align: center;
-//         color: $grey-dark;
-//         line-height: 20px;
-//     }
-
-// }
-
-// @media screen and (min-width: 1024px) {
-
-//     .gf-nav-bar, .gf-2nav-bar {
-//         padding: 0 3% !important;
-//     }
-//     .gf-2nav-mobile-bar {
-//         display: none;
-//     }
-//     .gf-2nav-bar {
-//         display: block;
-//         margin-right: 20px !important;
-//         margin-left: 10px !important;
-//     }
-
-// }
 
 
 // .gf-visible-desktop {
