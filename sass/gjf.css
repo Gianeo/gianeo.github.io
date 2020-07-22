@@ -30692,6 +30692,7 @@ div.gf-duties {
 }
 
 div.gf-duties .gf-text {
+  background: url(../images/shapes/bg-intro.svg) no-repeat top center;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
