@@ -9,7 +9,7 @@ $grey-dark: #424043;
 $grey: #818F9B;
 $grey-light: #F2F4F4;
 $primary: #40B9C9;
-$link: #2C374A;
+$link: #2A5A60;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
@@ -551,9 +551,9 @@ img.gf-svg-shape-mobile {
     z-index: 10000;
 }
 .gf-mobile-nav a {     
-    color: $grey-dark;       
+    color: $link;       
     display: inline-block;
-    color: $grey-dark;
+    color: $link;
     font-weight: 600;
     padding: 10px 10px 30px !important;
     text-align: center;
@@ -601,7 +601,7 @@ img.gf-svg-shape-mobile {
     .gf-works-nav a {
         display: inline-block;
         padding: 8px 16px;
-        text-align: center;
+        text-align: left;
         line-height: 20px;
     }
     .gf-works-nav a:nth-child(1) {
