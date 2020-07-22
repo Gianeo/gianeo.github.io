@@ -60,14 +60,14 @@ p {
     font-weight: 700;
     padding: 24px 0;
 }
-.gf-work-template main section h2.gf-title-light {
+.gf-work-template main section h2.gf-title-light  {
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     color: $grey;
     font-weight: 300;
-    padding: 0 24px 64px;
+    padding: 0 24px 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -82,6 +82,9 @@ p {
     .gf-work-template main section {
         padding: 40px 0 80px;
     } 
+    .gf-work-template main section h2.gf-title-light  {
+        padding: 0 24px 64px;
+    }
 
 }
 
@@ -112,6 +115,10 @@ p {
     height: 49px;
     padding-left: 24px;
     padding-right: 24px;
+} a.button.is-primary {
+    border-radius: 290486px;
+    padding-left: calc(1em + 0.25em);
+    padding-right: calc(1em + 0.25em);
 }
 
 
@@ -131,7 +138,7 @@ header h1 {
     font-weight: 300;
     display: inline-block;
     border-top: solid 8px $grey-light;
-    margin: 0 auto 16px;
+    margin: 0 auto 32px;
     padding: 8px 0 0;
 }
 header .gf-hero {
@@ -194,6 +201,7 @@ header a {
     header h1 {
         border-top: none;
         padding: 0 0 0 24px;
+        margin: inherit inherit 16px;
     }
     header .gf-hero {
         position: relative;
@@ -525,26 +533,6 @@ img.gf-svg-shape-mobile {
 
 }
 
-
-/* Footer navigation */
-
-.gf-footer-nav {
-    display: block;
-    padding: 24px;
-    text-align: center;
-}
-.gf-footer-nav a {
-    display: block;
-    padding: 12px;
-}
-.gf-footer-nav h6 {
-    color: $grey;
-    font-weight: 300;
-    margin: 0 0 24px;
-}
-
-
-
 /* Navigation */
 
 .gf-nav-bar {
@@ -588,11 +576,6 @@ img.gf-svg-shape-mobile {
 }
 .gf-works-nav {
     display: none;
-}
-
-.gf-list-menu-mobile a {
-    display: block;
-    padding: 15px;
 }
 
 .gf-nav-bar a {          
@@ -714,7 +697,8 @@ img.gf-svg-shape-mobile {
 }
 .gf-duties .gf-text {
     background: url(../images/shapes/bg-intro.svg) no-repeat bottom center;
-    padding:  0;
+    background-size: 100%;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
@@ -722,7 +706,7 @@ img.gf-svg-shape-mobile {
 .gf-duties p {
     min-width: 300px;
     flex: 1;
-    padding: 24px;
+    padding: 0 24px 32px;
     margin: 0;
     vertical-align: top;
 }
@@ -736,6 +720,7 @@ img.gf-svg-shape-mobile {
         padding: 16px 0;
     }
     .gf-duties .gf-text {
+        background-size: auto;
         padding: 0;
     }
     .gf-duties .gf-text div {
@@ -744,6 +729,35 @@ img.gf-svg-shape-mobile {
     .gf-duties p {
         padding: 0 64px 48px;
         max-width: 350px;
+    }
+
+}
+
+/* Quotes */
+
+.gf-quote {
+    max-width: 480px;
+    padding: 32px 24px;
+    margin: 0 auto;
+}
+.gf-quote p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 24px;
+    text-align: left;
+}
+p.gf-quotedby {
+    font-size: 16px;
+    margin: 24px 0 0;
+} p.gf-quotedby strong {
+    color: $grey-dark;
+}
+
+@media screen and (min-width: 768px) {
+
+    p.gf-quotedby {
+        margin: 40px 0 0;
     }
 
 }
@@ -805,6 +819,45 @@ div.gf-col-text-right {
     }
     .gf-work-template .gf-work-pic-mobile {
         height: inherit;
+    }
+
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #fff;
+    padding: 0 24px 80px;
+}
+footer h2  {
+    padding-bottom: 40px !important;
+    color: $grey;
+    font-weight: 300;
+}
+footer .gf-list-menu-mobile {
+    text-align: center;
+    padding: 40px 0 80px;
+}
+footer .gf-list-menu-mobile a {
+    display: block;
+    padding: 15px;
+}
+.gf-footer-sub {
+    text-align: center;
+    padding: 24px 24px 80px;
+}
+
+@media screen and (min-width: 960px) {
+
+    footer {
+        background: $grey-light url(../images/shapes/footer-shape.svg) no-repeat bottom left;
+        background-size: 100%;
+        min-height: 400px;
+        padding-bottom: 40px;
+    }
+    .gf-footer-sub {
+        padding: 40px 24px 64px;
     }
 
 }
