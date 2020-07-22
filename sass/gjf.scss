@@ -47,15 +47,27 @@ section {
 }
 p {
     font-weight: 300;
+    margin: 0 0 24px;
 }
-.gf-title-light {
+
+.gf-work-template main section {
+    padding: 32px 24px;
+}
+.gf-work-template main section h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.25px;
+    font-weight: 700;
+    padding: 24px 0;
+}
+.gf-work-template main section h2.gf-title-light {
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5em;
     color: $grey;
     font-weight: 300;
-    padding: 32px;
+    padding: 0 24px 64px;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,7 +78,10 @@ p {
     body .container {
         max-width: 1152px;
         padding: 48px 24px 32px;
-    }   
+    }  
+    .gf-work-template main section {
+        padding: 40px 0 80px;
+    } 
 
 }
 
@@ -694,47 +709,106 @@ img.gf-svg-shape-mobile {
 
 /* My role and duties */
 
-div.gf-duties {
+.gf-duties {
     padding: 32px 24px;
 }
-div.gf-duties .gf-text {
-    background: url(../images/shapes/bg-intro.svg) no-repeat top center;
+.gf-duties .gf-text {
+    background: url(../images/shapes/bg-intro.svg) no-repeat bottom center;
     padding:  0;
     display: flex;
     flex-flow: row wrap;
     flex-grow: 1;
 }
-div.gf-duties p {
+.gf-duties p {
     min-width: 300px;
     flex: 1;
-    padding: 20px;
+    padding: 24px;
     margin: 0;
     vertical-align: top;
 }
-div.gf-duties {
+.gf-duties {
     min-width: 300px;
-}
-div.gf-duties .gf-4-col p {
-    min-width: 270px;
 }
 
 @media screen and (min-width: 768px) {
     
-    div.gf-duties {
+    .gf-duties {
         padding: 16px 0;
     }
-    div.gf-duties .gf-text {
+    .gf-duties .gf-text {
         padding: 0;
     }
-    div.gf-duties .gf-text div {
+    .gf-duties .gf-text div {
         width: 33%;
     }
-    div.gf-duties p {
-        padding: 24px 64px;
+    .gf-duties p {
+        padding: 0 64px 48px;
         max-width: 350px;
     }
 
 }
+
+/* My journey */
+
+@media screen and (min-width: 768px) {
+
+    .gf-text-columns {
+        column-count: 2; 
+        column-gap: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1152px) {
+
+    .gf-text-columns {
+        column-count: 3; 
+    }
+}
+
+/* Task descriptions */
+
+
+div.gf-col-text-left {
+    padding: inherit 24px;
+}
+div.gf-col-text-right {
+    padding: inherit 24px;
+}
+.gf-large-screenshot div:nth-child(2) {
+    background-position-x: -1000px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gf-work-template .gf-work-pic-mobile {
+    display: block;
+    height: 220px;
+    margin: 0 8px;
+}
+
+@media screen and (min-width: 768px) {
+
+    div.gf-col-text-left {
+        padding-left: 64px;
+    }
+    div.gf-col-text-right {
+        padding-right: 64px;
+    }
+    .gf-large-screenshot div:nth-child(2) {
+        min-height: 800px;
+        background-position-x: 0 !important;
+    }
+    .gf-large-screenshot div.gf-col-text-right {
+        background: #fff;
+        width: 350px;
+        padding: 0 64px 48px 0;
+    }
+    .gf-work-template .gf-work-pic-mobile {
+        height: inherit;
+    }
+
+}
+
 
 
 // Old CSS
