@@ -45,6 +45,18 @@ body .container {
 section {
     margin: 0;
 }
+p {
+    font-weight: 300;
+}
+.gf-title-light {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: $grey;
+    font-weight: 300;
+    padding: 32px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -53,7 +65,7 @@ section {
     }
     body .container {
         max-width: 1152px;
-        padding: 48px 24px;
+        padding: 48px 24px 32px;
     }   
 
 }
@@ -69,7 +81,7 @@ section {
     }
     body .container {
         max-width: 1152px;
-        padding: 48px 80px 16px;
+        padding: 48px 80px 32px;
     }   
 
 }
@@ -241,7 +253,6 @@ header a {
 
 .gf-intro p {
     font-size: 21px;
-    font-weight: 300;
     line-height: 30px;
     padding: 24px;
     margin: 32px auto;
@@ -290,7 +301,6 @@ time {
     padding: 0 0 24px;
 }
 .gf-work p {
-    font-weight: 300;
     max-width: 300px;
 }
 .gf-work a {
@@ -575,32 +585,40 @@ img.gf-svg-shape-mobile {
     color: $grey-dark;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
-.gf-mobile-nav {
-    display: none;
+    .gf-mobile-nav {
+        display: none;
+    }
+    .gf-works-nav {
+        background-color: #fff;
+        max-width: 1152px;
+        padding: 0 48px;
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .gf-works-nav a {
+        display: inline-block;
+        padding: 8px 16px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .gf-works-nav a:nth-child(1) {
+        white-space: nowrap;
+        text-align: left;
+        margin-right: 32px
+    }
+
 }
-.gf-works-nav {
-    background-color: #fff;
-    max-width: 1152px;
-    padding: 24px 48px;
-    display: block;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.gf-works-nav a {
-    display: inline-block;
-    padding: 8px 16px;
-    text-align: center;
-    line-height: 20px;
-}
-.gf-works-nav a:nth-child(1) {
-    white-space: nowrap;
-    text-align: left;
-    margin-right: 32px
-}
+
+@media screen and (min-width: 960px) {
+
+    .gf-works-nav {
+        padding: 0 64px;
+    }
 
 }
 
@@ -610,9 +628,7 @@ img.gf-svg-shape-mobile {
 .gf-content-header {
     text-align: center;
     padding: 40px 24px;
-}
-.gf-content-header time {
-
+    margin: 0;
 }
 .gf-content-header h1 {
     font-size: 38px;
@@ -620,16 +636,13 @@ img.gf-svg-shape-mobile {
     font-weight: 900;
     padding: 8px 0;
 }
-.gf-content-header h2 {
-
-}
 .gf-content-header p {
     background-color: #fff;
     font-size: 21px;
     font-weight: 300;
     line-height: 30px;
     padding: 24px;
-    margin: 24px auto;
+    margin: 24px auto 0;
     max-width: 400px;
     text-align: left;
 }
@@ -640,11 +653,12 @@ img.gf-svg-shape-mobile {
 @media screen and (min-width: 768px) {
 
     main.container {
-        padding: 48px;
+        padding: 64px 48px;
     }
     .gf-content-header {
         text-align: left;
-        padding: 36px 0;
+        padding: 0;
+        margin: 0 0 32px;
     }
     .gf-content-header h1 {
         font-size: 68px;
@@ -666,6 +680,57 @@ img.gf-svg-shape-mobile {
         background-position-x: 0 !important;
         margin: 40px 0 0;
         padding: 0 0 160px;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    main.container {
+        padding: 80px;
+    }
+
+}
+
+/* My role and duties */
+
+div.gf-duties {
+    padding: 32px 24px;
+}
+div.gf-duties .gf-text {
+    padding:  0;
+    display: flex;
+    flex-flow: row wrap;
+    flex-grow: 1;
+}
+div.gf-duties p {
+    min-width: 300px;
+    flex: 1;
+    padding: 20px;
+    margin: 0;
+    vertical-align: top;
+}
+div.gf-duties {
+    min-width: 300px;
+}
+div.gf-duties .gf-4-col p {
+    min-width: 270px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    div.gf-duties {
+        padding: 16px 0;
+    }
+    div.gf-duties .gf-text {
+        padding: 0;
+    }
+    div.gf-duties .gf-text div {
+        width: 33%;
+    }
+    div.gf-duties p {
+        padding: 24px 64px;
+        max-width: 350px;
     }
 
 }

@@ -30081,13 +30081,27 @@ section {
   margin: 0;
 }
 
+p {
+  font-weight: 300;
+}
+
+.gf-title-light {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #818F9B;
+  font-weight: 300;
+  padding: 32px;
+}
+
 @media screen and (min-width: 768px) {
   body {
     background-color: #F2F4F4;
   }
   body .container {
     max-width: 1152px;
-    padding: 48px 24px;
+    padding: 48px 24px 32px;
   }
 }
 
@@ -30101,7 +30115,7 @@ section {
   }
   body .container {
     max-width: 1152px;
-    padding: 48px 80px 16px;
+    padding: 48px 80px 32px;
   }
 }
 
@@ -30224,7 +30238,6 @@ header a {
 /* Intro */
 .gf-intro p {
   font-size: 21px;
-  font-weight: 300;
   line-height: 30px;
   padding: 24px;
   margin: 32px auto;
@@ -30271,7 +30284,6 @@ time {
 }
 
 .gf-work p {
-  font-weight: 300;
   max-width: 300px;
 }
 
@@ -30567,14 +30579,14 @@ img.gf-svg-shape {
   color: #424043;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .gf-mobile-nav {
     display: none;
   }
   .gf-works-nav {
     background-color: #fff;
     max-width: 1152px;
-    padding: 24px 48px;
+    padding: 0 48px;
     display: block;
     margin: 0 auto;
     display: -webkit-box;
@@ -30601,10 +30613,17 @@ img.gf-svg-shape {
   }
 }
 
+@media screen and (min-width: 960px) {
+  .gf-works-nav {
+    padding: 0 64px;
+  }
+}
+
 /* Job content header */
 .gf-content-header {
   text-align: center;
   padding: 40px 24px;
+  margin: 0;
 }
 
 .gf-content-header h1 {
@@ -30620,7 +30639,7 @@ img.gf-svg-shape {
   font-weight: 300;
   line-height: 30px;
   padding: 24px;
-  margin: 24px auto;
+  margin: 24px auto 0;
   max-width: 400px;
   text-align: left;
 }
@@ -30631,11 +30650,12 @@ img.gf-svg-shape {
 
 @media screen and (min-width: 768px) {
   main.container {
-    padding: 48px;
+    padding: 64px 48px;
   }
   .gf-content-header {
     text-align: left;
-    padding: 36px 0;
+    padding: 0;
+    margin: 0 0 32px;
   }
   .gf-content-header h1 {
     font-size: 68px;
@@ -30657,6 +30677,65 @@ img.gf-svg-shape {
     background-position-x: 0 !important;
     margin: 40px 0 0;
     padding: 0 0 160px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  main.container {
+    padding: 80px;
+  }
+}
+
+/* My role and duties */
+div.gf-duties {
+  padding: 32px 24px;
+}
+
+div.gf-duties .gf-text {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+div.gf-duties p {
+  min-width: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+  margin: 0;
+  vertical-align: top;
+}
+
+div.gf-duties {
+  min-width: 300px;
+}
+
+div.gf-duties .gf-4-col p {
+  min-width: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  div.gf-duties {
+    padding: 16px 0;
+  }
+  div.gf-duties .gf-text {
+    padding: 0;
+  }
+  div.gf-duties .gf-text div {
+    width: 33%;
+  }
+  div.gf-duties p {
+    padding: 24px 64px;
+    max-width: 350px;
   }
 }
 /*# sourceMappingURL=gjf.css.map */
