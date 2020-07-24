@@ -74,7 +74,7 @@ p {
 @media screen and (min-width: 768px) {
 
     body {
-        background-color: $grey-light;
+        background-color: #fff;
     }
     body .container {
         max-width: 1152px;
@@ -92,7 +92,7 @@ p {
 @media screen and (min-width: 1152px) {
 
     body {
-        background-color: $grey-light;
+        background-color: #fff;
         background-image: url(../images/photos/generic/bg-profile.jpg), url(../images/shapes/bg-shape.svg);
         background-repeat: no-repeat;
         background-size: auto, 100%;
