@@ -30072,7 +30072,6 @@ body {
 
 body .container {
   position: relative;
-  background-color: #fff;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -30157,8 +30156,29 @@ a.button.is-primary {
   padding-right: calc(1em + 0.25em);
 }
 
+.gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom,
+.gf-logos svg.gf-shape-top, .gf-logos svg.gf-shape-bottom {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gf-what svg.gf-shape-top, .gf-logos svg.gf-shape-top {
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 0;
+  }
+  .gf-what svg.gf-shape-bottom, .gf-logos svg.gf-shape-bottom {
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+  }
+}
+
 /* Header */
 header {
+  background: #fff;
   text-align: center;
   margin: 0;
 }
@@ -30284,7 +30304,7 @@ header a {
 
 @media screen and (min-width: 1152px) {
   .gf-intro p {
-    margin: 42px 0 24px 154px;
+    margin: 42px 0 24px 184px;
   }
 }
 
@@ -30347,7 +30367,7 @@ time {
 
 @media screen and (min-width: 960px) {
   .gf-work {
-    padding: 24px 24px 0;
+    padding: 40px 24px 0;
   }
 }
 
@@ -30418,10 +30438,6 @@ time {
   background-color: transparent;
 }
 
-svg.gf-shape-top, svg.gf-shape-bottom {
-  display: none;
-}
-
 .gf-what p {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 300;
@@ -30457,18 +30473,6 @@ svg.gf-shape-top, svg.gf-shape-bottom {
     background-size: cover;
     margin: 0;
     padding: 128px 0 80px;
-  }
-  svg.gf-shape-top {
-    display: block;
-    position: absolute;
-    top: -8px;
-    left: 0;
-  }
-  svg.gf-shape-bottom {
-    display: block;
-    position: absolute;
-    bottom: -8px;
-    left: 0;
   }
   .gf-what p {
     text-align: left;
