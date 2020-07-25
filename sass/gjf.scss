@@ -81,7 +81,7 @@ p {
         padding: 48px 24px 32px;
     }  
     .gf-work-template main section {
-        padding: 40px 0 80px;
+        padding: 40px 0 40px;
     } 
     .gf-work-template main section h2.gf-title-light  {
         padding: 0 24px 64px;
@@ -93,10 +93,15 @@ p {
 
     body {
         background-color: #fff;
-        background-image: url(../images/photos/generic/bg-profile.jpg), url(../images/shapes/bg-shape.svg);
+        // background-image: url(../images/photos/generic/bg-profile.jpg), url(../images/shapes/bg-shape.svg);
+        // background-repeat: no-repeat;
+        // background-size: auto, 100%;
+        // background-position: center 200px, top left;
+        background-image: url(../images/shapes/bg-shape-sm.svg);
         background-repeat: no-repeat;
-        background-size: auto, 100%;
-        background-position: center 200px, top left;
+        background-size: auto;
+        background-position: top left;
+        // border-top: 8px solid #494949;
     }
     body .container {
         max-width: 1152px;
@@ -333,7 +338,7 @@ time {
 }
 .gf-work .gf-work-pic-mobile {
     display: block;
-    height: 220px;
+    height: 240px;
 }
 
 @media screen and (min-width: 768px) {
@@ -375,7 +380,10 @@ time {
 }
 
 @media screen and (min-width: 768px) {
-
+    
+    .gf-home .gf-showcase {
+        display: block;
+    }
     .gf-showcase {
         display: block;
         overflow: auto;
@@ -427,6 +435,11 @@ time {
     background-color: $grey-dark;
     padding: 64px 48px;
     margin: 0 0 40px;
+}.gf-what .container {
+    background-color: transparent;
+}
+.gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom {
+    display: none;
 }
 .gf-what p {
     color: rgba(275, 275, 275, 0.75);
@@ -435,6 +448,11 @@ time {
     padding: 16px 0 24px;
     max-width: 300px;
     margin: 0 auto;
+}
+.gf-what p.gf-lead {
+    font-size: 21px;
+    line-height: 30px;
+    padding: 0 0 48px;
 }
 .gf-what p b {
     color: #fff;
@@ -451,12 +469,46 @@ time {
 @media screen and (min-width: 768px) {
     
     .gf-what {
-        margin: 0 0 24px;
+        position: relative;
+        background: transparent url(../images/shapes/bg-middle.jpg) no-repeat right top;
+        background-size: cover;
+        margin: 0;
+        padding: 128px 0 80px;
+    }
+    .gf-what svg.gf-shape-top {
+        display: block;
+        position: absolute;
+        top: -8px;
+        left: 0;
+    }
+    .gf-what svg.gf-shape-bottom {
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
     }
 
     .gf-what p {
-        padding: 16px 24px 24px;
+        text-align: left;
+        padding: 24px 8px 24px 0;
+        max-width: 240px;
     }
+    .gf-what p.gf-lead {
+        font-size: 21px;
+        line-height: 30px;
+        padding: 0 16px 80px;
+        margin: 0;
+        max-width: 380px;
+    }
+
+}
+
+@media screen and (min-width: 1450px) {
+    
+    .gf-what {
+        padding: 152px 0 104px;
+}
+
 
 }
 
@@ -677,7 +729,7 @@ img.gf-svg-shape-mobile {
 
 @media screen and (min-width: 768px) {
 
-    main.container {
+    div.main.container {
         padding: 64px 48px;
     }
     .gf-content-header {
@@ -885,7 +937,7 @@ footer .gf-list-menu-mobile a {
 @media screen and (min-width: 960px) {
 
     footer {
-        background: $grey-light url(../images/shapes/footer-shape.svg) no-repeat bottom left;
+        background: #fff url(../images/shapes/footer-shape.svg) no-repeat bottom left;
         background-size: 100%;
         min-height: 400px;
         padding-bottom: 40px;
