@@ -81,7 +81,7 @@ p {
         padding: 48px 24px 32px;
     }  
     .gf-work-template main section {
-        padding: 40px 0 0;
+        padding: 40px 0 80px;
     } 
     .gf-work-template main section h2.gf-title-light  {
         padding: 0 24px 64px;
@@ -93,19 +93,9 @@ p {
 
     body {
         background-color: #fff;
-        // background-image: url(../images/photos/generic/bg-profile.jpg), url(../images/shapes/bg-shape.svg);
-        // background-repeat: no-repeat;
-        // background-size: auto, 100%;
-        // background-position: center 200px, top left;
-        background-image: url(../images/shapes/bg-shape-sm.svg);
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: top left;
-        // border-top: 8px solid #494949;
     }
     body .container {
-        max-width: 1152px;
-        padding: 48px 80px 32px;
+        padding: 48px 80px 16px;
     }   
 
 }
@@ -155,12 +145,15 @@ header {
     text-align: center;
     margin: 0;
 }
-header .gf-top-corner {
+.gf-work-template header  {
+    background: $grey-light;
+}
+header div:nth-child(1) a {
     display: none;
 }
 header h1 {
     color: $grey;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 2.74px;
     font-weight: 300;
     display: inline-block;
@@ -187,20 +180,6 @@ header a {
     margin: 0 auto;
 }
 
-// header div.mask-tablet, header div.mask-desktop {
-//     display: none;
-// }
-// header div.mask-mobile, header .gf-hero {
-//     width: 280px;
-//     height: 362px;
-// }
-// header div.mask-mobile .svg-masked {
-//     -webkit-clip-path: url(#svgPathMobile);
-//     clip-path: url(#svgPathMobile);
-//     width: 280px;
-//     height: 362px;
-// }
-
 @media screen and (min-width: 375px) {
 
     header h2 {
@@ -216,14 +195,9 @@ header a {
     header {
         text-align: left;
     }
-    header svg.gf-top-corner, header svg.gf-top-corner rect {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 208px;
-        height: 8px; 
-        fill: $grey-light;
+    header div:nth-child(1) a {
+        display: inline-block;
+        padding: 0;
     }
     header h1 {
         border-top: none;
@@ -234,68 +208,34 @@ header a {
         position: relative;
         background: url(../images/photos/generic/hero.jpg) no-repeat top center;
         background-size: contain;
-        width: 720px;
+        width: 750px;
         height: 464px;
         margin: 72px auto 0;
     }
     header a.button {
         position: absolute;
-        top: 48px;
-        right: 56px;
+        top: 40px;
+        right: 40px;
     }
-    // header div.mask-mobile, header div.mask-desktop {
-    //     display: none;
-    // }
-    // header div.mask-tablet, header .gf-hero {
-    //     display: block;
-    //     width: 728px;
-    //     height: 467px;
-    // }
-    // header div.mask-tablet .svg-masked {
-    //     -webkit-clip-path: url(#svgPathTablet);
-    //     clip-path: url(#svgPathTablet);
-    //     width: 728px;
-    //     height: 467px;
-    //     margin: 0;
-    // }
 
 }
 
 @media screen and (min-width: 1152px) { 
     
-    header svg.gf-top-corner, header svg.gf-top-corner rect {
-        width: 232px;
-        fill: #494949;
-    }
     header h1 {
         border-top: none;
-        padding: 0;
     }
     header .gf-hero {
         background: url(../images/photos/generic/hero.jpg) no-repeat;
-        width: 100%;
+        width: auto;
         height: 652px;
-        margin: 80px 0 0;
+        margin: 80px auto 0;
     }
     header .gf-hero h2 {
         top: 0;
         left: 290px;
         width: 150px;
     }
-    // header div.mask-mobile, header div.mask-tablet {
-    //     display: none;
-    // }
-    // header div.mask-desktop, header .gf-hero {
-    //     display: block;
-    //     width: 1010px;
-    //     height: 652px;
-    // }
-    // header div.mask-desktop .svg-masked {
-    //     -webkit-clip-path: url(#svgPathDesktop);
-    //     clip-path: url(#svgPathDesktop);
-    //     width: 1010px;
-    //     height: 652px;
-    // }
 
 }
 
@@ -325,7 +265,7 @@ header a {
 @media screen and (min-width: 1152px) {
 
     .gf-intro p {
-        margin: 42px 0 24px 184px;
+        margin: 42px 0 24px 112px;
     }
 
 }
@@ -669,9 +609,9 @@ img.gf-svg-shape-mobile {
         display: none;
     }
     .gf-works-nav {
-        background-color: #fff;
-        max-width: 1152px;
-        padding: 0 48px;
+        background-color: $grey-light;
+        // max-width: 1152px;
+        padding: 0 24px;
         display: block;
         margin: 0 auto;
         display: flex;
@@ -680,15 +620,15 @@ img.gf-svg-shape-mobile {
     }
     .gf-works-nav a {
         width: 50%;
-        padding: 0;
+        padding: 16px 0; 
         display: flex;
         justify-content: left;
         align-items: center;
     }
     .gf-works-nav a img {
         opacity: 0.4; 
-        max-width: 65px;
-        max-height: 65px;
+        max-width: 64px;
+        max-height: 64px;
         margin-left: 1rem;
         margin: 8px auto;
         fill: $link;
@@ -697,9 +637,9 @@ img.gf-svg-shape-mobile {
         opacity: 0.6; 
     }
     .gf-works-nav a.is-active {
-        background-color: $grey-light;
-        border-top: solid 1px #e2e2e2; 
-        border-radius: 8px;
+        background-color: #fff;
+        // border-top: solid 1px #e2e2e2; 
+        border-radius: 24px 24px 0 0;
     }
     .gf-works-nav a.is-active img {
         opacity: 0.8; 
@@ -710,7 +650,7 @@ img.gf-svg-shape-mobile {
 @media screen and (min-width: 960px) {
 
     .gf-works-nav {
-        padding: 0 64px;
+        padding: 0 40px;
     }
 
 }
@@ -746,11 +686,11 @@ img.gf-svg-shape-mobile {
 @media screen and (min-width: 768px) {
 
     div.main.container {
-        padding: 64px 48px;
+        padding: 80px 40px;
     }
     .gf-content-header {
         text-align: left;
-        padding: 0;
+        padding: 40px;
         margin: 0 0 32px;
     }
     .gf-content-header h1 {
@@ -773,14 +713,6 @@ img.gf-svg-shape-mobile {
         background-position-x: 0 !important;
         margin: 40px 0 0;
         padding: 0 0 160px;
-    }
-
-}
-
-@media screen and (min-width: 960px) {
-
-    main.container {
-        padding: 80px;
     }
 
 }
@@ -957,6 +889,9 @@ footer .gf-list-menu-mobile a {
         background-size: 100%;
         min-height: 400px;
         padding-bottom: 40px;
+    }
+    footer div:nth-child(1) {
+        background: #fff;
     }
     .gf-footer-sub {
         padding: 40px 24px 64px;
