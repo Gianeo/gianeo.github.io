@@ -30118,7 +30118,7 @@ p {
     padding: 48px 24px 32px;
   }
   .gf-work-template main section {
-    padding: 40px 0 40px;
+    padding: 40px 0 0;
   }
   .gf-work-template main section h2.gf-title-light {
     padding: 0 24px 64px;
@@ -30274,7 +30274,7 @@ header a {
 @media screen and (min-width: 768px) {
   .gf-intro {
     background: url(../images/shapes/bg-intro.svg) no-repeat top center;
-    padding: 0 24px 96px;
+    padding: 0 24px 40px;
   }
   .gf-intro p {
     margin: 0 auto;
@@ -30315,7 +30315,7 @@ time {
 }
 
 .gf-work a {
-  margin: 32px 0;
+  margin: 16px 0;
   width: 100%;
 }
 
@@ -30347,7 +30347,7 @@ time {
 
 @media screen and (min-width: 960px) {
   .gf-work {
-    padding: 80px 24px;
+    padding: 24px 24px 0;
   }
 }
 
@@ -30418,7 +30418,7 @@ time {
   background-color: transparent;
 }
 
-.gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom {
+svg.gf-shape-top, svg.gf-shape-bottom {
   display: none;
 }
 
@@ -30458,13 +30458,13 @@ time {
     margin: 0;
     padding: 128px 0 80px;
   }
-  .gf-what svg.gf-shape-top {
+  svg.gf-shape-top {
     display: block;
     position: absolute;
     top: -8px;
     left: 0;
   }
-  .gf-what svg.gf-shape-bottom {
+  svg.gf-shape-bottom {
     display: block;
     position: absolute;
     bottom: -8px;
@@ -30506,7 +30506,7 @@ img.gf-svg-shape {
   background-color: #F2F4F4;
   overflow: auto;
   padding: 24px 0;
-  margin: 0;
+  margin: 0 0 40px;
 }
 
 .gf-logos div {
@@ -30541,11 +30541,16 @@ img.gf-svg-shape {
     height: auto;
   }
   .gf-logos {
-    background: transparent url(../images/shapes/shape02.svg) no-repeat center center;
-    background-size: 100%;
+    position: relative;
+    background-color: transparent;
     overflow: auto;
-    height: 246px;
-    padding: 48px 24px;
+    padding: 52px 0 0;
+    margin: 0;
+  }
+  .gf-logos section {
+    background: #F2F4F4;
+    overflow: auto;
+    padding: 24px 24px 40px;
     margin: 0;
   }
   .gf-logos div {
@@ -30553,17 +30558,32 @@ img.gf-svg-shape {
     padding: 24px;
   }
   .gf-logos div img {
-    max-height: 60px;
+    max-width: 80px;
+    max-height: 48px;
   }
 }
 
 @media screen and (min-width: 960px) {
+  .gf-logos {
+    padding: 64px 0 0;
+  }
   .gf-logos div {
     width: 16.6%;
     padding: 40px;
   }
   .gf-logos div img {
-    max-height: 60px;
+    max-width: 96px;
+    max-height: 64px;
+  }
+}
+
+@media screen and (min-width: 1152px) {
+  .gf-logos {
+    padding: 80px 0 0;
+  }
+  .gf-logos div img {
+    max-width: 112px;
+    max-height: 80px;
   }
 }
 
