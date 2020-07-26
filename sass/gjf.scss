@@ -52,7 +52,7 @@ p {
 }
 
 .gf-work-template main section {
-    padding: 32px 24px;
+    padding: 32px 0;
 }
 .gf-work-template main section h2 {
     font-size: 24px;
@@ -81,7 +81,7 @@ p {
         padding: 48px 24px 32px;
     }  
     .gf-work-template main section {
-        padding: 40px 0 80px;
+        padding: 40px 40px 80px;
     } 
     .gf-work-template main section h2.gf-title-light  {
         padding: 0 24px 64px;
@@ -146,7 +146,7 @@ header {
     margin: 0;
 }
 .gf-work-template header  {
-    background: $grey-light;
+    background: #fff;
 }
 header div:nth-child(1) a {
     display: none;
@@ -216,6 +216,9 @@ header a {
         position: absolute;
         top: 40px;
         right: 40px;
+    }
+    .gf-work-template header  {
+        background: $grey-light;
     }
 
 }
@@ -660,7 +663,7 @@ img.gf-svg-shape-mobile {
 
 .gf-content-header {
     text-align: center;
-    padding: 40px 24px;
+    padding: 40px 0;
     margin: 0;
 }
 .gf-content-header h1 {
@@ -674,7 +677,7 @@ img.gf-svg-shape-mobile {
     font-size: 21px;
     font-weight: 300;
     line-height: 30px;
-    padding: 24px;
+    padding: 24px 0 0;
     margin: 24px auto 0;
     max-width: 400px;
     text-align: left;
@@ -771,7 +774,7 @@ img.gf-svg-shape-mobile {
     font-size: 21px;
     font-weight: 300;
     line-height: 30px;
-    padding: 0 24px;
+    padding: 0;
     text-align: left;
 }
 p.gf-quotedby {
@@ -833,10 +836,10 @@ div.gf-col-text-right {
 @media screen and (min-width: 768px) {
 
     div.gf-col-text-left {
-        padding-left: 64px;
+        padding-left: 40px;
     }
     div.gf-col-text-right {
-        padding-right: 64px;
+        padding-right: 40px;
     }
     .gf-largeview div:nth-child(2) {
         background-position: right top;
@@ -853,6 +856,17 @@ div.gf-col-text-right {
     }
     .gf-work-template .gf-work-pic-mobile {
         height: inherit;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    div.gf-col-text-left {
+        padding-left: 64px;
+    }
+    div.gf-col-text-right {
+        padding-right: 64px;
     }
 
 }
