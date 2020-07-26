@@ -30747,7 +30747,7 @@ img.gf-svg-shape {
   .gf-content-header h1 {
     font-size: 68px;
     line-height: 76px;
-    letter-spacing: -2.26px;
+    letter-spacing: -1.26px;
     padding: 16px 0 8px;
   }
   .gf-content-header h2 {
@@ -30895,8 +30895,8 @@ div.gf-col-text-right {
   div.gf-col-text-left {
     padding-left: 40px;
   }
-  div.gf-col-text-right {
-    padding-right: 40px;
+  div.gf-col-text-right h2, div.gf-col-text-right p {
+    padding-right: 40px !important;
   }
   .gf-largeview div:nth-child(2) {
     background-position: right top;
@@ -30969,10 +30969,10 @@ footer .gf-list-menu-mobile a {
 
 /* sticky tabs */
 .tabs {
-  left: 0;
-  width: 100%;
-  bottom: auto;
-  top: 0;
+  left: 0 !important;
+  width: 100% !important;
+  bottom: auto !important;
+  top: 0 !important;
 }
 
 a.is-active, .tabs .is-active a {
