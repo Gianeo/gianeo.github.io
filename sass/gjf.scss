@@ -915,6 +915,13 @@ footer .gf-list-menu-mobile a {
 
 /* sticky tabs */
 
+.tabs {
+    left: 0;
+    width: 100%;
+    bottom: auto;
+    top: 0;
+}
+
 a.is-active, .tabs .is-active a {
     color: #FF2147 !important;
     font-weight: 700;
@@ -925,6 +932,7 @@ a.is-active, .tabs .is-active a {
 
 .tabs a {
     font-weight: 700;
+    padding-bottom: 16px;
 }
 #tabs-with-content .tabs:not(:last-child) {
     margin-bottom: 0;
