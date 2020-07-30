@@ -30228,8 +30228,7 @@ header a {
     background: url(../images/shapes/bg-header.svg) no-repeat bottom center;
     background-size: cover;
     text-align: left;
-    padding-bottom: 162px;
-    margin-bottom: -32px;
+    padding-bottom: 104px;
   }
   header div:nth-child(1) a {
     display: inline-block;
@@ -30284,7 +30283,13 @@ header a {
 
 @media screen and (min-width: 768px) {
   .gf-intro {
-    background: url(../images/shapes/bg-intro.svg) no-repeat top center;
+    background-image: url(../images/shapes/bg-intro.svg), url(../images/shapes/bottom-shape.svg);
+    background-repeat: no-repeat;
+    background-position: top center, bottom left;
+    background-size: auto, 100%;
+    padding: 40px 0 80px;
+  }
+  .gf-intro section {
     padding: 0 24px;
     max-width: 710px;
     margin: 0 auto 48px;
@@ -30297,6 +30302,9 @@ header a {
 
 @media screen and (min-width: 1152px) {
   .gf-intro {
+    padding: 24px 0 104px;
+  }
+  .gf-intro section {
     max-width: 710px;
   }
   .gf-intro p {
@@ -30374,7 +30382,7 @@ time {
 
 @media screen and (min-width: 960px) {
   .gf-work {
-    padding: 40px 24px 0;
+    padding: 40px 24px;
   }
 }
 
@@ -30477,10 +30485,12 @@ time {
 @media screen and (min-width: 768px) {
   .gf-what {
     position: relative;
-    background: transparent url(../images/shapes/bg-middle.jpg) no-repeat right top;
-    background-size: cover;
+    background-image: url(../images/shapes/top-shape.svg), url(../images/shapes/bottom-shape.svg), url(../images/shapes/bg-middle.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom left, right top;
+    background-size: 100%, 100%, cover;
     margin: 0;
-    padding: 128px 64px;
+    padding: 156px 64px;
   }
   .gf-what section {
     margin: 0 auto;
@@ -30505,9 +30515,9 @@ time {
   }
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1350px) {
   .gf-what {
-    padding: 152px 0;
+    padding: 206px 64px;
   }
 }
 
@@ -30524,8 +30534,7 @@ img.gf-svg-shape {
 }
 
 .gf-logos {
-  background: url(../images/shapes/bg-logos.svg) no-repeat top center;
-  background-size: 100%;
+  background: #F6F9F9;
   overflow: auto;
   padding: 30px 0 0;
   margin: 0;
@@ -30571,7 +30580,7 @@ img.gf-svg-shape {
     position: relative;
     background-color: transparent;
     overflow: auto;
-    padding: 72px 0 0;
+    padding: 0;
     margin: 0;
   }
   .gf-logos section div {
@@ -30591,9 +30600,6 @@ img.gf-svg-shape {
 }
 
 @media screen and (min-width: 960px) {
-  .gf-logos {
-    padding: 88px 0 0;
-  }
   .gf-logos section {
     padding: 0;
   }
@@ -30608,18 +30614,9 @@ img.gf-svg-shape {
 }
 
 @media screen and (min-width: 1152px) {
-  .gf-logos {
-    padding: 108px 0 0;
-  }
   .gf-logos div img {
     max-width: 92px;
     max-height: 72px;
-  }
-}
-
-@media screen and (min-width: 1500px) {
-  .gf-logos {
-    padding: 142px 0 0;
   }
 }
 
@@ -30998,7 +30995,7 @@ footer .gf-list-menu-mobile a {
     background: #fff url(../images/shapes/footer-shape.svg) no-repeat bottom left;
     background-size: 100%;
     min-height: 400px;
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
   footer div:nth-child(1) {
     background: #fff;
