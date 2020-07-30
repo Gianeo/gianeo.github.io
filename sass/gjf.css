@@ -30312,6 +30312,12 @@ header a {
   }
 }
 
+@media screen and (min-width: 1500px) {
+  .gf-intro {
+    padding: 0 0 120px;
+  }
+}
+
 /* Work experience */
 .gf-work {
   background-color: #F6F9F9;
@@ -30992,10 +30998,10 @@ footer .gf-list-menu-mobile a {
 
 @media screen and (min-width: 960px) {
   footer {
-    background: #fff url(../images/shapes/footer-shape.svg) no-repeat bottom left;
+    background: #fff url(../images/shapes/top-shape.svg) no-repeat top left;
     background-size: 100%;
     min-height: 400px;
-    padding: 40px 0;
+    padding: 160px 0 40px;
   }
   footer div:nth-child(1) {
     background: #fff;
