@@ -30441,8 +30441,9 @@ time {
   margin: 0 0 40px;
 }
 
-.gf-what .container {
-  background-color: transparent;
+.gf-what section {
+  margin: 0 auto;
+  max-width: 880px;
 }
 
 .gf-what p {
@@ -30479,7 +30480,12 @@ time {
     background: transparent url(../images/shapes/bg-middle.jpg) no-repeat right top;
     background-size: cover;
     margin: 0;
-    padding: 128px 0;
+    padding: 128px 64px;
+  }
+  .gf-what section {
+    margin: 0 auto;
+    max-width: 880px;
+    padding: 24px 0;
   }
   .gf-what p {
     text-align: left;
@@ -30525,7 +30531,7 @@ img.gf-svg-shape {
   margin: 0;
 }
 
-.gf-logos section div {
+.gf-logos section {
   background: #F6F9F9;
   padding: 24px 0 32px;
 }
@@ -30565,7 +30571,7 @@ img.gf-svg-shape {
     position: relative;
     background-color: transparent;
     overflow: auto;
-    padding: 64px 0 0;
+    padding: 72px 0 0;
     margin: 0;
   }
   .gf-logos section div {
@@ -30585,6 +30591,9 @@ img.gf-svg-shape {
 }
 
 @media screen and (min-width: 960px) {
+  .gf-logos {
+    padding: 88px 0 0;
+  }
   .gf-logos section {
     padding: 0;
   }
@@ -30600,11 +30609,17 @@ img.gf-svg-shape {
 
 @media screen and (min-width: 1152px) {
   .gf-logos {
-    padding: 148px 0 0;
+    padding: 108px 0 0;
   }
   .gf-logos div img {
     max-width: 92px;
     max-height: 72px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .gf-logos {
+    padding: 142px 0 0;
   }
 }
 
