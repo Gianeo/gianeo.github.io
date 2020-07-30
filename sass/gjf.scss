@@ -7,7 +7,7 @@
 $family-sans-serif: "Muli", sans-serif;
 $grey-dark: #424043;
 $grey: #818F9B;
-$grey-light: #F2F4F4;
+$grey-light: #F6F9F9;
 $primary: #40B9C9;
 $link: #2A5A60;
 $widescreen-enabled: true;
@@ -116,20 +116,19 @@ p {
     padding-left: calc(1em + 0.25em);
     padding-right: calc(1em + 0.25em);
 }
-.gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom, 
-.gf-logos svg.gf-shape-top, .gf-logos svg.gf-shape-bottom {
+.gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
 
-    .gf-what svg.gf-shape-top, .gf-logos svg.gf-shape-top {
+    .gf-what svg.gf-shape-top {
         display: block;
         position: absolute;
         top: -8px;
         left: 0;
     }
-    .gf-what svg.gf-shape-bottom, .gf-logos svg.gf-shape-bottom {
+    .gf-what svg.gf-shape-bottom {
         display: block;
         position: absolute;
         bottom: -8px;
@@ -141,7 +140,6 @@ p {
 /* Header */
 
 header {
-    background: #fff;
     text-align: center;
     margin: 0;
 }
@@ -157,13 +155,12 @@ header h1 {
     letter-spacing: 2.74px;
     font-weight: 300;
     display: inline-block;
-    border-top: solid 8px $grey-light;
-    margin: 0 auto 32px;
-    padding: 8px 0 0;
+    margin: 0 auto;
+    padding: 32px 0 0;
 }
 header .gf-hero {
     position: relative;
-    background: url(../images/photos/generic/hero-mobile.jpg) no-repeat top center;
+    background: url(../images/photos/generic/hero-mobile.png) no-repeat top center;
     width: 280px;
     height: 362px;
     margin: 24px auto 56px;
@@ -193,20 +190,22 @@ header a {
 @media screen and (min-width: 768px) {
     
     header {
+        background: url(../images/shapes/bg-header.svg) no-repeat bottom center;
+        background-size: cover;
         text-align: left;
+        padding-bottom: 162px;
+        margin-bottom: -32px;
     }
     header div:nth-child(1) a {
         display: inline-block;
         padding: 0;
     }
     header h1 {
-        border-top: none;
-        padding: 0 0 0 24px;
-        margin: inherit inherit 16px;
+        padding: 54px 40px 0;
     }
     header .gf-hero {
         position: relative;
-        background: url(../images/photos/generic/hero.jpg) no-repeat top center;
+        background: url(../images/photos/generic/hero.png) no-repeat top center;
         background-size: contain;
         width: 750px;
         height: 464px;
@@ -226,10 +225,10 @@ header a {
 @media screen and (min-width: 1152px) { 
     
     header h1 {
-        border-top: none;
+        padding: 54px 56px 0;
     }
     header .gf-hero {
-        background: url(../images/photos/generic/hero.jpg) no-repeat;
+        background: url(../images/photos/generic/hero.png) no-repeat;
         width: 1020px;
         height: 652px;
         margin: 80px auto 0;
@@ -256,10 +255,12 @@ header a {
 
     .gf-intro {
         background: url(../images/shapes/bg-intro.svg) no-repeat top center;
-        padding: 0 24px 40px;
+        padding: 0 24px;
+        max-width: 710px;
+        margin: 0 auto 48px;
     }
     .gf-intro p {
-        margin: 0 auto;
+        margin: 0 0 0 88px;
         width: 420px;
     }
 
@@ -267,8 +268,12 @@ header a {
 
 @media screen and (min-width: 1152px) {
 
+    .gf-intro {
+        max-width: 710px;
+    }
+
     .gf-intro p {
-        margin: 42px 0 24px 180px;
+        margin: 42px 0 24px;
     }
 
 }
@@ -276,6 +281,16 @@ header a {
 
 /* Work experience */
 
+
+.gf-work {
+    background-color: $grey-light;
+}
+.gf-work section {
+    background-color: $grey-light;
+    padding: 24px 24px 40px;
+    margin: 0 auto;
+    max-width: 960px;
+}
 .gf-work div {
     padding: 24px 24px 40px;
 }
@@ -419,11 +434,11 @@ time {
     color: #fff;
     font-weight: 700;
 }
-.gf-what i.fas, .gf-what svg {
+.gf-what i.fas, .gf-what .column svg {
     color: rgba(275, 275, 275, 0.75);
     font-size: 24px;
     text-align: center;
-    margin: 0 auto;
+    margin: 24px auto 0;
     display: block;
 }
 
@@ -434,17 +449,21 @@ time {
         background: transparent url(../images/shapes/bg-middle.jpg) no-repeat right top;
         background-size: cover;
         margin: 0;
-        padding: 128px 0 80px;
+        padding: 128px 0;
     }
     .gf-what p {
         text-align: left;
-        padding: 24px 8px 24px 0;
+        padding: 24px 8px;
+        margin: 0;
         max-width: 240px;
+    }
+    .gf-what i.fas, .gf-what .column svg {
+        margin: 0 16px;
     }
     .gf-what p.gf-lead {
         font-size: 21px;
         line-height: 30px;
-        padding: 0 16px 80px;
+        padding: 32px 8px 80px;
         margin: 0;
         max-width: 380px;
     }
@@ -454,7 +473,7 @@ time {
 @media screen and (min-width: 1450px) {
     
     .gf-what {
-        padding: 152px 0 104px;
+        padding: 152px 0;
 }
 
 
@@ -473,12 +492,17 @@ img.gf-svg-shape-mobile {
 }
 
 .gf-logos {
-    background-color: $grey-light;
+    background: url(../images/shapes/bg-logos.svg) no-repeat top center;
+    background-size: 100%;
     overflow: auto;
-    padding: 24px 0;
-    margin: 0 0 40px;
+    padding: 40px 0 0;
+    margin: 0;
 }
-.gf-logos div {
+.gf-logos section div {
+    background: $grey-light;
+    padding: 0 0 32px;
+}
+.gf-logos div div {
     width: 50%;
     height: 130px;
     padding: 48px;
@@ -487,7 +511,7 @@ img.gf-svg-shape-mobile {
     justify-content: center;
     align-items: center;
 }
-.gf-logos div img {
+.gf-logos div div img {
     opacity: 0.4; 
     max-width: 100px;
     max-height: 60px;
@@ -507,20 +531,20 @@ img.gf-svg-shape-mobile {
         position: relative;
         background-color: transparent;
         overflow: auto;
-        padding: 52px 0 0;
+        padding: 64px 0 0;
         margin: 0;
     }
-    .gf-logos section {
-        background: $grey-light;
+    .gf-logos section div {
         overflow: auto;
-        padding: 24px 24px 40px;
-        margin: 0;
+        padding: 16px 40px 0;
+        margin: 0 auto;
+        max-width: 1200px;
     }
-    .gf-logos div {
+    .gf-logos div div {
         width: 16.6%;
         padding: 24px;
     }
-    .gf-logos div img { 
+    .gf-logos div div img { 
         max-width: 80px;
         max-height: 48px;
     }
@@ -529,16 +553,16 @@ img.gf-svg-shape-mobile {
 
 @media screen and (min-width: 960px) {
 
-    .gf-logos {
-        padding: 64px 0 0;
+    .gf-logos section {
+        padding: 0;
     }
-    .gf-logos div {
+    .gf-logos div div {
         width: 16.6%;
         padding: 40px;
     }
-    .gf-logos div img { 
-        max-width: 96px;
-        max-height: 64px;
+    .gf-logos div div img { 
+        max-width: 88px;
+        max-height: 56px;
     }
 
 }
@@ -546,11 +570,11 @@ img.gf-svg-shape-mobile {
 @media screen and (min-width: 1152px) {
 
     .gf-logos {
-        padding: 80px 0 0;
+        padding: 148px 0 0;
     }
     .gf-logos div img { 
-        max-width: 112px;
-        max-height: 80px;
+        max-width: 92px;
+        max-height: 72px;
     }
 
 }
