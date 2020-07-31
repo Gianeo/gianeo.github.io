@@ -30182,10 +30182,6 @@ header {
   margin: 0;
 }
 
-.gf-work-template header {
-  background: #fff;
-}
-
 header div:nth-child(1) a {
   display: none;
 }
@@ -30198,6 +30194,10 @@ header h1 {
   display: inline-block;
   margin: 0 auto;
   padding: 32px 0 0;
+}
+
+.gf-work-template header div:nth-child(1) {
+  margin-bottom: 32px;
 }
 
 header .gf-hero {
@@ -30234,11 +30234,14 @@ header a {
     background: url(../images/shapes/bg-header.svg) no-repeat bottom center;
     background-size: cover;
     text-align: left;
-    padding-bottom: 104px;
+    padding-bottom: 64px;
   }
   header div:nth-child(1) a {
     display: inline-block;
     padding: 0;
+  }
+  .gf-work-template header div:nth-child(1) {
+    padding: 0 40px;
   }
   header h1 {
     padding: 54px 40px 0;
