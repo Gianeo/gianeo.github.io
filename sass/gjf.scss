@@ -106,16 +106,22 @@ p {
     background-color: rgba(($primary), 0.1);
     color: #2A5A60;
     font-weight: 500;
-    border: 0;
-    border-bottom: solid 1px rgba(($primary), 0.4);
-    height: 49px;
+    border-radius: 6px;
+    border: solid 1px rgba(($primary), 0.2);
+    border-bottom: solid 1px rgba(($primary), 0.6);
+    height: 50px;
     padding-left: 24px;
     padding-right: 24px;
 } a.button.is-primary {
     border-radius: 290486px;
-    padding-left: calc(1em + 0.25em);
-    padding-right: calc(1em + 0.25em);
 }
+.button:hover {
+    background-color: rgba(($primary), 0.18);
+    color: #2A5A60;
+    border: solid 1px rgba(($primary), 0.4);
+    border-bottom: solid 1px rgba(($primary), 0.8);
+}
+
 .gf-what svg.gf-shape-top, .gf-what svg.gf-shape-bottom {
     display: none;
 }
