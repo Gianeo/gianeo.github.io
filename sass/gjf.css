@@ -30644,10 +30644,9 @@ img.gf-svg-shape {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: rgba(64, 185, 201, 0.4);
   margin: 0 !important;
   padding-top: 5px;
-  border-top: solid #F6F9F9 1px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   z-index: 10000;
