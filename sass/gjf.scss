@@ -55,6 +55,11 @@ p {
     padding: 0;
     margin: auto;
 }
+.gf-align-bottom {
+    display: flex;
+} .gf-align-bottom > * {
+    align-self: flex-end;
+}
 
 .gf-work-template main section {
     padding: 32px 0;
