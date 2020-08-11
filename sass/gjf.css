@@ -30086,6 +30086,12 @@ p {
   max-width: 450px;
 }
 
+.gf-container-center {
+  max-width: 1152px;
+  padding: 0;
+  margin: auto;
+}
+
 .gf-work-template main section {
   padding: 32px 0;
 }
@@ -30915,6 +30921,10 @@ p.gf-quotedby strong {
   .gf-text-columns {
     -webkit-column-count: 3;
             column-count: 3;
+  }
+  .gf-text-2columns {
+    -webkit-column-count: 2;
+            column-count: 2;
   }
 }
 

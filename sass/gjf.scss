@@ -50,6 +50,11 @@ p {
     margin: 0 0 24px;
     max-width: 450px;
 }
+.gf-container-center {
+    max-width: 1152px;
+    padding: 0;
+    margin: auto;
+}
 
 .gf-work-template main section {
     padding: 32px 0;
@@ -860,6 +865,9 @@ p.gf-quotedby {
 
     .gf-text-columns {
         column-count: 3; 
+    }
+    .gf-text-2columns {
+        column-count: 2; 
     }
 }
 
