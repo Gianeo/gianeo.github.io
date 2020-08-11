@@ -30083,7 +30083,7 @@ section {
 p {
   font-weight: 300;
   margin: 0 0 24px;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .gf-container-center {
@@ -30134,7 +30134,7 @@ p {
     padding: 48px 24px 32px;
   }
   .gf-work-template main section {
-    padding: 40px 40px 80px;
+    padding: 64px 40px 104px;
   }
   .gf-work-template main section h2.gf-title-light {
     padding: 0 24px 64px;
@@ -31026,7 +31026,7 @@ footer .gf-list-menu-mobile a {
 }
 
 @media screen and (min-width: 960px) {
-  footer {
+  .gf-home footer {
     background: #fff url(../images/shapes/top-shape.svg) no-repeat top left;
     background-size: 100%;
     min-height: 400px;
