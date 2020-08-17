@@ -206,8 +206,8 @@ header a {
 @media screen and (min-width: 768px) {
     
     header {
-        background: url(../images/shapes/bg-header.svg) no-repeat bottom center;
-        background-size: cover;
+        // background: url(../images/shapes/bg-header.svg) no-repeat bottom center;
+        // background-size: cover;
         text-align: left;
         padding-bottom: 64px;
     }
@@ -579,7 +579,7 @@ img.gf-svg-shape-mobile {
         overflow: auto;
         padding: 16px 40px 0;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1000px;
     }
     .gf-logos div div {
         width: 16.6%;
