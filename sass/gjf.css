@@ -30244,15 +30244,14 @@ nav + section {
 /* nav */
 nav {
   background-color: white;
-  margin: 0 0 2rem;
+  margin: 0;
   text-align: center;
-  z-index: 1000;
 }
 
 nav h2 {
   font-weight: 900;
   border-top: solid 6px #40B9C9;
-  padding: 1.5rem 4rem 0;
+  padding: 1.5rem 2rem 0;
   margin: 0;
   display: inline-block;
   margin: inherit auto;
@@ -30263,6 +30262,9 @@ nav ul {
 }
 
 @media screen and (min-width: 768px) {
+  nav {
+    margin-bottom: 2rem;
+  }
   nav h2 {
     display: none;
   }
@@ -30325,13 +30327,13 @@ section.gf-projects article {
   margin: 0 auto 4rem;
 }
 
+section.gf-projects article:last-child {
+  margin-bottom: 0;
+}
+
 section.gf-projects article div {
   padding: 0;
   margin: 0;
-}
-
-section.gf-projects article div:nth-child(odd) {
-  padding-right: 2rem;
 }
 
 section.gf-projects article h4 {
@@ -30341,10 +30343,6 @@ section.gf-projects article h4 {
 
 section.gf-projects article h6 {
   margin: .25rem 0 1.25rem;
-}
-
-section.gf-projects article img {
-  margin: 1rem auto;
 }
 
 section.gf-projects article div:nth-child(2) {
@@ -30370,6 +30368,7 @@ section.gf-projects article div:nth-child(1) a {
   }
   section.gf-projects article div:nth-child(1) {
     width: 35%;
+    padding-right: 2rem;
   }
   section.gf-projects article div:nth-child(2) {
     width: 65%;
@@ -30439,6 +30438,7 @@ section.gf-cv article a.button {
   }
 }
 
+/* Slideshow (swiper script) */
 /* Banner */
 section.gf-banner {
   padding: 2rem;
@@ -30884,7 +30884,6 @@ time {
 @media screen and (min-width: 768px) {
   .gf-what {
     position: relative;
-    background-image: url(../images/shapes/top-shape.svg), url(../images/shapes/bottom-shape.svg), url(../images/shapes/bg-middle.jpg);
     background-repeat: no-repeat;
     background-position: top left, bottom left, right top;
     background-size: 100%, 100%, cover;
@@ -31295,7 +31294,6 @@ footer .gf-list-menu-mobile a {
 
 @media screen and (min-width: 960px) {
   .gf-home footer {
-    background: #fff url(../images/shapes/top-shape.svg) no-repeat top left;
     background-size: 100%;
     min-height: 400px;
     padding: 160px 0 40px;
