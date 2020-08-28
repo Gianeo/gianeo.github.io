@@ -30075,7 +30075,7 @@ body {
   background-color: white;
   font-family: 'Muli', sans-serif;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 1.65;
   color: #424043;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30093,32 +30093,37 @@ h5,
 h6 {
   margin: 2.75rem 0 1.05rem;
   font-weight: 900;
-  line-height: 1.25;
+  line-height: 1.15;
 }
 
 h1, .gf-h1 {
   margin-top: 0;
-  font-size: 3.052em;
+  font-size: 1.802em;
 }
 
 h1 span {
   display: block;
 }
 
+h1.gf-display {
+  margin-top: 2rem;
+  font-size: 2.280625em;
+}
+
 h2, .gf-h2 {
-  font-size: 2.441em;
+  font-size: 1.602em;
 }
 
 h3, .gf-h3 {
-  font-size: 1.953em;
+  font-size: 1.424em;
 }
 
 h4, .gf-h4 {
-  font-size: 1.563em;
+  font-size: 1.266em;
 }
 
 h5, .gf-h5 {
-  font-size: 1.25em;
+  font-size: 1.125em;
 }
 
 h6, .gf-h6 {
@@ -30127,7 +30132,6 @@ h6, .gf-h6 {
 
 h4, .gf-h4, h5, .gf-h5, h6, .gf-h6 {
   max-width: 400px;
-  margin-bottom: 1.5rem;
   line-height: 1.4;
 }
 
@@ -30168,7 +30172,7 @@ a.button {
 
 /* Elements */
 section ul, section ol {
-  margin: 1rem 0 1rem 2rem;
+  margin: 1.5rem 0 1rem 2rem;
   max-width: 400px;
   list-style-type: none;
   padding-left: 0;
@@ -30205,9 +30209,15 @@ section ol li {
 
 hr {
   visibility: hidden;
-  margin: 8rem 0 -1px;
+  margin: 6rem 0 0;
   padding: 0;
   height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  hr {
+    margin: 8rem 0 0;
+  }
 }
 
 /* imgs */
@@ -30251,7 +30261,7 @@ nav {
 nav h2 {
   font-weight: 900;
   border-top: solid 6px #40B9C9;
-  padding: 1.5rem 2rem 0;
+  padding: 1.5rem 0 0;
   margin: 0;
   display: inline-block;
   margin: inherit auto;
@@ -30283,13 +30293,14 @@ nav ul {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding: 0 2rem;
+    padding: 0;
   }
   nav ul li {
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: .65px;
-    padding: 2rem;
+    padding: 2rem 0;
+    margin: 0 1.5rem;
   }
   nav ul li.active {
     font-weight: 900;
@@ -30337,13 +30348,13 @@ section.gf-projects article div {
   margin: 0;
 }
 
-section.gf-projects article h4 {
-  margin: .5rem 0 0;
+section.gf-projects article h3 {
+  margin: 1rem 0;
   padding: 0;
 }
 
 section.gf-projects article h6 {
-  margin: .25rem 0 1.25rem;
+  margin: 0 0 1.25rem;
 }
 
 section.gf-projects article div:nth-child(2) {
@@ -30427,13 +30438,14 @@ section.gf-cv article {
   margin: 0 0 4rem;
 }
 
-section.gf-cv article h4 {
-  margin: .5rem 0 0;
+section.gf-cv article h3 {
+  margin: 1rem 0 0;
   padding: 0;
 }
 
 section.gf-cv article h6 {
   margin: 1rem 0;
+  font-weight: 700;
 }
 
 section.gf-cv article a.button {
@@ -30462,22 +30474,35 @@ section.gf-cv article a.button {
 /* Banner */
 section.gf-banner {
   padding: 2rem;
-  margin: 4rem auto 1rem;
+  margin: 0 auto;
+  max-width: 750px;
 }
 
-section.gf-banner.gf-themeLight {
-  background: #F2F4F4;
-  color: inherit;
-}
-
-section.gf-banner.gf-themeDark {
-  background: #3CAAB8;
-  color: #fff;
+section.gf-banner p {
+  padding: .5rem 4rem 0 0;
+  margin-top: -8rem;
 }
 
 @media screen and (min-width: 768px) {
   section.gf-banner {
-    margin: 6rem auto 8rem;
+    position: relative;
+    padding: 4rem;
+  }
+  section.gf-banner p {
+    position: absolute;
+    top: 55%;
+    right: 24px;
+    padding: 2rem;
+  }
+  section.gf-banner img {
+    max-width: 370px;
+    max-height: 370px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.gf-banner {
+    margin: 4rem auto;
   }
 }
 
