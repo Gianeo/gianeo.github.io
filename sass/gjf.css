@@ -30243,9 +30243,9 @@ nav + section {
 
 /* nav */
 nav {
-  background-color: white;
   margin: 0;
   text-align: center;
+  z-index: 1000;
 }
 
 nav h2 {
@@ -30263,6 +30263,7 @@ nav ul {
 
 @media screen and (min-width: 768px) {
   nav {
+    background-color: rgba(255, 255, 255, 0.35);
     margin-bottom: 2rem;
   }
   nav h2 {
@@ -30365,13 +30366,20 @@ section.gf-projects article div:nth-child(1) a {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    margin: 0 auto 2rem;
+  }
+  section.gf-projects article:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   section.gf-projects article div:nth-child(1) {
-    width: 35%;
-    padding-right: 2rem;
+    width: 50%;
+    padding: 2rem 1rem;
   }
   section.gf-projects article div:nth-child(2) {
-    width: 65%;
+    width: 50%;
   }
   section.gf-projects article div:nth-child(1) a {
     display: -webkit-inline-box;
@@ -30380,6 +30388,19 @@ section.gf-projects article div:nth-child(1) a {
   }
   section.gf-projects article div:nth-child(2) a {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.gf-projects article {
+    margin: 0 auto 4rem;
+  }
+  section.gf-projects article div:nth-child(1) {
+    width: 45%;
+    padding: 2rem 4rem;
+  }
+  section.gf-projects article div:nth-child(2) {
+    width: 55%;
   }
 }
 
@@ -30438,7 +30459,6 @@ section.gf-cv article a.button {
   }
 }
 
-/* Slideshow (swiper script) */
 /* Banner */
 section.gf-banner {
   padding: 2rem;
@@ -30587,6 +30607,27 @@ div.gf-quote cite {
   border-left: 0;
   margin-left: -0.8em;
   margin-bottom: -1.2em;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  padding: 4rem;
+}
+
+footer div {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer div p {
+  text-align: center;
+  margin: 0 auto 2rem;
+}
+
+footer div a {
+  display: block;
+  padding: 15px;
 }
 
 /* core */
@@ -31262,47 +31303,6 @@ div.gf-col-text-right {
   }
   div.gf-col-text-right {
     padding-right: 64px;
-  }
-}
-
-/* Footer */
-footer {
-  background-color: #fff;
-  padding: 32px 24px 80px;
-}
-
-footer h2 {
-  padding-bottom: 40px !important;
-  color: #818F9B;
-  font-weight: 300;
-}
-
-footer .gf-list-menu-mobile {
-  text-align: center;
-  padding: 40px 0 80px;
-}
-
-footer .gf-list-menu-mobile a {
-  display: block;
-  padding: 15px;
-}
-
-.gf-footer-sub {
-  text-align: center;
-  padding: 24px 24px 80px;
-}
-
-@media screen and (min-width: 960px) {
-  .gf-home footer {
-    background-size: 100%;
-    min-height: 400px;
-    padding: 160px 0 40px;
-  }
-  footer div:nth-child(1) {
-    background: #fff;
-  }
-  .gf-footer-sub {
-    padding: 40px 24px 64px;
   }
 }
 

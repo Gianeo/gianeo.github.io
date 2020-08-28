@@ -49,7 +49,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
     <link rel="stylesheet" href="sass/gjf.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/hc-sticky.js"></script>
+    <!-- <script src="js/hc-sticky.js"></script> -->
+    <script src="js/medium-zoom.min.js"></script>
     <style>
   </style>
   </head>
@@ -246,7 +247,7 @@
       <p class="speech-bubble"><b>Problem #1.</b><br>How might we explain the functionality and architecture of the platform to regular human beings?</p>
       <h4>The OSP Tube Map</h4>
       <p>How can we clearly explain internally and externally how OSP works, from B2B to the B2C? Inspired by the London tube map, we concieved and created the OSP Tube Map, a user journey map of the platform's functionality that incorporates all the high-level actions that must be taken by the retailer and shopper to make OSP efficient. Every new feature will be regularly added to the map; and a beautiful, enormous printed wall version of it was made available in our offices across Europe (often used efficiently in workshops and brainstorming).</p>
-        <img src="images/photos/osp/tubemap.png" alt="">
+        <img src="images/photos/osp/tubemap.png" alt="" class="gf-img-zoom">
     </section>
     <section>
       <p class="speech-bubble"><b>Problem #2.</b><br>How to bring a coherent look and feel and common functional patterns across all B2B apps?</hp>
@@ -268,8 +269,8 @@
       <a href="" class="button">Designing the Fraisy language</a>
     </div>
     <div class="column">
-      <img src="images/photos/osp/11.jpg" alt="" class="has-margin-top-40 has-margin-bottom-40"><br>
-      <img src="images/photos/osp/06.jpg" alt="" class="has-margin-bottom-60">
+      <img src="images/photos/osp/11.jpg" alt="">
+      <img src="images/photos/osp/06.jpg" alt="" class="gf-img-zoom">
       <img src="images/photos/osp/brands.png" alt="">
     </div>
   </div>
@@ -333,36 +334,36 @@
         
     </section>
 
-  <footer>
+    <footer>
+  
+      <div>
+          <p>Read more about my work at</p>
+          <a href="zopa.html">
+            Zopa Bank
+          </a>
+          <a href="argos.html">
+            Sainsbury's Argos
+          </a>
+          <a href="osp.html">
+              Ocado Smart Platform
+          </a>
+          <a href="fabled.html">
+              Fabled by Marie Clare
+          </a>
+          <a href="fetch.html">
+              Fetch and Sizzle
+          </a>
+          <a href="ocado.html">
+              Ocado
+          </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="button is-primary">Get in touch via LinkedIn</a>
+      </div>
+      
+    </footer>
 
-    <div class="container is-fluid gf-list-menu-mobile">
-        <h2 class="gf-h6">Read more about my time at</h2>
-        <a href="zopa.html">
-          Zopa Bank
-        </a>
-        <a href="argos.html">
-          Sainsbury's Argos
-        </a>
-        <a href="osp.html">
-            Ocado Smart Platform
-        </a>
-        <a href="fabled.html">
-            Fabled by Marie Clare
-        </a>
-        <a href="fetch.html">
-            Fetch and Sizzle
-        </a>
-        <a href="ocado.html">
-            Ocado
-        </a>
-    </div>
-    <div class="gf-footer-sub">
-      <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="button is-primary">Get in touch via LinkedIn</a>
-    </div>
-    
-  </footer>
-
-<script>
+<!-- <script>
   "use strict";
 
   var elements = document.getElementsByTagName('nav');
@@ -374,7 +375,15 @@
       bottomEnd: 30
     });
   }
-</script>
+</script> -->
+<script>
+  mediumZoom('.gf-img-zoom ',{
+    margin: 0,
+    background: '#f5f7f6',
+    scrollOffset: 0,
+    metaClick: false
+    })
+  </script>
 
   </body>
 </html>

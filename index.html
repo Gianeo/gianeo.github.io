@@ -49,44 +49,9 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152-precomposed.png" />
     <link rel="stylesheet" href="sass/gjf.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="js/hc-sticky.js"></script>
+    <!-- <script src="js/hc-sticky.js"></script> -->
     <script src="js/medium-zoom.min.js"></script>
     <style>
-      /* .medium-zoom-overlay {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        opacity: 0;
-        -webkit-transition: opacity 300ms;
-        transition: opacity 300ms;
-        will-change: opacity;
-      }
-
-      .medium-zoom--open .medium-zoom-overlay {
-        cursor: pointer;
-        cursor: -webkit-zoom-out;
-        cursor: zoom-out;
-        opacity: 1;
-      }
-
-      .medium-zoom-image {
-        cursor: pointer;
-        cursor: -webkit-zoom-in;
-        cursor: zoom-in;
-        -webkit-transition: all 300ms;
-        transition: all 300ms;
-      }
-
-      .medium-zoom-image--open {
-        position: relative;
-        z-index: 999;
-        cursor: pointer;
-        cursor: -webkit-zoom-out;
-        cursor: zoom-out;
-        will-change: transform;
-      } */
 
   </style>
   </head>
@@ -98,9 +63,7 @@
 
       <div class="columns">
         <div class="column">
-          <svg viewBox="0 0 408 529" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M235 0V47H180V0H235ZM77.7429 272C105.68 272 126.874 265.756 141.324 253.267C155.775 240.778 163 222.429 163 198.22V61.0349H110.979V79.4511L110.719 79.0433C107.312 73.8106 102.569 69.311 96.4902 65.5443L95.9504 65.2138C86.8948 59.7379 76.6832 57 65.3156 57C52.792 57 41.5689 60.0742 31.6463 66.2225C21.7237 72.3709 13.9687 80.9209 8.38121 91.8727C2.79374 102.824 0 115.601 0 130.204C0 144.998 2.79374 157.919 8.38121 168.967C13.9687 180.015 21.7237 188.517 31.6463 194.473C41.5689 200.429 52.792 203.408 65.3156 203.408C72.8298 203.408 79.9105 201.966 86.5576 199.084C93.2048 196.202 98.9368 192.552 103.754 188.133C106.43 185.678 108.719 183.223 110.622 180.768L110.979 180.301V202.255C110.979 212.822 108.237 220.656 102.755 225.756L102.453 226.031C96.7692 231.123 87.9545 233.669 76.0089 233.669C67.9167 233.669 59.2946 232.612 50.1427 230.499C40.9908 228.385 32.0798 225.311 23.4096 221.276L15.6064 259.319C33.5248 267.773 54.237 272 77.7429 272ZM81.6439 165C72.626 165 65.4309 161.927 60.0585 155.78C54.6862 149.633 52 141.277 52 130.712C52 120.147 54.6382 111.887 59.9146 105.932C65.1911 99.9774 72.4341 97 81.6439 97C91.0455 97 98.2886 100.025 103.373 106.076C108.458 112.127 111 120.339 111 130.712C111 141.469 108.41 149.873 103.229 155.924C98.0488 161.975 90.8537 165 81.6439 165ZM234 207V61H182V207H234ZM341.782 202.206C332.838 207.402 322.787 210 311.631 210C299.128 210 287.971 206.921 278.161 200.762C268.351 194.604 260.705 185.847 255.223 174.492C249.741 163.138 247 149.858 247 134.655C247 119.258 249.789 105.739 255.367 94.0953C260.946 82.4519 268.592 73.3585 278.306 66.8151C288.019 60.2717 299.128 57 311.631 57C322.787 57 332.838 59.7425 341.782 65.2274L342.316 65.5585C348.321 69.334 353.014 73.8882 356.395 79.2211L356.641 79.6171L356.642 61.0415H408V207.691H356.642L356.641 188.067L356.482 188.325C352.996 193.911 348.096 198.538 341.782 202.206ZM327.144 171C317.718 171 310.504 167.893 305.503 161.678C300.501 155.464 298 146.525 298 134.86C298 122.814 300.597 113.492 305.791 106.895C310.985 100.298 318.103 97 327.144 97C336.378 97 343.496 100.155 348.497 106.465C353.499 112.775 356 122.049 356 134.287C356 146.142 353.451 155.225 348.353 161.535C343.255 167.845 336.186 171 327.144 171ZM262.41 287.678V369H184.446V264.977C184.446 258.08 184.231 251.088 183.8 244C183.369 236.912 182.436 229.92 181 223.023H254.226L258.292 244.726L258.861 244.161C266.187 236.966 275.195 231.213 285.885 226.902C298.951 221.634 313.955 219 330.898 219C382.299 219 408 239.977 408 281.931V369H330.036V284.23C330.036 275.226 327.739 268.761 323.144 264.833C318.55 260.906 311.371 258.943 301.607 258.943C289.834 258.943 280.357 261.577 273.178 266.845C265.999 272.113 262.41 279.057 262.41 287.678ZM239.512 529V447.678C239.512 439.057 241.916 432.113 246.723 426.845C251.53 421.577 257.875 418.943 265.759 418.943C272.297 418.943 277.104 420.906 280.18 424.833C283.257 428.761 284.795 435.226 284.795 444.23V529H337V441.931C337 399.977 319.791 379 285.372 379C274.027 379 263.98 381.634 255.232 386.902C248.073 391.213 242.041 396.966 237.136 404.161L236.755 404.728L234.032 383.023H185C185.961 389.92 186.586 396.912 186.875 404C187.163 411.088 187.307 418.08 187.307 424.977V529H239.512ZM408 383V529H356V383H408Z" fill="#494949"/>
-            </svg>
+          Header
         </div>
         <div class="column">
           <h2 class="gf-h4 gf-text-lh-med">User Experience, Design, and Leadership</h2>
@@ -185,8 +148,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/zopa/new01.jpg" class="medium-zoom-image" data-zoom-src="images/photos/zopa/new01.jpg">
+          <div class="">
+            <img src="images/photos/zopa/new01.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -207,8 +170,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/osp/new01.jpg" class="medium-zoom-image" data-zoom-src="images/photos/osp/new01.jpg">
+          <div class="">
+            <img src="images/photos/osp/new01.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -227,8 +190,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/osp/new02.jpg" class="medium-zoom-image" data-zoom-src="images/photos/osp/new02.jpg">
+          <div class="">
+            <img src="images/photos/osp/new02.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -247,8 +210,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/fabled/new01.jpg" class="medium-zoom-image" data-zoom-src="images/photos/fabled/new01.jpg">
+          <div class="">
+            <img src="images/photos/fabled/new01.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -267,8 +230,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/fetch/new01.jpg" class="medium-zoom-image" data-zoom-src="images/photos/fetch/new01.jpg">
+          <div class="">
+            <img src="images/photos/fetch/new01.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -285,8 +248,8 @@
             </ul>
             <a href="zopa.html" class="button">More info</a>
           </div>
-          <div class="gf-img-zoom">
-            <img src="images/photos/ocado/new01.jpg" class="medium-zoom-image" data-zoom-src="images/photos/ocado/new01.jpg">
+          <div class="">
+            <img src="images/photos/ocado/new01.jpg" class="gf-img-zoom">
             <a href="zopa.html" class="button">More info</a>
           </div>
       </article>
@@ -412,8 +375,8 @@
 
   <footer>
 
-    <div class="container is-fluid gf-list-menu-mobile">
-        <h2 class="gf-h6">Read more about my time at</h2>
+    <div>
+        <p>Read more about my work at</p>
         <a href="zopa.html">
           Zopa Bank
         </a>
@@ -433,30 +396,28 @@
             Ocado
         </a>
     </div>
-    <div class="gf-footer-sub">
+    <div>
       <a href="https://www.linkedin.com/in/giannijfavaretto" target="_blank" class="button is-primary">Get in touch via LinkedIn</a>
     </div>
     
   </footer>
 
-  <script>
-    "use strict";
-  
+<!-- <script>
     var elements = document.getElementsByTagName('nav');
   
     for (var i = 0; i < elements.length; i++) {
       new hcSticky(elements[i], {
         stickTo: elements[i].parentNode,
+        stickyClass: 'gf-nav-top',
         top: 0,
         bottomEnd: 30
       });
     }
-  </script>
-
+</script> -->
 <script>
-  mediumZoom('.gf-img-zoom img',{
+  mediumZoom('.gf-img-zoom',{
     margin: 0,
-    background: 'rgba(275,275,275,0.75)',
+    background: '#fff',
     scrollOffset: 0,
     metaClick: false
     })
