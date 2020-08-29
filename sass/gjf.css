@@ -30105,7 +30105,7 @@ h1 span {
   display: block;
 }
 
-h1.gf-display {
+.gf-display {
   margin-top: 2rem;
   font-size: 2.280625em;
 }
@@ -30200,7 +30200,7 @@ section ul li span {
 }
 
 section li svg {
-  opacity: .35;
+  color: #A5DDE4 !important;
 }
 
 section ol li {
@@ -30228,12 +30228,28 @@ img.gf-responsive {
 
 /* Header */
 header {
-  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 6rem;
 }
 
-header h1, header p {
-  margin: 40px 0;
+header div {
+  width: 50%;
+  padding: 4rem;
+}
+
+header div:first-of-type {
+  width: 100%;
+}
+
+header p {
+  margin: 4rem 0;
 }
 
 /* Blocks */
