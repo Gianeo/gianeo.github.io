@@ -167,44 +167,80 @@ img.gf-responsive {
 
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+header a {
+    text-decoration: none;
 }
 
 .gf-hero {
     background: url(../images/photos/generic/0-4.jpg) no-repeat;
-    background-size: 70%;
-    background-position-x: 0;
-    background-position-y: center;
-    display: flex;
-    max-width: 1400px;
+    background-position-x: center;
+    background-position-y: top;
     margin: 0 auto;
-    padding-bottom: 4rem;
-    position: relative;
-}
-.gf-hero div {
-    width: 40%;
-    padding: 4rem;
-    flex-grow: 0;
-}
-.gf-hero div:first-of-type {
-    width: 60%;
-}
-.gf-hero p {
-    background: rgba(275, 275, 275, 0.75);
-    margin: 2rem 0 2rem -2rem;
     padding: 2rem;
 }
+// .gf-hero div:first-of-type {
+//     height: 300px;
+// }
+.gf-hero p {
+    background: rgba(275, 275, 275, 0.95);
+    margin: 14rem 0 0;
+    padding: 2rem;
+}
+.gf-hero a {
+    margin-top: 3rem;
+}
 p.gf-img-caption {
-    position: absolute;
-    bottom: 2rem;
-    left: 25%;
-    padding: 1rem;
-    margin: 0;
-    line-height: 0;
-    font-size: 0.8em;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gf-hero {
+        background: url(../images/photos/generic/0-4.jpg) no-repeat;
+        // background-size: 70%;
+        background-position-x: 0;
+        background-position-y: center;
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+    .gf-hero div {
+        width: 40%;
+        padding: 4rem;
+        flex-grow: 0;
+    }
+    .gf-hero div:first-of-type {
+        width: 60%;
+    }
+    .gf-hero p {
+        background: rgba(275, 275, 275, 0.75);
+        margin: 2rem 0 2rem -2rem;
+        padding: 2rem;
+    }
+    .gf-hero a {
+        margin-top: 4rem;
+    }
+    p.gf-img-caption {
+        display: block;
+        position: absolute;
+        bottom: 2rem;
+        left: 25%;
+        padding: 1rem;
+        margin: 0;
+        line-height: 0;
+        font-size: 0.8em;
+    }
 }
 
 /* Blocks */
