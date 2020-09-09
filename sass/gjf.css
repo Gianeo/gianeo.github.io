@@ -30229,6 +30229,22 @@ img.gf-responsive {
   height: auto;
 }
 
+img.gf-frame {
+  padding: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  img.gf-frame {
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  img.gf-frame {
+    padding: 4rem;
+  }
+}
+
 /* Header + hero */
 header {
   display: -webkit-box;
@@ -30346,7 +30362,7 @@ p.gf-img-caption {
     display: block;
     position: absolute;
     bottom: 2rem;
-    left: 25%;
+    left: 15%;
     padding: 1rem;
     margin: 0;
     line-height: 0;
@@ -30574,7 +30590,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
   }
   section.gf-two-cols-img article div:nth-child(1) {
     width: 45%;
-    padding: 2rem 4rem;
+    padding: 4rem;
   }
   section.gf-two-cols-img article div:nth-child(2) {
     width: 55%;
