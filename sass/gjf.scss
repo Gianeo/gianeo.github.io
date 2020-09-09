@@ -185,6 +185,10 @@ header a {
     margin: 0 auto;
     padding: 2rem;
 }
+.gf-hero div {
+    max-width: 400px;
+    margin: 0 auto;
+}
 .gf-hero h2 {
     margin: 2rem 0;
 }
@@ -319,7 +323,7 @@ nav ul {
 
     nav {
         background-color: rgba(275, 275, 275, .35);
-        margin: 0 0 1rem;
+        margin: 0;
     }
     nav:first-of-type {
         margin: 3rem 0 0;
@@ -460,7 +464,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
 @media screen and (min-width: 1024px) {
 
     section.gf-two-cols-img article {
-        margin: 0 auto 4rem;
+        margin: 0 auto;
     }
     section.gf-two-cols-img article div:nth-child(1) {
         width: 45%;
