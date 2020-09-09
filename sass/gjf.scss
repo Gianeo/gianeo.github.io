@@ -182,16 +182,9 @@ header a {
 }
 
 .gf-hero {
-    // background: url(../images/photos/generic/0-4.jpg) no-repeat;
-    // background-size: 120%;
-    // background-position-x: center;
-    // background-position-y: top;
     margin: 0 auto;
     padding: 2rem;
 }
-// .gf-hero div:first-of-type {
-//     height: 300px;
-// }
 .gf-hero h2 {
     margin: 2rem 0;
 }
@@ -206,7 +199,6 @@ p.gf-img-caption {
 
     header {
         padding: 2rem;
-        margin-bottom: 0;
     }
 
     .gf-hero {
@@ -217,7 +209,7 @@ p.gf-img-caption {
         display: flex;
         max-width: 1400px;
         margin: 0 auto;
-        padding: 0 2rem 4rem;
+        padding: 0 2rem;
         position: relative;
     }
     .gf-hero div {
@@ -233,7 +225,7 @@ p.gf-img-caption {
     }
     .gf-hero p {
         background: rgba(275, 275, 275, 0.85);
-        margin: 2rem 0 2rem -2rem;
+        margin: 2rem 0 0 -2rem;
         padding: 2rem;
     }
     .gf-hero a {
@@ -250,6 +242,7 @@ p.gf-img-caption {
         background-size: 84%;
         background-position-x: center;
         background-position-y: top;
+        padding: 0 2rem;
     }
     .gf-hero div {
         width: 45%;
@@ -258,6 +251,28 @@ p.gf-img-caption {
     }
     .gf-hero div:first-of-type {
         width: 55%;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+
+    .gf-hero {
+        background-size: 75%;
+        background-position-x: 6rem;
+        background-position-y: top;
+        display: flex;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        position: relative;
+    }
+    .gf-hero div {
+        width: 40%;
+        padding: 4rem;
+        flex-grow: 0;
+    }
+    .gf-hero div:first-of-type {
+        width: 60%;
     }
     p.gf-img-caption {
         display: block;
@@ -268,28 +283,6 @@ p.gf-img-caption {
         margin: 0;
         line-height: 0;
         font-size: 0.8em;
-    }
-}
-
-@media screen and (min-width: 1224px) {
-
-    .gf-hero {
-        background-size: 75%;
-        background-position-x: 6rem;
-        background-position-y: center;
-        display: flex;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding-bottom: 4rem;
-        position: relative;
-    }
-    .gf-hero div {
-        width: 40%;
-        padding: 4rem;
-        flex-grow: 0;
-    }
-    .gf-hero div:first-of-type {
-        width: 60%;
     }
 }
 
@@ -326,7 +319,10 @@ nav ul {
 
     nav {
         background-color: rgba(275, 275, 275, .35);
-        margin-bottom: 2rem;
+        margin: 0 0 1rem;
+    }
+    nav:first-of-type {
+        margin: 3rem 0 0;
     }
     nav h2 {
        display: none; 
