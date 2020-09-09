@@ -209,7 +209,7 @@ p.gf-img-caption {
         background: url(../images/photos/generic/0-4.jpg) no-repeat;
         background-size: 90%;
         background-position-x: center;
-        background-position-y: top;
+        background-position-y: bottom;
         display: flex;
         max-width: 1400px;
         margin: 0 auto;
@@ -218,7 +218,7 @@ p.gf-img-caption {
     }
     .gf-hero div {
         width: 55%;
-        padding: 4rem;
+        padding: 4rem 0;
         flex-grow: 0;
     }
     .gf-hero div:first-of-type {
@@ -245,13 +245,10 @@ p.gf-img-caption {
     .gf-hero {
         background-size: 84%;
         background-position-x: center;
-        background-position-y: top;
         padding: 0 2rem;
     }
     .gf-hero div {
         width: 45%;
-        padding: 4rem;
-        flex-grow: 0;
     }
     .gf-hero div:first-of-type {
         width: 55%;
@@ -263,17 +260,9 @@ p.gf-img-caption {
     .gf-hero {
         background-size: 75%;
         background-position-x: 6rem;
-        background-position-y: top;
-        display: flex;
-        max-width: 1400px;
-        margin: 0 auto;
-        padding-bottom: 2rem;
-        position: relative;
     }
     .gf-hero div {
         width: 40%;
-        padding: 4rem;
-        flex-grow: 0;
     }
     .gf-hero div:first-of-type {
         width: 60%;
@@ -413,7 +402,7 @@ section.gf-two-cols article a.button {
 section.gf-two-cols-img article {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 4rem;
+    margin: 0 auto;
 }
 section.gf-two-cols-img article:last-child {
     margin-bottom: 0;
@@ -428,6 +417,9 @@ section.gf-two-cols-img article h3 {
 }
 section.gf-two-cols-img article h6 {
     margin: 0 0 1.25rem;
+}
+section.gf-two-cols-img article div a {
+    margin-bottom: 6rem;
 }
 section.gf-two-cols-img article div:nth-child(2) {
     order: 1;
