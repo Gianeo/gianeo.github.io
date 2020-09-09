@@ -499,39 +499,40 @@ section.gf-two-cols-img article div:nth-child(1) a {
 /* Banner */
 
 .gf-banner {
-    padding: 2rem;
+    padding: 2rem 4rem;
     margin: 0 auto;
-    max-width: 750px;
 }
 .gf-banner p {
-    padding: .5rem 4rem 0 0;
-    margin-top: -8rem;
+    max-width: 300px;
+    padding: 2rem 0;
+    margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
 
     .gf-banner {
-        position: relative;
-        padding: 4rem;
+        display: flex;
+        align-items: center;
     }
-    .gf-banner p {
-        position: absolute;
-        top: 55%;
-        right: 24px;
+    .gf-banner div {
+        width: 45%;
         padding: 2rem;
     }
-    .gf-banner img {
-        max-width: 370px;
-        max-height: 370px;
+    .gf-banner div:first-of-type {
+        width: 55%;
+        padding: 2rem;
+    }
+    .gf-banner p {
+        margin: 0;
     }
 
 }
-@media screen and (min-width: 1024px) {
+// @media screen and (min-width: 1024px) {
 
-    .gf-banner {
-        margin: 4rem auto;
-    }
+//     .gf-banner {
+//         margin: 4rem auto;
+//     }
 
-}
+// }
 
 /* Utility */
 
