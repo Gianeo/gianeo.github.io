@@ -30252,16 +30252,12 @@ header a {
 }
 
 .gf-hero {
-  background: url(../images/photos/generic/0-4.jpg) no-repeat;
-  background-size: 120%;
-  background-position-x: center;
-  background-position-y: top;
   margin: 0 auto;
   padding: 2rem;
 }
 
 .gf-hero h2 {
-  margin: 17rem 0 2rem;
+  margin: 2rem 0 2rem;
 }
 
 .gf-hero a {
@@ -30278,9 +30274,6 @@ p.gf-img-caption {
     margin-bottom: 0;
   }
   .gf-hero {
-    background: url(../images/photos/generic/0-4.jpg) no-repeat;
-    background-position-x: center;
-    background-position-y: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
