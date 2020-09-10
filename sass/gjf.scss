@@ -500,11 +500,10 @@ section.gf-two-cols-img article div:nth-child(1) a {
 /* Banner */
 
 .gf-banner {
-    padding: 0;
+    padding: 2rem;
     margin: 0 auto;
 }
 .gf-banner p {
-    max-width: 300px;
     padding: 2rem 0;
     margin: 0 auto;
 }
@@ -523,6 +522,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
         padding: 2rem;
     }
     .gf-banner p {
+        max-width: 300px;
         margin: 0;
     }
 
