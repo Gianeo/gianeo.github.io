@@ -216,10 +216,11 @@ p.gf-img-caption {
 
     header {
         padding: 2rem;
+        margin-bottom: 2rem;
     }
 
     .gf-hero {
-        background: url(../images/photos/generic/0-4.jpg) no-repeat;
+        background: url(../images/photos/generic/01.jpg) no-repeat;
         background-size: 90%;
         background-position-x: center;
         background-position-y: bottom;
@@ -499,7 +500,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
 /* Banner */
 
 .gf-banner {
-    padding: 2rem 4rem;
+    padding: 2rem;
     margin: 0 auto;
 }
 .gf-banner p {
