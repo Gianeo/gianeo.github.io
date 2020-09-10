@@ -30230,18 +30230,15 @@ img.gf-responsive {
 }
 
 img.gf-frame {
-  padding: 3rem;
+  padding: 4rem;
 }
 
 @media screen and (min-width: 768px) {
   img.gf-frame {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
     padding: 2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  img.gf-frame {
-    padding: 4rem;
   }
 }
 
@@ -30664,7 +30661,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
 
 .gf-container-centered p {
   max-width: 300px;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   text-align: left;
 }
 
