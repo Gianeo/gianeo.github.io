@@ -30458,9 +30458,9 @@ section.gf-two-cols {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.gf-two-cols article {
@@ -30486,20 +30486,22 @@ section.gf-two-cols article a.button {
 
 @media screen and (min-width: 768px) {
   section.gf-two-cols article {
+    max-width: 420px;
     padding: 0;
     width: 50%;
   }
   section.gf-two-cols article:nth-child(odd) {
-    padding: 0 1rem 0 0;
+    padding: 0 2rem 0 0;
   }
   section.gf-two-cols article:nth-child(even) {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 2rem;
   }
 }
 
 @media screen and (min-width: 1120px) {
   section.gf-two-cols article {
-    margin: 0 0 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
