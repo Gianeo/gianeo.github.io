@@ -30172,7 +30172,7 @@ a.button {
 
 /* Elements */
 section ul, section ol {
-  margin: 1.5rem 0 1rem 2rem;
+  margin: 1.5rem 0 1.5rem 2rem;
   max-width: 400px;
   list-style-type: none;
   padding-left: 0;
@@ -30534,7 +30534,7 @@ section.gf-two-cols-img article h6 {
 }
 
 section.gf-two-cols-img article div a {
-  margin-bottom: 6rem;
+  margin: 1rem 0 6rem;
 }
 
 section.gf-two-cols-img article div:nth-child(2) {
@@ -30567,7 +30567,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
   }
   section.gf-two-cols-img article div:nth-child(1) {
     width: 50%;
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
   section.gf-two-cols-img article div:nth-child(2) {
     width: 50%;
