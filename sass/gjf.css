@@ -30244,23 +30244,22 @@ img.gf-frame {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gf-gallery img {
-    display: block;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 400px;
-    margin-bottom: .5rem;
+  .gf-gallery div {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
   }
-  .gf-gallery img:nth-child(odd) {
-    margin-right: .5rem;
+  .gf-gallery div:nth-child(odd) {
+    padding-right: .25rem;
+  }
+  .gf-gallery div:nth-child(even) {
+    padding-left: .25rem;
+  }
+  .gf-gallery img {
+    width: 100%;
   }
 }
 

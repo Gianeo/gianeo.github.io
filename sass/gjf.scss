@@ -173,17 +173,19 @@ img.gf-frame {
     } 
     .gf-gallery {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
-    .gf-gallery img {
-        display: block;
-        flex-grow: 1;
-        width: 400px;
-        margin-bottom: .5rem;
+    .gf-gallery div {
+        flex: 50%;
     }
-    .gf-gallery img:nth-child(odd) {
-        margin-right: .5rem;
+    .gf-gallery div:nth-child(odd) {
+        padding-right: .25rem;
+    }
+    .gf-gallery div:nth-child(even) {
+        padding-left: .25rem;
+    }
+    .gf-gallery img {
+        width: 100%;
     }
 }
 // @media screen and (min-width: 1024px) {
