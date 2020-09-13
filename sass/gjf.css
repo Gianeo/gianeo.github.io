@@ -30234,7 +30234,7 @@ img.gf-responsive {
 }
 
 img.gf-frame {
-  padding: 3rem 2rem 2.5rem;
+  padding: 3rem 2rem 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -30542,7 +30542,7 @@ section.gf-two-cols-img article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
 }
 
 section.gf-two-cols-img article:last-child {

@@ -165,7 +165,7 @@ img.gf-responsive {
   height: auto;
 }
 img.gf-frame {
-    padding: 3rem 2rem 2.5rem;
+    padding: 3rem 2rem 0;
 } 
 
 @media screen and (min-width: 768px) {
@@ -443,7 +443,7 @@ section.gf-two-cols article a.button {
 section.gf-two-cols-img article {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
 }
 section.gf-two-cols-img article:last-child {
     margin-bottom: 0;
