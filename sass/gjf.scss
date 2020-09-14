@@ -90,6 +90,10 @@ font-weight: 700;}
 h4, .gf-h4, h5, .gf-h5, h6, .gf-h6 {max-width: 400px; line-height: 1.56;}
 
 small, .gf-text-small {font-size: 0.8em;}
+.gf-text-small {
+    color: $grey;
+    margin: 2.5rem 0 0;
+}
 
 .gf-text-light { font-weight: 700; }
 .gf-text-lighter { font-weight: 300; }
@@ -176,7 +180,11 @@ img.gf-responsive {
 }
 img.gf-frame {
     padding: 3rem 2rem 0;
-} 
+}
+
+.gf-images img {
+    padding: 2rem 2rem 1.5rem;
+}
 
 @media screen and (min-width: 768px) {
     img.gf-frame {
@@ -461,7 +469,7 @@ section.gf-two-cols-img article div {
     padding: 0;
     margin: 0;
 }
-section.gf-two-cols-img article h3 {
+section.gf-two-cols-img article h3.gf-with-subtitle {
     margin: 1rem 0 0;
     padding: 0;
 }
@@ -527,9 +535,10 @@ section.gf-two-cols-img article div:nth-child(1) a {
     justify-content: space-between;
   }
   
-.gf-three-cols div {
+.gf-three-cols > * {
     flex: 0 32%;
-    margin-bottom: 2%; /* (100-32*3)/2 */
+    padding: 2rem;
+    margin-bottom: 2rem; /* (100-32*3)/2 */
   }
 
 
@@ -577,21 +586,21 @@ section.gf-two-cols-img article div:nth-child(1) a {
     margin: inherit auto;
     text-align: center;
 }
-.gf-container-centered.gf-larger {
-    margin: 0 auto;
-}
-.gf-container-centered p {
+.gf-container-centered  > * {
     max-width: 300px;
-    margin: 0 auto;
-    text-align: left;
-}
-.gf-container-centered.gf-larger p {
-    max-width: 400px;
     margin: 0 auto 1rem;
     text-align: left;
 }
 .gf-container-centered img {
     margin: .5rem 0 1rem;
+}
+.gf-container-centered.gf-larger {
+    margin: 0 auto;
+}
+.gf-container-centered  > * {
+    max-width: 400px;
+    margin: 0 auto 1rem;
+    text-align: left;
 }
 .gf-with-gallery .gf-container-centered p {
     margin: 0;
@@ -707,16 +716,17 @@ blockquote p:first-child:before {
 
 /* Bubble speech */
 
-.speech-bubble {
+.gf-speech-bubble {
 	position: relative;
 	background: $grey-light;
     border-radius: .4em;
     padding: 3rem 4rem;
-    margin: 4rem 0;
+    margin-top: 0;
+    margin-bottom: 3rem;
     max-width: 400px;
 }
 
-.speech-bubble:after {
+.gf-speech-bubble:after {
 	content: '';
 	position: absolute;
 	bottom: 0;

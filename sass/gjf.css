@@ -30147,6 +30147,11 @@ small, .gf-text-small {
   font-size: 0.8em;
 }
 
+.gf-text-small {
+  color: #818F9B;
+  margin: 2.5rem 0 0;
+}
+
 .gf-text-light {
   font-weight: 700;
 }
@@ -30243,6 +30248,10 @@ img.gf-responsive {
 
 img.gf-frame {
   padding: 3rem 2rem 0;
+}
+
+.gf-images img {
+  padding: 2rem 2rem 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -30561,7 +30570,7 @@ section.gf-two-cols-img article div {
   margin: 0;
 }
 
-section.gf-two-cols-img article h3 {
+section.gf-two-cols-img article h3.gf-with-subtitle {
   margin: 1rem 0 0;
   padding: 0;
 }
@@ -30644,11 +30653,12 @@ section.gf-two-cols-img article div:nth-child(1) a {
           justify-content: space-between;
 }
 
-.gf-three-cols div {
+.gf-three-cols > * {
   -webkit-box-flex: 0;
       -ms-flex: 0 32%;
           flex: 0 32%;
-  margin-bottom: 2%;
+  padding: 2rem;
+  margin-bottom: 2rem;
   /* (100-32*3)/2 */
 }
 
@@ -30692,24 +30702,24 @@ section.gf-two-cols-img article div:nth-child(1) a {
   text-align: center;
 }
 
-.gf-container-centered.gf-larger {
-  margin: 0 auto;
-}
-
-.gf-container-centered p {
+.gf-container-centered > * {
   max-width: 300px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.gf-container-centered.gf-larger p {
-  max-width: 400px;
   margin: 0 auto 1rem;
   text-align: left;
 }
 
 .gf-container-centered img {
   margin: .5rem 0 1rem;
+}
+
+.gf-container-centered.gf-larger {
+  margin: 0 auto;
+}
+
+.gf-container-centered > * {
+  max-width: 400px;
+  margin: 0 auto 1rem;
+  text-align: left;
 }
 
 .gf-with-gallery .gf-container-centered p {
@@ -30829,16 +30839,17 @@ div.gf-quote cite {
 }
 
 /* Bubble speech */
-.speech-bubble {
+.gf-speech-bubble {
   position: relative;
   background: #e5ebeb;
   border-radius: .4em;
   padding: 3rem 4rem;
-  margin: 4rem 0;
+  margin-top: 0;
+  margin-bottom: 3rem;
   max-width: 400px;
 }
 
-.speech-bubble:after {
+.gf-speech-bubble:after {
   content: '';
   position: absolute;
   bottom: 0;
