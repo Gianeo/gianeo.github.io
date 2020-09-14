@@ -30116,6 +30116,8 @@ h2, .gf-h2 {
 
 h3, .gf-h3 {
   font-size: 1.424em;
+  max-width: 400px;
+  line-height: 1.4;
 }
 
 h4, .gf-h4 {
@@ -30128,9 +30130,15 @@ h5, .gf-h5 {
 
 h6, .gf-h6 {
   font-size: 1em;
+  font-weight: 700;
 }
 
-h3, .gf-h3, h4, .gf-h4, h5, .gf-h5, h6, .gf-h6 {
+.gf-h6.is-uppercase {
+  font-size: .85em;
+  letter-spacing: .25em;
+}
+
+h4, .gf-h4, h5, .gf-h5, h6, .gf-h6 {
   max-width: 400px;
   line-height: 1.56;
 }
@@ -30504,8 +30512,7 @@ section.gf-two-cols article h3 {
 }
 
 section.gf-two-cols article h6 {
-  margin: 1rem 0;
-  font-weight: 700;
+  margin: 0.25rem 0 1.25rem;
 }
 
 section.gf-two-cols article a.button {
@@ -30560,7 +30567,7 @@ section.gf-two-cols-img article h3 {
 }
 
 section.gf-two-cols-img article h6 {
-  margin: 0 0 1.25rem;
+  margin: 0.25rem 0 1.25rem;
 }
 
 section.gf-two-cols-img article div a {
@@ -30686,7 +30693,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
 }
 
 .gf-container-centered.gf-larger {
-  margin: 0 auto 4rem;
+  margin: 0 auto;
 }
 
 .gf-container-centered p {
@@ -30706,10 +30713,13 @@ section.gf-two-cols-img article div:nth-child(1) a {
 }
 
 .gf-with-gallery .gf-container-centered p {
-  margin: 2rem 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
+  .gf-container-centered.gf-larger {
+    margin: 0 auto 4rem;
+  }
   .gf-with-gallery .gf-container-centered p {
     margin: 0;
   }
