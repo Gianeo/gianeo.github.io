@@ -30229,7 +30229,7 @@ hr {
 }
 
 hr:first-of-type {
-  margin: 2rem 0 0;
+  margin: 4rem 0 0;
 }
 
 @media screen and (min-width: 1156px) {
@@ -31014,7 +31014,7 @@ div.gf-quote cite {
   position: relative;
   background: #e5ebeb;
   border-radius: .4em;
-  padding: 3rem 4rem;
+  padding: 1.5rem 2rem;
   margin-top: 0;
   margin-bottom: 3rem;
   max-width: 400px;
@@ -31033,6 +31033,12 @@ div.gf-quote cite {
   border-left: 0;
   margin-left: -0.8em;
   margin-bottom: -1.2em;
+}
+
+@media screen and (min-width: 1024px) {
+  .gf-speech-bubble {
+    padding: 3rem 4rem;
+  }
 }
 
 /* Utilities */
