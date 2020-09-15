@@ -30172,13 +30172,50 @@ a {
   text-decoration: underline;
 }
 
-a.button {
+a.gf-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: rgba(64, 185, 201, 0.1);
+  border: solid 1px rgba(64, 185, 201, 0.2);
+  border-bottom: solid 1px rgba(64, 185, 201, 0.6);
+  color: #2A5A60;
   text-decoration: none;
   width: 100%;
+  border-radius: 290486px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.6;
+  height: 42px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 2px);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: calc(0.5em - 2px);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+a.gf-button.gf-primary {
+  background-color: #40B9C9;
+  border: solid 1px #40B9C9;
+  border-bottom: solid 1px #379fa9;
+  color: #fff;
+}
+
+a.gf-button.gf-large {
+  font-weight: 700;
+  line-height: 1.7;
+  height: 50px;
+  padding-bottom: calc(0.75em - 2px);
+  padding-top: calc(0.75em - 2px);
 }
 
 @media screen and (min-width: 768px) {
-  a.button {
+  a.gf-button {
     width: auto;
     margin: 1rem .5rem 0 0 !important;
   }
@@ -30312,6 +30349,10 @@ header a {
   text-decoration: none;
 }
 
+header div:first-of-type a {
+  display: none;
+}
+
 .gf-hero {
   margin: 0 auto;
   padding: 2rem;
@@ -30336,9 +30377,10 @@ p.gf-img-caption {
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 2rem 2rem 0;
+    padding: 2rem 2rem 1rem;
   }
   header div:first-of-type a {
+    display: inline;
     margin-right: 1.5rem;
   }
   .gf-hero {
@@ -30372,11 +30414,17 @@ p.gf-img-caption {
     margin: 2rem 0 0 -2rem;
     padding: 2rem;
   }
-  .gf-hero a {
+  .gf-hero a.gf-button {
     margin: 3rem 0 .5rem !important;
   }
   p.gf-img-caption {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gf-hero {
+    padding-top: 1rem;
   }
 }
 
@@ -30395,13 +30443,11 @@ p.gf-img-caption {
   }
 }
 
-@media screen and (min-width: 1224px) {
-  header {
-    margin-bottom: 2rem;
-  }
+@media screen and (min-width: 1124px) {
   .gf-hero {
     background-size: 65%;
     background-position-x: 6rem;
+    padding-top: 0rem;
   }
   .gf-hero div {
     width: 40%;
@@ -30418,6 +30464,12 @@ p.gf-img-caption {
     margin: 0;
     line-height: 0;
     font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .gf-hero {
+    padding-top: 2rem;
   }
 }
 
@@ -30509,16 +30561,16 @@ nav ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(182, 229, 234, 0.8);
+  background-color: rgba(64, 185, 201, 0.9);
   margin: 0 !important;
   padding-top: 5px;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
   z-index: 10000;
 }
 
 .gf-mobile-nav a {
-  color: #318C97;
+  color: #fff !important;
   display: inline-block;
   color: #318C97;
   font-weight: 600;
@@ -30527,6 +30579,7 @@ nav ul {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  text-decoration: none;
 }
 
 .gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {
@@ -30654,7 +30707,7 @@ section.gf-two-cols article h6 {
   margin: 0.25rem 0 1.25rem;
 }
 
-section.gf-two-cols article a.button {
+section.gf-two-cols article a.gf-button {
   margin: 0 0 1rem;
 }
 
@@ -31156,7 +31209,7 @@ p {
 }
 
 /* Components */
-.button {
+.gf-button {
   background-color: rgba(64, 185, 201, 0.1);
   color: #2A5A60;
   font-weight: 500;
@@ -31168,11 +31221,11 @@ p {
   padding-right: 24px;
 }
 
-a.button.is-primary {
+a.gf-button.is-primary {
   border-radius: 290486px;
 }
 
-.button:hover {
+.gf-button:hover {
   background-color: rgba(64, 185, 201, 0.18);
   color: #2A5A60;
   border: solid 1px rgba(64, 185, 201, 0.4);
