@@ -30871,8 +30871,10 @@ blockquote p:first-child:before {
 }
 
 div.gf-quote cite {
+  display: block;
   color: #818F9B;
   font-size: 1em;
+  line-height: 1.35;
 }
 
 @media screen and (min-width: 1024px) {
