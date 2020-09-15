@@ -30716,7 +30716,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
   margin: 0 auto;
 }
 
-.gf-container-centered > * {
+.gf-container-centered.gf-larger div {
   max-width: 400px;
   margin: 0 auto 1rem;
   text-align: left;
@@ -30728,7 +30728,7 @@ section.gf-two-cols-img article div:nth-child(1) a {
 
 @media screen and (min-width: 768px) {
   .gf-container-centered.gf-larger {
-    margin: 0 auto 4rem;
+    margin: 2rem auto;
   }
   .gf-with-gallery .gf-container-centered p {
     margin: 0;
