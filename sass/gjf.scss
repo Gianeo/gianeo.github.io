@@ -231,6 +231,7 @@ header {
     max-width: 1400px;
 }
 header h1 {
+    display: inline-block;
     font-size: 1em;
     line-height: 1.7em;
     font-weight: 700;
@@ -260,7 +261,10 @@ p.gf-img-caption {
 @media screen and (min-width: 768px) {
 
     header {
-        padding: 2rem;
+        padding: 2rem 2rem 0;
+    }
+    header div:first-of-type a {
+        margin-right: 1.5rem;
     }
 
     .gf-hero {
@@ -409,6 +413,107 @@ nav ul {
     }
     .gf-onTop {
         z-index: 10000;
+    }
+
+}
+
+/* Case studies navigation */
+
+.gf-nav-bar {
+    display: none;
+}
+.gf-mobile-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(182, 229, 234, 0.8);
+    // background-color: rgba(($primary), 0.4);     
+    margin: 0 !important;
+    padding-top: 5px;
+    // border-top: solid $grey-light 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: 10000;
+}
+.gf-mobile-nav a {     
+    color: $link;       
+    display: inline-block;
+    color: $link;
+    font-weight: 600;
+    padding: 10px 10px 30px !important;
+    text-align: center;
+    flex-grow: 1;
+}
+.gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {     
+    color: #FF2147;
+}
+.gf-mobile-nav div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10px !important;
+    justify-content: space-between;
+}
+.gf-nav-bar a:hover { 
+    background-color: rgba(($primary), 0.1);      
+    color: $grey-dark;
+    border-radius: 4px;
+}
+.gf-works-nav {
+    display: none;
+}
+
+.gf-nav-bar a {          
+    background-color: transparent;
+    color: $grey-dark;
+}
+
+@media screen and (min-width: 768px) {
+
+    .gf-mobile-nav {
+        display: none;
+    }
+    .gf-works-nav {
+        background-color: #fff;
+        padding: 0;
+        display: block;
+        margin: 1rem auto 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .gf-works-nav a {
+        width: 50%;
+        padding: 0 0 .5rem; 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: solid 4px #fff; 
+    }
+    .gf-works-nav a img {
+        opacity: 0.4; 
+        max-width: 52px;
+        max-height: 52px;
+        margin: .5rem auto;
+        fill: $link;
+    }
+    .gf-works-nav a:hover img {
+        opacity: 0.6; 
+    }
+    .gf-works-nav a.is-active {
+        background-color: #fff;
+        border-bottom: solid 4px $primary; 
+    }
+    .gf-works-nav a.is-active img {
+        opacity: 0.8; 
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .gf-works-nav {
+        padding: 0 2rem;
     }
 
 }
@@ -1175,108 +1280,7 @@ time {
 
 
 
-/* Navigation */
 
-.gf-nav-bar {
-    display: none;
-}
-.gf-mobile-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(182, 229, 234, 0.8);
-    // background-color: rgba(($primary), 0.4);     
-    margin: 0 !important;
-    padding-top: 5px;
-    // border-top: solid $grey-light 1px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    z-index: 10000;
-}
-.gf-mobile-nav a {     
-    color: $link;       
-    display: inline-block;
-    color: $link;
-    font-weight: 600;
-    padding: 10px 10px 30px !important;
-    text-align: center;
-    flex-grow: 1;
-}
-.gf-mobile-nav a.is-active, .gf-list-menu-mobile a.is-active {     
-    color: #FF2147;
-}
-.gf-mobile-nav div {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0 10px !important;
-    justify-content: space-between;
-}
-.gf-nav-bar a:hover { 
-    background-color: rgba(($primary), 0.1);      
-    color: $grey-dark;
-    border-radius: 4px;
-}
-.gf-works-nav {
-    display: none;
-}
-
-.gf-nav-bar a {          
-    background-color: transparent;
-    color: $grey-dark;
-}
-
-@media screen and (min-width: 768px) {
-
-    .gf-mobile-nav {
-        display: none;
-    }
-    .gf-works-nav {
-        background-color: #fff;
-        // max-width: 1152px;
-        padding: 0 72px;
-        display: block;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .gf-works-nav a {
-        width: 50%;
-        padding: 16px 0; 
-        display: flex;
-        justify-content: left;
-        align-items: center;
-        border-bottom: solid 1px $grey-light; 
-    }
-    .gf-works-nav a img {
-        opacity: 0.4; 
-        max-width: 64px;
-        max-height: 64px;
-        margin-left: 1rem;
-        margin: 8px auto;
-        fill: $link;
-    }
-    .gf-works-nav a:hover img {
-        opacity: 0.6; 
-    }
-    .gf-works-nav a.is-active {
-        background-color: #fff;
-        border-bottom: solid 1px $grey-dark; 
-    }
-    .gf-works-nav a.is-active img {
-        opacity: 0.8; 
-    }
-
-}
-
-@media screen and (min-width: 960px) {
-
-    .gf-works-nav {
-        padding: 0 72px;
-    }
-
-}
 
 
 /* Job content header */
