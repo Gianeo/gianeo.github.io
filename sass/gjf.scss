@@ -218,10 +218,6 @@ img.gf-frame {
     padding: 3rem 2rem 0;
 }
 
-.gf-images img {
-    padding: 2rem 0 1.5rem;
-}
-
 @media screen and (min-width: 768px) {
     img.gf-frame {
         display: block;
@@ -229,9 +225,6 @@ img.gf-frame {
         margin: 0 auto;
         padding: 2rem;
     } 
-    .gf-images img {
-        padding: 2rem 2rem 1.5rem;
-    }
     .gf-gallery {
         display: flex;
         flex-wrap: wrap;
@@ -681,6 +674,9 @@ section.gf-two-cols-img article div:nth-child(2) {
 section.gf-two-cols-img article div:nth-child(1) a {
     display: none;
 }
+section.gf-two-cols-img article div.gf-col-images {
+    padding: 0;
+}
 @media screen and (min-width: 768px) {
 
     section.gf-two-cols-img article {
@@ -704,6 +700,9 @@ section.gf-two-cols-img article div:nth-child(1) a {
     }
     section.gf-two-cols-img article div:nth-child(2) a {
         display: none;
+    }
+    section.gf-two-cols-img article div.gf-col-images {
+        padding: 2rem;
     }
 
 }
