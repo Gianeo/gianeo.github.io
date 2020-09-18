@@ -674,8 +674,8 @@ section.gf-two-cols-img article div:nth-child(2) {
 section.gf-two-cols-img article div:nth-child(1) a {
     display: none;
 }
-section.gf-two-cols-img article div.gf-col-images {
-    padding: 0;
+section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
+    padding: 2rem 0;
 }
 @media screen and (min-width: 768px) {
 
