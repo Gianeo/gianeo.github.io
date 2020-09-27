@@ -30320,6 +30320,11 @@ img.gf-frame {
 
 /* Header + hero */
 header {
+  background-color: #000;
+}
+
+header .gf-top-bar {
+  background-color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30332,6 +30337,7 @@ header {
 }
 
 header h1 {
+  color: #fff;
   display: inline-block;
   font-size: 1em;
   line-height: 1.7em;
@@ -30357,7 +30363,13 @@ header div:first-of-type a {
 }
 
 .gf-hero h2 {
+  color: #bfbfbf;
   margin: 2rem 0;
+}
+
+.gf-hero p {
+  color: #5e5e5e;
+  margin-top: 3rem;
 }
 
 .gf-hero a {
@@ -30377,10 +30389,8 @@ p.gf-img-caption {
     margin-right: 1.5rem;
   }
   .gf-hero {
-    background: url(../images/photos/gallery/hero.jpg) no-repeat;
-    background-size: 90%;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -30399,11 +30409,7 @@ p.gf-img-caption {
   .gf-hero div:first-of-type {
     width: 50%;
   }
-  .gf-hero img {
-    display: none;
-  }
   .gf-hero p {
-    background: rgba(255, 255, 255, 0.85);
     margin: 2rem 0 0 -2rem;
     padding: 2rem;
   }
@@ -30423,7 +30429,6 @@ p.gf-img-caption {
 
 @media screen and (min-width: 1024px) {
   .gf-hero {
-    background-size: 84%;
     background-position-x: center;
     padding: 0 2rem;
   }
@@ -30438,7 +30443,6 @@ p.gf-img-caption {
 
 @media screen and (min-width: 1124px) {
   .gf-hero {
-    background-size: 65%;
     background-position-x: 6rem;
     padding-top: 0rem;
   }
