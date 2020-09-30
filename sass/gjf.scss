@@ -118,7 +118,7 @@ a.gf-button {
     color: #2A5A60;
     text-decoration: none;
     width: 100%;
-    border-radius: 290486px;
+    // border-radius: 290486px;
     font-weight: 500;
     font-size: 1em;
     line-height: 1.6;
@@ -160,7 +160,7 @@ a.gf-button.gf-large {
 
 section ul, section ol {
     margin: 1.5rem 0 2rem 2rem;
-    max-width: 400px;
+    max-width: 320px;
     list-style-type: none;
     padding-left: 0;
 }
@@ -597,7 +597,7 @@ section.gf-two-cols article a.gf-button {
 @media screen and (min-width: 768px) {
 
     section.gf-two-cols > * {
-        max-width: 420px;
+        max-width: 480px;
         padding: 0;
         width: 50%;
     }
@@ -605,7 +605,7 @@ section.gf-two-cols article a.gf-button {
         padding: 0 2rem 0 0;
     }
     section.gf-two-cols article:nth-child(even) {
-        padding: 0 0 0 2rem;
+        padding: 0 0 0 5rem;
     }
 
 }
@@ -793,6 +793,7 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
 /* Banner */
 
 .gf-banner {
+    background: $primary;
     padding: 2rem;
     margin: 0 auto;
 }
@@ -1096,14 +1097,14 @@ p {
     background-color: rgba(($primary), 0.1);
     color: #2A5A60;
     font-weight: 500;
-    border-radius: 6px;
+    border-radius: 0;
     border: solid 1px rgba(($primary), 0.2);
     border-bottom: solid 1px rgba(($primary), 0.6);
     height: 50px;
     padding-left: 24px;
     padding-right: 24px;
 } a.gf-button.is-primary {
-    border-radius: 290486px;
+    // border-radius: 290486px;
 }
 .gf-button:hover {
     background-color: rgba(($primary), 0.18);
