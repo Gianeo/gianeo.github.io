@@ -30347,18 +30347,18 @@ header a {
   text-decoration: none;
 }
 
-header div:first-of-type a {
-  display: none;
-}
-
 .gf-hero {
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
 }
 
 .gf-hero div {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.gf-hero div:first-of-type {
+  text-align: center;
 }
 
 .gf-hero h2 {
@@ -30375,8 +30375,8 @@ header div:first-of-type a {
   margin-top: 3rem;
 }
 
-p.gf-img-caption {
-  display: none;
+.gf-hero div img {
+  max-width: 240px;
 }
 
 @media screen and (min-width: 768px) {
@@ -30399,6 +30399,7 @@ p.gf-img-caption {
     position: relative;
   }
   .gf-hero div {
+    max-width: auto;
     width: 50%;
     padding: 1rem 0;
     -webkit-box-flex: 0;
@@ -30415,8 +30416,8 @@ p.gf-img-caption {
   .gf-hero a.gf-button {
     margin: 3rem 0 .5rem !important;
   }
-  p.gf-img-caption {
-    display: none;
+  .gf-hero div img {
+    max-width: 340px;
   }
 }
 
@@ -30430,13 +30431,14 @@ p.gf-img-caption {
   .gf-hero {
     background-position-x: center;
     padding: 0 2rem;
+    max-width: 920px;
   }
   .gf-hero div {
-    width: 45%;
+    width: 50%;
     padding: 4rem 0;
   }
   .gf-hero div:first-of-type {
-    width: 55%;
+    width: 50%;
   }
 }
 
@@ -30449,7 +30451,7 @@ p.gf-img-caption {
     width: 40%;
   }
   .gf-hero div:first-of-type {
-    width: 60%;
+    width: 30%;
   }
   p.gf-img-caption {
     display: block;
