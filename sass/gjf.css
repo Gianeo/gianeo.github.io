@@ -30163,6 +30163,7 @@ small, .gf-text-small {
 
 .gf-text-lh-med {
   line-height: 1.4;
+  margin: 2rem 0;
 }
 
 /* links & buttons */
@@ -30221,6 +30222,18 @@ a.gf-button.gf-large {
 }
 
 /* Elements */
+div.gf-block-primary {
+  background: #40B9C9;
+  margin: 4rem 0;
+  padding: 2rem 0;
+}
+
+div.gf-block-light {
+  background: #F6F9F9;
+  margin: 4rem 0;
+  padding: 1rem 0 4rem;
+}
+
 section ul, section ol {
   margin: 1.5rem 0 2rem 2rem;
   max-width: 320px;
@@ -30290,7 +30303,7 @@ img.gf-frame {
 @media screen and (min-width: 768px) {
   img.gf-frame {
     display: block;
-    width: 400px;
+    width: 460px;
     margin: 0 auto;
     padding: 2rem;
   }
@@ -30322,6 +30335,18 @@ header {
   background-color: #000;
 }
 
+header.gf-cs-head {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1rem 0;
+  margin-bottom: 2rem;
+}
+
 header .gf-top-bar {
   background-color: #000;
   display: -webkit-box;
@@ -30341,6 +30366,7 @@ header h1 {
   font-size: 1em;
   line-height: 1.7em;
   font-weight: 700;
+  margin-right: 1.5rem;
 }
 
 header a {
@@ -30504,7 +30530,6 @@ nav ul {
 
 @media screen and (min-width: 768px) {
   nav {
-    background-color: rgba(255, 255, 255, 0.35);
     margin: 0;
   }
   nav:first-of-type {
@@ -30767,6 +30792,9 @@ section.gf-two-cols-img article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0 auto 4rem;
 }
 
