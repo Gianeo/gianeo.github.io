@@ -30739,12 +30739,13 @@ section.gf-two-cols article a.gf-button {
     max-width: 480px;
     padding: 0;
     width: 50%;
+    margin: 0 auto;
   }
   section.gf-two-cols article:nth-child(odd) {
-    padding: 0 2rem 0 0;
+    padding: 0 0 0 0;
   }
   section.gf-two-cols article:nth-child(even) {
-    padding: 0 0 0 5rem;
+    padding: 0 0 0 0;
   }
 }
 
