@@ -808,7 +808,7 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
     .gf-three-cols {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
       }
       
     .gf-three-cols > * {
@@ -1557,6 +1557,7 @@ p.gf-quotedby {
 @media screen and (min-width: 768px) {
 
     .gf-text-columns {
+        padding: 2rem 4rem;
         column-count: 2; 
         column-gap: 40px;
     }

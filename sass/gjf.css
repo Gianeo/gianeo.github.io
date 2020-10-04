@@ -30955,9 +30955,6 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .gf-three-cols > * {
     -webkit-box-flex: 0;
@@ -31704,6 +31701,7 @@ p.gf-quotedby strong {
 /* My journey */
 @media screen and (min-width: 768px) {
   .gf-text-columns {
+    padding: 2rem 4rem;
     -webkit-column-count: 2;
             column-count: 2;
     -webkit-column-gap: 40px;
