@@ -30354,7 +30354,7 @@ header.gf-cs-head {
   margin-bottom: 2rem;
 }
 
-header div:first-of-type a {
+header.gf-cs-head div:first-of-type a {
   display: none;
 }
 
@@ -30424,7 +30424,7 @@ header a {
   header {
     padding: 2rem 2rem 1rem;
   }
-  header div:first-of-type a {
+  header.gf-cs-head div:first-of-type a {
     display: inline;
     margin-right: 1.5rem;
   }

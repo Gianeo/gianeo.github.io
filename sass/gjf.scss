@@ -273,7 +273,7 @@ header.gf-cs-head {
     padding: 1rem 1rem 0;
     margin-bottom: 2rem;
 }
-header div:first-of-type a {
+header.gf-cs-head div:first-of-type a {
     display: none;
 }
 header .gf-top-bar {
@@ -330,7 +330,7 @@ header a {
     header {
         padding: 2rem 2rem 1rem;
     }
-    header div:first-of-type a {
+    header.gf-cs-head div:first-of-type a {
         display: inline;
         margin-right: 1.5rem;
     }
