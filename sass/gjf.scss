@@ -226,7 +226,7 @@ img.gf-responsive {
   height: auto;
 }
 img.gf-frame {
-    padding: 3rem 2rem 0;
+    padding: 4rem 0 0;
 }
 .gf-bg {
     display: none;
@@ -442,7 +442,7 @@ nav h2 {
     font-weight: 900;
     border-top: solid 6px $primary;
     padding: 1.5rem 0 0;
-    margin: 0;
+    margin: 0 0 4rem;
     display: inline-block;
     margin: inherit auto;
 }
@@ -486,9 +486,9 @@ nav ul li a {
     nav:first-of-type {
         margin: 3rem 0 0;
     }
-    // nav h2 {
-    //    display: none; 
-    // }
+    nav h2 {
+       margin: 0; 
+    }
 
 }
 
