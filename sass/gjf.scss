@@ -228,6 +228,9 @@ img.gf-responsive {
 img.gf-frame {
     padding: 3rem 2rem 0;
 }
+.gf-bg {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     img.gf-frame {
@@ -252,10 +255,11 @@ img.gf-frame {
     .gf-gallery img {
         width: 100%;
     }
+    .gf-bg {
+        display: block;
+    }
 }
 // @media screen and (min-width: 1024px) {
-//     img.gf-frame {
-//     } 
 // }
 
 /* Header + hero */
@@ -424,7 +428,7 @@ section {
     margin: 0 auto;
 }
 nav + section {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 /* Nav */
@@ -443,8 +447,36 @@ nav h2 {
     margin: inherit auto;
 }
 nav ul {
-    display: none;
+    // display: none;
 }
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+}
+nav ul li {
+    // flex-grow: 1;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .65px;
+    padding: 2rem 0;
+    margin: 0 1.5rem;
+}
+nav ul li.active {
+    font-weight: 900;
+    border-top: solid 6px $primary;
+}
+nav ul li a {
+    color: $grey;
+    text-decoration: none;
+    font-weight: 300;
+}
+.gf-onTop {
+    z-index: 10000;
+}
+
 @media screen and (min-width: 768px) {
 
     nav {
@@ -454,38 +486,19 @@ nav ul {
     nav:first-of-type {
         margin: 3rem 0 0;
     }
-    nav h2 {
-       display: none; 
-    }
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        padding: 0;
-    }
-    nav ul li {
-        // flex-grow: 1;
-        text-transform: uppercase;
-        font-size: 12px;
-        letter-spacing: .65px;
-        padding: 2rem 0;
-        margin: 0 1.5rem;
-    }
-    nav ul li.active {
-        font-weight: 900;
-        border-top: solid 6px $primary;
-    }
-    nav ul li a {
-        color: $grey;
-        text-decoration: none;
-        font-weight: 300;
-    }
-    .gf-onTop {
-        z-index: 10000;
-    }
+    // nav h2 {
+    //    display: none; 
+    // }
 
 }
+
+@media screen and (min-width: 1200px) {
+    nav + section {
+        padding-top: 4rem;
+    }
+}
+
+
 
 /* Case studies navigation */
 
@@ -620,11 +633,21 @@ section.gf-two-cols article a.gf-button {
         width: 50%;
         margin: 0 auto;
     }
+    section.gf-two-cols article {
+        width: 50%;
+        margin: 0 0 6rem;
+    }
+    section.gf-two-cols article.gf-cs {
+        width: 60%;
+    }
+    section.gf-two-cols article.gf-bg {
+        width: 40%;
+    }
     section.gf-two-cols article:nth-child(odd) {
-        padding: 0 0 0 0;
+        padding: 0 4rem 0 0;
     }
     section.gf-two-cols article:nth-child(even) {
-        padding: 0 0 0 0;
+        padding: 0 0 0 4rem;
     }
 
 }
@@ -753,8 +776,6 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
 
 /* Layout: three columns */
 
-
-
 @media screen and (min-width: 768px) {
 
     .gf-three-cols {
@@ -815,7 +836,7 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
 .gf-banner {
     background: $primary;
     padding: 2rem;
-    margin: 0 auto;
+    margin: 1rem auto 0;
 }
 .gf-banner p {
     padding: 2rem 0;
@@ -826,6 +847,7 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
     .gf-banner {
         display: flex;
         align-items: center;
+        margin: 4rem auto 0;
     }
     .gf-banner div {
         width: 45%;
@@ -841,13 +863,13 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
     }
 
 }
-// @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
-//     .gf-banner {
-//         margin: 4rem auto;
-//     }
+    .gf-banner {
+        margin: 6rem auto 0;
+    }
 
-// }
+}
 
 /* logos */
 
