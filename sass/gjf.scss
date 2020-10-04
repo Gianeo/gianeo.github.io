@@ -273,6 +273,9 @@ header.gf-cs-head {
     padding: 1rem 1rem 0;
     margin-bottom: 2rem;
 }
+header div:first-of-type a {
+    display: none;
+}
 header .gf-top-bar {
     background-color: #000;
     display: flex;
@@ -317,6 +320,9 @@ header a {
 }
 .gf-hero div img {
     max-width: 240px;
+}
+.gf-cs-hero div:last-child {
+    height: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -442,12 +448,12 @@ nav h2 {
     font-weight: 900;
     border-top: solid 6px $primary;
     padding: 1.5rem 0 0;
-    margin: 0 0 4rem;
+    margin: 0 0 2rem;
     display: inline-block;
     margin: inherit auto;
 }
-nav ul {
-    // display: none;
+body.gf-body-cs nav ul {
+    display: none;
 }
 nav ul {
     display: flex;
@@ -623,6 +629,9 @@ section.gf-two-cols article h6 {
     margin: 0.25rem 0 1.25rem;
 }
 section.gf-two-cols article a.gf-button {
+    margin: 0 0 1rem;
+}
+section.gf-two-cols.gf-cs-hero div {
     margin: 0 0 1rem;
 }
 @media screen and (min-width: 768px) {
