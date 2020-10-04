@@ -30460,11 +30460,21 @@ header a {
   .gf-hero div img {
     max-width: 340px;
   }
+  .gf-cs-hero div:last-child {
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .gf-hero {
     padding-top: 1rem;
+  }
+  .gf-cs-hero div:first-child {
+    width: 55%;
+    padding-right: 2rem;
+  }
+  .gf-cs-hero div:last-child {
+    width: 45%;
   }
 }
 
@@ -30479,6 +30489,9 @@ header a {
     padding: 4rem 0;
   }
   .gf-hero div:first-of-type {
+    width: 50%;
+  }
+  .gf-cs-hero div:first-child, .gf-cs-hero div:last-child {
     width: 50%;
   }
 }
@@ -30592,6 +30605,14 @@ nav ul li a {
   }
   nav h2 {
     margin: 0;
+  }
+  body.gf-body-cs nav h2 {
+    display: none;
+  }
+  body.gf-body-cs nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
