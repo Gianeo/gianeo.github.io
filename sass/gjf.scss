@@ -10,7 +10,7 @@ $grey: #818F9B;
 $grey-light: #e5ebeb;
 $grey-lighter: #F6F9F9;
 $primary: #40B9C9;
-$link: #2AD4DB;
+$link: #298d9a;
 $widescreen-enabled: true;
 $fullhd-enabled: true;
 
@@ -23,8 +23,8 @@ $input-shadow: none;
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/_all.sass";
-@import "../node_modules/bulma/sass/components/_all.sass";
+// @import "../node_modules/bulma/sass/elements/_all.sass";
+// @import "../node_modules/bulma/sass/components/_all.sass";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/layout/_all.sass";
 
@@ -108,6 +108,18 @@ small, .gf-text-small {
 a {
     color: $link;
     font-weight: 700;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+header a {
+    color: $primary;
+    font-weight: 700;
+    text-decoration: none;
+}
+header a:hover {
+    color: $primary;
     text-decoration: underline;
 }
 a.gf-button {
@@ -1676,303 +1688,3 @@ a.is-active, .tabs .is-active a {
   }
 
 
-
-
-
-// Old CSS
-
-// html {
-//     background-color: transparent;
-// }
-// body {
-//     font-weight: 300;
-// }
-
-// .title.is-1 {
-//     line-height: 2.8rem;
-// }
-// h1.title.is-4 {
-//     font-weight: 800;
-// }
-// .title.is-6  {
-//     font-weight: 500;
-// }
-// .title {
-//     line-height: 1.325;
-// }
-// .subtitle.is-size-4 {
-//     line-height: 2.1rem;
-// }
-
-// p {
-//     margin-bottom: 1rem;
-//     max-width: 500px;
-// }
-// p.subtitle {
-//     max-width: 600px;
-//     font-weight: 300;
-// }
-// a {
-//     font-weight: 500;
-// }
-
-// .gf-button {
-//     background-color: rgba(($primary), 0.1);
-//     border-color: rgba(($primary), 0.1);
-//     color: $link;
-//     border-width: 0;
-//     font-weight: 500;
-//     padding-left: 1.2em;
-//     padding-right: 1.2em;
-//     height: 2.8em;
-//     border-bottom: solid 1px #cfd2d8;
-// }
-
-// @media screen and (max-width: 768px) {
-//     .gf-button {
-//         width: 100%;
-//     }
-//     .container {
-//         max-width: 580px !important;
-//     }
-// }
-
-// section {
-//     padding-top: 20px;
-//     padding-bottom: 60px;
-// }
-
-// @media screen and (min-width: 769px) {
-//     section {
-//         padding-top: 60px;
-//         padding-bottom: 60px;
-//     }
-// }
-
-// @media screen and (min-width: 1215px) {
-//     section {
-//         padding-top: 100px;
-//         padding-bottom: 100px;
-//     }
-// }
-
-// h1.gjf-is-display {
-//     color: #2C3236;
-//     font-size: 84px;
-//     font-weight: 800;
-//     letter-spacing: -3.85px;
-//     line-height: 20px;
-//     margin-left: -6px;
-// }
-// h1.gjf-is-display span {
-//     display: block;
-//     color: $grey-light;
-//     font-size: 84px;
-//     margin-left: 0;
-//     margin-top: 0;
-// }
-// h1.gjf-is-display span.gf-title-offset {
-//     color: transparent;
-//     font-size: 40px;
-//     mix-blend-mode: multiply;
-// }
-
-// @media screen and (min-width: 769px) {
-//     h1.gjf-is-display { 
-//         color: $grey-dark;
-//         font-size: 146px;
-//         font-weight: 800;
-//         letter-spacing: -0.055em;
-//         margin-bottom: 8px !important;
-//     }
-//     h1.gjf-is-display span {
-//         display: block;
-//         color: $grey-light;
-//         margin-top: 0;
-//         z-index: 0;
-//     }
-//     h1.gjf-is-display span.gf-title-offset {
-//         color: $grey-light;
-//         font-size: 146px;
-//         margin-left: 104px;
-//         line-height: 55px;
-//         mix-blend-mode: multiply;
-//     }
-// }
-
-// img.gf-logo, div.gf-argos img.gf-logo {
-//     width: 180px;
-//     mix-blend-mode: overlay;
-//     max-height: 100%;  
-//     max-width: 100%; 
-//     position: absolute;  
-//     top: 0;  
-//     bottom: 0;  
-//     left: 0;  
-//     right: 0;  
-//     margin: auto;
-// }
-// img.gf-logo-centered {
-//     position: absolute;
-//     max-height: 100%;  
-//     max-width: 100%; 
-//     top: 0;  
-//     bottom: 0;  
-//     left: 0;  
-//     right: 0;  
-//     margin: auto; 
-// }
-
-// @media (min-width: 1440px) {
-
-
-// }
-
-// .gf-sep {
-//     height: 5px;
-//     width: 150px;
-//     background-color: $grey-dark;
-// }
-// .gf-centered {
-//     margin-left: auto;
-//     margin-right: auto;
-// }
-// .gf-sep-full {
-//     width: 100%;
-// }
-// @media screen and (max-width: 768px) {
-//     .gf-centered-mobile {
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
-//     .logos div {
-//         width: 50%;
-//         height: 130px !important;
-//         float: left;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//     }
-//     .logos img {
-//         max-width: 80px;
-//         max-height: 80px;
-//     }
-// }
-// @media screen and (min-width: 769px) {
-//     .gf-sep {
-//         margin-top: 50px;
-//         margin-bottom: 50px;
-//     }
-//     .gf-sep-marginless {
-//         margin-top: 0;
-//         margin-bottom: 0;
-//     }
-//     .logos img {
-//         max-width: 90px;
-//         max-height: 90px;
-//     }
-// }
-
-
-
-
-// .gf-visible-desktop {
-//     display: none;
-// }
-
-// a.is-active, .tabs .is-active a {
-//     color: #FF2147 !important;
-//     font-weight: 800;
-// }
-// .tabs .is-active a {
-//     border-bottom-color: #FF2147 !important;
-// }
-
-// .tabs a {
-//     font-weight: 800;
-// }
-// #tabs-with-content .tabs:not(:last-child) {
-//     margin-bottom: 0;
-//   }
-  
-//   #tabs-with-content .tab-content {
-//     padding-top: 1rem;
-//     display: none;
-//   }
-  
-//   #tabs-with-content .tab-content.is-active {
-//     display: block;
-//   }
-
-// time {
-//     font-size: small;
-//     text-transform: uppercase;
-// }
-
-// div.gf-duties .gf-text {
-//     padding: 20px;
-//     display: flex;
-//     flex-flow: row wrap;
-//     flex-grow: 1;
-// }
-// div.gf-duties p {
-//     min-width: 300px;
-//     flex: 1;
-//     padding: 20px;
-//     margin: 0;
-//     vertical-align: top;
-// }
-// div.gf-duties {
-//     min-width: 300px;
-// }
-// div.gf-duties .gf-4-col p {
-//     min-width: 270px;
-// }
-
-// @media screen and (min-width: 769px) {
-
-//     .gf-text-columns {
-//         column-count: 2; 
-//         column-gap: 40px;
-//     }
-
-//     .gf-grid-horiz-border {
-//         border-bottom: solid 10px #fff;
-//     }
-//     .gf-grid-vert-border {
-//         border-right: solid 10px #fff;
-//     }
-
-//     div.gf-duties .gf-text {
-//         padding: 20px;
-//     }
-//     div.gf-duties .gf-text div {
-//         width: 33%;
-//     }
-//     div.gf-duties p {
-//         padding: 40px;
-//         max-width: 350px;
-//     }
-
-// }
-
-// @media screen and (min-width: 1024px) {
-
-//     .gf-text-columns {
-//         column-count: 3; 
-//     }
-
-//     .gf-visible-desktop {
-//         display: block;
-//     }
-
-// }
-
-// h6.title {
-//     font-size: 0.75em;
-//     text-transform: uppercase;
-//     text-align: center;
-//     letter-spacing: 0.75em;
-//     color: #6f6e70;
-//     font-weight: 300;
-// }
