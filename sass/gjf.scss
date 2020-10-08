@@ -240,14 +240,20 @@ img.gf-responsive {
 img.gf-frame {
     padding: 2rem 0 0;
 }
-.gf-bg {
+
+.gf-bg, .gf-bg a {
     display: flex;
     justify-content: center;
     padding: 2rem !important;
-    min-height: 160px;
+    min-height: 140px;
 }
 .gf-bg img {
     max-width: 120px;
+    text-align: center;
+}
+.gf-bg a {
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -272,19 +278,6 @@ img.gf-frame {
     }
     .gf-gallery img {
         width: 100%;
-    }
-    .gf-bg, .gf-bg a {
-        display: flex;
-        justify-content: center;
-        padding: 2rem !important;
-    }
-    .gf-bg img {
-        max-width: 120px;
-        text-align: center;
-    }
-    .gf-bg a {
-        width: 100%;
-        height: 100%;
     }
 }
 // @media screen and (min-width: 1024px) {
