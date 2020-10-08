@@ -2184,7 +2184,8 @@ section.gf-two-cols.gf-cs-hero div {
   }
   section.gf-two-cols article {
     width: 50%;
-    margin: 0 0 6rem;
+    margin: 0 0 8rem;
+    padding: 0 4rem;
   }
   section.gf-two-cols article.gf-cs {
     width: 60%;
@@ -2192,15 +2193,9 @@ section.gf-two-cols.gf-cs-hero div {
   section.gf-two-cols article.gf-bg {
     width: 40%;
   }
-  section.gf-two-cols article:nth-child(odd) {
-    padding: 0;
-  }
-  section.gf-two-cols article:nth-child(even) {
-    padding: 0;
-  }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1024px) {
   section.gf-two-cols > * {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -2208,6 +2203,7 @@ section.gf-two-cols.gf-cs-hero div {
   section.gf-two-cols article {
     width: 50%;
     margin: 2rem 0 8rem;
+    padding: 0;
   }
   section.gf-two-cols article.gf-cs, section.gf-two-cols article.gf-bg {
     width: 50%;
