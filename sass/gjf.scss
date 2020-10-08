@@ -708,6 +708,10 @@ section.gf-two-cols.gf-referrals article {
     section.gf-two-cols article.gf-bg {
         width: 40%;
     }
+    section.gf-two-cols.gf-cs-hero {
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
 
 }
 @media screen and (min-width: 1024px) {
@@ -731,6 +735,9 @@ section.gf-two-cols.gf-referrals article {
         max-width: 380px;
         padding: 0;
         margin: 0 auto;
+    }
+    section.gf-two-cols.gf-cs-hero {
+        margin-top: 6rem;
     }
 
 }
