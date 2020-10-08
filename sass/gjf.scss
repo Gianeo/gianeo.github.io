@@ -596,6 +596,12 @@ nav ul li a {
     padding: 0 10px !important;
     justify-content: space-between;
 }
+.gf-mobile-nav svg:first-of-type {
+    margin-right: .5rem;
+}
+.gf-mobile-nav svg:last-of-type {
+    margin-left: .5rem;
+}
 .gf-nav-bar a:hover { 
     background-color: rgba(($primary), 0.1);      
     color: $grey-dark;
