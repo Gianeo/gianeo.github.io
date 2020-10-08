@@ -241,12 +241,14 @@ img.gf-frame {
     padding: 2rem 0 0;
 }
 
+
 .gf-bg, .gf-bg a {
     display: flex;
     justify-content: center;
     padding: 2rem !important;
     min-height: 140px;
 }
+
 .gf-bg img {
     max-width: 120px;
     text-align: center;
@@ -698,6 +700,7 @@ section.gf-two-cols.gf-cs-hero div {
         width: 50%;
         margin: 0 0 8rem;
         padding: 0 4rem;
+        order: 0;
     }
     section.gf-two-cols.gf-referrals article {
         margin: 2rem 0;
