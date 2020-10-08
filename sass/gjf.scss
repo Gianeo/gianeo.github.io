@@ -390,7 +390,6 @@ header a {
         width: 50%;
     }
     .gf-hero p {
-        // background: rgba(275, 275, 275, 0.85);
         margin: 1rem 0 0 -2rem;
         padding: 2rem;
     }
@@ -408,7 +407,7 @@ header a {
 @media screen and (min-width: 768px) {
 
     .gf-hero {
-        padding-top: 1rem;
+        padding: 2rem 0;
     }
     .gf-cs-hero div:first-child {
         width: 55%;
@@ -423,8 +422,6 @@ header a {
 @media screen and (min-width: 1024px) {
 
     .gf-hero {
-        // background-size: 84%;
-        background-position-x: center;
         padding: 0 2rem;
         max-width: 920px;
     }
@@ -443,9 +440,7 @@ header a {
 @media screen and (min-width: 1124px) {
 
     .gf-hero {
-        // background-size: 65%;
-        background-position-x: 6rem;
-        padding-top: 0rem;
+        padding-top: 0;
     }
     .gf-hero div {
         width: 40%;
@@ -453,22 +448,12 @@ header a {
     .gf-hero div:first-of-type {
         width: 30%;
     }
-    p.gf-img-caption {
-        display: block;
-        position: absolute;
-        bottom: 2rem;
-        left: 15%;
-        padding: 1rem;
-        margin: 0;
-        line-height: 0;
-        font-size: 0.8em;
-    }
 }
 
 @media screen and (min-width: 1224px) {
 
     .gf-hero {
-        padding-top: 2rem;
+        padding: 0 0 2rem;
     }
 }
 
