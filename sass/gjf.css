@@ -1656,7 +1656,18 @@ img.gf-frame {
 }
 
 .gf-bg {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem !important;
+  min-height: 160px;
+}
+
+.gf-bg img {
+  max-width: 120px;
 }
 
 @media screen and (min-width: 768px) {

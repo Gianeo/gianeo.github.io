@@ -241,7 +241,13 @@ img.gf-frame {
     padding: 2rem 0 0;
 }
 .gf-bg {
-    display: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem !important;
+    min-height: 160px;
+}
+.gf-bg img {
+    max-width: 120px;
 }
 
 @media screen and (min-width: 768px) {
