@@ -1688,7 +1688,16 @@ img.gf-frame {
     width: 100%;
   }
   .gf-bg {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem !important;
+  }
+  .gf-bg img {
+    max-width: 120px;
   }
 }
 
@@ -2152,8 +2161,12 @@ section.gf-two-cols.gf-cs-hero div {
 }
 
 @media screen and (min-width: 768px) {
+  section.gf-two-cols {
+    max-width: 1152px;
+    padding: 0;
+    margin: 2rem auto 0;
+  }
   section.gf-two-cols > * {
-    max-width: 480px;
     padding: 0;
     width: 50%;
     margin: 0 auto;
@@ -2169,10 +2182,10 @@ section.gf-two-cols.gf-cs-hero div {
     width: 40%;
   }
   section.gf-two-cols article:nth-child(odd) {
-    padding: 0 4rem 0 0;
+    padding: 0;
   }
   section.gf-two-cols article:nth-child(even) {
-    padding: 0 0 0 4rem;
+    padding: 0;
   }
 }
 
@@ -2180,6 +2193,18 @@ section.gf-two-cols.gf-cs-hero div {
   section.gf-two-cols > * {
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+  section.gf-two-cols article {
+    width: 50%;
+    margin: 2rem 0 8rem;
+  }
+  section.gf-two-cols article.gf-cs, section.gf-two-cols article.gf-bg {
+    width: 50%;
+  }
+  section.gf-two-cols article div {
+    max-width: 380px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
