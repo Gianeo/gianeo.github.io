@@ -25,12 +25,12 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/base/_all.sass";
 // @import "../node_modules/bulma/sass/elements/_all.sass";
 // @import "../node_modules/bulma/sass/components/_all.sass";
-@import "../node_modules/bulma/sass/grid/_all.sass";
-@import "../node_modules/bulma/sass/layout/_all.sass";
+// @import "../node_modules/bulma/sass/grid/_all.sass";
+// @import "../node_modules/bulma/sass/layout/_all.sass";
 
-@import 'helpers/_all.sass';
-@import 'variables/_all.sass';
-@import 'mixins/_all.sass';
+// @import 'helpers/_all.sass';
+// @import 'variables/_all.sass';
+// @import 'mixins/_all.sass';
 
 
 
@@ -288,6 +288,9 @@ header.gf-cs-head {
     justify-content: space-between;
     padding: 1rem 1rem 0;
     margin-bottom: 2rem;
+}
+header.gf-cs-head a svg {
+    margin-right: .5rem;
 }
 header.gf-cs-head div:first-of-type a {
     display: none;
