@@ -2123,7 +2123,7 @@ nav ul li a {
 }
 
 /* Layout: two columns */
-section.gf-two-cols {
+section.gf-two-cols, section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2172,6 +2172,13 @@ section.gf-two-cols.gf-referrals article {
     padding: 0;
     margin: 2rem auto 0;
   }
+  section.gf-two-cols.gf-fullwidth {
+    max-width: 100%;
+    margin: 2.5rem auto 0;
+  }
+  section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
+    max-width: 1152px;
+  }
   section.gf-two-cols > * {
     padding: 0;
     width: 50%;
@@ -2189,10 +2196,10 @@ section.gf-two-cols.gf-referrals article {
     margin: 2rem 0;
   }
   section.gf-two-cols article.gf-cs {
-    width: 60%;
+    width: 70%;
   }
   section.gf-two-cols article.gf-bg {
-    width: 40%;
+    width: 30%;
   }
   section.gf-two-cols.gf-cs-hero {
     margin-top: 5rem;
@@ -2201,6 +2208,9 @@ section.gf-two-cols.gf-referrals article {
 }
 
 @media screen and (min-width: 1024px) {
+  section.gf-two-cols.gf-fullwidth {
+    margin: 2rem auto 0;
+  }
   section.gf-two-cols > * {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -2210,12 +2220,6 @@ section.gf-two-cols.gf-referrals article {
     margin: 2rem 0 8rem;
     padding: 0;
   }
-  section.gf-two-cols article.gf-cs {
-    width: 50%;
-  }
-  section.gf-two-cols article.gf-bg {
-    width: 50%;
-  }
   section.gf-two-cols article div {
     max-width: 380px;
     padding: 0;
@@ -2223,6 +2227,12 @@ section.gf-two-cols.gf-referrals article {
   }
   section.gf-two-cols.gf-cs-hero {
     margin-top: 7rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section.gf-two-cols.gf-fullwidth {
+    margin: 3rem auto 0;
   }
 }
 
