@@ -2607,6 +2607,14 @@ div.gf-quote cite {
 }
 
 /* Utilities */
+.gf-mobile-vert-space {
+  padding: 2rem 0 !important;
+}
+
+.gf-mobile-bottom-space {
+  padding-bottom: 2rem !important;
+}
+
 .gf-add-bottom-space {
   padding-bottom: 2rem !important;
 }
