@@ -343,6 +343,9 @@ header a {
 .gf-hero h2 {
     color: rgba(275, 275, 275, 0.8);
     margin: 2rem 0 0;
+    background: -webkit-linear-gradient(60deg, #959c9e, #fff, #1e2b2d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .gf-hero p {
     color: #5e5e5e;
