@@ -2198,6 +2198,14 @@ section.gf-two-cols.gf-referrals article {
   section.gf-two-cols article.gf-cs {
     width: 70%;
   }
+  section.gf-two-cols article.gf-cs:nth-child(odd) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   section.gf-two-cols article.gf-bg {
     width: 30%;
   }
@@ -2215,15 +2223,15 @@ section.gf-two-cols.gf-referrals article {
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
-  section.gf-two-cols article {
+  section.gf-two-cols article, section.gf-two-cols article.gf-cs, section.gf-two-cols article.gf-bg {
     width: 50%;
     margin: 2rem 0 8rem;
     padding: 0;
   }
   section.gf-two-cols article div {
-    max-width: 380px;
-    padding: 0;
-    margin: 0 auto;
+    max-width: 520px;
+    padding: 0 4rem;
+    margin: 0;
   }
   section.gf-two-cols.gf-cs-hero {
     margin-top: 7rem;
