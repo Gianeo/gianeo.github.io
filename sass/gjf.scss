@@ -159,6 +159,11 @@ a.gf-button.gf-large {
     padding-bottom: calc(0.75em - 2px);
     padding-top: calc(0.75em - 2px);
 }
+h1 a, h1 a:hover {
+    display: flex !important;
+    color: #fff;
+    text-decoration: none;
+}
 @media screen and (min-width: 768px) {   
 
     a.gf-button {
