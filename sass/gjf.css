@@ -1699,19 +1699,41 @@ img.gf-frame {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     padding: 2rem !important;
     min-height: 140px;
-  }
-  .gf-bg img {
-    max-width: 120px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 300;
     text-align: center;
   }
   .gf-bg a {
     width: 100%;
     height: 100%;
+  }
+  .gf-bg img {
+    max-width: 120px;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .gf-bg p {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gf-bg p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    max-width: 300px;
+    margin: 0 auto 2rem;
   }
 }
 
