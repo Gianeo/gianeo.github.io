@@ -2415,14 +2415,15 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
   }
   .gf-three-cols > * {
     -webkit-box-flex: 0;
-        -ms-flex: 0 32%;
-            flex: 0 32%;
+        -ms-flex: 0 33%;
+            flex: 0 33%;
     padding: 2rem;
-    margin-bottom: 2rem;
-    /* (100-32*3)/2 */
+    max-width: 300px;
   }
 }
 

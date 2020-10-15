@@ -904,16 +904,33 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
 
 @media screen and (min-width: 768px) {
 
+    // .gf-three-cols {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-between;
+    //     flex-direction: row;
+    //     max-width: 900px;
+    //     margin: 0 auto;
+    //   }
+      
+    // .gf-three-cols > * {
+    //     padding: 2rem;
+    //     max-width: 300px;
+    //   }
+
     .gf-three-cols {
         display: flex;
         flex-wrap: wrap;
         // justify-content: space-between;
+        // flex-direction: row;
+        max-width: 900px;
+        margin: 0 auto;
       }
       
     .gf-three-cols > * {
-        flex: 0 32%;
+        flex: 0 33%;
         padding: 2rem;
-        margin-bottom: 2rem; /* (100-32*3)/2 */
+        max-width: 300px;
       }
 
 }
