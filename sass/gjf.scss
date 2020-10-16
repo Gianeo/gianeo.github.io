@@ -684,8 +684,14 @@ section.gf-two-cols, section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
     flex-wrap: wrap;
     justify-content: center;
 }
+section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
+    margin-bottom: 0;
+}
 section.gf-two-cols > * {
     flex-grow: 1;
+    margin: 0 0 4rem;
+}
+section.gf-two-cols.gf-fullwidth div.gf-resetwidth > * {
     margin: 0 0 4rem;
 }
 section.gf-two-cols article h3 {
@@ -704,6 +710,12 @@ section.gf-two-cols.gf-cs-hero div {
 section.gf-two-cols.gf-referrals article {
     margin: 1rem 0;
 }
+
+section.gf-two-cols.gf-cols-gallery > * {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
 
     section.gf-two-cols {

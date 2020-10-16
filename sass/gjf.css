@@ -2171,10 +2171,18 @@ section.gf-two-cols, section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
           justify-content: center;
 }
 
+section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
+  margin-bottom: 0;
+}
+
 section.gf-two-cols > * {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin: 0 0 4rem;
+}
+
+section.gf-two-cols.gf-fullwidth div.gf-resetwidth > * {
   margin: 0 0 4rem;
 }
 
@@ -2197,6 +2205,11 @@ section.gf-two-cols.gf-cs-hero div {
 
 section.gf-two-cols.gf-referrals article {
   margin: 1rem 0;
+}
+
+section.gf-two-cols.gf-cols-gallery > * {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
