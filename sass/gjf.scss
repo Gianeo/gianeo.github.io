@@ -937,7 +937,7 @@ section.gf-two-cols-img article div.gf-col-images, section div.gf-col-images {
 .gf-container-centered.gf-larger {
     margin: 0 auto;
 }
-.gf-container-centered.gf-larger div {
+.gf-container-centered.gf-larger > * {
     max-width: 400px;
     margin: 0 auto 1rem;
     text-align: left;
