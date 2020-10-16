@@ -1655,9 +1655,9 @@ hr:first-of-type {
 
 /* imgs */
 img.gf-responsive {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+  width: 100% !important;
+  max-width: 680px;
+  height: auto !important;
 }
 
 img.gf-frame {
