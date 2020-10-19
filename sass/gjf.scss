@@ -696,12 +696,6 @@ section.gf-folio.gf-cs-hero div {
 
 @media screen and (min-width: 768px) {
 
-    section.gf-folio {
-        max-width: 1152px;
-        padding: 0;
-        margin: 2rem auto 0;
-    }
-
     section.gf-folio.gf-fullwidth {
         max-width: 100%;
         margin: 2.5rem auto 0;
@@ -711,6 +705,7 @@ section.gf-folio.gf-cs-hero div {
     }
     section.gf-folio article {
         display: flex;
+        width: 890px;
         padding: 0;
         margin: 4rem auto;
     }
@@ -732,22 +727,24 @@ section.gf-folio.gf-cs-hero div {
     section.gf-folio.gf-fullwidth {
         margin: 2rem auto 0;
     }
+    section.gf-folio article {
+        margin: 5rem auto;
+    }
     section.gf-folio article.gf-reverse {
         flex-direction: row-reverse;
     }
     section.gf-folio article div.gf-cs {
         width: 50%;
         margin: 0;
-        padding: 0;
+        padding: 0 1rem;
     }
     section.gf-folio article div.gf-bg {
         width: 50%;
-        margin: 0;
-        padding: 0;
+        margin: 0 0 0 auto;
+        padding: 0 1rem;
     }
     section.gf-folio article div div {
-        max-width: 520px;
-        padding: 0 4rem;
+        padding: 0;
         margin: 0 auto;
     }
 
@@ -835,8 +832,8 @@ section.gf-folio.gf-cs-hero div {
 @media screen and (min-width: 1024px) {
 
     .gf-bg div, .gf-bg div a { 
-        height: 360px; 
-        width: 360px;
+        height: 400px; 
+        width: 400px;
         margin: 0 auto;
     }
     .gf-bg div a { 
@@ -857,7 +854,7 @@ section.gf-folio.gf-cs-hero div {
     }
     .gf-bg p {
         display: inline-flex;
-        max-width: 300px;
+        max-width: 200px;
         margin: 0 auto 2rem;
     }
 }
@@ -1217,7 +1214,8 @@ section.gf-banner {
     opacity: 0.8; 
     max-width: 120px;
     max-height: 40px;
-    margin: 2rem;
+    margin: 0 2rem 4rem;
+    border-radius: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1231,24 +1229,16 @@ section.gf-banner {
     }
 
 }
-
 @media screen and (min-width: 960px) {
 
-    .gf-logos {
-        padding: 2rem !important;
-    }
+    
     .gf-logos div img { 
         max-width: 88px;
         max-height: 56px;
     }
 
 }
-
 @media screen and (min-width: 1152px) {
-
-    // .gf-logos div {
-    //     max-width: 480px !important;
-    // }
     
     .gf-logos div img { 
         max-width: 92px;
