@@ -1705,7 +1705,7 @@ img.gf-frame {
 .gf-bg div {
   background: #000 no-repeat bottom center;
   background-size: cover;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 2rem 2rem 2rem 0;
 }
 
 .gf-bg div a {
