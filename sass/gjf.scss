@@ -263,45 +263,6 @@ img.gf-responsive {
 img.gf-frame {
     margin: 2rem 0 0;
 }
-
-
-.gf-bg {
-    display: flex;
-    flex-direction: column;
-    padding: 0 !important;
-    margin: 5rem auto 1.5rem;
-    max-height: 120px;
-    color: rgba(255, 255, 255, 0.6); 
-    text-decoration: none; 
-    font-weight: 300; 
-    text-align: center; 
-}
-.gf-bg:first-of-type {
-    margin-top: 2rem;
-}
-.gf-bg div {
-    background: #000 no-repeat bottom center; 
-    background-size: cover; 
-    border-radius: 2rem 2rem 2rem 0; 
-}
-.gf-bg div a { 
-    height: 100px; 
-    width: auto; 
-}
-.gf-bg div a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.gf-bg div img {
-    border-radius: 0; 
-    max-width: 100px;
-    max-height: 60px;
-}
-.gf-bg div p {
-    display: none; 
-}
-
 @media screen and (min-width: 768px) {
 
     img.gf-frame {
@@ -327,83 +288,8 @@ img.gf-frame {
         width: 100%;
     }
 
-    .gf-bg, .gf-bg a {
-        display: flex;
-        flex-direction: column;
-        // padding: 2rem !important;
-        margin: 0 auto;
-        min-height: 140px;
-        color: rgba(255, 255, 255, 0.6); 
-        text-decoration: none; 
-        font-weight: 300; 
-        text-align: center; 
-    }
-    .gf-bg div {
-        background: #000 no-repeat bottom center; 
-        background-size: cover; 
-        border-radius: 2rem; 
-        height: 200px; 
-        width: 200px; 
-        margin-top: .5rem;
-        margin-left: auto; 
-        margin-right: auto;
-    }
-    .gf-bg div.gf-right {
-        margin-left: auto; 
-        margin-right: auto;
-    }
-    .gf-bg div img {
-        border-radius: 0;
-    }
-    .gf-bg a {
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-    .gf-bg img {
-        max-width: 120px;
-        text-align: center;
-        margin: 2rem auto;
-    }
-    .gf-bg p {
-        display: none;
-    }
 }
 
-@media screen and (min-width: 1024px) {
-
-    .gf-bg, .gf-bg a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem !important;
-        margin: 0 auto;
-        min-height: 140px;
-        color: rgba(255, 255, 255, 0.6); 
-        text-decoration: none; 
-        font-weight: 300; 
-        text-align: center; 
-    }
-    .gf-bg div {
-        background: #000 no-repeat bottom center; 
-        background-size: cover; 
-        border-radius: 5rem; 
-        height: 360px; 
-        width: 360px; 
-        padding: 1.8rem;
-        margin-left: 2rem; 
-        margin-right: auto;
-    }
-    .gf-bg div.gf-right {
-        margin-left: auto; 
-        margin-right: 2rem;
-    }
-    .gf-bg p {
-        display: inline-flex;
-        max-width: 300px;
-        margin: 0 auto 2rem;
-    }
-}
 
 /* Header + hero */
 header {
@@ -769,6 +655,211 @@ nav ul li a {
         padding: 0 2rem;
     }
 
+}
+
+
+
+
+
+/* Layout: folio (homepage) */
+
+section.gf-folio, section.gf-folio.gf-fullwidth div.gf-resetwidth {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.gf-folio article {
+    margin: 2rem 0;
+    padding: 0;
+}
+section.gf-folio article > * {
+    flex-grow: 1;
+    // margin: 0 0 4rem;
+}
+section.gf-folio.gf-fullwidth div.gf-resetwidth article div > * {
+    margin: 0 0 4rem;
+}
+section.gf-folio article div h3 {
+    margin: .5rem 0 0;
+    padding: 0;
+}
+section.gf-folio article div h6 {
+    margin: 0.25rem 0 1.25rem;
+}
+section.gf-folio article div a.gf-button {
+    margin: 0 0 1rem;
+}
+section.gf-folio.gf-cs-hero div {
+    margin: 0 0 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    section.gf-folio {
+        max-width: 1152px;
+        padding: 0;
+        margin: 2rem auto 0;
+    }
+
+    section.gf-folio.gf-fullwidth {
+        max-width: 100%;
+        margin: 2.5rem auto 0;
+    }
+    section.gf-folio.gf-fullwidth div.gf-resetwidth {
+        max-width: 1152px;
+    }
+    section.gf-folio article {
+        display: flex;
+        padding: 0;
+        margin: 4rem auto;
+    }
+    section.gf-folio article div.gf-cs {
+        padding: 0 2rem;
+        width: 65%;
+    }
+    section.gf-folio article div.gf-bg {
+        width: 35%;
+    }
+    section.gf-folio.gf-cs-hero {
+        margin-top: 5rem;
+        padding: 0 2rem;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+
+    section.gf-folio.gf-fullwidth {
+        margin: 2rem auto 0;
+    }
+    section.gf-folio article.gf-reverse {
+        flex-direction: row-reverse;
+    }
+    section.gf-folio article div.gf-cs {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    section.gf-folio article div.gf-bg {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    section.gf-folio article div div {
+        max-width: 520px;
+        padding: 0 4rem;
+        margin: 0 auto;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+
+    section.gf-folio.gf-fullwidth {
+        margin: 3rem auto 0;
+    }
+
+}
+
+
+.gf-bg {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 5rem auto 1.5rem;
+    max-height: 120px;
+}
+.gf-bg:first-of-type {
+    margin-top: 2rem;
+}
+.gf-bg div {
+    background: #000 no-repeat bottom center; 
+    background-size: cover; 
+    border-radius: 2rem 2rem 2rem 0; 
+}
+.gf-bg div a { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    width: auto; 
+    color: rgba(255, 255, 255, 0.6); 
+    text-decoration: none; 
+    font-weight: 300; 
+    text-align: center; 
+}
+.gf-bg div img {
+    border-radius: 0; 
+    max-width: 100px;
+    max-height: 60px;
+}
+.gf-bg p {
+    display: none; 
+}
+
+@media screen and (min-width: 768px) {
+
+    .gf-bg:first-of-type {
+        margin-top: 0;
+    }
+    .gf-bg div {
+        border-radius: 2rem 0 2rem 2rem; 
+        margin-top: .5rem;
+        margin-left: auto; 
+        margin-right: 1rem;
+    }
+    .gf-bg div, .gf-bg div a { 
+        height: 200px; 
+        width: 200px; 
+    }
+    .gf-bg div.gf-right {
+        margin-left: auto; 
+        margin-right: 1rem;
+    }
+    .gf-bg div img {
+        max-width: 120px;
+        max-height: 80px;
+    }
+    .gf-bg a {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .gf-bg img {
+        max-width: 120px;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .gf-bg div, .gf-bg div a { 
+        height: 360px; 
+        width: 360px;
+        margin: 0 auto;
+    }
+    .gf-bg div a { 
+        width: auto; 
+    }
+    .gf-bg div {
+        border-radius: 5rem 0 5rem 5rem; 
+        padding: 1.8rem;
+        margin-left: 2rem; 
+        margin-right: auto;
+    }
+    .gf-reverse div.gf-bg div {
+        border-radius: 0 5rem 5rem 5rem; 
+    }
+    .gf-bg div.gf-right {
+        margin-left: auto; 
+        margin-right: 2rem;
+    }
+    .gf-bg p {
+        display: inline-flex;
+        max-width: 300px;
+        margin: 0 auto 2rem;
+    }
 }
 
 
