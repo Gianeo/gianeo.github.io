@@ -269,12 +269,15 @@ img.gf-frame {
     display: flex;
     flex-direction: column;
     padding: 0 !important;
-    margin: 4rem auto 1.5rem;
+    margin: 5rem auto 1.5rem;
     max-height: 120px;
     color: rgba(255, 255, 255, 0.6); 
     text-decoration: none; 
     font-weight: 300; 
     text-align: center; 
+}
+.gf-bg:first-of-type {
+    margin-top: 2rem;
 }
 .gf-bg div {
     background: #000 no-repeat bottom center; 
