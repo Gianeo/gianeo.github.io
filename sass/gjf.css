@@ -1682,6 +1682,52 @@ img.gf-frame {
 }
 
 .gf-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 !important;
+  margin: 4rem auto 1rem;
+  max-height: 120px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 300;
+  text-align: center;
+}
+
+.gf-bg div {
+  background: #000 no-repeat bottom center;
+  background-size: cover;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.gf-bg div a {
+  height: 120px;
+  width: auto;
+}
+
+.gf-bg div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gf-bg div img {
+  border-radius: 0;
+  max-width: 120px;
+  max-height: 80px;
+}
+
+.gf-bg div p {
   display: none;
 }
 
@@ -2247,7 +2293,6 @@ section.gf-two-cols > * {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 0 0 4rem;
 }
 
 section.gf-two-cols.gf-fullwidth div.gf-resetwidth > * {
