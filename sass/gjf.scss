@@ -481,7 +481,7 @@ section {
     margin: 0 auto;
 }
 nav + section {
-    padding-top: 1rem;
+    padding-top: 0;
 }
 
 /* Nav */
@@ -679,7 +679,7 @@ section.gf-folio {
     justify-content: center;
 }
 section.gf-folio article {
-    margin: 2rem 0;
+    margin: 0 0 4rem;
     padding: 0;
 }
 section.gf-folio article > * {

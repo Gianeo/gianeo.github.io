@@ -1919,7 +1919,7 @@ section {
 }
 
 nav + section {
-  padding-top: 1rem;
+  padding-top: 0;
 }
 
 /* Nav */
@@ -2156,7 +2156,7 @@ section.gf-folio {
 }
 
 section.gf-folio article {
-  margin: 2rem 0;
+  margin: 0 0 4rem;
   padding: 0;
 }
 
