@@ -1214,6 +1214,7 @@ section.gf-banner {
     section.gf-banner {
         display: flex;
         align-items: center;
+        max-width: 980px;
         margin: 2rem auto;
     }
     .gf-banner div {

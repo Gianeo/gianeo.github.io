@@ -2754,6 +2754,7 @@ section.gf-banner {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 980px;
     margin: 2rem auto;
   }
   .gf-banner div {
