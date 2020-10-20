@@ -481,7 +481,7 @@ section {
     margin: 0 auto;
 }
 nav + section {
-    padding-top: 0;
+    padding-top: 1rem;
 }
 
 /* Nav */
@@ -546,6 +546,9 @@ nav ul li a {
     }
     body.gf-body-cs nav ul {
         display: flex;
+    }
+    nav + section {
+        padding-top: 2rem;
     }
 
 }

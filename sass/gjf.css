@@ -1919,7 +1919,7 @@ section {
 }
 
 nav + section {
-  padding-top: 0;
+  padding-top: 1rem;
 }
 
 /* Nav */
@@ -1999,6 +1999,9 @@ nav ul li a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  nav + section {
+    padding-top: 2rem;
   }
 }
 
