@@ -242,6 +242,12 @@ hr:first-of-type {
 img, .gf-rounded {
     border-radius: 2rem;
 }
+img.gf-square-tl {
+    border-top-left-radius: 0;
+}
+img.gf-square-tr {
+    border-top-right-radius: 0;
+}
 img.gf-img-zoom, .gf-works-nav img {
     border-radius: 0;
 }
@@ -267,9 +273,9 @@ img.gf-frame {
 
     img.gf-frame {
         display: block;
-        width: 460px;
-        margin: 0 auto;
-        padding: 2rem;
+        width: 380px;
+        margin: 1rem auto;
+        // padding: 2rem;
     } 
     .gf-gallery {
         display: flex;
@@ -404,6 +410,9 @@ header a {
     }
     .gf-hero div img {
         max-width: 340px;
+    }
+    section.gf-two-cols.gf-cs-hero {
+        max-width: 1152px;
     }
     .gf-cs-hero div:last-child {
         height: auto;
@@ -614,7 +623,7 @@ nav ul li a {
     }
     .gf-works-nav {
         background-color: #fff;
-        padding: 0;
+        padding: 0 2rem;
         display: block;
         margin: 1rem auto 4rem;
         display: flex;
@@ -652,7 +661,7 @@ nav ul li a {
 @media screen and (min-width: 960px) {
 
     .gf-works-nav {
-        padding: 0 2rem;
+        padding: 2rem 2rem 0;
     }
 
 }
@@ -663,7 +672,7 @@ nav ul li a {
 
 /* Layout: folio (homepage) */
 
-section.gf-folio, section.gf-folio.gf-fullwidth div.gf-resetwidth {
+section.gf-folio {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -675,10 +684,6 @@ section.gf-folio article {
 }
 section.gf-folio article > * {
     flex-grow: 1;
-    // margin: 0 0 4rem;
-}
-section.gf-folio.gf-fullwidth div.gf-resetwidth article div > * {
-    margin: 0 0 4rem;
 }
 section.gf-folio article div h3 {
     margin: .5rem 0 0;
@@ -690,18 +695,12 @@ section.gf-folio article div h6 {
 section.gf-folio article div a.gf-button {
     margin: 0 0 1rem;
 }
-section.gf-folio.gf-cs-hero div {
-    margin: 0 0 1rem;
-}
 
 @media screen and (min-width: 768px) {
 
     section.gf-folio.gf-fullwidth {
         max-width: 100%;
         margin: 2.5rem auto 0;
-    }
-    section.gf-folio.gf-fullwidth div.gf-resetwidth {
-        max-width: 1152px;
     }
     section.gf-folio article {
         display: flex;
@@ -715,10 +714,6 @@ section.gf-folio.gf-cs-hero div {
     }
     section.gf-folio article div.gf-bg {
         width: 35%;
-    }
-    section.gf-folio.gf-cs-hero {
-        margin-top: 5rem;
-        padding: 0 2rem;
     }
 
 }
@@ -746,13 +741,6 @@ section.gf-folio.gf-cs-hero div {
     section.gf-folio article div div {
         padding: 0;
         margin: 0 auto;
-    }
-
-}
-@media screen and (min-width: 1440px) {
-
-    section.gf-folio.gf-fullwidth {
-        margin: 3rem auto 0;
     }
 
 }
@@ -916,7 +904,7 @@ section.gf-two-cols.gf-fullwidth div.gf-resetwidth {
 }
 section.gf-two-cols > * {
     flex-grow: 1;
-    // margin: 0 0 4rem;
+    margin: 0 0 4rem;
 }
 section.gf-two-cols.gf-fullwidth div.gf-resetwidth > * {
     margin: 0 0 4rem;
@@ -966,7 +954,7 @@ section.gf-two-cols.gf-cols-gallery > * {
     }
     section.gf-two-cols article {
         width: 50%;
-        margin: 0 0 8rem;
+        margin: 0 0 4rem;
         padding: 0 2rem;
         order: 0;
     }
@@ -1004,7 +992,7 @@ section.gf-two-cols.gf-cols-gallery > * {
     }
     section.gf-two-cols article, section.gf-two-cols article.gf-cs, section.gf-two-cols article.gf-bg {
         width: 50%;
-        margin: 2rem 0 8rem;
+        margin: 2rem 0 4rem;
         padding: 0;
     }
     section.gf-two-cols article div {
