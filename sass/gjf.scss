@@ -3,7 +3,7 @@
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Muli:300,500,700,900');
 
-// Update Bulma's global variables
+// global variables
 $family-sans-serif: "Muli", sans-serif;
 $grey-dark: #424043;
 $grey: #818F9B;
@@ -19,18 +19,6 @@ $body-background-color: #fff;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-
-// Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-// @import "../node_modules/bulma/sass/base/_all.sass";
-// @import "../node_modules/bulma/sass/elements/_all.sass";
-// @import "../node_modules/bulma/sass/components/_all.sass";
-// @import "../node_modules/bulma/sass/grid/_all.sass";
-// @import "../node_modules/bulma/sass/layout/_all.sass";
-
-// @import 'helpers/_all.sass';
-// @import 'variables/_all.sass';
-// @import 'mixins/_all.sass';
 
 /* Reset */
 
