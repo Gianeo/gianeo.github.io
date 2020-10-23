@@ -873,15 +873,16 @@ section.gf-folio article div a.gf-button {
     width: 320px;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    text-align: center;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
 }
 .gf-logos img {
     opacity: 0.8; 
-    max-width: 120px;
-    max-height: 40px;
+    // max-width: 120px;
+    // max-height: 40px;
     margin: 2rem 1rem;
     border-radius: 0;
 }
@@ -893,9 +894,9 @@ section.gf-folio article div a.gf-button {
         justify-content: center;
     }
     .gf-logos img { 
-        margin: 2rem 1.5rem;
-        max-width: 100px;
-        max-height: 60px;
+        margin: 2rem 1.5rem 0;
+        // max-width: 100px;
+        // max-height: 60px;
     }
 }
 @media screen and (min-width: 1024px) {
