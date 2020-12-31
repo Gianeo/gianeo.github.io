@@ -656,6 +656,7 @@ section.gf-folio article div a.gf-button {
     section.gf-folio article div.gf-cs {
         padding: 0 2rem;
         width: 65%;
+        min-height: 120px;
     }
     section.gf-folio article div.gf-bg {
         width: 35%;
@@ -675,6 +676,7 @@ section.gf-folio article div a.gf-button {
     }
     section.gf-folio article div.gf-cs {
         width: 50%;
+        min-height: 400px;
         margin: 0;
         padding: 0 2rem;
     }
@@ -709,7 +711,7 @@ section.gf-folio article div a.gf-button {
     background-size: cover; 
     border-radius: 2rem 2rem 2rem 0; 
 }
-.gf-bg div a { 
+.gf-bg div a, .gf-bg div span.nolink { 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -741,7 +743,7 @@ section.gf-folio article div a.gf-button {
         margin-left: auto; 
         margin-right: 1rem;
     }
-    .gf-bg div, .gf-bg div a { 
+    .gf-bg div, .gf-bg div a, .gf-bg div span.nolink { 
         height: 200px; 
         width: 200px; 
     }
@@ -767,12 +769,12 @@ section.gf-folio article div a.gf-button {
 
 @media screen and (min-width: 1024px) {
 
-    .gf-bg div, .gf-bg div a { 
+    .gf-bg div, .gf-bg div a, .gf-bg div span.nolink { 
         height: 400px; 
         width: 400px;
         margin: 0 auto;
     }
-    .gf-bg div a { 
+    .gf-bg div a, .gf-bg div span.nolink { 
         width: auto; 
     }
     .gf-bg div {
