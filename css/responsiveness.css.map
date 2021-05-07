@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/variables/responsiveness.sass"
-    ],
-    "names": [],
-    "file": "responsiveness.css"
-}

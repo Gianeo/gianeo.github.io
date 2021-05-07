@@ -1,8 +1,0 @@
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^giannifavaretto.com [NC]
-RewriteRule ^(.*)$ https://www.giannifavaretto.com/$1 [R=301,L]
-
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.giannifavaretto.com/$1 [R,L]
