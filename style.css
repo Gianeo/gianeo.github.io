@@ -33405,7 +33405,7 @@ video {
 @media (min-width: 1024px){
   .gf-card-work-md .gf-card-image{
     height: auto;
-    width: 33.333333%;
+    width: 50%;
   }
 }
 
@@ -33420,7 +33420,7 @@ video {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 3rem;
-    width: 66.666667%;
+    width: 50%;
   }
 }
 
