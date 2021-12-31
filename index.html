@@ -85,13 +85,14 @@
     position: absolute;
     width: 10rem; height: 10rem;
     margin: auto;
-    top: 13%; left: 50%;
+    top: 12%; left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 10;
     mix-blend-mode: multiply;
   }
   .g-hero .g-gianni-text {
     position: absolute;
-    height: 590px; 
+    height: 580px; 
     top: 22%; left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -142,20 +143,20 @@
     height: 770px;
   }
     .g-hero .g-profile-photo {
-      top: 29%; right: 29.5%;
+      top: 27%; left: 37%;
+      width: 8.2rem; height: 8.2rem;
       margin: none;
       transform: none;
-      mix-blend-mode: normal;
     }
     .g-hero .g-gianni-text {
-      top: 22.2%; right: 39%; left: auto;
-      height: 490px; 
+      top: 27.2%; right: 38.2%; left: auto;
+      height: 450px; 
       transform: none;
     }
     .g-hero .g-aboutme {
       position: absolute;
-      top: 28%; right: 7.8%;
-      max-width: 11.5rem; 
+      top: 27%; right: 19.8%;
+      max-width: 10rem; 
       padding: 0;
     }
     .g-hero .g-heroTxt-01 {
@@ -165,7 +166,7 @@
       top: 39.8%; left: 4%;
     }
     .g-hero .g-heroTxt-03 {
-      top: 59.5%; right: 0.5%;
+      top: 59.5%; right: 1.8%;
     }
     .g-hero .g-heroTxt-01, .g-hero .g-heroTxt-02, .g-hero .g-heroTxt-03 {
       position: absolute;
@@ -206,28 +207,27 @@
     height: 1028px;
   }
     .g-hero .g-profile-photo {
-      top: 29%; right: 28.5%;
-      width: 13rem; height: 13rem;
+      top: 27.2%; left: 38.2%;
+      width: 10rem; height: 10rem;
     }
     .g-hero .g-gianni-text {
-      top: 22.2%; right: 39%;
-      height: 660px; 
+      top: 27.2%; right: 35.8%;
+      height: 620px; 
     }
     .g-hero .g-aboutme {
-      top: 29.6%; right: 14.5%;
-      max-width: 11rem; 
+      top: 27%; right: 23%;
     }
     .g-hero .g-heroTxt-01 {
-      top: 7%; left: 37%;
+      top: 7%; left: 38%;
     }
     .g-hero .g-heroTxt-02 {
       top: 41.6%; left: 4%;
     }
     .g-hero .g-heroTxt-03 {
-      top: 60.5%; right: 0.5%;
+      top: 60.5%; right: 3.5%;
     }
     .g-hero .g-heroTxt-01, .g-hero .g-heroTxt-02, .g-hero .g-heroTxt-03 {
-      max-width: 20rem;
+      max-width: 19rem;
     }
       .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
         font-size: 3rem;
@@ -254,21 +254,21 @@
 
   .g-hero {
     height: 1285px;
+    margin-top: 2rem;
   }
     .g-hero .g-profile-photo {
-      top: 30%; right: 26.5%;
-      width: 15rem; height: 15rem;
+    top: 28.2%; left: 39%;
+    width: 11.8rem; height: 11.8rem;
     }
     .g-hero .g-gianni-text {
-      top: 22.2%; right: 39%;
-      height: 810px; 
+      top: 28.2%; right: 37%;
+      height: 720px; 
     }
     .g-hero .g-aboutme {
-      top: 32%; right: 17.2%;
-      max-width: 11rem; 
+      top: 28.2%; right: 27%;
     }
     .g-hero .g-heroTxt-01 {
-      top: 8%; left: 37%;
+      top: 8%; left: 39%;
     }
     .g-hero .g-heroTxt-02 {
       top: 42.2%; left: 4%;
@@ -306,16 +306,16 @@
     height: 1540px;
   }
     .g-hero .g-profile-photo {
-      top: 28%; right: 25.5%;
-      width: 18rem; height: 18rem;
+      top: 28%; right: 17%;
+      width: 15rem; height: 15rem;
     }
     .g-hero .g-gianni-text {
-      top: 22.5%; right: 39%;
-      height: 940px; 
+      top: 22.5%; right: 35%;
+      height: 980px; 
     }
     .g-hero .g-aboutme {
-      top: 30%; right: 18.5%;
-      max-width: 11rem; 
+      top: 28.5%; right: 19.5%;
+      max-width: 10rem; 
     }
     .g-hero .g-heroTxt-01 {
       top: 8.5%; left: 38%;
@@ -350,14 +350,13 @@
 </header>  
 
 <!-- Hero -->
-<section class="g-hero relative container mx-auto pb-8 lg:mb-80 bg-gray-100 md:bg-white">
+<section class="g-hero relative container mx-auto lg:mb-80">
 
     <img src="img/largetxt.svg" class="w-full">
     <img src="img/profile.png" class="rounded-full g-profile-photo">
     <img src="img/gianni.svg" class="g-gianni-text" style="mix-blend-mode: multiply;">
-    <img src="img/gianni.svg" class="g-gianni-text" style="mix-blend-mode: screen;">
 
-    <p class="text-gray-500 text-xs font-serif g-aboutme">A British boy living in the Italian Renaissance land joined the Navy to become a hero, became a missionary for no particular reason, moved to the US to grasp Computer Science and rediscover Design; and ever since, spent almost all his time maniacally on his craft to become inadvertently decent at connecting dots and pixels.</p>
+    <p class="text-gray-500 text-xs g-aboutme">A British boy living in the Italian Renaissance land joined the Navy to become a hero, became a missionary for no particular reason, moved to the US to grasp Computer Science and ended up rediscovering Design; and ever since, spent almost all his time maniacally on his craft to become inadvertently decent at connecting dots and pixels.</p>
 
     <div class="g-heroTxt-main">
       <h2 class="max-w-3xl text-gray-800 tracking-tight font-extrabold uppercase newFont">Design <br>Leadership <br>in Tech-Savvy Organisations</h2>
@@ -375,7 +374,7 @@
       </ul>
     </div>
 
-      <p class="text-sm leading-tight text-gray-500 g-heroTxt-01"><b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I set up and coach individuals</b> to work together, grow, and be objective driven while <s>preserving</s> exploting the singularity of each.</p>
+      <p class="text-sm leading-tight text-gray-500 g-heroTxt-01"><b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I set up and coach individuals</b> to work together, progress, and be objective driven while <s>preserving</s> exploting the singularity of each.</p>
 
       <p class="text-sm leading-tight text-gray-500 py-40 g-heroTxt-02" style="">Strategically, <b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I instill and level up design standards</b> to hide technology complexities and help my loved ones feel more productive and less <s>dumb</s> critical.</p>
 
