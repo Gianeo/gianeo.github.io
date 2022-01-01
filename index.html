@@ -125,13 +125,14 @@
   }
   .g-hero .g-heroTxt-01, .g-hero .g-heroTxt-02, .g-hero .g-heroTxt-03 {
     font-size: 0.75rem;
-    max-width: 16rem;
+    max-width: 20rem;
     padding: 1rem;
-    margin: 0 auto 0 2rem;
+    margin: auto;
   }
     .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
-      font-size: 2.25rem;
-      line-height: 24px;
+      font-size: 2rem;
+      line-height: 22px;
+      max-width: 16rem;
     }
   .g-hero .g-heroTxt-main {
     padding: 2rem 1rem;
@@ -148,8 +149,8 @@
   .g-hero .g-heroTxt-currentRole {
     padding: 1rem;
     padding-top: 0;
-    max-width: 16rem;
-    margin: 4rem auto 0 2rem;
+    max-width: 20rem;
+    margin: 4rem auto 0;
   }
     .g-hero .g-heroTxt-currentRole p {
       font-size: 0.875rem;
@@ -161,18 +162,9 @@
   .g-hero {
     height: 770px;
   }
-    .g-hero .g-fullname {
-      margin: 0;
-      top: -18px; left: 1.5%;
-      transform: none;
-      width: auto;
-      text-align: left;
-    }
-    .g-hero .g-fullname h1 {
-      font-size: 10px;
-      letter-spacing: 0;
-      /* transform: rotate(-90deg); */
-    }
+  .g-hero .g-fullname {
+    display: none;
+  }
     .g-hero .g-profile-photo {
       top: 27%; left: 37%;
       width: 8.2rem; height: 8.2rem;
@@ -206,10 +198,6 @@
       padding: 0;
       margin: 0;
     }
-      .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
-        font-size: 2.25rem;
-        line-height: 24px;
-      }
     .g-hero .g-heroTxt-main {
       position: absolute;
       top: 88%; left: 4%;
@@ -265,8 +253,9 @@
       max-width: 19rem;
     }
       .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
-        font-size: 3rem;
-        line-height: 32px;
+        font-size: 2.25rem;
+        line-height: 24px;
+        max-width: 18rem;
       }
     .g-hero .g-heroTxt-main {
       top: 88%; left: 4%;
@@ -290,9 +279,6 @@
   .g-hero {
     height: 1285px;
   }
-    .g-hero .g-fullname {
-      top: 16px; left: 0%;
-    }
     .g-hero .g-profile-photo {
     top: 28.2%; left: 39%;
     width: 11.8rem; height: 11.8rem;
@@ -317,8 +303,9 @@
       max-width: 24rem;
     }
       .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
-        font-size: 3.75rem;
-        line-height: 40px;
+        font-size: 3rem;
+        line-height: 32px;
+        max-width: 24rem;
       }
     .g-hero .g-heroTxt-main {
       top: 87.1%; left: 4%;
@@ -383,7 +370,7 @@
     <div class="max-w-screen-2xl mx-auto">
       <div class="flex justify-between items-center pt-2 md:pt-1 lg:pt-2 md:justify-start">
         <div class="flex justify-start lg:w-0 lg:flex-1 px-6 sm:px-6">
-          <h1 class="font-bold text-sm text-gray-800">Gianni J. Favaretto</h1>
+          <h1 class="hidden md:block font-bold text-sm text-gray-800">Gianni J. Favaretto</h1>
         </div>
         <div class="flex items-center justify-end md:flex-1 lg:w-0">
           <button class="tracking-tight font-bold text-sm border-0 px-6 py-4 flex items-center justify-center whitespace-nowrap">Connect<svg xmlns="http://www.w3.org/2000/svg" class="fill-current ml-2" width="20" height="20" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></button>
@@ -394,6 +381,10 @@
 
 <!-- Hero -->
 <section class="g-hero relative container mx-auto lg:mb-80">
+
+  <div class="g-fullname">
+    <h1 class="font-normal text-sm text-gray-800">Gianni J. Favaretto</h1>
+  </div>
 
     <img src="img/largetxt.svg" class="w-full">
     <img src="img/profile.png" class="rounded-full g-profile-photo">
