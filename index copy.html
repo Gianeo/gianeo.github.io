@@ -86,9 +86,6 @@ h2 {
     z-index: 10;
     mix-blend-mode: multiply;
   }
-  .g-hero .g-hiking-photo {
-    display: none;
-  }
   .g-hero .g-gianni-text {
     position: absolute;
     height: 357px; 
@@ -107,7 +104,7 @@ h2 {
     padding: 1rem 2.5rem 1rem 1rem;
     margin: auto;
   }
-    .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b, h3 {
+    .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
       font-size: 2.25rem;
       line-height: 23px;
       max-width: 16rem;
@@ -149,19 +146,6 @@ h2 {
       width: 9rem; height: 9rem;
       margin: none;
       transform: none;
-    }
-    .g-hero .g-hiking-photo {
-      display: block;
-      position: absolute;
-      width: 60rem;
-      margin: auto;
-      top: 37rem; left: 28rem;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-      mix-blend-mode: multiply;
-      opacity: 0.3;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
     }
     .g-hero .g-gianni-text {
       top: 13.1rem; left: 16.5rem;
@@ -207,7 +191,7 @@ h2 {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .g-hero .g-heroTxt-03 b, h3 {
+    .g-hero .g-heroTxt-03 b {
       background: #1F2938;
       background: -webkit-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
       background: -moz-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
@@ -259,10 +243,6 @@ h2 {
       top: 17.5rem; left: 25.2rem;
       width: 10.2rem; height: 10.2rem;
     }
-    .g-hero .g-hiking-photo {
-      width: 60rem;
-      top: 30rem; left: 21rem;
-    }
     .g-hero .g-gianni-text {
       top: 17.5rem; left: 25.2rem;
       height: 570px; 
@@ -313,10 +293,6 @@ h2 {
     top: 22.5rem; left: 31rem;
     width: 11.8rem; height: 11.8rem;
     }
-    .g-hero .g-hiking-photo {
-      width: 66rem;
-      top: 33rem; left: 28rem;
-    }
     .g-hero .g-gianni-text {
       top: 22.5rem; left: 31rem;
       height: 760px; 
@@ -336,7 +312,7 @@ h2 {
     .g-hero .g-heroTxt-01, .g-hero .g-heroTxt-02, .g-hero .g-heroTxt-03 {
       max-width: 19rem;
     }
-      .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b, h3 {
+      .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
         font-size: 3rem;
         line-height: 32px;
         max-width: 19rem;
@@ -362,10 +338,6 @@ h2 {
     .g-hero .g-profile-photo {
       top: 25.8rem; left: 38.7rem;
       width: 14.4rem; height: 14.4rem;
-    }
-    .g-hero .g-hiking-photo {
-      width: 75rem;
-      top: 39rem; left: 34rem;
     }
     .g-hero .g-gianni-text {
       top: 26rem; left: 38.7rem;
@@ -424,14 +396,13 @@ h2 {
     <img src="img/largetxt.svg" class="w-full">
     <img src="img/profile.png" class="rounded-full g-profile-photo">
     <img src="img/gianni.svg" class="g-gianni-text" style="mix-blend-mode: multiply;">
-    <img src="img/gallery/hiking.png" class="g-hiking-photo">
 
     <p class="text-gray-500 text-sm md:text-xs g-aboutme">I'm a British boy that grew up in the heart of the Italian Renaissance region, joined the Navy dreaming to become a Top Gun, converted into a missionary for no particular reason, moved to the US to grasp Computer Science but ended up rediscovering Design; and ever since, I passionately spent countless time on my craft to become inadvertently decent at connecting dots and pixels.</p>
 
     <div class="g-heroTxt-main">
       <h2 class="max-w-3xl text-gray-800 tracking-tight font-extrabold uppercase newFont">Design <br>Leadership <br>in Tech-Savvy Organisations</h2>
       <ul class="space-y-1 text-gray-500 text-sm md:text-xs mt-4">
-        <li>20+ years experience in managing progressive digital expectations</li>
+        <li>20+ years experience in dealing with messy digital evolution.</li>
         <li>Organisational Design in start-up and scale up settings</li>
         <li>Transformation and problem-solving facilitation</li>
         <li>Remote and international teams management</li>
@@ -445,11 +416,11 @@ h2 {
       </ul>
     </div>
 
-      <p class="text-sm md:text-xs leading-tight text-gray-500 g-heroTxt-01">With lived and breathed military and sports principles <b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I set up and coach individuals</b> to perform and grow in ad hoc agile team settings.</p>
+      <p class=" text-sm md:text-xs leading-tight text-gray-500 g-heroTxt-01">With lived and breathed military and sports principles <b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I set up and coach individuals</b> to perform and grow in ad hoc agile team settings.</p>
 
-      <p class="text-sm md:text-xs leading-tight text-gray-500 py-40 g-heroTxt-02" style="">Strategically, <b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I instill and level up design standards</b> to hide technology complexities and make humans feel less dumb.</p>
+      <p class=" text-sm md:text-xs leading-tight text-gray-500 py-40 g-heroTxt-02" style="">Strategically, <b class="block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont">I instill and level up design standards</b> to hide technology complexities and make humans feel less dumb.</p>
 
-      <p class="text-sm md:text-xs leading-tight text-gray-500 g-heroTxt-03"><b class="block tracking-tight font-extrabold uppercase text-gray-800 leading-none my-2 newFont">I facilitate multidisciplinary collaboration</b> while fostering creative and critical thinking regardless of the players' background and function.</p>
+      <p class=" text-sm md:text-xs leading-tight text-gray-500 g-heroTxt-03"><b class="block tracking-tight font-extrabold uppercase text-gray-800 leading-none my-2 newFont">I facilitate multidisciplinary collaboration</b> while fostering creative and critical thinking regardless of the players' background and function.</p>
 
       <div class="gap-4 mt-20 md:mt-48 g-heroTxt-currentRole">
         <p class="text-gray-700"><span class="block italic text-xs text-gray-700 font-extralight">Currently</span> Director of Design @ <img class="h-12 opacity-75 mt-1.5" src="img/logos/chargebee.svg" alt=""></p>
@@ -528,22 +499,20 @@ h2 {
    </div>  
   </section>
 
-<!-- projects -->
-<section class="container mx-auto my-24 lg:my-32 xl:my-48 px-8 md:px-14 xl:px-0">
+<!-- mood board -->
+<section class="container lg:max-w-6xl xl:max-w-7xl mx-auto my-24 lg:my-32 xl:my-48 px-8 md:px-10 xl:px-0">
 
-  <div class="md:mx-1.5 lg:mx-16 xl:mx-32">
-
-  <h3 class="max-w-sm lg:max-w-lg xl:max-w-xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-24 xl:mb-40">A glimpse of a recent past</h3>
+  <h2 class="max-w-sm lg:max-w-lg xl:max-w-xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-24 xl:mb-40">A glimpse of a recent past ...</h2>
 
   <div class="space-y-20 md:space-y-24 lg:space-y-32 lg:space-y-48">
 
     <div>
-      <h4 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2019-20</h4>
+      <h3 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2019-20</h3>
       <div class="lg:max-w-5xl xl:max-w-7xl xl:flex xl:space-x-12 mx-auto">
         <div class="md:flex space-y-4 md:space-y-0 md:space-x-16 xl:block xl:space-x-0 xl:space-y-6 text-sm text-gray-500 mb-12">
           <ul class="md:w-1/3 xl:w-full">
-            <li><b class="text-gray-700">Zopa Bank</b></li>
-            <li><i class="text-gray-700">Head of Experience Design</i></li>
+            <li><b class="text-gray-700">Brand</b>: Zopa Bank</li>
+            <li><b class="text-gray-700">Role</b>: Head of Experience Design</li>
           </ul>
           <div class="md:w-2/3 xl:w-full">
             <p class="max-w-sm lg:max-w-lg xl:max-w-xs pr-6">
@@ -555,12 +524,12 @@ h2 {
     </div>
 
     <div>
-      <h4 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2019</h4>
+      <h3 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2019</h3>
       <div class="lg:max-w-5xl xl:max-w-7xl xl:flex xl:space-x-12 mx-auto">
         <div class="md:flex space-y-4 md:space-y-0 md:space-x-16 xl:block xl:space-x-0 xl:space-y-6 text-sm text-gray-500 mb-12">
           <ul class="md:w-1/3 xl:w-full">
-        <li><b class="text-gray-700">Sainsbury's Argos</b> (Argos Financial Services, Tu Clothing, and Habitat)</li>
-        <li><i class="text-gray-700">Head of UX and Product Design</i></li>
+        <li><b class="text-gray-700">Brand</b>: Sainsbury's Argos (Argos Financial Services, Tu Clothing, and Habitat)</li>
+        <li><b class="text-gray-700">Role</b>: Head of UX and Product Design</li>
         </ul>
         <div class="md:w-2/3 xl:w-full">
           <p class="max-w-sm lg:max-w-lg xl:max-w-xs pr-6">
@@ -572,12 +541,12 @@ h2 {
     </div>
 
     <div>
-      <h4 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2015-19</h4>
+      <h3 class="text-gray-700 text-xl tracking-tight font-bold mb-8">2015-19</h3>
       <div class="lg:max-w-5xl xl:max-w-7xl xl:flex xl:space-x-12 mx-auto">
         <div class="md:flex space-y-4 md:space-y-0 md:space-x-16 xl:block xl:space-x-0 xl:space-y-6 text-sm text-gray-500 mb-12">
           <ul class="md:w-1/3 xl:w-full">
-          <li><b class="text-gray-700">Ocado Technology</b></li>
-          <li><i class="text-gray-700">UX and Design Chapter Lead</i></li>
+          <li><b class="text-gray-700">Brand</b>: Ocado Technology</li>
+          <li><b class="text-gray-700">Role</b>: UX and Design Chapter Lead</li>
           </ul>
           <div class="md:w-2/3 xl:w-full">
             <p class="max-w-sm lg:max-w-lg xl:max-w-xs pr-6">
@@ -589,14 +558,60 @@ h2 {
     </div>
 
   </div>
-
-</div>
 </section>
+
+
+<!-- <canvas width="600" height="600">
+  <script>
+    let canvas = document.querySelector('canvas');
+    let context = canvas.getContext('2d');
+
+    context.fillStyle = 'gray';
+    // context.fillRect(100, 100, 400, 400);
+
+    context.lineWidth = 4;
+    context.beginPath();
+    context.rect(100, 100, 400, 400);
+    // context.stroke();
+
+    context.beginPath();
+    context.arc(300, 300, 100, 0, Math.PI * 2);
+    // context.stroke();
+
+      const width = 60;
+      const height = 60;
+      const gap = 20;
+      let x, y;
+
+    for (let i = 0; i < 5; i++) {
+      for (let j = 0; j < 5; j++) {
+
+      x = 100 + (gap + width) * i;
+      y = 100 + (gap + width) * j;
+
+      context.beginPath();
+      context.rect(x, y, width, height);
+      context.stroke();
+
+      if (Math.random() > 0.5) {
+
+        context.beginPath();
+        context.rect(x + 8, y + 8, width - 16, height - 16);
+        context.stroke();
+
+        }
+
+      }
+    }
+
+  </script>
+</canvas> -->
+
 
 <!-- References -->
 <section class="container lg:max-w-6xl xl:max-w-7xl mx-auto space-y-20 md:space-y-24 lg:space-y-32 lg:space-y-48 my-24 lg:my-32 xl:my-48 px-8 md:px-10 xl:px-0">
 
-  <h3 class="max-w-sm lg:max-w-lg xl:max-w-xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-24 xl:mb-40">Acts of kindness</h3>
+  <h2 class=" text-gray-700 text-xl tracking-tight font-bold mb-4 md:mb-16 px-4 md:p-0">Acts of kindness ...</h2>
   
   <div class="max-w-6xl mx-auto lg:px-8">
 
