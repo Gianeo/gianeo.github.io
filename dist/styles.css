@@ -646,6 +646,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -974,7 +978,7 @@ h3 {
 .g-hero .g-fullname {
   position: absolute;
   margin: auto;
-  top: 19.2%;
+  top: 18.2%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -1006,7 +1010,7 @@ h3 {
 .g-hero .g-gianni-text {
   position: absolute;
   height: 357px;
-  top: 15.8%;
+  top: 15%;
   left: 50%;
   transform: translate(-54%, -50%);
 }
@@ -1425,6 +1429,10 @@ h3 {
     width: 66.666667%;
   }
 
+  .md\:w-40 {
+    width: 10rem;
+  }
+
   .md\:flex-grow {
     flex-grow: 1;
   }
@@ -1466,6 +1474,15 @@ h3 {
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .md\:leading-tight {
+    line-height: 1.25;
+  }
+
+  .md\:text-gray-500 {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
   }
 }
 
