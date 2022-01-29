@@ -1421,6 +1421,14 @@ h3 {
     margin-bottom: 5rem;
   }
 
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .md\:block {
     display: block;
   }
