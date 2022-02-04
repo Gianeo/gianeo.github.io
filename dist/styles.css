@@ -827,6 +827,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.25rem;
 }
 
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1552,6 +1560,14 @@ h3 {
     padding-right: 1.5rem;
   }
 
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .md\:pr-5 {
+    padding-right: 1.25rem;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -1636,6 +1652,10 @@ h3 {
     margin-left: 3rem;
   }
 
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .xl\:block {
     display: block;
   }
@@ -1650,6 +1670,10 @@ h3 {
 
   .xl\:w-full {
     width: 100%;
+  }
+
+  .xl\:w-80 {
+    width: 20rem;
   }
 
   .xl\:max-w-xs {
@@ -1692,6 +1716,14 @@ h3 {
     padding-right: 3rem;
   }
 
+  .xl\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:pr-4 {
+    padding-right: 1rem;
+  }
+
   .xl\:text-left {
     text-align: left;
   }
@@ -1700,5 +1732,9 @@ h3 {
 @media (min-width: 1536px) {
   .\32xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .\32xl\:w-64 {
+    width: 16rem;
   }
 }
