@@ -496,6 +496,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   order: -9999;
 }
 
+.order-last {
+  order: 9999;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -576,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .box-border {
@@ -815,6 +823,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 2rem;
 }
 
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -906,6 +918,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .opacity-75 {
@@ -1590,6 +1612,10 @@ h3 {
     order: 9999;
   }
 
+  .xl\:order-2 {
+    order: 2;
+  }
+
   .xl\:mt-16 {
     margin-top: 4rem;
   }
@@ -1600,6 +1626,14 @@ h3 {
 
   .xl\:mb-32 {
     margin-bottom: 8rem;
+  }
+
+  .xl\:mr-12 {
+    margin-right: 3rem;
+  }
+
+  .xl\:ml-12 {
+    margin-left: 3rem;
   }
 
   .xl\:block {
@@ -1652,6 +1686,14 @@ h3 {
 
   .xl\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3rem;
+  }
+
+  .xl\:text-left {
+    text-align: left;
   }
 }
 
