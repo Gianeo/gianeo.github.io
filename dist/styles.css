@@ -500,8 +500,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.z-50 {
-  z-index: 50;
+.z-40 {
+  z-index: 40;
 }
 
 .col-span-1 {
@@ -666,12 +666,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
-}
-
 .w-48 {
   width: 12rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .w-4 {
@@ -880,8 +880,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 800;
 }
 
-.font-extralight {
-  font-weight: 200;
+.font-light {
+  font-weight: 300;
 }
 
 .font-medium {
@@ -890,10 +890,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .leading-none {
@@ -914,11 +910,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -927,6 +918,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-100 {
@@ -1090,16 +1086,16 @@ h3 {
 
 .g-hero .g-aboutme {
   position: relative;
-  padding: 1rem;
-  max-width: 19.8rem;
-  margin: 3.5rem auto 0;
+  padding: 2rem;
+  margin: 3.5rem 0 0;
+  max-width: 23rem;
   z-index: 1000;
 }
 
 .g-hero .g-heroTxt-01, .g-hero .g-heroTxt-02, .g-hero .g-heroTxt-03 {
-  max-width: 20rem;
-  padding: 1rem 2.5rem 1rem 1rem;
-  margin: auto;
+  max-width: 22rem;
+  padding: 1rem 2rem;
+  margin: 0;
 }
 
 .g-hero .g-heroTxt-01 b, .g-hero .g-heroTxt-02 b, .g-hero .g-heroTxt-03 b {
@@ -1109,9 +1105,9 @@ h3 {
 }
 
 .g-hero .g-heroTxt-main {
-  padding: 2rem 1rem;
-  max-width: 20rem;
-  margin: auto;
+  padding: 2rem;
+  max-width: 24rem;
+  margin: 0;
 }
 
 .g-hero .g-heroTxt-main h2 {
@@ -1126,10 +1122,10 @@ h3 {
 }
 
 .g-hero .g-heroTxt-currentRole {
-  padding: 1rem;
+  padding: 1rem 2rem;
   padding-top: 0;
-  max-width: 20rem;
-  margin: 4rem auto 0;
+  max-width: 24rem;
+  margin: 4rem 0 0;
 }
 
 .g-hero .g-heroTxt-currentRole p {
@@ -1506,12 +1502,12 @@ h3 {
     display: flex;
   }
 
-  .md\:w-48 {
-    width: 12rem;
-  }
-
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
   }
 
   .md\:w-1\/2 {
