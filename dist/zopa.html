@@ -54,9 +54,25 @@
 </head>
 <body id="template">
 
-  <div class="w-full grid grid-cols-4 gap-4">
+  <!-- header -->
+  <header>
+    <div>
+      <a href="index.html" class="flex gap-2 p-2 font-semibold text-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+        </svg> Home
+      </a>
+    </div>
+    <div>
+      <h1 class="text-gray-800 mr-4"><a href="index.html">Gianni J. Favaretto</a></h1>
+      <a href="https://www.instagram.com/giannifavaretto/?hl=en" target="_blank" class=""><img src="img/instagram.svg" width="24" alt="Check my Instagram account"></a>
+      <a href="https://www.linkedin.com/in/giannijfavaretto/" target="_blank" class=""><img src="img/linkedin.svg" width="24" alt="Check my LinkedIn profile"></a>
+    </div>
+  </header>
 
-    <main class="col-span-3 p-16">
+  <div class="md:grid md:grid-cols-4">
+
+    <main>
 
       <!-- Intro -->
       <section>
@@ -64,7 +80,7 @@
       
           <div class="relative max-w-lg">
             
-            <div class="pt-12">
+            <div class="py-12">
       
               <p class="date">Oct 2019 - Aug 2020</p>
               <h1 class="text-7xl text-gray-900 font-extrabold tracking-tight uppercase newFont">Zopa Bank</h1>
@@ -78,29 +94,33 @@
       </section>
       
       <!-- Role -->
+      <div class="g-section-header">
+        <span></span>
+        <h2>My Role</h2>
+      </div>
+
       <section>
-        <div class="max-w-3xl">
-          <div class="space-y-8">
-      
-            <h2>Role</h2>
+        <div class="max-w-4xl space-y-16">
+
+            <div class="space-y-4">
       
             <div>
-              <h3>Head of Experience Design</h3>
-              <p class="">Reporting to the Chief Product Officer</p>
+              <h3 class="-mt-8">Head of Experience Design</h3>
+              <p class="-mt-4 text-sm text-gray-400 italic">Reporting to the Chief Product Officer</p>
             </div>
       
-            <ul role="list" class="lg:grid lg:grid-cols-2 lg:gap-x-32 space-y-12">
+            <ul class="g-boxes-list-light pt-8">
       
-              <li class="mt-12">
+              <li>
                 <p class=""><strong>Re-engineered, coached, and led</strong> a team of Product and Service Designers.</p>
               </li>
       
               <li>
-                <p class=""><strong>Identified and initiated</strong> team initiatives associated with Design Thinking, gamification, and other design-related practices to boost craftsmanship, creativity and collaboration.</p>
+                <p class=""><strong>Identified and initiated</strong> team initiatives associated with Design Thinking, and other design-related practices to boost craftsmanship, creativity and collaboration.</p>
               </li>
       
               <li>
-                <p class=""><strong>Defined and executed</strong> the user experience and design vision, strategy and tactics, including introducing Service Design to facilitate the creation of a customer's ecosystem.</p>
+                <p class=""><strong>Defined and executed</strong> the user experience and design vision, strategy and tactics, including introducing Service Design.</p>
               </li>
       
               <li>
@@ -116,24 +136,28 @@
               </li>
       
             </ul>
+
           </div>
+            
         </div>
       </section>
       
       <!-- Beginning -->
       <section>
-        <div class="max-w-md mx-auto space-y-4">
+        <div class="max-w-md space-y-4">
           <h4>How it all started...</h4>
           <p class="">I mostly joined Zopa because of the wonderful people I met during the interview process and for their keen desire to hire me. Incredibly, the recruiter was able to fit a three-stage interview process with ten stakeholders in ten days.</p>
         </div>
       </section>
       
       <!-- Needs -->
+      <div class="g-section-header">
+        <span></span>
+        <h2>Needs</h2>
+      </div>
+
       <section>
-        <div class="max-w-3xl py-16">
-          <div class="space-y-12">
-      
-            <h2>Needs</h2>
+        <div class="max-w-4xl space-y-16">
       
             <div class="lg:grid lg:grid-cols-2 gap-x-20 space-y-12">
               <div class="space-y-4">
@@ -144,89 +168,115 @@
             </div>
 
             <div>
-            <h4 class="font-bold text-gray-800 py-8">How to transform</h4>
-            <p class="flex gap-x-4">
-                <span class="block w-64 p-8 bg-gray-50">
-                  an organisation with no experience with design...
-                </span>
-                <span class="block w-16 text-center font-bold text-gray-800">to</span>
-                <span class="block w-64 p-8 bg-gray-50">
-                  an organisation that embraces design as a business device successfully?
-                </span>
-              </p>
+              <ol role="list" class="border border-white rounded-md divide-y divide-gray-300 md:flex md:divide-y-0">
+                <li class="relative md:flex-1 md:flex bg-gray-100">
+                  <p class="p-8 flex items-center">
+                    <span class="ml-4 text-gray-500 group-hover:text-gray-900">How to trasform an organisation with no experience with design</span>
+                  </p>
+
+                  <!-- Arrow separator for lg screens and up -->
+                  <div class="hidden md:block absolute top-0 right-0 h-full w-5">
+                    <svg class="h-full w-full text-white" viewBox="0 0 22 80" fill="none" preserveAspectRatio="none">
+                      <path d="M0 -2L20 40L0 82" vector-effect="non-scaling-stroke" stroke="currentcolor" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="relative md:flex-1 md:flex bg-gray-100">
+                  <!-- Upcoming Step -->
+                    <p class="p-8 flex items-center">
+                      <span class="ml-4 text-gray-500 group-hover:text-gray-900">to an organisation that embraces design as a business device successfully?</span>
+                    </p>
+                </li>
+              </ol>
             </div>
       
-            <div class="max-w-xs space-y-4 pt-8">
-              <p>How can design help the business not in a year, nor in six months, but now?</p>
-              <p>Didier Baclin, CPO at Zopa Bank.</p>
+            <div class="max-w-xs space-y-4 pl-8 border-l-8 border-gray-100">
+              <p class="g-large-text">How can design help the business not in a year, nor in six months, but now?</p>
+              <div>
+                <div class="text-sm font-medium">Didier Baclin</div>
+                <div class="text-sm text-gray-400">Chief Product Officer</div>
+              </div>
             </div>
       
-          </div>
         </div>
       </section>
       
       <!-- Challenges -->
+      <div class="g-section-header">
+        <span></span>
+        <h2>Challenges</h2>
+      </div>
+
       <section>
-        <div class="max-w-4xl py-16">
-          <div class="space-y-16">
+        <div class="max-w-4xl space-y-16">
       
-            <h2>Challenges</h2>
-      
-            <ul role="list" class="lg:grid lg:grid-cols-3 lg:gap-x-20  space-y-12">
-      
-              <li class="mt-12">
-                <p class=""><span class="block font-bold text-gray-800 mb-2">#1</span> Zopa had no experience in dealing with design leadership; design wasn't really a Zopa's thing.</p>
-              </li>
-      
+            <div class="space-y-4">
+
+            <ul class="g-boxes-list-dark pb-8">
+
               <li>
-                <p class=""><span class="block font-bold text-gray-800 mb-2">#2</span> The designers were discontent and concerned about their future at Zopa.</p>
+                <span><span>1</span></span>
+                <p>Zopa had no experience in dealing with design leadership; design wasn't really a Zopa's thing.</p>
               </li>
-      
+
               <li>
-                <p class=""><span class="block font-bold text-gray-800 mb-2">#3</span> Design was overall poorly executed, from branding to product design.</p>
+                <span><span>2</span></span>
+                <p>The designers were discontent and concerned about their future at Zopa.</p>
               </li>
-      
+
+              <li>
+                <span><span>3</span></span>
+                <p>Design was overall poorly executed, from branding to product design.</p>
+              </li>
+
             </ul>
-      
-            <div class="max-w-lg space-y-12">
+
               <p>After talking to several stakeholders, I felt the need to define and explain the meaning of design at Zopa, from a philosophical to a practical perspective.</p>
-              <div class="space-y-4">
+
                 <h3>The plan</h3>
-                <ul class="space-y-2">
+                <ul class="g-default-list">
                   <li>Clarify the meaning and purpose of design at Zopa.</li>
                   <li>Use design as a device to connect people of different domains.</li>
                   <li>Invite and include everyone to be part of the design transformation.</li>
                   <li>Don't only tell, show what good design looks like.</li>
                   <li>Re-build the design team for the long term.</li>
                 </ul>
-              </div>
       
-              <div class="space-y-4">
                 <h3>The <del>obstacles</del> opportunities</h3>
-                <p>Sometimes, challenges can become opportunities.</p>
-                <ul class="space-y-2">
+                <p class="font-bold">Sometimes, challenges can become opportunities.</p>
+                <ul class="g-default-list">
                   <li>No design background at the leadership level. Sometimes a clean slate is all you need.</li>
                   <li>A couple of senior designers abandoned the ship ahead of my arrival. I can refresh the team with new selective personalities and skillsets.</li>
                   <li>Tight timelines for the bank launch. At least we know how much time we have at our disposal.</li>
                 </ul>
-              </div>
+                
             </div>
       
-          </div>
         </div>
       </section>
       
       <!-- Solutions -->
+      <div class="g-section-header">
+        <span></span>
+        <h2>Solutions</h2>
+      </div>
+
       <section>
-        <div class="max-w-lg py-16">
-          <div class="space-y-12">
+        <div class="max-w-4xl space-y-16">
+
+            <div class="space-y-4">
       
-            <h2>Solutions</h2>
+              <div class="max-w-xs space-y-4 pl-8 border-l-8 border-gray-100">
+                <p class="g-large-text">Luckily, the people at Zopa were exceptionally good to work with, and that indeed facilitated my job.</p>
+              </div>
       
-            <p class="text-xl">Luckily, the people at Zopa were exceptionally good to work with, and that indeed facilitated my job.</p>
-      
-            <p>Challenge #1
-                How might I facilitate conversations about design and get support from the leadership group?</p>
+            <div class="g-boxes-list-dark">
+              <div>
+                <span><span>Challenge #1</span></span>
+                <p>How might I facilitate conversations about design and get support from the leadership group?</p>
+              </div>
+            </div>
       
             <h3>What is Design?</h3>
             <p>When you ask what design is to your co-workers, you will surely get a variety of definitions. The majority of those definitions will regard the visual appearance, how something looks and [maybe] feels. To properly deliver good design efficiently and collaboratively, all parties need to have [internally] a common understanding of the meaning of design.</p>
@@ -235,15 +285,23 @@
             <p>As part of my strategy to talk about design, I planned and facilitated several "Intro to Design Thinking" workshops across several business' areas—including HR— both in the London and the Barcelona office.</p>
             <p>That was also a very successful way to introduce designers in those business areas and become friends with colleagues that you would not interact with regularly. To engage with all participants, I used a format that makes these workshops fun, interactive and comprehensible for all. Proudly, it's not the typical jargon-overloaded workshop that you might have encountered or heard about.</p>
       
-            <p>Challenge #2.
-              How might I inspire and excite designers about their and Zopa's future?</p>
+            <div class="g-boxes-list-dark">
+              <div>
+                <span><span>Challenge #2</span></span>
+                <p>How might I inspire and excite designers about their and Zopa's future?</p>
+              </div>
+            </div>
             
             <h3>A team for the long run.</h3>
             <p>When I joined Zopa, I found most designers to be contractors; there was only one permanent employee. They were all favourable, supportive and collaborative. I was genuinely excited to work with them. However, as I said, most of them were freelancers, and unfortunately for them, my goal was to build a team that was adequately integrated into the business and for the long run. To achieve that goal, I needed to have permanent individuals that could care and grow with the company.</p>
             <p>I wanted to convert all contractors into permanent employees, and for that to happen, I needed to show them what the future will look like for them at Zopa. All but one accepted the offer to become a Zopian. Even though I was sad to see one freelancer go, I was too please knowing that everybody else accepted to stay for the vision. In the meantime, we were able to welcome new designers into the team. Luckily, we were able to complete the team set up just before the COVID-19 pandemic lockdown.</p>
       
-            <p>Challenge #3.
-              How might I help to raise the quality bar of design?</p>
+            <div class="g-boxes-list-dark">
+              <div>
+                <span><span>Challenge #3</span></span>
+                <p>How might I help to raise the quality bar of design?</p>
+              </div>
+            </div>
       
             <h3>The design journey.</h3>
             <p>If there is something I learned in my experience is that design is an organisation's effort. I could be a fantastic talented designer and still fail to deliver decent work. Think about it. What gets prioritised, the methodology, the timeline, the code performance, and how we measure success will shape the outcome of any design work, and most of the time they are led by a diverse group of individuals that might not understand or even appreciate design.</p>
@@ -262,17 +320,22 @@
               <li>the clarification of individuals' responsibility [especially within the Design System large group of contributors]</li>
               <li>the introduction of Service Design</li>
             </ul>
-      
+
           </div>
+      
         </div>
       </section>
       
       <!-- Results -->
+      <div class="g-section-header">
+        <span></span>
+        <h2>Results</h2>
+      </div>
+
       <section>
-        <div class="max-w-3xl py-16">
-          <div class="space-y-12">
-      
-            <h2>Results</h2>
+        <div class="max-w-4xl space-y-16">
+
+            <div class="space-y-4">
       
             <p>Six months into the job, the design team was finally formed; at least for the year. With our processes and design toolkit ready, we were well-equipped and prepared to assist the business in the transaction of becoming a bank and scale the design to a new level.</p>
       
@@ -290,47 +353,56 @@
             <p>I was told that a cut on the Design workforce was necessary to help the business pass-through these hard times.</p>
             <p>I was sure that the design work done so fas would satisfy Zopa for some good time. I was confident that my team could deliver the expected. I was aware of the danger of having half of my team still in probation. Hence, I decided to volunteer to go on furlough hoping that my move would have been enough to avoid any other sacrifice in the team.</p>
             <p>I knew then that that was the end of my experience in Zopa. Zopa never had high expectations from design, and inevitably some believed that it was a luxury that now they couldn't afford.</p>
-            <p>A month later ...</p>
+            <h5>A month later ...</h5>
             <p>The team went on to receive high praise throughout the business and won Zopa’s team of the week award after helping to redesign our website and app in time for our bank launch.
               <span>Didier Baclin, CPO at Zopa Bank.</span>
             </p>
       
             <p>PS: All the outcomes mentioned were only delivered successfully because of the trust, support, skills and care of professionals of all disciplines.</p>
-      
+
           </div>
+      
         </div>
       </section>
 
     </main>
 
-    <aside class="p-8 flex h-screen">
-      
-      <nav class="w-32 m-auto space-y-1">
+    <aside class="hidden md:block relative">
+
+      <div class="flex w-1/4 h-screen fixed">
         
-        <a href="#" class="bg-gray-100 text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md" aria-current="page">
-          <span class="truncate"> Intro </span>
-        </a>
+        <nav class="w-48 mx-auto my-auto p-8">
 
-        <a href="#" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
-          <span class="truncate"> Role </span>
-        </a>
+          <div class="pb-16 px-3 -mt-4">
+            <img class="max-h-3" src="img/logos/zopa.svg" alt="">
+          </div>
+          
+          <a href="#" class="bg-gray-100 text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md" aria-current="page">
+            <span class="truncate"> Intro </span>
+          </a>
 
-        <a href="#" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
-          <span class="truncate"> Needs </span>
-        </a>
+          <a href="#" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <span class="truncate"> Role </span>
+          </a>
 
-        <a href="#" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
-          <span class="truncate"> Challenges </span>
-        </a>
+          <a href="#" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <span class="truncate"> Needs </span>
+          </a>
 
-        <a href="#" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
-          <span class="truncate"> Solutions </span>
-        </a>
+          <a href="#" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <span class="truncate"> Challenges </span>
+          </a>
 
-        <a href="#" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
-          <span class="truncate"> Results </span>
-        </a>
-      </nav>
+          <a href="#" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <span class="truncate"> Solutions </span>
+          </a>
+
+          <a href="#" class="text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+            <span class="truncate"> Results </span>
+          </a>
+        </nav>
+
+      </div>
 
     </aside>
   </div>
