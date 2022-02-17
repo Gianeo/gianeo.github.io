@@ -4,7 +4,12 @@ module.exports = {
     fontFamily: {
       'sans': ['Roboto', 'system-ui'],
     },
-    extend: {},
+    extend: {
+      screens: {
+        'xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      },
+    },
   },
   plugins: [],
 }
