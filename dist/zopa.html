@@ -75,9 +75,13 @@ background-position: 0 -2vw;">
 
   <div class="lg:flex" style="
   background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 97.8%, rgba(255,255,255,0) 100%);">
+  background: linear-gradient(0deg, rgba(255,255,255,1) 97.8%, rgba(255,255,255,0) 100%);">
 
-    <main class="grow">
+    <main class="grow relative">
+
+      <div class="absolute max-w-xl top-0 right-0 flex items-stretch h-screen">
+        <img src="img/zopa/zopa.jpg" class="mv-auto self-center">
+      </div>
 
       <!-- Intro -->
       <section class="section" id="one">
@@ -417,7 +421,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 97.8%, rgba(255,255,255,0)
 
       <div class="flex w-1/4 h-screen fixed">
         
-        <nav class="section-nav">
+        <nav>
 
           <div class="pb-12 px-3 -mt-6">
             <img class="max-h-3" src="img/logos/zopa.svg" alt="">
