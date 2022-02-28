@@ -1,0 +1,699 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify --watch */
+
+
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  .newFont {
+    font-family: 'Alumni Sans', sans-serif;
+  }
+  .baccent {
+      background-color: #2af6ff;
+  }
+  .border-r-accent {
+      border-right-color: #2af6ff;
+  }
+  .border-l-accent {
+      border-left-color: #2af6ff;
+  }
+  .text-xxs {
+    font-size: 0.625rem;
+  }
+  .logoName {
+    background: rgba(0, 0, 0, .08);
+    mix-blend-mode: multiply;
+  }
+  .logoName h1 {
+    line-height: 0.8;
+  }
+  @media (min-width: 768px) {
+    .name {
+      font-size: 26rem; 
+    }
+  }
+
+
+/* Header */
+
+header {
+  @apply fixed flex justify-between w-full z-40 top-0 p-4 lg:p-8;
+}
+  header div {
+    @apply flex items-center justify-end gap-2 pr-2;
+  }
+  header h1 {
+    display: none;
+  }
+@media (min-width: 768px) {
+  header h1 {
+    display: block;
+    letter-spacing: 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+  
+/* Section */
+  
+section {
+  @apply bg-cover bg-no-repeat bg-fixed;
+  background-image: url(img/bgblur.png);
+  padding: 8vw 6vw;
+}
+  section div, section img {
+    mix-blend-mode: multiply;
+  }
+
+
+/* Hero section */
+
+.hero {
+  @apply relative bg-no-repeat;
+  background-image: url(img/largetxt.svg);
+  background-attachment: scroll;
+  background-size: 90%;
+  background-position: center 4rem;
+}
+.hero h3 {
+  font-size: 2.25rem;
+  line-height: 23px;
+}
+.hero .fullname {
+  position: absolute;
+  margin: auto;
+  top: 18.2%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  mix-blend-mode: multiply;
+  width: 100%;
+  text-align: center;
+}
+  .hero .fullname h1 {
+    letter-spacing: 0.5rem;
+  }
+.profile-photo {
+  position: absolute;
+  width: 10rem; height: 10rem;
+  margin: auto;
+  top: 12%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  mix-blend-mode: multiply;
+  @apply shadow-2xl;
+}
+.gianni-text {
+  position: absolute;
+  height: 357px; 
+  top: 15%; left: 50%;
+  transform: translate(-54%, -50%);
+}
+.aboutme {
+  @apply text-gray-500 text-sm md:text-xs lg:text-sm;
+  position: relative;
+  padding: 2rem;
+  margin: 3.5rem 0 0;
+  max-width: 23rem;
+  z-index: 1000;
+}
+.whatido-01, .whatido-02, .whatido-03 {
+  @apply text-sm md:text-xs md:leading-tight text-gray-500 md:text-gray-500;
+  max-width: 22rem;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+  .whatido-01 b, .whatido-02 b, .whatido-03 b {
+    @apply block text-gray-800 tracking-tight font-extrabold uppercase leading-none my-2 newFont;
+    font-size: 2.25rem;
+    line-height: 23px;
+    max-width: 16rem;
+  }
+  .whatido-01 span, .whatido-02 span, .whatido-03 span {
+    @apply block;
+  }
+
+
+
+@media (min-width: 768px) {
+
+.hero {
+  max-width: 768px;
+}
+.hero h3 {
+  font-size: 3rem;
+  line-height: 32px;
+}
+.hero .fullname {
+  display: none;
+}
+  .profile-photo, .gianni-text, .aboutme {
+    top: 11rem; left: 36%;
+  }
+  .profile-photo {
+    width: 8rem; height: 8rem;
+    margin: none;
+    transform: none;
+  }
+  .gianni-text {
+    height: 450px; 
+    transform: none;
+  }
+  .aboutme {
+    position: absolute;
+    max-width: 330px; 
+    padding: 0 0 0 172px;
+    margin: 0;
+  }
+  .whatido-01, .whatido-02, .whatido-03 {
+    position: absolute;
+    max-width: 13.2rem;
+    padding: 0;
+    margin: 0;
+  }
+  .whatido-01 {
+    top: 0; left: 36%;
+  }
+  .whatido-02 {
+    top: 25%; left: 0;
+  }
+  .whatido-03 {
+    top: 45%; right: 0;
+  }
+  .whatido-01 b, .whatido-02 b, .whatido-03 b {
+    max-width: 20rem;
+  }
+  .whatido-01 b {
+    background: #1F2938;
+    background: -webkit-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
+    background: -moz-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
+    background: linear-gradient(to bottom right, #1F2938 35%, #6A7380 35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .whatido-02 b {
+    background: #1F2938;
+    background: -webkit-linear-gradient(to bottom right, #1F2938 0%, #6A7380 30%);
+    background: -moz-linear-gradient(to bottom right, #1F2938 0%, #6A7380 30%);
+    background: linear-gradient(to top right, #6A7380 50%, #1F2938 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .whatido-03 b {
+    background: #1F2938;
+    background: -webkit-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
+    background: -moz-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
+    background: linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+.hero {
+  max-width: 1024px;
+}
+.hero h2 {
+  font-size: 6rem;
+  line-height: 60px;
+}
+.profile-photo, .gianni-text, .aboutme {
+  top: 12rem; 
+}
+  .profile-photo {
+    width: 10.2rem; height: 10.2rem;
+  }
+  .gianni-text {
+    height: 570px; 
+  }
+  .aboutme {
+    max-width: 404px; 
+    padding: 0 0 0 220px;
+  }
+  .whatido-01, .whatido-02, .whatido-03 {
+    max-width: 13.5rem;
+  }
+  .whatido-02 {
+    /* top: 24.8rem;  */
+  }
+  .whatido-03 {
+    /* top: 39rem; */
+  }
+    .whatido-01 b, .whatido-02 b, .whatido-03 b {
+      font-size: 2.25rem;
+      line-height: 24px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+.hero {
+  max-width: 1280px;
+}
+  .profile-photo, .gianni-text, .aboutme {
+    top: 14.4rem; 
+  }
+  .profile-photo {
+    width: 11.8rem; 
+    height: 11.8rem;
+  }
+  .gianni-text {
+    height: 760px; 
+  }
+  .aboutme {
+    max-width: 474px; 
+    padding: 0 0 0 290px;
+  }
+  .whatido-01, .whatido-02, .whatido-03 {
+    max-width: 18rem;
+  }
+  .whatido-02 {
+    /* top: 26.8rem;  */
+  }
+  .whatido-03 {
+    /* top: 42.2rem; */
+  }
+    .whatido-01 b, .whatido-02 b, .whatido-03 b {
+      font-size: 3rem;
+      line-height: 32px;
+    }
+
+}
+
+@media (min-width: 1536px) {
+
+.hero {
+  max-width: 1536px;
+}
+  .profile-photo, .gianni-text, .aboutme {
+    top: 19rem; 
+  }
+  .profile-photo {
+    width: 14.4rem; height: 14.4rem;
+  }
+  .gianni-text {
+    height: 780px; 
+  }
+  .aboutme {
+    max-width: 480px; 
+    padding: 0 0 0 296px;
+  }
+  .whatido-02 {
+    /* top: 27rem;  */
+  }
+  .whatido-03 {
+    /* top: 48rem; */
+  }
+
+}
+
+
+
+/* Leadership's section */
+
+@media (min-width: 768px) {
+  .leadership {
+    padding-top: 39.1rem;
+    }
+  .leadership h2 {
+    font-size: 4.5rem;
+    line-height: 46px;
+  }
+  .currentRole {
+    padding: 6.6rem 2rem 1rem;
+    max-width: 24rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .leadership {
+    padding-top: 51rem;
+  }
+  .leadership h2 {
+    font-size: 6rem;
+    line-height: 60px;
+  }
+  .currentRole {
+    padding-top: 10rem;
+  }
+}
+@media (min-width: 1280px) {
+  .leadership {
+    padding-top: 71rem;
+  }
+  .leadership h2 {
+    font-size: 8rem;
+    line-height: 80px;
+  }
+  .currentRole {
+    padding-top: 15rem;
+  }
+}
+@media (min-width: 1536px) {
+  .leadership {
+    padding-top: 77rem;
+  }
+}
+.leadership h2 {
+  @apply max-w-3xl text-gray-800 tracking-tight font-extrabold uppercase newFont;
+  background: #1F2938;
+  background: -webkit-linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
+  background: -moz-linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
+  background: linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.leadership div ul {
+  @apply space-y-1 text-gray-500 text-sm md:text-xs lg:text-sm mt-6;
+  padding: 1.4rem 0;
+  margin: 0;
+}
+.currentRole span {
+  @apply block text-xs font-light;
+}
+.currentRole img {
+  @apply h-12 opacity-75 mt-1.5;
+}
+.currentRole p:last-of-type {
+  @apply text-gray-400 text-sm md:text-xs mt-2 md:w-48;
+}
+
+
+
+
+
+
+
+body#template main {
+    @apply lg:col-span-3;
+    padding: 8vw inherit 0;
+}
+
+body#template .whatido {
+ @apply relative md:pb-16; 
+}
+body#template .whatido::after {
+  @apply absolute bottom-0 left-0 w-20 h-0 md:h-4 bg-gray-100;
+  content: "";
+}
+
+body#template section {
+    @apply space-y-8 md:space-y-0;
+    padding: 0;
+}
+body#template .section {
+    @apply w-auto space-y-8 md:space-y-16;
+    padding: 4vw 8vw 4vw;
+    mix-blend-mode: multiply;
+}
+body#template section:first-of-type {
+    @apply pt-24;
+}
+@media (min-width: 1024px) {
+    body#template section:first-of-type {
+        padding: 4vw 8vw 0vw;
+    }
+    body#template section:first-of-type .section {
+        paddinbottom: 0vw;
+    }
+}
+
+body#template section .separator {
+    padding: 4vw 8vw;
+} body#template section .separator span {
+  @apply text-gray-400 text-xxs;
+}
+
+
+body#template div.section-header span {
+    @apply block baccent float-left;
+    height: 16px; width: 16px;
+}
+body#template h2 {
+    @apply mx-auto lg:max-w-7xl text-lg font-extrabold tracking-tight uppercase text-gray-800 border-r border-gray-800;
+    line-height: 0.9;
+    margin: 0 8vw;
+}
+
+body#template h2.large-thin {
+  @apply md:max-w-xl text-4xl font-thin tracking-tight normal-case text-gray-800 border-none leading-tight;
+  padding: 4vw 0 2vw;
+  margin: inherit 0;
+}
+
+body#template section h1 {
+    @apply text-7xl text-gray-900 font-extrabold tracking-tight uppercase newFont;
+}
+body#template h3 {
+    @apply text-2xl font-extrabold tracking-tight pt-8 border-0;
+}
+body#template h4 {
+    @apply text-xl font-extrabold tracking-tight pt-8;
+}
+body#template h5 {
+    @apply font-bold tracking-tight pt-4;
+}
+body#template p, body#template ul li {
+    @apply text-gray-500 leading-6 antialiased md:max-w-lg lg:max-w-md;
+}
+
+body#template ul.default-list {
+    @apply space-y-2;
+}
+body#template ul.default-list li {
+    @apply py-1 px-8 rounded-md flex relative;
+}
+    body#template ul.default-list li span {
+        @apply absolute block w-3 h-3 bg-gray-200 -ml-8 mr-4;
+        margin-top: 0.35rem;
+    }
+
+body#template .boxes-list li, body#template .boxes-list div {
+  @apply flex items-start md:max-w-lg lg:max-w-md py-3 md:py-6 rounded-md;
+  
+}
+  body#template .boxes-list span {
+      @apply block flex-shrink-0 p-2 text-center font-bold rounded-r-sm;
+      margin: .25rem inherit;
+  }
+  body#template .boxes-list p {
+      @apply pl-6 pr-8;
+  }
+
+body#template .max-two-cols {
+    @apply md:grid md:grid-cols-2 gap-4 space-y-2 md:space-y-0;
+}
+body#template .max-three-cols {
+  @apply md:grid md:grid-cols-3 gap-4 space-y-2 md:space-y-0;
+}
+
+body#template ul.boxes-list.light li {
+    @apply md:bg-gray-50;
+    background: rgb(249,250,251);
+    background: linear-gradient(30deg, rgba(249,250,251,1) 70%, rgba(243,244,246,1) 30%);
+}
+    body#template ul.boxes-list.light li span {
+        @apply bg-gray-200;
+    }
+
+body#template .boxes-list.dark li, body#template .boxes-list.dark div {
+    @apply bg-gray-600 text-gray-200;
+    background: rgb(75,85,99);
+    background: linear-gradient(30deg, rgba(75,85,99,1) 70%, rgba(55,65,81,1) 30%);
+}
+  body#template .boxes-list.dark span {
+      @apply text-gray-200 bg-gray-700;
+  }
+  body#template .boxes-list.dark p {
+      @apply text-gray-200;
+  }
+
+
+body#template .large-text {
+    @apply text-xl leading-7 max-w-md;
+}
+body#template .date {
+    @apply text-xs text-gray-500 uppercase mb-4 antialiased;
+}
+body#template p.text-small {
+    @apply text-xs leading-tight pt-24;
+}
+body#template .section div img {
+    @apply rounded-md shadow-2xl;
+}
+body#template .section div img.noshadow {
+    @apply shadow-none;
+}
+
+
+body#template .grid-image {
+    @apply md:grid md:grid-cols-2 xl:grid-cols-3 md:gap-x-16 xl:gap-x-20 space-y-12 md:space-y-2 ;
+}
+    body#template .grid-image div:first-of-type {
+        @apply space-y-6;
+    }
+    body#template .grid-image div:last-of-type {
+        @apply xl:col-span-2;
+    }
+    body#template .grid-image div.btop-left {
+        @apply xl:col-span-2;
+        background: rgb(75,85,99);
+        background: linear-gradient(160deg, rgba(41,246,255,1) 25%, rgba(255,255,255,.15) 25%);
+    }
+    body#template .grid-image div.bbottom-right {
+        @apply xl:col-span-2;
+        background: rgb(75,85,99);
+        background: linear-gradient(160deg, rgba(255,255,255,1) 75%, rgba(42,246,255,1) 75%);
+    }
+    body#template .grid-image div img {
+      @apply object-cover;
+  }
+
+body#template .quote {
+    @apply max-w-xs space-y-4 pl-8 border-l-8 border-gray-100;
+}
+    body#template .quote p:first-of-type {
+        @apply text-xl leading-7 max-w-md;
+    }
+    body#template .quote .quoter div:first-of-type {
+        @apply text-sm font-medium;
+    }
+    body#template .quote .quoter div:last-of-type {
+        @apply text-sm text-gray-400;
+    }
+
+body#template aside {
+    @apply hidden xl:block flex-none w-1/4 relative;
+}
+body#template nav {
+    @apply w-48 mx-auto my-auto p-8;
+}
+    body#template nav ol {
+        @apply space-y-0 my-0;
+    }
+    body#template nav li a {
+        @apply text-gray-500 hover:bg-gray-50 hover:text-gray-900 flex items-center px-4 py-2 -ml-2 text-sm border-l border-white;
+        transition: all 50ms ease-in-out;
+    }
+    body#template nav li.active > a {
+        @apply border-l-accent text-gray-900;
+    }
+
+
+
+
+p {
+  @apply text-base font-normal leading-6 text-gray-500;
+}
+
+div.copy-columns {
+  @apply lg:columns-2 gap-16 space-y-6;
+}
+
+.references {
+  @apply md:columns-2 lg:columns-3 gap-16 pt-8 pb-24 space-y-20;
+}
+    .references blockquote {
+      @apply md:flex-grow md:flex md:flex-col break-inside-avoid relative space-y-8;
+    }
+    .references blockquote::before {
+      @apply w-12 h-4 bg-gray-100 mb-8;
+      content: '';
+    }
+      .references blockquote div:first-of-type {
+        @apply text-gray-500 md:flex-grow space-y-4;
+      }
+      .references blockquote footer {
+        @apply flex items-start space-x-4 mt-8;
+      }
+        .references blockquote footer img {
+          @apply w-10 h-10 rounded-full;
+        }
+        .references blockquote footer div {
+          @apply space-y-0;
+        }
+          .references blockquote footer div p {
+            @apply text-sm font-semibold leading-5;
+          }
+          .references blockquote footer div p span {
+            @apply block font-normal text-gray-400 leading-5;
+          }
+
+
+
+section h2.h-section {
+  @apply w-full text-5xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
+  line-height: 32px;
+  }
+
+
+/* Home Projects */
+
+.project {
+  @apply relative;
+  padding: 0 0 0.5vw;
+}
+  .project h1 {
+    @apply text-gray-200 text-xl tracking-tight leading-none mt-8 mb-8 pl-1 border-l-gray-100 border-r-accent;
+    border-left-width: 75px;
+    border-right-width: 18px;
+    height: 18px;
+  }
+  .project.reverse h1 {
+    @apply border-r-gray-100;
+  }
+  .project main {
+    @apply xl:flex mx-auto;
+  }
+    .project main div.image {
+      @apply mb-8 xl:mb-0 xl:mr-12;
+    }
+    .project.reverse main div.image {
+      @apply mb-8 xl:mb-0 xl:order-2 xl:ml-12 xl:mr-0;
+    }
+      .project main div.image img {
+        @apply w-full;
+      }
+    .project main div.desc {
+      @apply md:flex xl:w-80 space-y-4 md:space-y-0 md:space-x-16 xl:block xl:space-x-0 xl:space-y-6 text-sm text-gray-500 mb-12;
+    }
+    .project main div.desc div:first-of-type {
+      @apply md:w-1/2 xl:w-full text-gray-700 space-y-2;
+    }
+      .project main div.desc div:first-of-type time {
+        @apply text-gray-400 text-sm;
+      }
+      .project main div.desc div:first-of-type span {
+        @apply block;
+      }
+      .project main div.desc div:first-of-type h2 {
+        @apply text-base font-bold;
+      }
+      .project main div.desc div:first-of-type h3 {
+        @apply text-base text-gray-700 italic;
+      }
+    .project main div.desc div:last-of-type {
+      @apply md:w-1/2 xl:w-full xl:pr-4 space-y-8;
+    }
+    .project main div.desc div:last-of-type a {
+      @apply inline-block px-6 py-4 bg-gray-900 text-gray-50 font-semibold rounded shadow-lg;
+    }
+  .project div.code-decoration {
+    @apply hidden md:block absolute bottom-14 xl:bottom-0 xl:right-0;
+  }
+  .project.reverse div.code-decoration {
+    @apply xl:left-0;
+  }
+  .project div.code-decoration span {
+    @apply text-gray-400 text-xxs;
+  }
