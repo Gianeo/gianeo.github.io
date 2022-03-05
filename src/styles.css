@@ -26,6 +26,9 @@ html {
   .border-l-accent {
       border-left-color: #2af6ff;
   }
+  .border-b-accent {
+      border-bottom-color: #2af6ff;
+  }
   .text-xxs {
     font-size: 0.625rem;
   }
@@ -42,6 +45,10 @@ html {
     }
   }
 
+  p.sub-header {
+    @apply text-sm text-gray-400 italic;
+  }
+
 
 /* Header */
 
@@ -52,6 +59,7 @@ header {
     @apply flex items-center justify-end gap-2 pr-2;
   }
   header h1 {
+    @apply text-gray-900;
     display: none;
   }
 @media (min-width: 768px) {
@@ -61,6 +69,30 @@ header {
     font-size: 0.75rem;
   }
 }
+header div:first-child {
+  @apply space-x-8;
+}
+  header div:first-child a {
+    @apply text-sm pb-2 text-gray-500;
+  }
+  header div:first-child a.active {
+    @apply text-gray-900 border-b-2 border-b-accent;
+  }
+  header div:first-child a.back {
+    @apply flex p-2 pb-4 font-semibold text-gray-900;
+  }
+    header div:first-child a.back svg {
+      @apply h-10 w-10 lg:h-8 lg:w-8;
+    }
+    header div:first-child a.back span {
+      @apply pt-2 lg:pt-1 pl-1.5;
+    }
+header div:last-child {
+  @apply flex pb-2 space-x-4 lg:space-x-2;
+}
+  header div:last-child img {
+    @apply h-8 w-8 lg:h-6 lg:w-6;
+  }
 
 main {
   @apply mx-auto;
@@ -657,19 +689,19 @@ div.copy-columns {
       .references blockquote div:first-of-type {
         @apply text-gray-500 md:flex-grow space-y-4;
       }
-      .references blockquote footer {
+      .references blockquote .footer {
         @apply flex items-start space-x-4 mt-8;
       }
-        .references blockquote footer img {
+        .references blockquote .footer img {
           @apply w-10 h-10 rounded-full;
         }
-        .references blockquote footer div {
+        .references blockquote .footer div {
           @apply space-y-0;
         }
-          .references blockquote footer div p {
+          .references blockquote .footer div p {
             @apply text-sm font-semibold leading-5;
           }
-          .references blockquote footer div p span {
+          .references blockquote .footer div p span {
             @apply block font-normal text-gray-400 leading-5;
           }
 
@@ -744,3 +776,29 @@ section h2.h-section {
   .project div.code-decoration span {
     @apply text-gray-400 text-xxs;
   }
+
+.transformation-box {
+  @apply max-w-xl;
+}
+  .transformation-box ol {
+    @apply border border-white rounded-md md:flex md:divide-y-0;
+  }
+  .transformation-box ol li {
+    @apply relative md:flex-1 md:flex bg-gray-100;
+  }
+    .transformation-box ol li p {
+      @apply p-8 flex items-start;
+    }
+    .transformation-box ol li p span {
+      @apply ml-4 text-gray-500 group-hover:text-gray-900;
+    }
+
+footer {
+  @apply hidden md:block fixed bottom-0 right-0 p-6 lg:p-10;
+} 
+  footer svg {
+    @apply block float-right;
+  } 
+  footer p {
+    @apply text-gray-400 text-xxs clear-right pt-8;
+  } 
