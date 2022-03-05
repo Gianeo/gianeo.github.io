@@ -4,3 +4,4 @@ package.json
 uikit
 webpack.config.js
 yarn.lock
+.DS_Store

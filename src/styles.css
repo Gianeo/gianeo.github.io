@@ -589,12 +589,12 @@ body#template .grid-image {
     body#template .grid-image div:last-of-type {
         @apply xl:col-span-2;
     }
-    body#template .grid-image div.btop-left {
+    body#template .grid-image div.bg-top-left {
         @apply xl:col-span-2;
         background: rgb(75,85,99);
         background: linear-gradient(160deg, rgba(41,246,255,1) 25%, rgba(255,255,255,.15) 25%);
     }
-    body#template .grid-image div.bbottom-right {
+    body#template .grid-image div.bg-bottom-right {
         @apply xl:col-span-2;
         background: rgb(75,85,99);
         background: linear-gradient(160deg, rgba(255,255,255,1) 75%, rgba(42,246,255,1) 75%);
