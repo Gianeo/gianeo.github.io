@@ -676,9 +676,12 @@ div.copy-columns {
 
 
 section h2.h-section {
-  @apply w-full text-5xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
-  line-height: 32px;
+  @apply w-full text-6xl md:text-8xl lg:text-9xl text-gray-800 tracking-tight font-extrabold uppercase newFont mt-8 mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
+  line-height: 62%;
   }
+  section h2.h-section span {
+    @apply md:block md:max-w-xl lg:max-w-2xl;
+    }
 
 
 /* Home Projects */
