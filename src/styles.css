@@ -537,7 +537,7 @@ body#template h4 {
     @apply text-xl font-extrabold tracking-tight pt-8;
 }
 body#template h5 {
-    @apply font-bold tracking-tight pt-4;
+    @apply text-gray-800 font-bold tracking-tight pt-4;
 }
 body#template p, body#template ul li {
     @apply text-gray-500 leading-6 antialiased md:max-w-lg lg:max-w-md;
