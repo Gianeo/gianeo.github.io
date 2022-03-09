@@ -104,7 +104,7 @@ main {
 section {
   @apply bg-cover bg-no-repeat bg-fixed;
   background-image: url(img/bgblur.png);
-  padding: 8vw 6vw;
+  padding: 6vw;
 }
   section div, section img {
     mix-blend-mode: multiply;
@@ -229,7 +229,7 @@ section {
   .whatido-01 b, .whatido-02 b, .whatido-03 b {
     max-width: 20rem;
   }
-  .whatido-01 b {
+  .whatido-01 b, .top-left-cut {
     background: #1F2938;
     background: -webkit-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
     background: -moz-linear-gradient(to bottom right, #1F2938 30%, #6A7380 30%);
@@ -262,7 +262,8 @@ section {
   /* max-width: 1024px; */
 }
 .hero h2 {
-  font-size: 6rem;
+  @apply text-6xl;
+  /* font-size: 6rem; */
   line-height: 60px;
 }
 .profile-photo, .gianni-text, .aboutme {
@@ -378,8 +379,8 @@ section {
     }
   .leadership h2 {
     @apply max-w-xl;
-    font-size: 4.75rem;
-    line-height: 46px;
+    font-size: 6rem;
+    line-height: 60px;
   }
   .currentRole {
     @apply absolute right-0;
@@ -802,3 +803,14 @@ footer {
   footer p {
     @apply text-gray-400 text-xxs clear-right pt-8;
   } 
+
+
+
+.img-top-left-cut {
+  background: rgb(75,85,99);
+  background: linear-gradient(160deg, rgba(41,246,255,1) 25%, rgba(255,255,255,.15) 25%);
+}
+.img-bottom-right-cut {
+  background: rgb(75,85,99);
+  background: linear-gradient(160deg, rgba(255,255,255,1) 75%, rgba(42,246,255,1) 75%);
+}
