@@ -365,8 +365,10 @@ section {
   padding-top: 3rem;
   }
 .leadership h2 {
-  font-size: 3.8rem;
-  line-height: 38px;
+  @apply text-6xl md:text-8xl lg:text-9xl tracking-tight;
+  line-height: 62%;
+  /* font-size: 3.8rem;
+  line-height: 38px; */
 }
 .currentRole {
   margin: 2rem 0 0;
@@ -375,17 +377,17 @@ section {
 
 @media (min-width: 768px) {
   .leadership {
-    padding-top: 86%;
+    padding-top: 92%;
     }
   .leadership h2 {
     @apply max-w-xl;
-    font-size: 6rem;
-    line-height: 60px;
+    /* font-size: 6rem;
+    line-height: 60px; */
   }
   .currentRole {
     @apply absolute right-0;
-    top: 0.6rem;
-    /* max-width: 24rem; */
+    top: 4rem;
+    right: 0;
     margin: 0;
   }
   .currentRole div {
@@ -394,17 +396,16 @@ section {
 }
 @media (min-width: 1024px) {
   .leadership {
-    padding-top: 84%;
+    padding-top: 86%;
   }
   .leadership h2 {
     @apply max-w-3xl;
-    font-size: 8rem;
-    line-height: 80px;
+    /* font-size: 8rem;
+    line-height: 80px; */
   }
   .currentRole {
     @apply absolute;
     top: 9rem;
-    right: 0;
   }
   .currentRole div {
     @apply bg-gray-50 rounded-full p-24;
@@ -419,8 +420,8 @@ section {
     line-height: 80px;
   } */
   .currentRole {
-    top: 6rem;
-    right: 10%;
+    top: 4rem;
+    right: 5%;
     width: 30rem;
   }
   .currentRole div {
@@ -709,11 +710,11 @@ div.copy-columns {
 
 
 section h2.h-section {
-  @apply w-full text-6xl md:text-8xl lg:text-9xl text-gray-800 tracking-tight font-extrabold uppercase newFont mt-8 mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
+  @apply w-full text-5xl md:text-7xl lg:text-8xl text-gray-800 tracking-tight font-extrabold uppercase newFont mt-8 mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
   line-height: 62%;
   }
   section h2.h-section span {
-    @apply md:block md:max-w-xl lg:max-w-2xl;
+    @apply md:block md:max-w-md lg:max-w-xl;
     }
 
 
