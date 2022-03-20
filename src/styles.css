@@ -391,7 +391,8 @@ section {
     margin: 0;
   }
   .currentRole div {
-    @apply bg-gray-50 rounded-full p-24;
+    @apply bg-gray-900 rounded-full p-24 shadow-2xl;
+    mix-blend-mode: overlay;
   }
 }
 @media (min-width: 1024px) {
@@ -408,7 +409,7 @@ section {
     top: 9rem;
   }
   .currentRole div {
-    @apply bg-gray-50 rounded-full p-24;
+    
   }
 }
 @media (min-width: 1280px) {
@@ -425,7 +426,7 @@ section {
     width: 30rem;
   }
   .currentRole div {
-    @apply bg-gray-50 rounded-full p-36;
+    @apply p-36;
   }
 }
 @media (min-width: 1536px) {
@@ -460,10 +461,40 @@ section {
   @apply block text-xs font-light;
 }
 .currentRole img {
-  @apply h-12 opacity-75 mt-1.5;
+  @apply h-12 mt-1.5;
+  mix-blend-mode: normal;
 }
 .currentRole p:last-of-type {
   @apply text-gray-400 text-sm md:text-xs mt-2 md:w-48;
+}
+
+/* Hero photo banner */
+
+.photo-banner {
+  @apply bg-cover bg-right h-auto text-white py-32 px-10 mt-16 object-fill;
+  background-image: url(img/banner/banner01.jpg);
+  }
+
+@media (min-width: 768px) {
+  .photo-banner {
+    @apply py-64 -mt-32;
+    clip-path: polygon(46% 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+    }
+}
+@media (min-width: 1024px) {
+  .photo-banner {
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
+  }
+}
+@media (min-width: 1280px) {
+  .photo-banner {
+    clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 60%);
+  }
+}
+@media (min-width: 1536px) {
+  .photo-banner {
+    
+  }
 }
 
 
