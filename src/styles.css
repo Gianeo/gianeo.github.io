@@ -471,7 +471,7 @@ section {
 /* Hero photo banner */
 
 .photo-banner {
-  @apply bg-cover bg-right h-auto text-white py-32 px-10 mt-16 object-fill;
+  @apply bg-cover bg-right h-auto text-white py-24 px-10 mt-16 object-fill;
   background-image: url(img/banner/banner01.jpg);
   }
 
