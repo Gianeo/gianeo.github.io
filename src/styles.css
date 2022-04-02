@@ -702,7 +702,7 @@ body#template nav {
 
 
 p {
-  @apply text-base font-normal leading-6 text-gray-500;
+  @apply text-sm font-normal leading-6 text-gray-500;
 }
 
 div.copy-columns {
