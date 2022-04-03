@@ -374,8 +374,6 @@ section {
     @apply bg-gray-50 w-full flex justify-center items-center p-4;
     mix-blend-mode: overlay;
   }
-  .currentRole div {
-  }
 }
 @media (min-width: 1024px) {
   .leadership {
@@ -384,17 +382,10 @@ section {
   .leadership h2 {
     @apply max-w-3xl;
   }
-  .currentRole {
-  }
-  .currentRole div {
-    
-  }
 }
 @media (min-width: 1280px) {
   .leadership {
     margin-top: 70%;
-  }
-  .currentRole div {
   }
 }
 @media (min-width: 1536px) {
@@ -403,10 +394,6 @@ section {
   }
   .leadership div:first-of-type > div:first-child {
     width: 50%
-  }
-  .currentRole {
-  }
-  .currentRole div {
   }
 }
 .leadership h2 {
