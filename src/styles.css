@@ -721,10 +721,10 @@ section h2.h-section {
     @apply sm:flex gap-8 mx-auto;
   }
     .project main div.image {
-      @apply sm:w-1/2 lg:w-2/3 xl:w-3/4;
+      @apply sm:w-1/2 lg:w-2/3 xl:w-3/4 p-8 mb-4 sm:mb-0;
     }
     .project.reverse main div.image {
-      @apply mb-0 sm:order-2;
+      @apply sm:order-2;
     }
       .project main div.image img {
         @apply w-full;
