@@ -183,8 +183,8 @@ section {
 @media (min-width: 768px) {
 
 .hero {
+  @apply mt-12;
   background-size: 90%;
-  padding-top: 0;
 }
 .hero h3 {
   font-size: 3rem;
@@ -221,10 +221,10 @@ section {
     top: 0; left: 36%;
   }
   .whatido-02 {
-    top: 25%; left: 0;
+    top: 22%; left: 0;
   }
   .whatido-03 {
-    top: 42%; right: 0;
+    top: 38%; right: 0;
   }
   .whatido-01 b, .whatido-02 b, .whatido-03 b {
     max-width: 20rem;
@@ -259,11 +259,9 @@ section {
 @media (min-width: 1024px) {
 
 .hero {
-  /* max-width: 1024px; */
 }
 .hero h2 {
   @apply text-6xl;
-  /* font-size: 6rem; */
   line-height: 60px;
 }
 .profile-photo, .gianni-text, .aboutme {
@@ -282,12 +280,6 @@ section {
   .whatido-01, .whatido-02, .whatido-03 {
     max-width: 13.5rem;
   }
-  .whatido-02 {
-    /* top: 24.8rem;  */
-  }
-  .whatido-03 {
-    /* top: 39rem; */
-  }
     .whatido-01 b, .whatido-02 b, .whatido-03 b {
       font-size: 2.25rem;
       line-height: 24px;
@@ -298,7 +290,6 @@ section {
 @media (min-width: 1280px) {
 
 .hero {
-  /* max-width: 1280px; */
 }
   .profile-photo, .gianni-text, .aboutme {
     top: 14.4rem; 
@@ -318,10 +309,10 @@ section {
     max-width: 18rem;
   }
   .whatido-02 {
-    /* top: 26.8rem;  */
+    top: 20%;
   }
   .whatido-03 {
-    /* top: 42.2rem; */
+    top: 34%;
   }
     .whatido-01 b, .whatido-02 b, .whatido-03 b {
       font-size: 3rem;
@@ -333,13 +324,13 @@ section {
 @media (min-width: 1536px) {
 
 .hero {
-  /* max-width: 1536px; */
 }
   .profile-photo, .gianni-text, .aboutme {
     top: 19rem; 
   }
   .profile-photo {
     width: 14.4rem; height: 14.4rem;
+    margin-top: -4px;
   }
   .gianni-text {
     height: 780px; 
@@ -347,12 +338,13 @@ section {
   .aboutme {
     max-width: 480px; 
     padding: 0 0 0 296px;
+    margin-top: -3px;
   }
   .whatido-02 {
-    /* top: 27rem;  */
+    top: 23%;
   }
   .whatido-03 {
-    /* top: 48rem; */
+    top: 40%;
   }
 
 }
@@ -362,51 +354,37 @@ section {
 /* Leadership's section */
 
 .leadership {
-  padding-top: 3rem;
   }
 .leadership h2 {
   @apply text-6xl md:text-8xl lg:text-9xl tracking-tight;
   line-height: 62%;
-  /* font-size: 3.8rem;
-  line-height: 38px; */
 }
 .currentRole {
-  margin: 2rem 0 0;
 }
 
 
 @media (min-width: 768px) {
   .leadership {
-    padding-top: 92%;
-    }
+    margin-top: 50%;
+  }
   .leadership h2 {
     @apply max-w-xl;
-    /* font-size: 6rem;
-    line-height: 60px; */
   }
   .currentRole {
-    @apply absolute right-0;
-    top: 4rem;
-    right: 0;
-    margin: 0;
+    @apply bg-gray-50 w-full flex justify-center items-center p-4;
+    mix-blend-mode: overlay;
   }
   .currentRole div {
-    @apply bg-gray-900 rounded-full p-24 shadow-2xl;
-    mix-blend-mode: overlay;
   }
 }
 @media (min-width: 1024px) {
   .leadership {
-    padding-top: 86%;
+    margin-top: 62%;
   }
   .leadership h2 {
     @apply max-w-3xl;
-    /* font-size: 8rem;
-    line-height: 80px; */
   }
   .currentRole {
-    @apply absolute;
-    top: 9rem;
   }
   .currentRole div {
     
@@ -414,33 +392,21 @@ section {
 }
 @media (min-width: 1280px) {
   .leadership {
-    /* padding-top: 71rem; */
-  }
-  /* .leadership h2 {
-    font-size: 8rem;
-    line-height: 80px;
-  } */
-  .currentRole {
-    top: 4rem;
-    right: 5%;
-    width: 30rem;
+    margin-top: 70%;
   }
   .currentRole div {
-    @apply p-36;
   }
 }
 @media (min-width: 1536px) {
+  .leadership {
+    margin-top: 75%;
+  }
   .leadership div:first-of-type > div:first-child {
     width: 50%
   }
   .currentRole {
-    @apply relative;
-    top: 5rem;
-    right: auto;
-    width: 32rem;
   }
   .currentRole div {
-    @apply p-40;
   }
 }
 .leadership h2 {
@@ -454,7 +420,7 @@ section {
 }
 .leadership div ul {
   @apply space-y-1 text-gray-500 text-sm md:text-xs lg:text-sm mt-6;
-  padding: 1.4rem 0;
+  padding: 1.4rem 0 0;
   margin: 0;
 }
 .currentRole span {
