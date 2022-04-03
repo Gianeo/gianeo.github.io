@@ -354,12 +354,15 @@ section {
 /* Leadership's section */
 
 .leadership {
+  @apply pt-16;
   }
 .leadership h2 {
   @apply text-6xl md:text-8xl lg:text-9xl tracking-tight;
   line-height: 62%;
 }
 .currentRole {
+  @apply bg-gray-50 w-full flex justify-center items-center p-16 my-16 sm:my-0;
+  mix-blend-mode: overlay;
 }
 
 
@@ -369,10 +372,6 @@ section {
   }
   .leadership h2 {
     @apply max-w-xl;
-  }
-  .currentRole {
-    @apply bg-gray-50 w-full flex justify-center items-center p-4;
-    mix-blend-mode: overlay;
   }
 }
 @media (min-width: 1024px) {
@@ -410,9 +409,6 @@ section {
   padding: 1.4rem 0 0;
   margin: 0;
 }
-.currentRole span {
-  @apply block text-xs font-light;
-}
 .currentRole img {
   @apply h-12 mt-1.5;
   mix-blend-mode: normal;
@@ -421,9 +417,10 @@ section {
   @apply text-gray-400 text-sm md:text-xs mt-2 md:w-48;
 }
 
+
 /* Hero photo banner */
 
-.photo-banner {
+/* .photo-banner {
   @apply bg-cover bg-right h-auto text-white py-24 px-10 mt-16 object-fill;
   background-image: url(img/banner/banner01.jpg);
   }
@@ -448,7 +445,7 @@ section {
   .photo-banner {
     
   }
-}
+} */
 
 
 
