@@ -361,7 +361,7 @@ section {
   line-height: 62%;
 }
 .currentRole {
-  @apply bg-gray-50 w-full flex justify-center items-center p-16 my-16 sm:my-0;
+  @apply bg-gray-50 w-full flex justify-center items-center p-16 mt-12 mb-4 sm:my-0;
   mix-blend-mode: overlay;
 }
 
