@@ -73,7 +73,7 @@ header div:first-child {
   @apply space-x-8;
 }
   header div:first-child a {
-    @apply text-sm pb-2 text-gray-500;
+    @apply text-sm pb-2 text-gray-500 hidden lg:inline;
   }
   header div:first-child a.active {
     @apply text-gray-900 border-b-2 border-b-accent;
@@ -522,8 +522,8 @@ body#template h4 {
 body#template h5 {
     @apply text-gray-800 font-bold tracking-tight pt-4;
 }
-body#template p, body#template ul li {
-    @apply text-gray-500 leading-6 antialiased md:max-w-lg lg:max-w-md;
+body#template section p, body#template ul li {
+    @apply text-base text-gray-500 leading-6 antialiased md:max-w-lg lg:max-w-md;
 }
 
 body#template ul.default-list {
@@ -660,7 +660,10 @@ div.copy-columns {
 }
 
 .references {
-  @apply md:columns-2 lg:columns-3 gap-16 pt-8 pb-24 space-y-20;
+  @apply md:columns-2 lg:columns-3 md:gap-16 lg:gap-24 pt-8 pb-24 space-y-20;
+}
+.references.noColumns {
+  @apply sm:columns-2;
 }
     .references blockquote {
       @apply md:flex-grow md:flex md:flex-col break-inside-avoid relative space-y-8;
@@ -676,7 +679,7 @@ div.copy-columns {
         @apply flex items-start space-x-4 mt-8;
       }
         .references blockquote .footer img {
-          @apply w-10 h-10 rounded-full;
+          @apply w-10 h-10 rounded;
         }
         .references blockquote .footer div {
           @apply space-y-0;
