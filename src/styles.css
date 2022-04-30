@@ -96,18 +96,28 @@ header div:last-child {
 
 main {
   @apply mx-auto;
-  max-width: 1536px;
+  /* max-width: 1536px; */
 }
   
 /* Section */
   
 section {
   @apply bg-cover bg-no-repeat bg-fixed;
-  background-image: url(img/bgblur.png);
-  padding: 6vw;
+  /* background-image: url(img/bgblur.png); */
+  padding: 6vw 0;
+} section.dark {
+  /* background-image: url(img/bgblur-black.png); */
+}
+section .container {
+  @apply mx-auto;
+  max-width: 1536px;
+  padding: 0 6vw;
 }
   section div, section img {
     mix-blend-mode: multiply;
+  }
+  section.dark div, section img {
+    mix-blend-mode: normal;
   }
 
 
@@ -119,6 +129,7 @@ section {
   background-attachment: scroll;
   background-size: 100%;
   background-position: center 4rem;
+  margin: 6vw;
   padding-top: 25rem;
 }
 .hero h3 {
@@ -718,10 +729,10 @@ section h2.h-section {
     @apply border-r-gray-100;
   }
   .project main {
-    @apply sm:flex gap-8 mx-auto;
+    @apply sm:flex gap-8 mx-auto relative;
   }
     .project main div.image {
-      @apply sm:w-1/2 lg:w-2/3 xl:w-3/4 p-8 mb-4 sm:mb-0;
+      @apply w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 p-8 mb-4 sm:mb-0;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
@@ -762,6 +773,52 @@ section h2.h-section {
   .project div.code-decoration span {
     @apply text-gray-400 text-xxs;
   }
+
+/* Dark mode */
+section.dark {
+  @apply bg-gray-900;
+  /* clip-path: polygon(0 24%, 100% 0, 100% 80%, 0 100%);
+  margin-top: -42rem;
+  padding-top: 42rem; */
+}
+h2.h-section span {
+  background: #1F2938;
+  background: -webkit-linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
+  background: -moz-linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
+  background: linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section.dark .project h1 {
+  @apply text-gray-700 border-l-gray-700 border-r-accent;
+} 
+section.dark .project.reverse h1 {
+  @apply border-r-gray-800;
+}
+section.dark .project main div.desc div:first-of-type time {
+  @apply text-gray-500;
+}
+section.dark .project main div.desc div:first-of-type h2 {
+  @apply text-gray-100;
+}
+section.dark .project main div.desc div:first-of-type h3 {
+  @apply text-gray-300;
+}
+section.dark .project main div.desc {
+  @apply text-gray-50;
+}
+section.dark .project main div.desc div:last-of-type a {
+  @apply bg-accent text-gray-900;
+}
+section.dark .project main div.image {
+  @apply bg-gray-900 border border-gray-700;
+}
+.project div.code-decoration span {
+  @apply text-gray-500;
+}
+.project div.code-decoration svg {
+  @apply bg-gray-800;
+}
 
 .transformation-box {
   @apply max-w-xl;
