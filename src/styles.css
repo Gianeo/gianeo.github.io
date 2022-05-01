@@ -123,11 +123,11 @@ section {
     margin-bottom: -18rem;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1536px) {
   section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
-    margin-bottom: -18rem;
+    margin-bottom: -20rem;
   }
 }
 
@@ -338,7 +338,7 @@ section .container {
   height: 1540px;
 }
   .profile-photo, .gianni-text, .aboutme {
-    top: 19rem; 
+    top: 28rem; 
   }
   .profile-photo {
     width: 14.4rem; height: 14.4rem;
@@ -348,15 +348,30 @@ section .container {
     height: 780px; 
   }
   .aboutme {
-    max-width: 480px; 
+    max-width: 510px; 
     padding: 0 0 0 296px;
     margin-top: -3px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .whatido-01 {
+    top: 6rem;
   }
   .whatido-02 {
-    top: 23%;
+    top: 32.6rem;
   }
   .whatido-03 {
-    top: 40%;
+    top: 52rem;
+  }
+  .whatido-01, .whatido-02, .whatido-03 {
+    max-width: 340px;
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+  .whatido-01 b, .whatido-02 b, .whatido-03 b {
+    max-width: 340px;
+    font-size: 3.6rem;
+    line-height: 36px;
   }
 
 }
@@ -377,16 +392,22 @@ section .container {
   mix-blend-mode: overlay;
 }
 .currentRole div {
-  @apply bg-gray-100 p-32 rounded-full;
+  /* @apply bg-gray-100 p-32 rounded-full; */
   mix-blend-mode: overlay;
 }
 
 
 @media (min-width: 768px) {
   .leadership {
+    @apply relative;
   }
   .leadership h2 {
     @apply max-w-xl;
+  }
+  .currentRole {
+    @apply absolute right-0 w-auto;
+    top: 140px;
+    padding: 3rem 3.2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -396,10 +417,19 @@ section .container {
   .leadership h2 {
     @apply max-w-3xl;
   }
+  .currentRole {
+    padding: 8rem;
+  }
 }
 @media (min-width: 1280px) {
   .leadership {
     /* margin-top: -394px; */
+  }
+  .currentRole {
+    @apply p-12
+  }
+  .currentRole div {
+    @apply p-20;
   }
 }
 @media (min-width: 1536px) {
@@ -408,6 +438,12 @@ section .container {
   }
   .leadership div:first-of-type > div:first-child {
     width: 50%
+  }
+  .currentRole {
+    @apply relative w-full top-0;
+  }
+  .currentRole div {
+    @apply bg-gray-100 p-48;
   }
 }
 .leadership h2 {
