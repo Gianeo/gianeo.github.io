@@ -109,6 +109,10 @@ section {
   /* background-image: url(img/bgblur-black.png); */
 }
 
+section:first-of-type  {
+  padding-top: 4.5rem;
+  height: 1124px;
+}
 @media (min-width: 768px) {
   section:first-of-type  {
     padding-top: 6rem;
@@ -147,13 +151,15 @@ section .container {
 /* Hero section */
 
 .hero {
-  @apply bg-no-repeat;
+  @apply container bg-no-repeat;
   background-image: url(img/largetxt.svg);
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
   /* margin: 6vw; */
   padding-top: 25rem;
+  height: 425px;
+  max-width: 425px;
 }
 .hero h3 {
   font-size: 2.25rem;
@@ -162,7 +168,7 @@ section .container {
 .hero .fullname {
   position: absolute;
   margin: auto;
-  top: 21.8rem; left: 50%;
+  top: 11.4rem; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
   mix-blend-mode: multiply;
@@ -176,7 +182,7 @@ section .container {
   position: absolute;
   width: 10rem; height: 10rem;
   margin: auto;
-  top: 12%; left: 50%;
+  top: 4.2rem; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   mix-blend-mode: multiply;
@@ -184,14 +190,14 @@ section .container {
 }
 .gianni-text {
   position: absolute;
-  height: 400px; 
-  top: 15.5rem; left: 50%;
+  height: 460px; 
+  top: 10rem; left: 50%;
   transform: translate(-54%, -50%);
 }
 .aboutme {
   @apply text-gray-500 text-sm md:text-xs lg:text-sm;
   position: relative;
-  padding: 2rem 0;
+  padding: 26.5rem 0 2rem;
   margin: 3.5rem 0 0;
   max-width: 23rem;
   z-index: 1000;
@@ -217,9 +223,8 @@ section .container {
 @media (min-width: 768px) {
 
 .hero {
-  @apply container;
   height: 770px;
-  /* background-size: 90%; */
+  padding-top: 25rem;
 }
 .hero h3 {
   font-size: 3rem;
@@ -393,7 +398,6 @@ section .container {
 }
 .currentRole div {
   /* @apply bg-gray-100 p-32 rounded-full; */
-  @apply shadow-xl;
   mix-blend-mode: overlay;
 }
 
@@ -410,7 +414,7 @@ section .container {
     top: 140px;
   }
   .currentRole div {
-    @apply p-8;
+    @apply p-8 shadow-xl;
   }
 }
 @media (min-width: 1024px) {
@@ -440,7 +444,7 @@ section .container {
     width: 50%
   }
   .currentRole {
-    @apply relative w-full top-0;
+    @apply relative w-full top-0 p-12;
   }
   .currentRole div {
     @apply p-48;
