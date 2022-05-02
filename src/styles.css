@@ -118,6 +118,7 @@ section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
     margin-bottom: -16rem;
+    height: auto;
   }
 }
 @media (min-width: 1024px) {
@@ -151,13 +152,12 @@ section .container {
 /* Hero section */
 
 .hero {
-  @apply container bg-no-repeat;
+  @apply bg-no-repeat mx-auto px-8;
   background-image: url(img/largetxt.svg);
   background-attachment: scroll;
   background-size: cover;
   background-position: center;
-  /* margin: 6vw; */
-  padding-top: 25rem;
+  padding-top: 2rem;
   height: 425px;
   max-width: 425px;
 }
@@ -223,6 +223,7 @@ section .container {
 @media (min-width: 768px) {
 
 .hero {
+  @apply container;
   height: 770px;
   padding-top: 25rem;
 }
