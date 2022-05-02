@@ -393,6 +393,7 @@ section .container {
 }
 .currentRole div {
   /* @apply bg-gray-100 p-32 rounded-full; */
+  @apply shadow-xl;
   mix-blend-mode: overlay;
 }
 
@@ -405,9 +406,11 @@ section .container {
     @apply max-w-xl;
   }
   .currentRole {
-    @apply absolute right-0 w-auto;
+    @apply absolute right-0 p-4 w-auto;
     top: 140px;
-    padding: 3rem 3.2rem;
+  }
+  .currentRole div {
+    @apply p-8;
   }
 }
 @media (min-width: 1024px) {
@@ -418,18 +421,15 @@ section .container {
     @apply max-w-3xl;
   }
   .currentRole {
-    padding: 8rem;
+    @apply p-20;
+  }
+  .currentRole div {
+    @apply p-12;
   }
 }
 @media (min-width: 1280px) {
   .leadership {
     /* margin-top: -394px; */
-  }
-  .currentRole {
-    @apply p-12
-  }
-  .currentRole div {
-    @apply p-20;
   }
 }
 @media (min-width: 1536px) {
@@ -443,7 +443,7 @@ section .container {
     @apply relative w-full top-0;
   }
   .currentRole div {
-    @apply bg-gray-100 p-48;
+    @apply p-48;
   }
 }
 .leadership h2 {
