@@ -892,7 +892,6 @@ footer {
   } 
 
 
-
 .img-top-left-cut {
   background: rgb(75,85,99);
   background: linear-gradient(160deg, rgba(41,246,255,1) 25%, rgba(255,255,255,.15) 25%);
@@ -900,4 +899,23 @@ footer {
 .img-bottom-right-cut {
   background: rgb(75,85,99);
   background: linear-gradient(160deg, rgba(255,255,255,1) 75%, rgba(42,246,255,1) 75%);
+}
+
+/* my photo */
+.photoOne  {
+  @apply absolute w-full sm:w-auto md:h-72 lg:h-96 xl:h-auto -top-24 lg:-top-24 xl:-top-48;
+  mix-blend-mode: color-dodge;
+}
+@media (min-width: 768px) {
+  .photoOne  {
+    right: 12%;
+  }
+}
+@media (min-width: 1024px) {
+  .photoOne   {
+  }
+}
+@media (min-width: 1536px) {
+  .photoOne   {
+  }
 }
