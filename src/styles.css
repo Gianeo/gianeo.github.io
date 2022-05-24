@@ -105,9 +105,7 @@ section {
   @apply bg-cover bg-no-repeat bg-fixed;
   /* background-image: url(img/bgblur.png); */
   padding: 8rem 0;
-} section.dark {
-  /* background-image: url(img/bgblur-black.png); */
-}
+} 
 
 section:first-of-type  {
   padding-top: 4.5rem;
@@ -144,7 +142,7 @@ section .container {
   section div, section img {
     mix-blend-mode: multiply;
   }
-  section.dark div, section img {
+  .dark div, section img {
     mix-blend-mode: normal;
   }
 
@@ -750,7 +748,7 @@ div.copy-columns {
 
 
 section h2.h-section {
-  @apply w-full text-5xl md:text-7xl lg:text-8xl text-gray-800 tracking-tight font-extrabold uppercase newFont mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
+  @apply w-full text-5xl md:text-7xl lg:text-8xl text-gray-50 tracking-tight font-extrabold uppercase newFont mb-16 md:mb-24 xl:mb-32 border-r border-r-gray-800;
   line-height: 62%;
   }
   section h2.h-section span {
@@ -761,8 +759,8 @@ section h2.h-section {
 /* Home Projects */
 
 .project {
-  @apply relative;
-  padding: 0 0 0.5vw;
+  @apply relative bg-gray-900;
+  /* padding: 0 0 0.5vw; */
 }
   .project h1 {
     @apply text-gray-200 text-xl tracking-tight leading-none mt-8 mb-8 pl-1 border-l-gray-100 border-r-accent;
@@ -786,7 +784,7 @@ section h2.h-section {
         @apply w-full;
       }
     .project main div.desc {
-      @apply sm:w-1/2 lg:w-1/3 xl:w-1/4 space-y-4 block space-x-0 text-sm text-gray-500 mb-12;
+      @apply sm:w-1/2 lg:w-1/3 xl:w-1/4 space-y-4 block space-x-0 text-sm text-gray-500;
     }
     .project main div.desc div:first-of-type {
       @apply w-full text-gray-700 space-y-2;
@@ -820,42 +818,42 @@ section h2.h-section {
   }
 
 /* Dark mode */
-section.dark {
+div.dark {
   @apply bg-gray-900;
   /* clip-path: polygon(0 24%, 100% 0, 100% 80%, 0 100%);
   margin-top: -42rem;
   padding-top: 42rem; */
 }
 h2.h-section span {
-  background: #1F2938;
+  /* background: #1F2938;
   background: -webkit-linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
   background: -moz-linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
   background: linear-gradient(to top right, #6A7380 40%, #1F2938 40%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
-section.dark .project h1 {
+.dark .project h1 {
   @apply text-gray-700 border-l-gray-700 border-r-accent;
 } 
-section.dark .project.reverse h1 {
+.dark .project.reverse h1 {
   @apply border-r-gray-800;
 }
-section.dark .project main div.desc div:first-of-type time {
+.dark .project main div.desc div:first-of-type time {
   @apply text-gray-500;
 }
-section.dark .project main div.desc div:first-of-type h2 {
+.dark .project main div.desc div:first-of-type h2 {
   @apply text-gray-100;
 }
-section.dark .project main div.desc div:first-of-type h3 {
+.dark .project main div.desc div:first-of-type h3 {
   @apply text-gray-300;
 }
-section.dark .project main div.desc {
+.dark .project main div.desc {
   @apply text-gray-50;
 }
-section.dark .project main div.desc div:last-of-type a {
+.dark .project main div.desc div:last-of-type a {
   @apply bg-accent text-gray-900;
 }
-section.dark .project main div.image {
+.dark .project main div.image {
   @apply bg-gray-900 border border-gray-700;
 }
 .project div.code-decoration span {
@@ -903,16 +901,16 @@ footer {
 
 /* my photo */
 .photoOne  {
-  @apply absolute w-full sm:w-auto md:h-72 lg:h-96 xl:h-auto -top-24 lg:-top-24 xl:-top-48;
+  @apply w-full sm:w-auto md:h-72 lg:h-96 xl:h-auto -mt-40 lg:-mt-96 pt-8;
   mix-blend-mode: color-dodge;
 }
 @media (min-width: 768px) {
   .photoOne  {
-    right: 12%;
   }
 }
 @media (min-width: 1024px) {
   .photoOne   {
+    right: 12%;
   }
 }
 @media (min-width: 1536px) {
