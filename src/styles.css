@@ -230,7 +230,7 @@ section .container {
     @apply block;
   }
   .whatido-01 span span, .whatido-02 span span, .whatido-03 span span {
-    @apply inline;
+    @apply inline md:block;
   }
 
 
