@@ -427,11 +427,11 @@ section .container {
     @apply max-w-xl pt-0;
   }
   .currentRole {
-    @apply absolute right-6 my-0 p-0 w-auto z-50;
+    @apply my-0 p-0 w-auto;
     top: 140px;
   }
   .currentRole div {
-    padding: 2.8rem 2rem 2rem 5.5rem;
+    padding: 2.8rem 2rem 2rem 4.18rem;
   }
 }
 @media (min-width: 1024px) {
@@ -442,7 +442,7 @@ section .container {
     @apply max-w-3xl;
   }
   .currentRole div {
-    padding: 8rem 6.5rem;
+    padding: 3rem 6.5rem 0;
   }
 }
 /* @media (min-width: 1280px) {
@@ -459,7 +459,7 @@ section .container {
     @apply relative w-full top-0 p-12;
   }
   .currentRole div {
-    @apply p-48;
+    padding: 3rem 0 0;
   }
 }
 .leadership h2 {
@@ -767,6 +767,9 @@ section h2.h-section {
   section h2.h-section span {
     @apply md:block md:max-w-md lg:max-w-xl;
     }
+  section .dark h2.h-section {
+      @apply mb-0 md:mb-8 lg:mb-24;
+      }
 
 
 /* Home Projects */
