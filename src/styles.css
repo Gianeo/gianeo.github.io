@@ -420,8 +420,9 @@ section .container {
 
 
 @media (min-width: 768px) {
-  .leadership {
+  section .leadership {
     @apply relative max-w-3xl;
+    padding: 6rem 2rem 4rem;
   }
   .leadership h2 {
     @apply max-w-xl pt-0;
@@ -436,7 +437,7 @@ section .container {
 }
 @media (min-width: 1024px) {
   .leadership {
-    @apply relative max-w-5xl;
+    @apply relative;
   }
   .leadership h2 {
     @apply max-w-3xl;
@@ -448,9 +449,10 @@ section .container {
 /* @media (min-width: 1280px) {
 } */
 @media (min-width: 1536px) {
-  .leadership {
+  section .leadership {
     @apply relative;
     max-width: 1540px;
+    padding: 9rem 2rem 4rem;
   }
   .leadership div:first-of-type > div:first-child {
     width: 50%
