@@ -403,7 +403,6 @@ section .container {
 
 .leadership {
   @apply container mx-auto;
-  max-width: 26.5rem;
   }
 .leadership h2 {
   @apply text-6xl md:text-8xl lg:text-9xl tracking-tight pt-12;
@@ -421,7 +420,7 @@ section .container {
 
 @media (min-width: 768px) {
   section .leadership {
-    @apply relative max-w-3xl;
+    @apply relative;
     padding: 6rem 2rem 4rem;
   }
   .leadership h2 {
