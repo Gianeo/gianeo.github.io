@@ -107,27 +107,27 @@ section {
   padding: 8rem 0;
 } 
 
-section:first-of-type  {
+#home section:first-of-type  {
   padding-top: 4.5rem;
   height: 1124px;
 }
-section:nth-of-type(2)  {
+#home section:nth-of-type(2)  {
   padding-top: 5rem;
 }
 @media (min-width: 395px) {
-  section:nth-of-type(2)  {
+  #home section:nth-of-type(2)  {
     padding-top: 0;
     @apply -mt-8;
   }
 }
 @media (min-width: 768px) {
-  section:nth-of-type(2)  {
+  #home section:nth-of-type(2)  {
     padding-top: 8rem;
     @apply mt-0;
   }
 }
 @media (min-width: 768px) {
-  section:first-of-type  {
+  #home section:first-of-type  {
     padding-top: 4rem;
     padding-bottom: 0;
     margin-bottom: -16rem;
@@ -135,14 +135,14 @@ section:nth-of-type(2)  {
   }
 }
 @media (min-width: 1024px) {
-  section:first-of-type  {
+  #home section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
     margin-bottom: -18rem;
   }
 }
 @media (min-width: 1536px) {
-  section:first-of-type  {
+  #home section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
     margin-bottom: -20rem;
@@ -157,7 +157,7 @@ section .container {
   section div, section img {
     mix-blend-mode: multiply;
   }
-  .dark div, section img {
+  .dark div, section .dark img {
     mix-blend-mode: normal;
   }
 
@@ -435,8 +435,9 @@ section .container {
   }
 }
 @media (min-width: 1024px) {
-  .leadership {
+  section .leadership {
     @apply relative;
+    padding: 7rem 2rem 4rem;
   }
   .leadership h2 {
     @apply max-w-3xl;
