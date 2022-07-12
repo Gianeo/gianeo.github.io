@@ -410,11 +410,9 @@ section .container {
 }
 .currentRole {
   @apply w-full flex justify-center items-center px-0 py-16;
-  mix-blend-mode: overlay;
 }
 .currentRole div {
   @apply rounded-full;
-  mix-blend-mode: overlay;
 }
 
 
