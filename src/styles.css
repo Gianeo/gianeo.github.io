@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  .bg-gray-900 {
+    background-color: #111521;
+  }
+
   .newFont {
     font-family: 'Alumni Sans', sans-serif;
   }
@@ -130,7 +134,7 @@ section {
   #home section:first-of-type  {
     padding-top: 4rem;
     padding-bottom: 0;
-    margin-bottom: -16rem;
+    /* margin-bottom: -16rem; */
     height: auto;
   }
 }
@@ -138,14 +142,14 @@ section {
   #home section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
-    margin-bottom: -18rem;
+    /* margin-bottom: -18rem; */
   }
 }
 @media (min-width: 1536px) {
   #home section:first-of-type  {
     padding-top: 6rem;
     padding-bottom: 0;
-    margin-bottom: -20rem;
+    /* margin-bottom: -20rem; */
   }
 }
 
@@ -169,7 +173,7 @@ section .container {
   background-image: url(img/largetxt.svg);
   background-attachment: scroll;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   padding-top: 2rem;
   height: 425px;
   max-width: 425px;
@@ -215,6 +219,14 @@ section .container {
   max-width: 23rem;
   z-index: 1000;
 }
+.whatido-list {
+  @apply text-xs font-normal text-gray-400 text-right;
+  position: relative;
+  padding: 26.5rem 0 2rem;
+  margin: 3.5rem 0 0;
+  max-width: 23rem;
+  z-index: 1000;
+}
 .whatido-01, .whatido-02, .whatido-03 {
   @apply text-sm md:text-xs md:leading-tight text-gray-500 md:text-gray-500 max-w-md;
   max-width: 22rem;
@@ -239,7 +251,7 @@ section .container {
 
 .hero {
   @apply container;
-  height: 770px;
+  height: 702px;
   padding-top: 25rem;
 }
 .hero h3 {
@@ -250,7 +262,7 @@ section .container {
   display: none;
 }
   .profile-photo, .gianni-text, .aboutme {
-    top: 12rem; left: 36%;
+    top: 12.2rem; left: 36%;
   }
   .profile-photo {
     width: 8rem; height: 8rem;
@@ -267,6 +279,12 @@ section .container {
     padding: 0 0 0 172px;
     margin: 0;
   }
+  .whatido-list {
+    position: absolute;
+    text-align: right;
+    top: -1.5rem;
+    left: 14.5%;
+  }
   .whatido-01, .whatido-02, .whatido-03 {
     position: absolute;
     max-width: 13.2rem;
@@ -274,13 +292,13 @@ section .container {
     margin: 0;
   }
   .whatido-01 {
-    top: 0.5rem; left: 36%;
+    top: 2rem; left: 36%;
   }
   .whatido-02 {
-    top: 14.5rem; left: 0;
+    top: 14.5rem; left: 4%;
   }
   .whatido-03 {
-    top: 26.5rem; right: 0;
+    top: 26.5rem; right: 2%;
   }
   .whatido-01 b, .whatido-02 b, .whatido-03 b {
     max-width: 20rem;
@@ -309,20 +327,24 @@ section .container {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .designer-subtract {
+    @apply mx-auto opacity-20 px-2;
+    max-width: 768px;
+  }
 
 }
 
 @media (min-width: 1024px) {
 
 .hero {
-  height: 1020px;
+  height: 936px;
 }
 .hero h2 {
   @apply text-6xl;
   line-height: 60px;
 }
 .profile-photo, .gianni-text, .aboutme {
-  top: 16rem; 
+  top: 16.25rem; 
 }
   .profile-photo {
     width: 10.2rem; height: 10.2rem;
@@ -334,6 +356,10 @@ section .container {
     max-width: 404px; 
     padding: 0 0 0 220px;
   }
+  .whatido-list {
+    top: 9.8rem;
+    left: 12%;
+  }
   .whatido-01, .whatido-02, .whatido-03 {
     max-width: 18rem;
   }
@@ -341,7 +367,7 @@ section .container {
     top: 2.5rem; left: 36%;
   }
   .whatido-02 {
-    top: 21.2rem;
+    top: 22.08rem;
   }
   .whatido-03 {
     top: 37rem;
@@ -350,16 +376,19 @@ section .container {
     font-size: 3rem;
     line-height: 32px;
   }
+  .designer-subtract {
+    max-width: 1024px;
+  }
 
 }
 
 @media (min-width: 1536px) {
 
 .hero {
-  height: 1540px;
+  height: 1405px;
 }
   .profile-photo, .gianni-text, .aboutme {
-    top: 28rem; 
+    top: 24.5rem; 
   }
   .profile-photo {
     width: 14.4rem; height: 14.4rem;
@@ -375,6 +404,10 @@ section .container {
     font-size: 1rem;
     line-height: 1.3rem;
   }
+  .whatido-list {
+    top: 34.5rem;
+    left: 21%;
+  }
   .whatido-01 {
     top: 6rem;
   }
@@ -382,7 +415,7 @@ section .container {
     top: 32.6rem;
   }
   .whatido-03 {
-    top: 52rem;
+    top: 50rem;
   }
   .whatido-01, .whatido-02, .whatido-03 {
     max-width: 340px;
@@ -393,6 +426,9 @@ section .container {
     max-width: 340px;
     font-size: 3.6rem;
     line-height: 36px;
+  }
+  .designer-subtract {
+    max-width: 1536px;
   }
 
 }
@@ -419,55 +455,44 @@ section .container {
 @media (min-width: 768px) {
   section .leadership {
     @apply relative;
-    padding: 6rem 2rem 4rem;
+    padding: 4rem 0 6rem;
   }
   .leadership h2 {
-    @apply max-w-xl pt-0;
+    @apply m-0 p-0;
+    font-size: 10rem;
+    max-width: 46rem;
+    mix-blend-mode: multiply;
   }
   .currentRole {
-    @apply my-0 p-0 w-auto;
-    top: 140px;
+    @apply absolute -bottom-48 right-8 bg-white rounded-full shadow-lg;
+    width: 24rem; height: 24rem;
   }
   .currentRole div {
-    padding: 2.8rem 2rem 2rem 4.18rem;
+    @apply p-16;
   }
 }
-@media (min-width: 1024px) {
-  section .leadership {
-    @apply relative;
-    padding: 7rem 2rem 4rem;
-  }
-  .leadership h2 {
-    @apply max-w-3xl;
-  }
-  .currentRole div {
-    padding: 3rem 6.5rem 0;
-  }
-}
+
 /* @media (min-width: 1280px) {
 } */
 @media (min-width: 1536px) {
   section .leadership {
-    @apply relative;
-    max-width: 1540px;
-    padding: 9rem 2rem 4rem;
+    @apply relative py-24;
+    max-width: 1536px;
   }
   .leadership div:first-of-type > div:first-child {
     width: 50%
   }
   .currentRole {
-    @apply relative w-full top-0 p-12;
-  }
-  .currentRole div {
-    padding: 3rem 0 0;
+    @apply right-16;
+    width: 26rem; height: 26rem;
   }
 }
 .leadership h2 {
   @apply text-gray-800 tracking-tight font-extrabold uppercase newFont;
   background: #1F2938;
-  background: -webkit-linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
-  background: -moz-linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
-  background: linear-gradient(to top right, #1F2938 50%, #2AF6FF 50%);
+  background: -webkit-linear-gradient(to top right, #eee 50%, #2AF6FF 50%);
+  background: -moz-linear-gradient(to top right, #eee 50%, #2AF6FF 50%);
+  background: linear-gradient(to top right, #eee 50%, #2AF6FF 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -475,10 +500,6 @@ section .container {
   @apply space-y-1 text-gray-500 text-sm md:text-xs lg:text-sm mt-6;
   padding: 1.4rem 0 0;
   margin: 0;
-}
-.currentRole img {
-  @apply h-12 mt-1.5;
-  mix-blend-mode: normal;
 }
 .currentRole p:last-of-type {
   @apply text-gray-400 text-sm md:text-xs mt-2 md:w-48;
