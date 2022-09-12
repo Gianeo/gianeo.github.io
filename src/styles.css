@@ -108,48 +108,47 @@ main {
 section {
   @apply bg-cover bg-no-repeat bg-fixed;
   /* background-image: url(img/bgblur.png); */
-  padding: 8rem 0;
+  padding: 4rem 0;
 } 
 
-#home section:first-of-type  {
-  padding-top: 4.5rem;
-  height: 1124px;
+#home section.intro  {
+  padding: 6rem 0 0;
 }
-#home section:nth-of-type(2)  {
-  padding-top: 5rem;
+#home section.currently  {
+  padding: 0;
 }
 @media (min-width: 395px) {
-  #home section:nth-of-type(2)  {
+  #home section.currently  {
     padding-top: 0;
     @apply -mt-8;
   }
 }
 @media (min-width: 768px) {
-  #home section:nth-of-type(2)  {
-    padding-top: 8rem;
-    @apply mt-0;
-  }
-}
-@media (min-width: 768px) {
-  #home section:first-of-type  {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    /* margin-bottom: -16rem; */
+  #home section.intro  {
+    @apply z-50 bg-center;
+    background-image: url(img/me/me01-blur.jpg);
+    background-position: -25rem;
+    padding: 4rem 0;
     height: auto;
+  }
+  #home section.currently  {
+    @apply relative m-0 p-0 z-40;
+    background-image: url(img/me/me01.jpg);
+    background-position: -25rem;
   }
 }
 @media (min-width: 1024px) {
-  #home section:first-of-type  {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    /* margin-bottom: -18rem; */
+  #home section.intro  {
+    background-position: center;
+    padding: 6rem 0;
+  }
+  #home section.currently  {
+    background-position: center;
   }
 }
 @media (min-width: 1536px) {
-  #home section:first-of-type  {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    /* margin-bottom: -20rem; */
+  #home section.intro  {
+    padding: 6rem 0;
   }
 }
 
@@ -185,7 +184,7 @@ section .container {
 .hero .fullname {
   position: absolute;
   margin: auto;
-  top: 11.4rem; left: 50%;
+  top: 15.5rem; left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
   mix-blend-mode: multiply;
@@ -194,6 +193,15 @@ section .container {
 }
   .hero .fullname h1 {
     letter-spacing: 0.5rem;
+  }
+  .hero .fullname h2 {
+    @apply text-gray-800 tracking-tight font-extrabold uppercase newFont text-6xl;
+    line-height: 62%;
+  }
+  .hero .fullname h2 span {
+    @apply tracking-normal font-normal lowercase text-xs block;
+    font-family: 'Roboto', sans-serif;
+    line-height: 200%;
   }
 .profile-photo {
   position: absolute;
@@ -208,7 +216,7 @@ section .container {
 .gianni-text {
   position: absolute;
   height: 460px; 
-  top: 10rem; left: 50%;
+  top: 13rem; left: 50%;
   transform: translate(-54%, -50%);
 }
 .aboutme {
@@ -451,14 +459,14 @@ section .container {
     padding: 4rem 0 6rem;
   }
   .leadership h2 {
-    @apply m-0 p-0;
-    font-size: 10rem;
-    max-width: 46rem;
+    @apply m-0 p-0  mx-auto;
+    font-size: 8rem;
+    max-width: 37rem;
     mix-blend-mode: multiply;
   }
   .currentRole {
     @apply absolute -bottom-48 right-8 bg-white rounded-full shadow-lg;
-    width: 24rem; height: 24rem;
+    width: 22rem; height: 22rem;
   }
   .currentRole div {
     @apply p-16;

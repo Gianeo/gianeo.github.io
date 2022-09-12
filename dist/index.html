@@ -68,8 +68,62 @@
 
 <main class="mx-auto">
 
+<!-- Hero Mobile -->
+<section class="intro sm:hidden">
+  <div class="hero relative">
+  
+    <div class="fullname space-y-8">
+      <h1 class="font-normal text-sm text-gray-800">Gianni J. Favaretto</h1>
+      <h2>Design <br>Leadership <span>in Tech-Savvy Organisations</span></h2>
+    </div>
+
+    <img src="img/profile.png" class="rounded-full profile-photo" alt="Gianni's face">
+    <img src="img/gianni.svg" class="gianni-text" style="mix-blend-mode: multiply;" alt="Gianni">
+
+  </div>
+  <div class="p-8 space-y-4">
+
+    <p class="hidden">I'm a British boy that grew up in the heart of the Italian Renaissance region, joined the Navy, converted into a missionary, moved to the US to grasp Computer Science and Design. Ever since, I have passionately spent countless time on my craft to become inadvertently decent at connecting dots and pixels.</p>
+
+    <div class="space-y-8">
+
+      <p class="text-lg leading-snug">
+        <span>With lived and breathed military and sports principles 
+        <b class="text-gray-600">I set up and coach individuals</b> 
+        to efficiently perform at their best in any team setting.
+      </p>
+
+      <p class="text-lg leading-snug">
+        Strategically, 
+        <b class="text-gray-600">I instil and level up design standards</b> 
+        to humanise technology and business complexities.
+      </p>
+
+      <p class="text-lg leading-snug">
+        <b class="text-gray-600">I facilitate multidisciplinary collaboration</b> 
+        while fostering creative and critical thinking regardless of the players' background and function.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Current role Mobile -->
+<section class="currently sm:hidden">
+    <div class="p-8">
+      <p class="text-sm text-gray-400">Currently</p> 
+      <h4 class="text-base text-gray-700 italic">Director of Design</h4>
+      <img src="img/logos/chargebee.svg" class="my-2" alt="Chargebee logo">
+      <p>Chargebee is a SaaS product company. We build subscription and billing software. We power some of the fastest growing SaaS and subscription-based companies in the world.</p>
+    </div>
+
+  <img src="img/me/me01.jpg" class="" style="mix-blend-mode: normal;">
+
+</section>
+
 <!-- Hero -->
-<section class="z-50 bg-center" style="background-image: url(img/me/me01-blur.jpg);">
+<section class="intro hidden sm:block">
   <div class="hero relative">
   
     <div class="fullname">
@@ -115,14 +169,8 @@
   </div>
 </section>
 
-<section class="relative m-0 p-0 z-40 bg-center" style="background-image: url(img/me/me01.jpg); padding-top: 0;">
-
-  <!-- <svg class="-mb-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,224L40,218.7C80,213,160,203,240,176C320,149,400,107,480,85.3C560,64,640,64,720,96C800,128,880,192,960,202.7C1040,213,1120,171,1200,149.3C1280,128,1360,128,1400,128L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg> -->
-
-  <!-- <svg class="designer-subtract" viewBox="0 0 1108 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M955.326 0H1082.96C1084.75 3.57267 1086.33 8.06534 1087.68 13.478L1107.8 92.426H1039.31L1026.15 17.348C1025.63 13.736 1024.99 10.769 1024.21 8.44702C1023.7 5.86702 1023.18 3.93201 1022.66 2.64201C1022.15 1.35201 1021.5 0.707016 1020.73 0.707016H1019.57V92.426H955.326V0ZM828.342 0H892.584V50.63H939.024V92.426H828.342V0ZM588.036 0H657.309V92.426H610.869L607.773 77.72C605.967 81.59 602.097 85.718 596.163 90.104C590.229 94.232 581.199 96.296 569.073 96.296C561.075 96.296 553.206 94.877 545.466 92.039C537.984 88.943 531.663 82.88 526.503 73.85C521.601 64.82 519.15 51.533 519.15 33.989V0H580.683V49.856C580.683 52.694 581.07 55.016 581.844 56.822C582.618 58.628 583.65 59.918 584.94 60.692C586.23 61.208 587.649 61.466 589.197 61.466C591.777 61.466 593.841 60.692 595.389 59.144C596.937 57.338 597.711 54.242 597.711 49.856V6.51201H588.036V0ZM440.208 0H501.741V92.426H440.208V0ZM324.719 0H422.714C424.244 7.04268 425.009 15.7924 425.009 26.249C425.009 43.535 422.042 57.338 416.108 67.658C410.174 77.72 401.66 84.944 390.566 89.33C379.472 93.458 366.185 95.522 350.705 95.522C335.483 95.522 322.454 93.716 311.618 90.104C301.04 86.234 292.913 79.397 287.237 69.593C281.819 59.531 279.11 45.341 279.11 27.023V12.704H311.231H343.739V32.441C343.739 39.407 343.997 44.696 344.513 48.308C345.287 51.662 346.19 53.984 347.222 55.274C348.512 56.306 350.06 56.822 351.866 56.822C354.704 56.822 356.639 55.532 357.671 52.952C358.961 50.114 359.606 44.309 359.606 35.537C359.606 27.281 358.316 21.218 355.736 17.348C353.156 13.478 348.77 10.253 342.578 7.67302C337.956 5.66328 332.003 3.1056 324.719 0ZM156.383 0H220.625V50.63H267.065V92.426H156.383V0ZM0.675781 0V92.426H81.1718C93.2978 92.426 103.618 91.007 112.132 88.169C120.646 85.073 127.225 80.042 131.869 73.076C136.513 65.852 138.835 56.177 138.835 44.051V0H77.3018V49.856C77.3018 54.242 76.6568 57.338 75.3668 59.144C74.3348 60.692 72.7868 61.466 70.7228 61.466H64.9178V0H0.675781ZM673.769 0H727.562V92.426H673.769V0ZM728.273 0H808.832V92.426H755.813L728.273 0Z" fill="#fff"/>
-    </svg> -->
-    
+<!-- Current role -->
+<section class="currently hidden sm:block">
 
   <div class="container relative">
 
@@ -141,24 +189,17 @@
 
   </div>
 
-  <!-- <img src="img/me/me01.jpg" class="" style="mix-blend-mode: normal;"> -->
-
 </section>
 
 <!-- projects -->
 <section class="relative bg-gray-900">
-
-  <!-- <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-0" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,320L20,320C40,320,80,320,120,304C160,288,200,256,240,245.3C280,235,320,245,360,218.7C400,192,440,128,480,133.3C520,139,560,213,600,256C640,299,680,309,720,277.3C760,245,800,171,840,117.3C880,64,920,32,960,48C1000,64,1040,128,1080,138.7C1120,149,1160,107,1200,90.7C1240,75,1280,85,1320,117.3C1360,149,1400,203,1420,229.3L1440,256L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg> -->
-
-  <!-- Break shape -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#111827" fill-opacity="1" d="M0,64L14.1,90.7C28.2,117,56,171,85,176C112.9,181,141,139,169,149.3C197.6,160,226,224,254,213.3C282.4,203,311,117,339,96C367.1,75,395,117,424,117.3C451.8,117,480,75,508,53.3C536.5,32,565,32,593,69.3C621.2,107,649,181,678,218.7C705.9,256,734,256,762,234.7C790.6,213,819,171,847,176C875.3,181,904,235,932,261.3C960,288,988,288,1016,266.7C1044.7,245,1073,203,1101,170.7C1129.4,139,1158,117,1186,122.7C1214.1,128,1242,160,1271,149.3C1298.8,139,1327,85,1355,69.3C1383.5,53,1412,75,1426,85.3L1440,96L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path></svg> -->
 
   <div class="dark">
 
   <!-- <img src="img/me/me04.jpg" class="absolute top-0 right-0 lg:right-24 2xl:right-64" style="mix-blend-mode: color-dodge;"> -->
 
   <div class="container">
-  <h2 class="h-section pt-20"><span>A glimpse of a <br>recent past</span></h2>
+  <h2 class="h-section sm:pt-20"><span>A glimpse of a <br>recent past</span></h2>
   </div>
 
   <div class="space-y-0 md:space-y-12 xl:space-y-32">
@@ -469,9 +510,9 @@
 </section>
 
 <!-- Break shape -->
-<div class="-mt-4 -mb-8">
+<!-- <div class="-mt-4 -mb-8">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#111521" fill-opacity="1" d="M0,0L14.1,21.3C28.2,43,56,85,85,96C112.9,107,141,85,169,101.3C197.6,117,226,171,254,192C282.4,213,311,203,339,181.3C367.1,160,395,128,424,106.7C451.8,85,480,75,508,90.7C536.5,107,565,149,593,176C621.2,203,649,213,678,229.3C705.9,245,734,267,762,256C790.6,245,819,203,847,208C875.3,213,904,267,932,256C960,245,988,171,1016,128C1044.7,85,1073,75,1101,112C1129.4,149,1158,235,1186,234.7C1214.1,235,1242,149,1271,133.3C1298.8,117,1327,171,1355,208C1383.5,245,1412,267,1426,277.3L1440,288L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z"></path></svg>
-</div>
+</div> -->
 
 <!-- References -->
 <section>
