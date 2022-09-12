@@ -135,6 +135,7 @@ section {
     @apply relative m-0 p-0 z-40;
     background-image: url(img/me/me01.jpg);
     background-position: -25rem;
+    height: 530px;
   }
 }
 @media (min-width: 1024px) {
