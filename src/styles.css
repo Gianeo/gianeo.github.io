@@ -129,7 +129,6 @@ section {
     background-image: url(img/me/hero-faded-ipad.jpg);
     background-position: -26rem;
     padding: 4rem 0;
-    height: auto;
   }
   #home section.currently  {
     @apply block relative m-0 p-0 z-40 bg-gray-900;
