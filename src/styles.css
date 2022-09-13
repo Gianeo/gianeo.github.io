@@ -125,17 +125,16 @@ section {
 }
 @media (min-width: 768px) {
   #home section.intro  {
-    @apply z-50 bg-center;
-    background-image: url(img/me/me01-blur.jpg);
-    background-position: -25rem;
+    @apply z-50;
+    background-image: url(img/me/hero-faded-ipad.jpg);
+    background-position: -26rem;
     padding: 4rem 0;
     height: auto;
   }
   #home section.currently  {
     @apply relative m-0 p-0 z-40 bg-gray-900;
-    background-image: url(img/me/me01.jpg);
-    background-position: -25rem;
-    height: 580px;
+    background-image: url(img/me/hero-ipad.jpg);
+    background-position: -26rem;
   }
 }
 @media (min-width: 1024px) {
@@ -147,9 +146,20 @@ section {
     background-position: center;
   }
 }
+@media (min-width: 1280px) {
+  #home section.intro  {
+    background-image: url(img/me/hero-faded.jpg);
+  }
+  #home section.currently  {
+    background-image: url(img/me/hero.jpg);
+  }
+}
 @media (min-width: 1536px) {
   #home section.intro  {
     padding: 6rem 0;
+  }
+  #home section.currently  {
+    @apply relative m-0 p-0 z-40 bg-gray-900 bg-center;
   }
 }
 
