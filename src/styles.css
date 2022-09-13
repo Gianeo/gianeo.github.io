@@ -133,6 +133,10 @@ section {
   }
   #home section.currently  {
     @apply relative m-0 p-0 z-40 bg-gray-900;
+    -webkit-background-size: cover; 
+   -moz-background-size: cover; 
+   -o-background-size: cover; 
+     background-size: cover;
     background-image: url(img/me/hero-ipad.jpg);
     background-position: -26rem;
   }
