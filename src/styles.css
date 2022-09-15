@@ -566,7 +566,7 @@ section .container {
   #home section.currently  {
     background-image: none;
   }
-  #home section.leadership h2  {
+  #home section .leadership h2  {
     font-size: 6rem;
   }
 }
