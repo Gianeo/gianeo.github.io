@@ -569,6 +569,7 @@ section .container {
   #home section .leadership h2  {
     font-size: 6rem;
     text-align: left;
+    margin-left: 0;
   }
 }
 @supports not (-webkit-touch-callout: none) {
