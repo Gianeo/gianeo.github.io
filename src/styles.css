@@ -550,9 +550,6 @@ section .container {
 
 
 
-
-
-
 body#template main {
     @apply lg:col-span-3;
     padding: 8vw inherit 0;
