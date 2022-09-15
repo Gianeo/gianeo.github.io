@@ -131,9 +131,9 @@ section {
     padding: 4rem 0;
   }
   #home section.currently  {
-    @apply relative m-0 p-0 z-40 bg-gray-900 bg-contain;
+    @apply relative m-0 p-0 z-40 bg-gray-900 bg-auto bg-center;
     background-image: url(img/me/hero-ipad.jpg);
-    background-position: -26rem;
+    /* background-position: -26rem; */
   }
 }
 @media (min-width: 1024px) {
