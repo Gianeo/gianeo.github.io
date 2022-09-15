@@ -560,6 +560,12 @@ section .container {
     width: 110%;
     mix-blend-mode: multiply;
   }
+  #home section.intro  {
+    background-image: none;
+  }
+  #home section.currently  {
+    background-image: none;
+  }
 }
 @supports not (-webkit-touch-callout: none) {
   /* CSS for other than iOS devices */ 
