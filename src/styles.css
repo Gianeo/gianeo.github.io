@@ -134,6 +134,7 @@ section {
     @apply relative m-0 p-0 z-40 bg-gray-900;
     background-image: url(img/me/hero-ipad.jpg);
     background-position: -26rem;
+    max-width: 768px;
   }
 }
 @media (min-width: 1024px) {
