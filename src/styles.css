@@ -548,6 +548,18 @@ section .container {
 } */
 
 
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */ 
+  .ios-image {
+    mix-blend-mode: multiply;
+  }
+}
+@supports not (-webkit-touch-callout: none) {
+  /* CSS for other than iOS devices */ 
+  .ios-image {
+    mix-blend-mode: screen;
+  }
+}
 
 
 body#template main {
