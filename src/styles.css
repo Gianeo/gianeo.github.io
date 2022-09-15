@@ -557,7 +557,7 @@ section .container {
   /* CSS specific to iOS devices */ 
   .ios-image {
     @apply left-0;
-    width: 100%;
+    width: 110%;
     mix-blend-mode: multiply;
   }
 }
