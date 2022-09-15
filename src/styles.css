@@ -558,7 +558,7 @@ section .container {
   .ios-image {
     @apply left-0;
     width: 110%;
-    mix-blend-mode: multiply;
+    mix-blend-mode: normal;
   }
   #home section.intro  {
     background-image: none;
