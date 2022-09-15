@@ -567,7 +567,7 @@ section .container {
     background-image: none;
   }
   #home section .leadership h2  {
-    font-size: 6rem;
+    @apply text-8xl tracking-tight pt-8;
     text-align: left;
     margin-left: 0;
   }
