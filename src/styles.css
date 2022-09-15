@@ -563,6 +563,9 @@ section .container {
   #home section.intro  {
     background-image: none;
   }
+  #home section.intro h2  {
+    font-size: 6rem;
+  }
   #home section.currently  {
     background-image: none;
   }
