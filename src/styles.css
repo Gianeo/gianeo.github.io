@@ -567,7 +567,7 @@ section .container {
     background-image: none;
   }
   #home section .leadership  {
-    @apply pt-4;
+    @apply pt-2;
   }
   #home section .leadership h2  {
     @apply text-8xl pt-0;
