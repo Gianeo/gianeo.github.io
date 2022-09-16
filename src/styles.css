@@ -302,7 +302,7 @@ section .container {
     position: absolute;
     text-align: right;
     top: 5rem;
-    left: 8.5%;
+    left: 6.5%;
     font-size: 10px;
     line-height: 14px;
   }
@@ -375,8 +375,8 @@ section .container {
   }
   .whatido-list {
     @apply text-xs;
-    top: 18rem;
-    left: 7.5%;
+    top: 15.2rem;
+    left: 7%;
   }
   .whatido-01, .whatido-02, .whatido-03 {
     max-width: 18rem;
@@ -420,8 +420,8 @@ section .container {
     line-height: 1.3rem;
   }
   .whatido-list {
-    top: 50rem;
-    left: 17%;
+    top: 49rem;
+    left: 23%;
   }
   .whatido-01 {
     top: 6rem;
