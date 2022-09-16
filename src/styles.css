@@ -568,9 +568,10 @@ section .container {
   }
   #home section .leadership h2  {
     @apply text-8xl pt-0;
-    line-height: 40%;
+    line-height: 62%;
     text-align: left;
     margin-left: 0;
+    max-width: 27rem;
   }
 }
 @supports not (-webkit-touch-callout: none) {
