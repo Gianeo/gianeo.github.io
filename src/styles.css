@@ -859,14 +859,17 @@ section .dark h2.h-section {
     @apply border-r-gray-100;
   }
   .project main {
-    @apply sm:flex gap-8 mx-auto relative;
+    @apply sm:flex gap-12 mx-auto relative;
   }
     .project main div.image {
       @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
     }
     .project main div.image div:first-of-type {
-      @apply hidden lg:flex absolute w-full h-full justify-center items-center bg-no-repeat bg-cover bg-fixed;
+      @apply hidden lg:flex absolute w-full h-full justify-center items-center bg-no-repeat;
       mix-blend-mode: multiply;
+    }
+    .project.reverse main div.image div:first-of-type {
+      @apply sm:bg-right;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
