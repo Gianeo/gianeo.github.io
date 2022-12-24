@@ -107,7 +107,6 @@ main {
   
 section {
   @apply bg-cover bg-no-repeat bg-fixed;
-  /* background-image: url(img/bgblur.png); */
   padding: 4rem 0;
 } 
 
@@ -553,6 +552,10 @@ section .container {
   width: 90%; height: 573px; 
   object-fit: cover;
 }
+.folio-cover-img {
+  @apply absolute -top-20 opacity-10; 
+  object-fit: cover;
+}
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */ 
   .ios-image {
@@ -859,7 +862,10 @@ section .dark h2.h-section {
     @apply sm:flex gap-8 mx-auto relative;
   }
     .project main div.image {
-      @apply w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 p-8 mb-4 sm:mb-0;
+      @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-4 sm:mb-0;
+    }
+    .project main div.image div:first-of-type {
+      @apply absolute w-full h-full flex justify-center items-center opacity-5;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
@@ -938,8 +944,44 @@ h2.h-section span {
   @apply bg-accent text-gray-900;
 }
 .dark .project main div.image {
-  @apply bg-gray-900 border border-gray-700;
+  @apply bg-gray-900 border border-gray-700 relative z-0;
 }
+/* colourful shadow */
+.project main div.image:before {
+  content: "";
+  width: 35%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+  transform: translate3d(10px, 0px, 0) scale(0.87);
+  filter: blur(20px);
+  border-radius: inherit;
+}
+.project.reverse main div.image:before {
+  left: 0;
+  background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+  transform: translate3d(-10px, 0px, 0) scale(0.87);
+}
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.project main div.image:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+      
 .project div.code-decoration span {
   @apply text-gray-500;
 }
