@@ -865,7 +865,8 @@ section .dark h2.h-section {
       @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
     }
     .project main div.image div:first-of-type {
-      @apply hidden lg:flex absolute w-full h-full justify-center items-center opacity-10 sm:opacity-5;
+      @apply hidden lg:flex absolute w-full h-full justify-center items-center bg-no-repeat bg-cover bg-fixed;
+      mix-blend-mode: multiply;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
