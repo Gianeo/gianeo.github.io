@@ -865,7 +865,7 @@ section .dark h2.h-section {
       @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
     }
     .project main div.image div:first-of-type {
-      @apply hidden md:flex absolute w-full h-full justify-center items-center opacity-10 sm:opacity-5;
+      @apply hidden lg:flex absolute w-full h-full justify-center items-center opacity-10 sm:opacity-5;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
@@ -980,13 +980,32 @@ h2.h-section span {
   }
   
 @media (min-width: 768px) {
+  
+  .project main div.image:before {
+    width: 200px;
+    height: 160px;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+    transform: translate3d(10px, 0px, 0) scale(0.76);
+    filter: blur(20px);
+    border-radius: inherit;
+  }
+  .project.reverse main div.image:before {
+    left: 0;
+    background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+    transform: translate3d(-10px, 0px, 0) scale(0.76);
+  }
+  
+}
+  
+@media (min-width: 1024px) {
 
   .project main div.image:before {
-    content: "";
-    width: 35%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
+    width: 400px;
+    height: 360px;
+    left: auto;
     right: 0;
     bottom: 0;
     background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
@@ -998,22 +1017,6 @@ h2.h-section span {
     left: 0;
     background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
     transform: translate3d(-10px, 0px, 0) scale(0.87);
-  }
-  /* 
-  * Prevents issues when the parent creates a 
-  * stacking context. (For example, using the transform
-  * property )
-  */
-  .project main div.image:after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    border-radius: inherit;
   }
 
 }
