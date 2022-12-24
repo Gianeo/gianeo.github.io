@@ -895,7 +895,7 @@ section .dark h2.h-section {
       @apply w-full sm:pr-8 space-y-8;
     }
     .project main div.desc div:last-of-type a {
-      @apply inline-block px-6 py-4 bg-gray-900 text-gray-50 font-semibold rounded shadow-lg;
+      @apply inline-block px-6 py-4 bg-gray-900 text-gray-50 font-semibold rounded shadow-lg w-full sm:w-auto text-center;
     }
   .project div.code-decoration {
     @apply hidden sm:block absolute bottom-14 sm:bottom-0 sm:right-0;
