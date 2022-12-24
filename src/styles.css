@@ -862,16 +862,16 @@ section .dark h2.h-section {
     @apply sm:flex gap-8 mx-auto relative;
   }
     .project main div.image {
-      @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-4 sm:mb-0;
+      @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
     }
     .project main div.image div:first-of-type {
-      @apply absolute w-full h-full flex justify-center items-center opacity-5;
+      @apply hidden sm:flex absolute w-full h-full justify-center items-center opacity-5;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
     }
       .project main div.image img {
-        @apply w-full;
+        @apply w-full mb-8 sm:mb-0;
       }
     .project main div.desc {
       @apply sm:w-1/2 lg:w-1/3 xl:w-1/4 space-y-4 block space-x-0 text-sm text-gray-500;
@@ -944,42 +944,78 @@ h2.h-section span {
   @apply bg-accent text-gray-900;
 }
 .dark .project main div.image {
-  @apply bg-gray-900 border border-gray-700 relative z-0;
+  @apply bg-gray-900 sm:border border-gray-700 relative z-0;
 }
+
 /* colourful shadow */
-.project main div.image:before {
-  content: "";
-  width: 35%;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
-  transform: translate3d(10px, 0px, 0) scale(0.87);
-  filter: blur(20px);
-  border-radius: inherit;
-}
-.project.reverse main div.image:before {
-  left: 0;
-  background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
-  transform: translate3d(-10px, 0px, 0) scale(0.87);
-}
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
-.project main div.image:after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
+
+  .project main div.image:before {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #111521 70%, #2AF6FF 0% );
+    transform: translate3d(5px, 0px, 0) scale(0.70);
+    filter: blur(20px);
+    border-radius: inherit;
+  }
+  /* 
+  * Prevents issues when the parent creates a 
+  * stacking context. (For example, using the transform
+  * property )
+  */
+  .project main div.image:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+  }
+  
+@media (min-width: 768px) {
+
+  .project main div.image:before {
+    content: "";
+    width: 35%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+    transform: translate3d(10px, 0px, 0) scale(0.87);
+    filter: blur(20px);
+    border-radius: inherit;
+  }
+  .project.reverse main div.image:before {
+    left: 0;
+    background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
+    transform: translate3d(-10px, 0px, 0) scale(0.87);
+  }
+  /* 
+  * Prevents issues when the parent creates a 
+  * stacking context. (For example, using the transform
+  * property )
+  */
+  .project main div.image:after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+  }
+
 }
       
 .project div.code-decoration span {
