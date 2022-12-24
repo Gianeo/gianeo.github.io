@@ -475,7 +475,7 @@ section .container {
     mix-blend-mode: multiply;
   }
   .currentRole {
-    @apply absolute -bottom-64 right-8 bg-white rounded-full shadow-lg;
+    @apply absolute -bottom-72 right-8 bg-white rounded-full shadow-lg;
     width: 22rem; height: 22rem;
   }
   .currentRole div {
