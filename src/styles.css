@@ -871,7 +871,7 @@ section .dark h2.h-section {
       @apply sm:order-2;
     }
       .project main div.image img {
-        @apply w-full mb-8 sm:m-0;
+        @apply w-full mt-4 mb-8 sm:m-0;
       }
     .project main div.desc {
       @apply sm:w-1/2 lg:w-1/3 xl:w-1/4 space-y-4 block space-x-0 text-sm text-gray-500;
@@ -951,14 +951,14 @@ h2.h-section span {
 
   .project main div.image:before {
     content: "";
-    width: 35%;
+    width: 120px;
+    height: 50px;
     z-index: -1;
     position: absolute;
-    top: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(180deg, #111521 30%, #2AF6FF 70% );
-    transform: translate3d(-10px, 0px, 0) scale(0.87);
+    background: linear-gradient(180deg, #111521 0%, #2AF6FF 100% );
+    transform: translate3d(-10px, 0px, 0) scale(0.75);
     filter: blur(20px);
     border-radius: inherit;
   }
