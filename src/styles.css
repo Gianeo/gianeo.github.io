@@ -862,7 +862,7 @@ section .dark h2.h-section {
     @apply sm:flex gap-8 mx-auto relative;
   }
     .project main div.image {
-      @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
+      @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0 rounded-xl sm:rounded-none;
     }
     .project main div.image div:first-of-type {
       @apply hidden sm:flex absolute w-full h-full justify-center items-center opacity-10 sm:opacity-5;
