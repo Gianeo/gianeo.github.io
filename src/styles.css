@@ -865,11 +865,8 @@ section .dark h2.h-section {
       @apply relative w-full flex justify-center items-center sm:w-1/2 lg:w-2/3 xl:w-3/4 mb-6 sm:mb-0;
     }
     .project main div.image div:first-of-type {
-      @apply hidden lg:flex absolute w-full h-full justify-center items-center bg-no-repeat;
+      @apply hidden lg:flex absolute w-full h-full justify-center items-center bg-no-repeat opacity-80;
       mix-blend-mode: multiply;
-    }
-    .project.reverse main div.image div:first-of-type {
-      @apply sm:bg-right;
     }
     .project.reverse main div.image {
       @apply sm:order-2;
@@ -948,7 +945,7 @@ h2.h-section span {
   @apply bg-accent text-gray-900;
 }
 .dark .project main div.image {
-  @apply bg-gray-900 sm:border border-gray-700 relative z-0;
+  @apply bg-gray-900 sm:border border-gray-700 hover:border-gray-600 hover:cursor-pointer relative z-0;
 }
 
 /* colourful shadow */
