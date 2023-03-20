@@ -21,8 +21,9 @@ html {
 }
 
 h1, h2, h3, h4, .huge, .xlarge {
-  @apply font-black;
+  /* @apply font-black; */
   font-family: 'Inter Tight', sans-serif;
+  font-weight: 700;
 }
 h1, h2, h3, h4 {
   @apply text-neutral-800;
@@ -31,7 +32,7 @@ h1 {
   @apply text-h1 leading-8;
 }
 h2 {
-  @apply text-h2 leading-7;
+  @apply text-h4 md:text-h2 leading-7;
 }
 h3 {
   @apply text-h3 leading-8;
@@ -51,26 +52,40 @@ p {
 .small {
   @apply text-sm leading-6;
 }
+.mini {
+  @apply text-xs leading-5;
+}
 .xlarge {
   @apply text-xl;
-  line-height: 100px;
+  line-height: 65px;
 }
 .huge {
   @apply text-huge;
-  line-height: 100px;
+  line-height: 80px;
+}
+.logo {
+  @apply text-xl md:text-huge tracking-tight;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 900;
 }
 .text-light {
   @apply text-neutral-500;
+}
+.text-vertical {
+  writing-mode: vertical-lr; /* or vertical-rl */
+  text-orientation: sideways;
+  transform: rotate(360deg); /* or 90deg, depending on the desired orientation */
 }
 
 /* Buttons */
 
 .btn {
-  @apply inline-block font-semibold bg-neutral-700 hover:bg-neutral-800 text-white py-2.5 px-5 rounded shadow-lg;
+  @apply inline-block py-3.5 px-6 bg-transparent hover:bg-transparent border border-neutral-300 hover:border-neutral-900 text-neutral-700 shadow;
   font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
 }
   .btn-primary {
-    @apply bg-primary hover:bg-primary-dark text-neutral-700;
+    @apply  bg-neutral-800 hover:bg-neutral-800 text-white;
   }
 
 /* Blocks */
@@ -85,6 +100,31 @@ header {
   header div {
     @apply flex items-center justify-end gap-2 pr-2;
   }
+
+.mobile-gutter {
+  @apply px-8 md:p-0;
+}
+
+/* hover effect with js */
+.img-container {
+    @apply hidden md:inline-block relative w-full h-full cursor-pointer bg-neutral-900 shadow-xl hover:shadow-2xl;
+  }
+    .img-container img {
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .img-container img.logo {
+      @apply absolute inset-0 mx-auto my-auto transform -translate-x-1/2 -translate-y-1/2 origin-center opacity-0;
+      transform: translateX(0%);
+    }
+    .img-container img.left {
+      transform: translateX(-20%);
+    }
+    .img-container img.right {
+      transform: translateX(20%);
+    }
+    .img-container img.left.center, .img-container img.right.center {
+      transform: translateX(0%);
+    }
 
 
 .leadershipTxt {
@@ -158,3 +198,4 @@ header {
           .references blockquote .footer div p span {
             @apply block text-sm font-normal leading-5 text-neutral-600;
           }
+

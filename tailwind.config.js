@@ -5,6 +5,7 @@ module.exports = {
       'sans': ['Inter Tight', 'system-ui'],
     },
     fontSize: {
+      xs: '0.64rem',
       sm: '0.8rem',
       base: '1rem',
       lg: '1.25rem',
@@ -21,7 +22,7 @@ module.exports = {
       'white': '#ffffff',
       'primary': {
         light: '#00dce6',
-        DEFAULT: '#1af5ff',
+        DEFAULT: '#004076',
         dark: '#00dce6',
       },
       'neutral': {
